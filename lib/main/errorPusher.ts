@@ -77,7 +77,7 @@ export class ErrorPusher {
   }
 
   private getLinterErrors(): Message[] {
-    if (atom.config.get("atom-typescript.suppressAllDiagnostics")) return []
+    if (atom.config.get("atom-typescript-updated.suppressAllDiagnostics")) return []
     const result: Message[] = []
     for (const fileErrors of this.errors.values()) {
       for (const [filePath, diagnostics] of fileErrors) {
@@ -148,9 +148,9 @@ export class ErrorPusher {
   }
 }
 
-function config<T extends keyof ConfigValues["atom-typescript"]>(
+function config<T extends keyof ConfigValues["atom-typescript-updated"]>(
   option: T,
   scope: string,
-): ConfigValues["atom-typescript"][typeof option] {
-  return atom.config.get(`atom-typescript.${option}`, {scope: [scope]}) as any
+): ConfigValues["atom-typescript-updated"][typeof option] {
+  return atom.config.get(`atom-typescript-updated.${option}`, {scope: [scope]}) as any
 }

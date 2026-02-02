@@ -43,7 +43,7 @@ export class TypescriptBuffer {
   private constructor(public buffer: Atom.TextBuffer, private deps: Deps) {
     let debouncedGetErr: DebouncedFunc<() => void>
     this.subscriptions.add(
-      atom.config.observe("atom-typescript.getErrDebounceTimeout", (val) => {
+      atom.config.observe("atom-typescript-updated.getErrDebounceTimeout", (val) => {
         debouncedGetErr = debounce(() => {
           handlePromise(this.getErr({allFiles: false, delay: 0}))
         }, val)
@@ -167,7 +167,7 @@ export class TypescriptBuffer {
     if (!this.state || !this.state.configFile) return
     const options = getProjectConfig(this.state.configFile.getPath())
     this.compileOnSave = options.compileOnSave
-    const cfg = atom.config.get("atom-typescript")
+    const cfg = atom.config.get("atom-typescript-updated")
     await this.state.client.execute("configure", {
       file: this.state.filePath,
       formatOptions: options.formatCodeOptions,

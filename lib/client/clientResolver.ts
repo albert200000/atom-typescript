@@ -33,7 +33,7 @@ export class ClientResolver {
   private emitter = new Emitter<{}, EventTypes>()
   private subscriptions = new CompositeDisposable()
   private tsserverInstancePerTsconfig =
-    atom.config.get("atom-typescript").tsserverInstancePerTsconfig
+    atom.config.get("atom-typescript-updated").tsserverInstancePerTsconfig
   // This is just here so TypeScript can infer the types of the callbacks when using "on" method
   // tslint:disable-next-line:member-ordering
   public on = this.emitter.on.bind(this.emitter)
