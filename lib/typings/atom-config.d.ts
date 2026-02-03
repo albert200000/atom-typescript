@@ -11,8 +11,6 @@ declare module "atom" {
     "atom-typescript-updated.autocompletionStrictFilterIgnoreCase": boolean
     "atom-typescript-updated.autocompletionStrictFilterLongestMatchFirst": boolean
     "atom-typescript-updated.locale": string
-    "atom-typescript-updated.preferBuiltinTooltips": boolean
-    "atom-typescript-updated.preferBuiltinSigHelp": boolean
     "atom-typescript-updated.preferBuiltinBusySignal": boolean
     "atom-typescript-updated.preferBuiltinOccurrenceHighlight": boolean
     "atom-typescript-updated.disableAtomIdeDefinitions": boolean
@@ -20,10 +18,6 @@ declare module "atom" {
     "atom-typescript-updated.getErrDebounceTimeout": number
     "atom-typescript-updated.occurrenceHighlightDebounceTimeout": number
     "atom-typescript-updated.showSemanticView": boolean
-    "atom-typescript-updated.tooltipDelay": number
-    "atom-typescript-updated.tooltipPosition": "top" | "bottom"
-    "atom-typescript-updated.sigHelpPosition": "top" | "bottom"
-    "atom-typescript-updated.sigHelpDisplayOnChange": boolean
     "atom-typescript-updated.autocompleteParens": boolean
     "atom-typescript-updated.includeCompletionsForModuleExports": boolean
     "atom-typescript-updated.quotePreference": "auto" | "double" | "single"
@@ -59,8 +53,6 @@ declare module "atom" {
       autocompletionStrictFilterIgnoreCase: boolean
       autocompletionStrictFilterLongestMatchFirst: boolean
       locale: string
-      preferBuiltinTooltips: boolean
-      preferBuiltinSigHelp: boolean
       preferBuiltinBusySignal: boolean
       preferBuiltinOccurrenceHighlight: boolean
       disableAtomIdeDefinitions: boolean
@@ -68,10 +60,6 @@ declare module "atom" {
       getErrDebounceTimeout: number
       occurrenceHighlightDebounceTimeout: number
       showSemanticView: boolean
-      tooltipDelay: number
-      tooltipPosition: "top" | "bottom"
-      sigHelpPosition: "top" | "bottom"
-      sigHelpDisplayOnChange: boolean
       autocompleteParens: boolean
       includeCompletionsForModuleExports: boolean
       quotePreference: "auto" | "double" | "single"

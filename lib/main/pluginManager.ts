@@ -25,8 +25,6 @@ import {registerCommands} from "./atom/commands"
 import {StatusPanel, TBuildStatus, TProgress} from "./atom/components/statusPanel"
 import {EditorPositionHistoryManager} from "./atom/editorPositionHistoryManager"
 import {OccurrenceManager} from "./atom/occurrence/manager"
-import {SigHelpManager} from "./atom/sigHelp/manager"
-import {TooltipManager} from "./atom/tooltips/manager"
 import {isTypescriptEditorWithPath, spanToRange, TextSpan} from "./atom/utils"
 import {SemanticViewController} from "./atom/views/outline/semanticViewController"
 import {SymbolsViewController} from "./atom/views/symbols/symbolsViewController"
@@ -55,10 +53,6 @@ export class PluginManager {
   private semanticViewController: SemanticViewController
   private symbolsViewController: SymbolsViewController
   private editorPosHist: EditorPositionHistoryManager
-  private tooltipManager: TooltipManager
-  private usingBuiltinTooltipManager = true
-  private sigHelpManager: SigHelpManager
-  private usingBuiltinSigHelpManager = true
   private occurrenceManager: OccurrenceManager
   private pending = new Set<{title: string}>()
   private busySignalService?: BusySignalService
@@ -94,14 +88,6 @@ export class PluginManager {
       getClient: this.getClient,
     })
     this.subscriptions.add(this.symbolsViewController)
-
-    this.tooltipManager = new TooltipManager(this.getClient)
-    this.subscriptions.add(this.tooltipManager)
-
-    this.sigHelpManager = new SigHelpManager({
-      getClient: this.getClient,
-    })
-    this.subscriptions.add(this.sigHelpManager)
 
     this.occurrenceManager = new OccurrenceManager(this.getClient)
     this.subscriptions.add(this.occurrenceManager)
@@ -192,21 +178,15 @@ export class PluginManager {
   }
 
   public consumeDatatipService(datatip: DatatipService) {
-    if (atom.config.get("atom-typescript-updated").preferBuiltinTooltips) return
     const disp = datatip.addProvider(new TSDatatipProvider(this.getClient))
     this.subscriptions.add(disp)
-    this.tooltipManager.dispose()
-    this.usingBuiltinTooltipManager = false
     return disp
   }
 
   public consumeSigHelpService(registry: SignatureHelpRegistry): void | Atom.DisposableLike {
-    if (atom.config.get("atom-typescript-updated").preferBuiltinSigHelp) return
     const provider = new TSSigHelpProvider(this.getClient)
     const disp = registry(provider)
     this.subscriptions.add(disp, provider)
-    this.sigHelpManager.dispose()
-    this.usingBuiltinSigHelpManager = false
     return disp
   }
 
@@ -345,23 +325,19 @@ export class PluginManager {
     )
 
   private showTooltipAt = async (ed: Atom.TextEditor): Promise<void> => {
-    if (this.usingBuiltinTooltipManager) this.tooltipManager.showExpressionAt(ed)
-    else await atom.commands.dispatch(atom.views.getView(ed), "datatip:toggle")
+    await atom.commands.dispatch(atom.views.getView(ed), "datatip:toggle")
   }
 
   private showSigHelpAt = async (ed: Atom.TextEditor): Promise<void> => {
-    if (this.usingBuiltinSigHelpManager) await this.sigHelpManager.showTooltipAt(ed)
-    else await atom.commands.dispatch(atom.views.getView(ed), "signature-help:show")
+    await atom.commands.dispatch(atom.views.getView(ed), "signature-help:show")
   }
 
-  private hideSigHelpAt = (ed: Atom.TextEditor): boolean => {
-    if (this.usingBuiltinSigHelpManager) return this.sigHelpManager.hideTooltipAt(ed)
-    else return false
+  private hideSigHelpAt = (_: Atom.TextEditor): boolean => {
+    return false
   }
 
-  private rotateSigHelp = (ed: Atom.TextEditor, shift: number): boolean => {
-    if (this.usingBuiltinSigHelpManager) return this.sigHelpManager.rotateSigHelp(ed, shift)
-    else return false
+  private rotateSigHelp = (_: Atom.TextEditor, __: number): boolean => {
+    return false
   }
 
   private histGoForward: EditorPositionHistoryManager["goForward"] = (ed, opts) => {

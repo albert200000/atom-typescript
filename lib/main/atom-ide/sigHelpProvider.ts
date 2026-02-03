@@ -9,15 +9,7 @@ export class TSSigHelpProvider implements SignatureHelpProvider {
   public priority = 100
   private disposables = new CompositeDisposable()
 
-  constructor(private getClient: GetClientFunction) {
-    const triggerCharsDefault = new Set(["<", "(", ","])
-    const triggerCharsDisabled = new Set<string>([])
-    this.disposables.add(
-      atom.config.observe("atom-typescript-updated.sigHelpDisplayOnChange", (newVal) => {
-        this.triggerCharacters = newVal ? triggerCharsDefault : triggerCharsDisabled
-      }),
-    )
-  }
+  constructor(private getClient: GetClientFunction) {}
 
   public dispose() {
     this.disposables.dispose()
