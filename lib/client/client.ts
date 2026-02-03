@@ -281,7 +281,7 @@ class MessageStream extends Transform {
       } else if (!line.startsWith("Content-Length:")) {
         console.warn(line)
       }
-    } catch (error) {
+    } catch (_) {
       console.error("client: failed to parse: ", line)
     } finally {
       callback(undefined)

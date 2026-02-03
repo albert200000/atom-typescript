@@ -13,12 +13,12 @@ export async function renderTooltip(
   )
 
   const tags = data.tags
-    ? data.tags.map((tag) => {
+    ? data.tags.map((tag, idx) => {
         const tagClass =
           "atom-typescript-datatip-tooltip-doc-tag " +
           `atom-typescript-datatip-tooltip-doc-tag-name-${tag.name}`
         return (
-          <div className={tagClass}>
+          <div className={tagClass} key={idx}>
             <span className="atom-typescript-datatip-tooltip-doc-tag-name">{tag.name}</span>
             {formatTagText(etch, tag.text)}
           </div>

@@ -6,7 +6,7 @@ const packagePath = join(__dirname, "..")
 describe("atom-typescript", function () {
   this.timeout(8000)
 
-  it("should activate", async () => {
+  it("should activate", async function () {
     const packages = atom.packages
 
     // Load package, but it won't activate until the TypeScript grammar is used

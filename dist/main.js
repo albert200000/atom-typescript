@@ -1,63 +1,36 @@
-var $8qw4J$swchelperscjs_async_to_generatorcjs = require("@swc/helpers/cjs/_async_to_generator.cjs");
-var $8qw4J$swchelperscjs_ts_generatorcjs = require("@swc/helpers/cjs/_ts_generator.cjs");
-var $8qw4J$atompackagedeps = require("atom-package-deps");
-var $8qw4J$etch = require("etch");
-var $8qw4J$swchelperscjs_class_call_checkcjs = require("@swc/helpers/cjs/_class_call_check.cjs");
-var $8qw4J$swchelperscjs_create_classcjs = require("@swc/helpers/cjs/_create_class.cjs");
-var $8qw4J$swchelperscjs_object_spreadcjs = require("@swc/helpers/cjs/_object_spread.cjs");
-var $8qw4J$atom = require("atom");
-var $8qw4J$lodash = require("lodash");
-var $8qw4J$lodashdebounce = require("lodash/debounce");
-var $8qw4J$swchelperscjs_sliced_to_arraycjs = require("@swc/helpers/cjs/_sliced_to_array.cjs");
-var $8qw4J$swchelperscjs_to_consumable_arraycjs = require("@swc/helpers/cjs/_to_consumable_array.cjs");
-var $8qw4J$path = require("path");
-var $8qw4J$typescript = require("typescript");
-var $8qw4J$swchelperscjs_ts_valuescjs = require("@swc/helpers/cjs/_ts_values.cjs");
-var $8qw4J$swchelperscjs_call_supercjs = require("@swc/helpers/cjs/_call_super.cjs");
-var $8qw4J$swchelperscjs_inheritscjs = require("@swc/helpers/cjs/_inherits.cjs");
-var $8qw4J$byline = require("byline");
-var $8qw4J$stream = require("stream");
-var $8qw4J$swchelperscjs_type_ofcjs = require("@swc/helpers/cjs/_type_of.cjs");
-var $8qw4J$fs = require("fs");
-var $8qw4J$jsoncparser = require("jsonc-parser");
-var $8qw4J$resolve = require("resolve");
-var $8qw4J$swchelperscjs_object_spread_propscjs = require("@swc/helpers/cjs/_object_spread_props.cjs");
-var $8qw4J$fuzzaldrin = require("fuzzaldrin");
-var $8qw4J$atomselectlist = require("atom-select-list");
-var $8qw4J$fsplus = require("fs-plus");
-
-
-function $parcel$interopDefault(a) {
-  return a && a.__esModule ? a.default : a;
-}
-
-function $parcel$export(e, n, v, s) {
-  Object.defineProperty(e, n, {get: v, set: s, enumerable: true, configurable: true});
-}
-
-$parcel$export(module.exports, "activate", function () { return $64e7645780377c6f$export$234c45b355edd85b; });
-$parcel$export(module.exports, "deactivate", function () { return $64e7645780377c6f$export$e96c1edfdaf2d1db; });
-$parcel$export(module.exports, "serialize", function () { return $64e7645780377c6f$export$dfdc1655ccc5b9cb; });
-$parcel$export(module.exports, "deserializeSemanticView", function () { return $64e7645780377c6f$export$a44ae7a0ffe32de; });
-$parcel$export(module.exports, "consumeLinter", function () { return $64e7645780377c6f$export$7513da91a6067379; });
-$parcel$export(module.exports, "consumeStatusBar", function () { return $64e7645780377c6f$export$a51a2902ac3affa7; });
-$parcel$export(module.exports, "consumeDatatipService", function () { return $64e7645780377c6f$export$ca7950270ff61d66; });
-$parcel$export(module.exports, "consumeSignatureHelp", function () { return $64e7645780377c6f$export$3ceee8b9bf304299; });
-$parcel$export(module.exports, "consumeBusySignal", function () { return $64e7645780377c6f$export$29fa66c1419daddc; });
-$parcel$export(module.exports, "provideAutocomplete", function () { return $64e7645780377c6f$export$71db97b929e8341b; });
-$parcel$export(module.exports, "provideIntentions", function () { return $64e7645780377c6f$export$3781320452d1dce8; });
-$parcel$export(module.exports, "provideIntentionsHighlight", function () { return $64e7645780377c6f$export$6f2bf0ac3e405d7b; });
-$parcel$export(module.exports, "provideCodeActions", function () { return $64e7645780377c6f$export$7990dc4c350e7387; });
-$parcel$export(module.exports, "provideHyperclick", function () { return $64e7645780377c6f$export$1c7ef754fc81a243; });
-$parcel$export(module.exports, "provideReferences", function () { return $64e7645780377c6f$export$e32ae1c830f39f16; });
-$parcel$export(module.exports, "provideOutlines", function () { return $64e7645780377c6f$export$cec97b3152a9a2a4; });
-$parcel$export(module.exports, "provideDefinitions", function () { return $64e7645780377c6f$export$60b479b2c6dcce92; });
-$parcel$export(module.exports, "provideCodeHighlight", function () { return $64e7645780377c6f$export$67b00a253126c08e; });
+import {_ as $j0dGC$_} from "@swc/helpers/_/_async_to_generator";
+import {_ as $j0dGC$_1} from "@swc/helpers/_/_ts_generator";
+import {install as $j0dGC$install} from "atom-package-deps";
+import $j0dGC$etch, * as $j0dGC$etch1 from "etch";
+import {_ as $j0dGC$_2} from "@swc/helpers/_/_class_call_check";
+import {_ as $j0dGC$_3} from "@swc/helpers/_/_create_class";
+import {_ as $j0dGC$_4} from "@swc/helpers/_/_object_spread";
+import {CompositeDisposable as $j0dGC$CompositeDisposable, Point as $j0dGC$Point, Range as $j0dGC$Range, TextBuffer as $j0dGC$TextBuffer, Disposable as $j0dGC$Disposable, Emitter as $j0dGC$Emitter, BufferedProcess as $j0dGC$BufferedProcess, BufferedNodeProcess as $j0dGC$BufferedNodeProcess, File as $j0dGC$File} from "atom";
+import {isEqual as $j0dGC$isEqual, memoize as $j0dGC$memoize, throttle as $j0dGC$throttle, debounce as $j0dGC$debounce, flatten as $j0dGC$flatten} from "lodash";
+import $j0dGC$lodashdebounce from "lodash/debounce";
+import {_ as $j0dGC$_5} from "@swc/helpers/_/_sliced_to_array";
+import {_ as $j0dGC$_6} from "@swc/helpers/_/_to_consumable_array";
+import * as $j0dGC$path from "path";
+import $j0dGC$typescript from "typescript";
+import {_ as $j0dGC$_7} from "@swc/helpers/_/_ts_values";
+import {_ as $j0dGC$_8} from "@swc/helpers/_/_call_super";
+import {_ as $j0dGC$_9} from "@swc/helpers/_/_inherits";
+import $j0dGC$byline from "byline";
+import {Transform as $j0dGC$Transform} from "stream";
+import {_ as $j0dGC$_10} from "@swc/helpers/_/_type_of";
+import $j0dGC$fs, {access as $j0dGC$access, constants as $j0dGC$constants, readFile as $j0dGC$readFile} from "fs";
+import * as $j0dGC$jsoncparser from "jsonc-parser";
+import $j0dGC$resolve from "resolve";
+import {_ as $j0dGC$_11} from "@swc/helpers/_/_object_spread_props";
+import {match as $j0dGC$match, filter as $j0dGC$filter} from "fuzzaldrin";
+import $j0dGC$atomselectlist from "atom-select-list";
+import {move as $j0dGC$move} from "fs-plus";
 
 
 
 
-function $2893351583386024$export$8080b7556d9d6445(promise) {
+
+function $e61b31fac60530e8$export$8080b7556d9d6445(promise) {
     if (promise === undefined) return;
     if (typeof promise["catch"] !== "function") {
         atom.notifications.addFatalError("Atom-Typescript: non-promise passed to handlePromise. Please report this.", {
@@ -99,23 +72,23 @@ function $2893351583386024$export$8080b7556d9d6445(promise) {
 
 
 
-var $ee93806a41573bb4$export$70bfa4f5700cfeae = (0, ($parcel$interopDefault($8qw4J$typescript))).DiagnosticCategory;
-function $ee93806a41573bb4$export$9978d8c48293dc72(point) {
+var $ee2d752c6bad64f9$export$70bfa4f5700cfeae = (0, $j0dGC$typescript).DiagnosticCategory;
+function $ee2d752c6bad64f9$export$9978d8c48293dc72(point) {
     return {
         line: point.row + 1,
         offset: point.column + 1
     };
 }
-function $ee93806a41573bb4$export$2b9d56ac2fba440c(loc) {
-    return new $8qw4J$atom.Point(loc.line - 1, loc.offset - 1);
+function $ee2d752c6bad64f9$export$2b9d56ac2fba440c(loc) {
+    return new $j0dGC$Point(loc.line - 1, loc.offset - 1);
 }
-function $ee93806a41573bb4$export$477d491a08b070ec(span) {
-    return $ee93806a41573bb4$export$19d00dfc4e734f8b(span.start, span.end);
+function $ee2d752c6bad64f9$export$477d491a08b070ec(span) {
+    return $ee2d752c6bad64f9$export$19d00dfc4e734f8b(span.start, span.end);
 }
-function $ee93806a41573bb4$export$19d00dfc4e734f8b(start, end) {
-    return new $8qw4J$atom.Range($ee93806a41573bb4$export$2b9d56ac2fba440c(start), $ee93806a41573bb4$export$2b9d56ac2fba440c(end));
+function $ee2d752c6bad64f9$export$19d00dfc4e734f8b(start, end) {
+    return new $j0dGC$Range($ee2d752c6bad64f9$export$2b9d56ac2fba440c(start), $ee2d752c6bad64f9$export$2b9d56ac2fba440c(end));
 }
-function $ee93806a41573bb4$export$430a7b9c6c8900f6(range) {
+function $ee2d752c6bad64f9$export$430a7b9c6c8900f6(range) {
     return {
         line: range.start.row + 1,
         offset: range.start.column + 1,
@@ -123,11 +96,11 @@ function $ee93806a41573bb4$export$430a7b9c6c8900f6(range) {
         endOffset: range.end.column + 1
     };
 }
-function $ee93806a41573bb4$export$bad43d745a81bbd5(configFile) {
-    var config = $ee93806a41573bb4$var$loadConfig(configFile);
+function $ee2d752c6bad64f9$export$bad43d745a81bbd5(configFile) {
+    var config = $ee2d752c6bad64f9$var$loadConfig(configFile);
     var options = config.formatCodeOptions;
     return {
-        formatCodeOptions: (0, $8qw4J$swchelperscjs_object_spreadcjs._)({
+        formatCodeOptions: (0, $j0dGC$_4)({
             indentSize: atom.config.get("editor.tabLength"),
             tabSize: atom.config.get("editor.tabLength")
         }, options),
@@ -135,44 +108,44 @@ function $ee93806a41573bb4$export$bad43d745a81bbd5(configFile) {
         preferences: config.preferences ? config.preferences : {}
     };
 }
-function $ee93806a41573bb4$var$loadConfig(configFile) {
-    if ($8qw4J$path.extname(configFile) !== ".json") configFile = "".concat(configFile, ".json");
-    var config = (0, ($parcel$interopDefault($8qw4J$typescript))).readConfigFile(configFile, function(file) {
-        return (0, ($parcel$interopDefault($8qw4J$typescript))).sys.readFile(file);
+function $ee2d752c6bad64f9$var$loadConfig(configFile) {
+    if ($j0dGC$extname(configFile) !== ".json") configFile = "".concat(configFile, ".json");
+    var config = (0, $j0dGC$typescript).readConfigFile(configFile, function(file) {
+        return (0, $j0dGC$typescript).sys.readFile(file);
     }).config;
     if (config === undefined) return {};
     if (typeof config["extends"] === "string") {
-        var extendsPath = $8qw4J$path.join($8qw4J$path.dirname(configFile), config["extends"]);
-        var extendsConfig = $ee93806a41573bb4$var$loadConfig(extendsPath);
+        var extendsPath = $j0dGC$join($j0dGC$dirname(configFile), config["extends"]);
+        var extendsConfig = $ee2d752c6bad64f9$var$loadConfig(extendsPath);
         config = Object.assign({}, extendsConfig, config);
     }
     return config;
 }
-function $ee93806a41573bb4$export$9db02c2ec8f703d4(i) {
+function $ee2d752c6bad64f9$export$9db02c2ec8f703d4(i) {
     return {
-        label: $ee93806a41573bb4$export$c2a999eb584410f0(i.prefixDisplayParts) + i.parameters.map(function(x) {
-            return $ee93806a41573bb4$export$c2a999eb584410f0(x.displayParts);
-        }).join($ee93806a41573bb4$export$c2a999eb584410f0(i.separatorDisplayParts)) + $ee93806a41573bb4$export$c2a999eb584410f0(i.suffixDisplayParts),
-        documentation: $ee93806a41573bb4$export$c2a999eb584410f0(i.documentation),
-        parameters: i.parameters.map($ee93806a41573bb4$export$f7eb6a32d312d66a)
+        label: $ee2d752c6bad64f9$export$c2a999eb584410f0(i.prefixDisplayParts) + i.parameters.map(function(x) {
+            return $ee2d752c6bad64f9$export$c2a999eb584410f0(x.displayParts);
+        }).join($ee2d752c6bad64f9$export$c2a999eb584410f0(i.separatorDisplayParts)) + $ee2d752c6bad64f9$export$c2a999eb584410f0(i.suffixDisplayParts),
+        documentation: $ee2d752c6bad64f9$export$c2a999eb584410f0(i.documentation),
+        parameters: i.parameters.map($ee2d752c6bad64f9$export$f7eb6a32d312d66a)
     };
 }
-function $ee93806a41573bb4$export$f7eb6a32d312d66a(p) {
+function $ee2d752c6bad64f9$export$f7eb6a32d312d66a(p) {
     return {
-        label: $ee93806a41573bb4$export$c2a999eb584410f0(p.displayParts),
-        documentation: $ee93806a41573bb4$export$c2a999eb584410f0(p.documentation)
+        label: $ee2d752c6bad64f9$export$c2a999eb584410f0(p.displayParts),
+        documentation: $ee2d752c6bad64f9$export$c2a999eb584410f0(p.documentation)
     };
 }
-function $ee93806a41573bb4$export$c2a999eb584410f0(x) {
+function $ee2d752c6bad64f9$export$c2a999eb584410f0(x) {
     return x.map(function(i) {
         return i.text;
     }).join("");
 }
-var $ee93806a41573bb4$export$8b10423be8ce987b = function() {
+var $ee2d752c6bad64f9$export$8b10423be8ce987b = function() {
     var codeToCategory;
     return function(code, category) {
         if (code === undefined) return true;
-        if (codeToCategory === undefined) codeToCategory = new Map(Object.values((0, ($parcel$interopDefault($8qw4J$typescript))).Diagnostics).map(function(x) {
+        if (codeToCategory === undefined) codeToCategory = new Map(Object.values((0, $j0dGC$typescript).Diagnostics).map(function(x) {
             return [
                 x.code,
                 x.category
@@ -189,13 +162,13 @@ var $ee93806a41573bb4$export$8b10423be8ce987b = function() {
 
 
 
-function $cf8cb216522ae432$var$eventLoopYielder(delayMs, maxTimeMs) {
+function $e452e33174581f1c$var$eventLoopYielder(delayMs, maxTimeMs) {
     var started = performance.now();
     var lastYield = started;
     return function() {
-        return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+        return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
             var now;
-            return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+            return (0, $j0dGC$_1)(this, function(_state) {
                 switch(_state.label){
                     case 0:
                         now = performance.now();
@@ -221,7 +194,7 @@ function $cf8cb216522ae432$var$eventLoopYielder(delayMs, maxTimeMs) {
         })();
     };
 }
-/** Throws maximum time reached error */ function $cf8cb216522ae432$var$maxTimeError(name, timeS) {
+/** Throws maximum time reached error */ function $e452e33174581f1c$var$maxTimeError(name, timeS) {
     var err = new Error("Max time reached");
     atom.notifications.addError("".concat(name, " took more than ").concat(timeS, " seconds to complete"), {
         dismissable: true,
@@ -230,14 +203,14 @@ function $cf8cb216522ae432$var$eventLoopYielder(delayMs, maxTimeMs) {
     });
     return err;
 }
-function $cf8cb216522ae432$export$e4043f67d36cbb26(sourceCode, scopeName) {
-    return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+function $e452e33174581f1c$export$e4043f67d36cbb26(sourceCode, scopeName) {
+    return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
         var yielder, buf, grammar, lm, end, iter, pos, res, _res, nextPos;
-        return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+        return (0, $j0dGC$_1)(this, function(_state) {
             switch(_state.label){
                 case 0:
-                    yielder = $cf8cb216522ae432$var$eventLoopYielder(100, 5000);
-                    buf = new (0, $8qw4J$atom.TextBuffer)();
+                    yielder = $e452e33174581f1c$var$eventLoopYielder(100, 5000);
+                    buf = new (0, $j0dGC$TextBuffer)();
                     _state.label = 1;
                 case 1:
                     _state.trys.push([
@@ -254,7 +227,7 @@ function $cf8cb216522ae432$export$e4043f67d36cbb26(sourceCode, scopeName) {
                     if (lm.startTokenizing) lm.startTokenizing();
                     return [
                         4,
-                        $cf8cb216522ae432$var$tokenized(lm)
+                        $e452e33174581f1c$var$tokenized(lm)
                     ];
                 case 2:
                     _state.sent();
@@ -275,14 +248,14 @@ function $cf8cb216522ae432$export$e4043f67d36cbb26(sourceCode, scopeName) {
                         3,
                         5
                     ];
-                    (_res = res).push.apply(_res, (0, $8qw4J$swchelperscjs_to_consumable_arraycjs._)(iter.getCloseScopeIds().map(function() {
+                    (_res = res).push.apply(_res, (0, $j0dGC$_6)(iter.getCloseScopeIds().map(function() {
                         return "</span>";
-                    })).concat((0, $8qw4J$swchelperscjs_to_consumable_arraycjs._)(iter.getOpenScopeIds().map(function(x) {
+                    })).concat((0, $j0dGC$_6)(iter.getOpenScopeIds().map(function(x) {
                         return '<span class="'.concat(lm.classNameForScopeId(x), '">');
                     }))));
                     iter.moveToSuccessor();
                     nextPos = iter.getPosition();
-                    res.push($cf8cb216522ae432$var$escapeHTML(buf.getTextInRange([
+                    res.push($e452e33174581f1c$var$escapeHTML(buf.getTextInRange([
                         pos,
                         nextPos
                     ])));
@@ -292,7 +265,7 @@ function $cf8cb216522ae432$export$e4043f67d36cbb26(sourceCode, scopeName) {
                     ];
                 case 4:
                     if (!_state.sent()) {
-                        console.error($cf8cb216522ae432$var$maxTimeError("Atom-TypeScript: Highlighter", 5));
+                        console.error($e452e33174581f1c$var$maxTimeError("Atom-TypeScript: Highlighter", 5));
                         return [
                             3,
                             5
@@ -331,9 +304,9 @@ function $cf8cb216522ae432$export$e4043f67d36cbb26(sourceCode, scopeName) {
         });
     })();
 }
-function $cf8cb216522ae432$var$tokenized(lm) {
-    return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-        return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+function $e452e33174581f1c$var$tokenized(lm) {
+    return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+        return (0, $j0dGC$_1)(this, function(_state) {
             return [
                 2,
                 new Promise(function(resolve) {
@@ -349,41 +322,41 @@ function $cf8cb216522ae432$var$tokenized(lm) {
         });
     })();
 }
-function $cf8cb216522ae432$var$escapeHTML(str) {
+function $e452e33174581f1c$var$escapeHTML(str) {
     return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
 }
 
 
 // Return line/offset position in the editor using 1-indexed coordinates
-function $7580a2909a181bf5$var$getEditorPosition(editor) {
+function $47ae2d5cb2e495d2$var$getEditorPosition(editor) {
     var pos = editor.getCursorBufferPosition();
     return {
         line: pos.row + 1,
         offset: pos.column + 1
     };
 }
-function $7580a2909a181bf5$export$225e59ca209a506(filePath) {
+function $47ae2d5cb2e495d2$export$225e59ca209a506(filePath) {
     if (filePath === undefined) return false;
-    return $7580a2909a181bf5$var$isAllowedExtension($8qw4J$path.extname(filePath));
+    return $47ae2d5cb2e495d2$var$isAllowedExtension($j0dGC$extname(filePath));
 }
-function $7580a2909a181bf5$export$d9994fe0923974a5() {
+function $47ae2d5cb2e495d2$export$d9994fe0923974a5() {
     var config = atom.config.get("atom-typescript-updated");
-    var tsScopes = (0, $8qw4J$swchelperscjs_to_consumable_arraycjs._)(config.tsSyntaxScopes).concat((0, $8qw4J$swchelperscjs_to_consumable_arraycjs._)(config.jsSyntaxScopes));
+    var tsScopes = (0, $j0dGC$_6)(config.tsSyntaxScopes).concat((0, $j0dGC$_6)(config.jsSyntaxScopes));
     return tsScopes;
 }
-function $7580a2909a181bf5$export$3aecee58e23ede2c(editor) {
-    return $7580a2909a181bf5$export$225e59ca209a506(editor.getPath()) && $7580a2909a181bf5$export$bde40b56025b92b9(editor);
+function $47ae2d5cb2e495d2$export$3aecee58e23ede2c(editor) {
+    return $47ae2d5cb2e495d2$export$225e59ca209a506(editor.getPath()) && $47ae2d5cb2e495d2$export$bde40b56025b92b9(editor);
 }
-function $7580a2909a181bf5$export$bde40b56025b92b9(editor) {
-    var _editor_getRootScopeDescriptor_getScopesArray = (0, $8qw4J$swchelperscjs_sliced_to_arraycjs._)(editor.getRootScopeDescriptor().getScopesArray(), 1), scopeName = _editor_getRootScopeDescriptor_getScopesArray[0];
-    return $7580a2909a181bf5$export$d9994fe0923974a5().includes(scopeName);
+function $47ae2d5cb2e495d2$export$bde40b56025b92b9(editor) {
+    var _editor_getRootScopeDescriptor_getScopesArray = (0, $j0dGC$_5)(editor.getRootScopeDescriptor().getScopesArray(), 1), scopeName = _editor_getRootScopeDescriptor_getScopesArray[0];
+    return $47ae2d5cb2e495d2$export$d9994fe0923974a5().includes(scopeName);
 }
-function $7580a2909a181bf5$var$notNullary(x) {
+function $47ae2d5cb2e495d2$var$notNullary(x) {
     return x != null;
 }
-function $7580a2909a181bf5$var$memoizeThrottle(func, wait) {
-    var mem = (0, $8qw4J$lodash.memoize)(function(_param) {
-        return (0, $8qw4J$lodash.throttle)(func, wait, {
+function $47ae2d5cb2e495d2$var$memoizeThrottle(func, wait) {
+    var mem = (0, $j0dGC$memoize)(function(_param) {
+        return (0, $j0dGC$throttle)(func, wait, {
             leading: true
         });
     });
@@ -391,37 +364,37 @@ function $7580a2909a181bf5$var$memoizeThrottle(func, wait) {
         return mem(param)(param);
     }; // NOTE: leading MUST be true for this ! to hold
 }
-var $7580a2909a181bf5$var$isAllowedExtension = $7580a2909a181bf5$var$memoizeThrottle(function(ext) {
-    var _a;
+var $47ae2d5cb2e495d2$var$isAllowedExtension = $47ae2d5cb2e495d2$var$memoizeThrottle(function(ext) {
     var config = atom.config.get("atom-typescript-updated");
-    var tsExts = (0, $8qw4J$swchelperscjs_to_consumable_arraycjs._)(config.tsFileExtensions).concat((0, $8qw4J$swchelperscjs_to_consumable_arraycjs._)(config.jsFileExtensions));
+    var tsExts = (0, $j0dGC$_6)(config.tsFileExtensions).concat((0, $j0dGC$_6)(config.jsFileExtensions));
     if (config.extensionsFromGrammars) {
         var _instance, _tsExts;
-        var custom = (_a = atom.config.get("core.customFileTypes")) !== null && _a !== void 0 ? _a : {};
-        var scopes = $7580a2909a181bf5$export$d9994fe0923974a5();
-        (_tsExts = tsExts).push.apply(_tsExts, (0, $8qw4J$swchelperscjs_to_consumable_arraycjs._)((_instance = []).concat.apply(_instance, (0, $8qw4J$swchelperscjs_to_consumable_arraycjs._)(scopes.map(function(scope) {
-            var _a;
-            return (_a = atom.grammars.grammarForScopeName(scope)) === null || _a === void 0 ? void 0 : _a.fileTypes;
-        })).concat((0, $8qw4J$swchelperscjs_to_consumable_arraycjs._)(scopes.map(function(scope) {
+        var _atom_config_get;
+        var custom = (_atom_config_get = atom.config.get("core.customFileTypes")) !== null && _atom_config_get !== void 0 ? _atom_config_get : {};
+        var scopes = $47ae2d5cb2e495d2$export$d9994fe0923974a5();
+        (_tsExts = tsExts).push.apply(_tsExts, (0, $j0dGC$_6)((_instance = []).concat.apply(_instance, (0, $j0dGC$_6)(scopes.map(function(scope) {
+            var _atom_grammars_grammarForScopeName;
+            return (_atom_grammars_grammarForScopeName = atom.grammars.grammarForScopeName(scope)) === null || _atom_grammars_grammarForScopeName === void 0 ? void 0 : _atom_grammars_grammarForScopeName.fileTypes;
+        })).concat((0, $j0dGC$_6)(scopes.map(function(scope) {
             return custom[scope];
-        })))).filter($7580a2909a181bf5$var$notNullary).map(function(s) {
+        })))).filter($47ae2d5cb2e495d2$var$notNullary).map(function(s) {
             return ".".concat(s);
         })));
     }
     return tsExts.includes(ext);
 }, 5000);
-function $7580a2909a181bf5$export$f25e34a2b31a939c(editor, position) {
+function $47ae2d5cb2e495d2$export$f25e34a2b31a939c(editor, position) {
     var file = editor.getPath();
     if (file !== undefined) {
-        var location = position ? (0, $ee93806a41573bb4$export$9978d8c48293dc72)(position) : $7580a2909a181bf5$var$getEditorPosition(editor);
-        return (0, $8qw4J$swchelperscjs_object_spreadcjs._)({
+        var location = position ? (0, $ee2d752c6bad64f9$export$9978d8c48293dc72)(position) : $47ae2d5cb2e495d2$var$getEditorPosition(editor);
+        return (0, $j0dGC$_4)({
             file: file
         }, location);
     }
 }
-function $7580a2909a181bf5$export$d121654372a91687() {
+function $47ae2d5cb2e495d2$export$d121654372a91687() {
     var _iteratorNormalCompletion, _didIteratorError, _iteratorError, _iterator, _step, ed, err;
-    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+    return (0, $j0dGC$_1)(this, function(_state) {
         switch(_state.label){
             case 0:
                 _iteratorNormalCompletion = true, _didIteratorError = false, _iteratorError = undefined;
@@ -441,7 +414,7 @@ function $7580a2909a181bf5$export$d121654372a91687() {
                     5
                 ];
                 ed = _step.value;
-                if (!$7580a2909a181bf5$export$3aecee58e23ede2c(ed)) return [
+                if (!$47ae2d5cb2e495d2$export$3aecee58e23ede2c(ed)) return [
                     3,
                     4
                 ];
@@ -504,31 +477,31 @@ function $7580a2909a181bf5$export$d121654372a91687() {
 
 
 
-function $495e5651dd8d899e$var$getElStartLine(elem) {
+function $901a7b16ca8b520b$var$getElStartLine(elem) {
     var v = elem.dataset["startLine"];
     return v !== undefined ? parseInt(v, 10) - 1 : 0;
 }
-function $495e5651dd8d899e$var$getElEndLine(elem) {
+function $901a7b16ca8b520b$var$getElEndLine(elem) {
     var v = elem.dataset["endLine"];
     return v !== undefined ? parseInt(v, 10) - 1 : 0;
 }
-function $495e5651dd8d899e$export$a4ea95adf60c92fc(startLine, endLine, node) {
+function $901a7b16ca8b520b$export$a4ea95adf60c92fc(startLine, endLine, node) {
     var children = node.querySelectorAll(":scope > ol > li.node");
     if (children.length === 0) return undefined;
     var _iteratorNormalCompletion = true, _didIteratorError = false, _iteratorError = undefined;
     try {
         for(var _iterator = Array.from(children)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true){
             var elem = _step.value;
-            var start = $495e5651dd8d899e$var$getElStartLine(elem);
-            var end = $495e5651dd8d899e$var$getElEndLine(elem);
+            var start = $901a7b16ca8b520b$var$getElStartLine(elem);
+            var end = $901a7b16ca8b520b$var$getElEndLine(elem);
             if (isFinite(start) && isFinite(end)) {
                 if (startLine >= start && endLine <= end) {
-                    var selected = $495e5651dd8d899e$export$a4ea95adf60c92fc(startLine, endLine, elem);
+                    var selected = $901a7b16ca8b520b$export$a4ea95adf60c92fc(startLine, endLine, elem);
                     if (selected) return selected;
                     else return elem;
                 } else if (isFinite(end) && endLine < end) break;
             }
-            var selectedChild = $495e5651dd8d899e$export$a4ea95adf60c92fc(startLine, endLine, elem);
+            var selectedChild = $901a7b16ca8b520b$export$a4ea95adf60c92fc(startLine, endLine, elem);
             if (selectedChild) return selectedChild;
         }
     } catch (err) {
@@ -545,22 +518,22 @@ function $495e5651dd8d899e$export$a4ea95adf60c92fc(startLine, endLine, node) {
             }
         }
     }
-    var nstart = $495e5651dd8d899e$var$getElStartLine(node);
-    var nend = $495e5651dd8d899e$var$getElEndLine(node);
+    var nstart = $901a7b16ca8b520b$var$getElStartLine(node);
+    var nend = $901a7b16ca8b520b$var$getElEndLine(node);
     if (isFinite(nstart) && isFinite(nend) && startLine >= nstart && endLine <= nend) return node;
     return undefined;
 }
-function $495e5651dd8d899e$export$1d9ba002f33dc82b(node) {
+function $901a7b16ca8b520b$export$1d9ba002f33dc82b(node) {
     return node.spans.length > 0 ? node.spans[0].start.line - 1 : 0;
 }
-function $495e5651dd8d899e$export$53f1c18187345410(node) {
+function $901a7b16ca8b520b$export$53f1c18187345410(node) {
     return node.spans.length > 0 ? node.spans[0].start.offset - 1 : 0;
 }
-function $495e5651dd8d899e$export$f2907b76aa85709(node) {
+function $901a7b16ca8b520b$export$f2907b76aa85709(node) {
     var s = node.spans;
     return s.length > 0 ? s[s.length - 1].end.line - 1 : 0;
 }
-function $495e5651dd8d899e$export$8d37f6070173ccdc(newTree, oldTree) {
+function $901a7b16ca8b520b$export$8d37f6070173ccdc(newTree, oldTree) {
     if (!newTree || !oldTree) return newTree === oldTree;
     // a bit of guess work here:
     // there may have been additions/deletions in the children
@@ -586,13 +559,13 @@ function $495e5651dd8d899e$export$8d37f6070173ccdc(newTree, oldTree) {
                 oldChild = oldTree.childItems[i];
                 // allow for one addition / deletion in the children
                 // (i.e. check if there's a match in the previous/next position)
-                if (!$495e5651dd8d899e$export$8d37f6070173ccdc(newChild, oldChild)) {
+                if (!$901a7b16ca8b520b$export$8d37f6070173ccdc(newChild, oldChild)) {
                     // try, if a child was removed
                     oldChild = oldTree.childItems[i + 1];
-                    if (!$495e5651dd8d899e$export$8d37f6070173ccdc(newChild, oldChild)) {
+                    if (!$901a7b16ca8b520b$export$8d37f6070173ccdc(newChild, oldChild)) {
                         // try, if a child was added
                         oldChild = oldTree.childItems[i - 1];
-                        $495e5651dd8d899e$export$8d37f6070173ccdc(newChild, oldChild);
+                        $901a7b16ca8b520b$export$8d37f6070173ccdc(newChild, oldChild);
                     }
                 }
             }
@@ -601,7 +574,7 @@ function $495e5651dd8d899e$export$8d37f6070173ccdc(newTree, oldTree) {
     }
     return false;
 }
-function $495e5651dd8d899e$export$c2b0a16388cba90f(navTree) {
+function $901a7b16ca8b520b$export$c2b0a16388cba90f(navTree) {
     if (navTree === null) return;
     if (navTree.childItems) {
         if (navTree.childItems.length < 1) {
@@ -612,13 +585,13 @@ function $495e5651dd8d899e$export$c2b0a16388cba90f(navTree) {
         // TODO should there be a different sort-order?
         //     for now: sort ascending by line-number
         navTree.childItems.sort(function(a, b) {
-            return $495e5651dd8d899e$export$1d9ba002f33dc82b(a) - $495e5651dd8d899e$export$1d9ba002f33dc82b(b);
+            return $901a7b16ca8b520b$export$1d9ba002f33dc82b(a) - $901a7b16ca8b520b$export$1d9ba002f33dc82b(b);
         });
         var _iteratorNormalCompletion = true, _didIteratorError = false, _iteratorError = undefined;
         try {
             for(var _iterator = navTree.childItems[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true){
                 var child = _step.value;
-                $495e5651dd8d899e$export$c2b0a16388cba90f(child);
+                $901a7b16ca8b520b$export$c2b0a16388cba90f(child);
             }
         } catch (err) {
             _didIteratorError = true;
@@ -636,43 +609,43 @@ function $495e5651dd8d899e$export$c2b0a16388cba90f(navTree) {
         }
     }
 }
-function $495e5651dd8d899e$export$e4d153b3e021fb47(node, pos) {
-    var start = $495e5651dd8d899e$var$getElStartLine(node);
-    var end = $495e5651dd8d899e$var$getElEndLine(node);
+function $901a7b16ca8b520b$export$e4d153b3e021fb47(node, pos) {
+    var start = $901a7b16ca8b520b$var$getElStartLine(node);
+    var end = $901a7b16ca8b520b$var$getElEndLine(node);
     if (start <= pos && end >= pos) {
-        if ($495e5651dd8d899e$export$a4ea95adf60c92fc(start, end, node)) // -> there is a node "further down" that should get selected
+        if ($901a7b16ca8b520b$export$a4ea95adf60c92fc(start, end, node)) // -> there is a node "further down" that should get selected
         return false;
         return true;
     }
     return false;
 }
-function $495e5651dd8d899e$export$8cdf83cd3204bbcd(n1, n2) {
-    return n1.text === n2.text && (0, $8qw4J$lodash.isEqual)(n1.spans, n2.spans);
+function $901a7b16ca8b520b$export$8cdf83cd3204bbcd(n1, n2) {
+    return n1.text === n2.text && (0, $j0dGC$isEqual)(n1.spans, n2.spans);
 }
-function $495e5651dd8d899e$export$47553c2643784b50(node, event) {
+function $901a7b16ca8b520b$export$47553c2643784b50(node, event) {
     return !!node.childItems && event.target === event.currentTarget;
 }
 
 
-var $3c84f55e2ff649f2$export$814b29caa594376c = /*#__PURE__*/ function() {
+var $86af674b67b24207$export$814b29caa594376c = /*#__PURE__*/ function() {
     "use strict";
     function NavigationNodeComponent(props) {
-        (0, $8qw4J$swchelperscjs_class_call_checkcjs._)(this, NavigationNodeComponent);
+        (0, $j0dGC$_2)(this, NavigationNodeComponent);
         this.props = props;
-        $8qw4J$etch.initialize(this);
+        $j0dGC$initialize(this);
     }
-    (0, $8qw4J$swchelperscjs_create_classcjs._)(NavigationNodeComponent, [
+    (0, $j0dGC$_3)(NavigationNodeComponent, [
         {
             key: "update",
             value: function update(props) {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
-                                this.props = (0, $8qw4J$swchelperscjs_object_spreadcjs._)({}, this.props, props);
+                                this.props = (0, $j0dGC$_4)({}, this.props, props);
                                 return [
                                     4,
-                                    $8qw4J$etch.update(this)
+                                    $j0dGC$update(this)
                                 ];
                             case 1:
                                 _state.sent();
@@ -687,13 +660,13 @@ var $3c84f55e2ff649f2$export$814b29caa594376c = /*#__PURE__*/ function() {
         {
             key: "destroy",
             value: function destroy() {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
                                 return [
                                     4,
-                                    $8qw4J$etch.destroy(this)
+                                    $j0dGC$destroy(this)
                                 ];
                             case 1:
                                 _state.sent();
@@ -709,30 +682,31 @@ var $3c84f55e2ff649f2$export$814b29caa594376c = /*#__PURE__*/ function() {
             key: "render",
             value: function render() {
                 var _this = this;
-                var _a, _b, _c, _d;
+                var _this_props_navTree_spans__start, _this_props_navTree_spans_, _this_props_navTree_spans__end, _this_props_navTree_spans_1;
                 var node = this.props.navTree;
                 var ctrl = this.props.ctrl;
                 var classes = (node.childItems ? "nested-" : "") + "item" + (node.collapsed ? " collapsed" : " expanded");
                 var styleClasses = this.getStyles();
-                return $8qw4J$etch.dom("li", {
+                return $j0dGC$dom("li", {
                     className: "node entry exanded list-" + classes,
                     dataset: {
-                        startLine: (_b = (_a = this.props.navTree.spans[0]) === null || _a === void 0 ? void 0 : _a.start) === null || _b === void 0 ? void 0 : _b.line,
-                        endLine: (_d = (_c = this.props.navTree.spans[0]) === null || _c === void 0 ? void 0 : _c.end) === null || _d === void 0 ? void 0 : _d.line
+                        startLine: (_this_props_navTree_spans_ = this.props.navTree.spans[0]) === null || _this_props_navTree_spans_ === void 0 ? void 0 : (_this_props_navTree_spans__start = _this_props_navTree_spans_.start) === null || _this_props_navTree_spans__start === void 0 ? void 0 : _this_props_navTree_spans__start.line,
+                        endLine: (_this_props_navTree_spans_1 = this.props.navTree.spans[0]) === null || _this_props_navTree_spans_1 === void 0 ? void 0 : (_this_props_navTree_spans__end = _this_props_navTree_spans_1.end) === null || _this_props_navTree_spans__end === void 0 ? void 0 : _this_props_navTree_spans__end.line
                     }
-                }, $8qw4J$etch.dom("div", {
+                }, $j0dGC$dom("div", {
                     className: "header list-item",
                     on: {
                         click: function(event) {
                             return _this.entryClicked(event, node);
                         }
                     }
-                }, $8qw4J$etch.dom("span", {
+                }, $j0dGC$dom("span", {
                     className: styleClasses
-                }, node.text)), $8qw4J$etch.dom("ol", {
+                }, node.text)), $j0dGC$dom("ol", {
                     className: "entries list-tree"
-                }, node.childItems ? node.childItems.map(function(sn) {
-                    return $8qw4J$etch.dom(NavigationNodeComponent, {
+                }, node.childItems ? node.childItems.map(function(sn, i) {
+                    return $j0dGC$dom(NavigationNodeComponent, {
+                        key: i,
                         navTree: sn,
                         ctrl: ctrl
                     });
@@ -755,11 +729,11 @@ var $3c84f55e2ff649f2$export$814b29caa594376c = /*#__PURE__*/ function() {
             key: "entryClicked",
             value: function entryClicked(event, node) {
                 event.stopPropagation();
-                var isToggle = (0, $495e5651dd8d899e$export$47553c2643784b50)(node, event);
+                var isToggle = (0, $901a7b16ca8b520b$export$47553c2643784b50)(node, event);
                 if (!isToggle) this.props.ctrl.gotoNode(node);
                 else {
                     node.collapsed = !node.collapsed;
-                    (0, $2893351583386024$export$8080b7556d9d6445)($8qw4J$etch.update(this));
+                    (0, $e61b31fac60530e8$export$8080b7556d9d6445)($j0dGC$update(this));
                 }
             }
         }
@@ -769,19 +743,19 @@ var $3c84f55e2ff649f2$export$814b29caa594376c = /*#__PURE__*/ function() {
 
 
 
-var $cd15631f259ad2e9$export$1beacdeb2d370927 = /*#__PURE__*/ function() {
+var $9e5f8d5b25f7ce4d$export$1beacdeb2d370927 = /*#__PURE__*/ function() {
     "use strict";
     function NavigationTreeComponent(props) {
         var _this = this;
-        (0, $8qw4J$swchelperscjs_class_call_checkcjs._)(this, NavigationTreeComponent);
+        (0, $j0dGC$_2)(this, NavigationTreeComponent);
         this.props = props;
-        this.subscriptions = new (0, $8qw4J$atom.CompositeDisposable)();
+        this.subscriptions = new (0, $j0dGC$CompositeDisposable)();
         this.longLineLength = 4000;
         this.largeFileLineCount = 500;
         this.loadNavTree = function() {
-            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+            return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                 var filePath, client, navtreeResult, navTree, err;
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (0, $j0dGC$_1)(this, function(_state) {
                     switch(_state.label){
                         case 0:
                             if (!this.editor) return [
@@ -824,7 +798,7 @@ var $cd15631f259ad2e9$export$1beacdeb2d370927 = /*#__PURE__*/ function() {
                             this.setNavTree(navTree);
                             return [
                                 4,
-                                $8qw4J$etch.update(this)
+                                $j0dGC$update(this)
                             ];
                         case 4:
                             _state.sent();
@@ -854,11 +828,12 @@ var $cd15631f259ad2e9$export$1beacdeb2d370927 = /*#__PURE__*/ function() {
          *        current cursor position
          */ this.selectAtCursorLine = function(param) {
             var newBufferPosition = param.newBufferPosition;
-            var _a, _b;
+            var _findNodeAt;
             var firstNodeElem = _this.firstNode();
             if (!firstNodeElem) return;
             var cursorLine = newBufferPosition.row;
-            var selectedChild = (_b = (_a = (0, $495e5651dd8d899e$export$a4ea95adf60c92fc)(cursorLine, cursorLine, firstNodeElem)) === null || _a === void 0 ? void 0 : _a.querySelector(".header")) !== null && _b !== void 0 ? _b : undefined;
+            var _findNodeAt_querySelector;
+            var selectedChild = (_findNodeAt_querySelector = (_findNodeAt = (0, $901a7b16ca8b520b$export$a4ea95adf60c92fc)(cursorLine, cursorLine, firstNodeElem)) === null || _findNodeAt === void 0 ? void 0 : _findNodeAt.querySelector(".header")) !== null && _findNodeAt_querySelector !== void 0 ? _findNodeAt_querySelector : undefined;
             var currentSelection = _this.getSelectedNode();
             if (selectedChild !== currentSelection) {
                 if (currentSelection) currentSelection.classList.remove("selected");
@@ -866,14 +841,14 @@ var $cd15631f259ad2e9$export$1beacdeb2d370927 = /*#__PURE__*/ function() {
             }
         };
         this.subscribeToEditor = function(editor) {
-            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+            return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                 var lineCount;
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (0, $j0dGC$_1)(this, function(_state) {
                     switch(_state.label){
                         case 0:
                             if (this.editorScrolling) this.editorScrolling.dispose();
                             if (this.editorChanging) this.editorChanging.dispose();
-                            if (!editor || !$7580a2909a181bf5$export$3aecee58e23ede2c(editor)) return [
+                            if (!editor || !$47ae2d5cb2e495d2$export$3aecee58e23ede2c(editor)) return [
                                 2,
                                 this.update({
                                     navTree: null
@@ -890,7 +865,7 @@ var $cd15631f259ad2e9$export$1beacdeb2d370927 = /*#__PURE__*/ function() {
                             _state.sent();
                             lineCount = this.lineCountIfLarge(editor);
                             if (!atom.config.get("atom-typescript-updated.largeFileNoFollowCursor") || lineCount === 0) this.editorScrolling = editor.onDidChangeCursorPosition(this.selectAtCursorLine);
-                            this.editorChanging = editor.onDidStopChanging(lineCount === 0 ? this.loadNavTree : (0, ($parcel$interopDefault($8qw4J$lodashdebounce)))(this.loadNavTree, Math.max(lineCount / 5, 300)));
+                            this.editorChanging = editor.onDidStopChanging(lineCount === 0 ? this.loadNavTree : (0, $j0dGC$lodashdebounce)(this.loadNavTree, Math.max(lineCount / 5, 300)));
                             return [
                                 2
                             ];
@@ -898,8 +873,8 @@ var $cd15631f259ad2e9$export$1beacdeb2d370927 = /*#__PURE__*/ function() {
                 });
             }).call(_this);
         };
-        (0, $495e5651dd8d899e$export$c2b0a16388cba90f)(props.navTree);
-        $8qw4J$etch.initialize(this);
+        (0, $901a7b16ca8b520b$export$c2b0a16388cba90f)(props.navTree);
+        $j0dGC$initialize(this);
         this.subscriptions.add(atom.workspace.observeActiveTextEditor(this.subscribeToEditor), atom.commands.add("atom-text-editor.typescript-editor", {
             "typescript:reveal-in-semantic-view": {
                 description: "Reveal the symbol under the text cursor in semantic view",
@@ -922,19 +897,19 @@ var $cd15631f259ad2e9$export$1beacdeb2d370927 = /*#__PURE__*/ function() {
             if (typeof value === "number") _this.largeFileLineCount = value / 6;
         }));
     }
-    (0, $8qw4J$swchelperscjs_create_classcjs._)(NavigationTreeComponent, [
+    (0, $j0dGC$_3)(NavigationTreeComponent, [
         {
             key: "update",
             value: function update(props) {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
                                 if (props.navTree !== undefined) this.setNavTree(props.navTree);
-                                this.props = (0, $8qw4J$swchelperscjs_object_spreadcjs._)({}, this.props, props);
+                                this.props = (0, $j0dGC$_4)({}, this.props, props);
                                 return [
                                     4,
-                                    $8qw4J$etch.update(this)
+                                    $j0dGC$update(this)
                                 ];
                             case 1:
                                 _state.sent();
@@ -949,8 +924,8 @@ var $cd15631f259ad2e9$export$1beacdeb2d370927 = /*#__PURE__*/ function() {
         {
             key: "destroy",
             value: function destroy() {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
                                 if (this.editorScrolling) this.editorScrolling.dispose();
@@ -960,7 +935,7 @@ var $cd15631f259ad2e9$export$1beacdeb2d370927 = /*#__PURE__*/ function() {
                                 this.subscriptions.dispose();
                                 return [
                                     4,
-                                    $8qw4J$etch.destroy(this)
+                                    $j0dGC$destroy(this)
                                 ];
                             case 1:
                                 _state.sent();
@@ -975,8 +950,8 @@ var $cd15631f259ad2e9$export$1beacdeb2d370927 = /*#__PURE__*/ function() {
         {
             key: "setGetClient",
             value: function setGetClient(getClient) {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
                                 this.getClient = getClient;
@@ -997,8 +972,8 @@ var $cd15631f259ad2e9$export$1beacdeb2d370927 = /*#__PURE__*/ function() {
         {
             key: "getSelectedNode",
             value: function getSelectedNode() {
-                var _a;
-                return (_a = this.element.querySelector(".header.selected")) !== null && _a !== void 0 ? _a : undefined;
+                var _this_element_querySelector;
+                return (_this_element_querySelector = this.element.querySelector(".header.selected")) !== null && _this_element_querySelector !== void 0 ? _this_element_querySelector : undefined;
             }
         },
         {
@@ -1020,20 +995,20 @@ var $cd15631f259ad2e9$export$1beacdeb2d370927 = /*#__PURE__*/ function() {
         {
             key: "firstNode",
             value: function firstNode() {
-                var _a;
-                return (_a = this.element.querySelector("li.node")) !== null && _a !== void 0 ? _a : undefined;
+                var _this_element_querySelector;
+                return (_this_element_querySelector = this.element.querySelector("li.node")) !== null && _this_element_querySelector !== void 0 ? _this_element_querySelector : undefined;
             }
         },
         {
             key: "render",
             value: function render() {
-                var maybeNavNodeComp = this.props.navTree ? $8qw4J$etch.dom((0, $3c84f55e2ff649f2$export$814b29caa594376c), {
+                var maybeNavNodeComp = this.props.navTree ? $j0dGC$dom((0, $86af674b67b24207$export$814b29caa594376c), {
                     navTree: this.props.navTree,
                     ctrl: this
                 }) : null;
-                return $8qw4J$etch.dom("div", {
+                return $j0dGC$dom("div", {
                     className: "atomts atomts-semantic-view native-key-bindings"
-                }, $8qw4J$etch.dom("ol", {
+                }, $j0dGC$dom("ol", {
                     className: "list-tree has-collapsable-children focusable-panel"
                 }, maybeNavNodeComp));
             }
@@ -1056,8 +1031,8 @@ var $cd15631f259ad2e9$export$1beacdeb2d370927 = /*#__PURE__*/ function() {
      */ key: "gotoNode",
             value: function gotoNode(node) {
                 if (!this.editor) return;
-                var gotoLine = (0, $495e5651dd8d899e$export$1d9ba002f33dc82b)(node);
-                var gotoOffset = (0, $495e5651dd8d899e$export$53f1c18187345410)(node);
+                var gotoLine = (0, $901a7b16ca8b520b$export$1d9ba002f33dc82b)(node);
+                var gotoOffset = (0, $901a7b16ca8b520b$export$53f1c18187345410)(node);
                 this.editor.setCursorBufferPosition([
                     gotoLine,
                     gotoOffset
@@ -1074,14 +1049,14 @@ var $cd15631f259ad2e9$export$1beacdeb2d370927 = /*#__PURE__*/ function() {
         {
             key: "setNavTree",
             value: function setNavTree(navTree) {
-                (0, $495e5651dd8d899e$export$c2b0a16388cba90f)(navTree);
-                if ((0, $8qw4J$lodash.isEqual)(navTree, this.props.navTree)) return;
-                (0, $495e5651dd8d899e$export$8d37f6070173ccdc)(navTree, this.props.navTree);
+                (0, $901a7b16ca8b520b$export$c2b0a16388cba90f)(navTree);
+                if ((0, $j0dGC$isEqual)(navTree, this.props.navTree)) return;
+                (0, $901a7b16ca8b520b$export$8d37f6070173ccdc)(navTree, this.props.navTree);
                 this.props.navTree = navTree;
                 var node = this.firstNode();
                 if (node) {
                     var cursorLine = this.getCursorLine();
-                    if (cursorLine !== undefined) this.markSelection((0, $495e5651dd8d899e$export$a4ea95adf60c92fc)(cursorLine, cursorLine, node));
+                    if (cursorLine !== undefined) this.markSelection((0, $901a7b16ca8b520b$export$a4ea95adf60c92fc)(cursorLine, cursorLine, node));
                 }
             }
         },
@@ -1118,16 +1093,16 @@ var $cd15631f259ad2e9$export$1beacdeb2d370927 = /*#__PURE__*/ function() {
 }();
 
 
-var $4759e62349e0b646$export$c5c441a5719d665b = "atom-typescript://semantic-view";
-var $4759e62349e0b646$export$a3a95952d8506109 = /*#__PURE__*/ function() {
+var $cea6b8bc91af2731$export$c5c441a5719d665b = "atom-typescript://semantic-view";
+var $cea6b8bc91af2731$export$a3a95952d8506109 = /*#__PURE__*/ function() {
     "use strict";
     function SemanticView(config) {
-        (0, $8qw4J$swchelperscjs_class_call_checkcjs._)(this, SemanticView);
-        this.comp = new (0, $cd15631f259ad2e9$export$1beacdeb2d370927)({
+        (0, $j0dGC$_2)(this, SemanticView);
+        this.comp = new (0, $9e5f8d5b25f7ce4d$export$1beacdeb2d370927)({
             navTree: config.navTree
         });
     }
-    (0, $8qw4J$swchelperscjs_create_classcjs._)(SemanticView, [
+    (0, $j0dGC$_3)(SemanticView, [
         {
             key: "element",
             get: function get() {
@@ -1137,8 +1112,8 @@ var $4759e62349e0b646$export$a3a95952d8506109 = /*#__PURE__*/ function() {
         {
             key: "setGetClient",
             value: function setGetClient(gc) {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
                                 return [
@@ -1170,14 +1145,14 @@ var $4759e62349e0b646$export$a3a95952d8506109 = /*#__PURE__*/ function() {
         {
             key: "getURI",
             value: function getURI() {
-                return $4759e62349e0b646$export$c5c441a5719d665b;
+                return $cea6b8bc91af2731$export$c5c441a5719d665b;
             }
         },
         {
             key: "destroy",
             value: function destroy() {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
                                 SemanticView.instance = null;
@@ -1233,7 +1208,7 @@ var $4759e62349e0b646$export$a3a95952d8506109 = /*#__PURE__*/ function() {
     ]);
     return SemanticView;
 }();
-$4759e62349e0b646$export$a3a95952d8506109.instance = null;
+$cea6b8bc91af2731$export$a3a95952d8506109.instance = null;
 
 
 
@@ -1266,21 +1241,21 @@ $4759e62349e0b646$export$a3a95952d8506109.instance = null;
 
 
 
-var $c6112536605178e1$export$2b3937e1c5d995d8 = /*#__PURE__*/ function() {
+var $853179f3674bb25b$export$2b3937e1c5d995d8 = /*#__PURE__*/ function() {
     "use strict";
     function Callbacks(reportBusyWhile) {
-        (0, $8qw4J$swchelperscjs_class_call_checkcjs._)(this, Callbacks);
+        (0, $j0dGC$_2)(this, Callbacks);
         this.reportBusyWhile = reportBusyWhile;
         this.callbacks = new Map();
         this.interval = 0;
     }
-    (0, $8qw4J$swchelperscjs_create_classcjs._)(Callbacks, [
+    (0, $j0dGC$_3)(Callbacks, [
         {
             key: "add",
             value: function add(seq, command) {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                     var _this, promise;
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
                                 _this = this;
@@ -1393,8 +1368,8 @@ var $c6112536605178e1$export$2b3937e1c5d995d8 = /*#__PURE__*/ function() {
 
 
 // Set this to true to start tsserver with node --inspect
-var $15c8165b6fc0c3c1$var$INSPECT_TSSERVER = false;
-var $15c8165b6fc0c3c1$var$commandWithResponseMap = {
+var $33e0bcf1de16974e$var$INSPECT_TSSERVER = false;
+var $33e0bcf1de16974e$var$commandWithResponseMap = {
     compileOnSaveAffectedFileList: true,
     compileOnSaveEmitFile: true,
     completionEntryDetails: true,
@@ -1420,38 +1395,38 @@ var $15c8165b6fc0c3c1$var$commandWithResponseMap = {
     getEditsForFileRename: true,
     applyCodeActionCommand: true
 };
-var $15c8165b6fc0c3c1$var$commandsWithMultistepMap = {
+var $33e0bcf1de16974e$var$commandsWithMultistepMap = {
     geterr: true,
     geterrForProject: true
 };
-var $15c8165b6fc0c3c1$var$eventTypesMap = {
+var $33e0bcf1de16974e$var$eventTypesMap = {
     configFileDiag: true,
     semanticDiag: true,
     suggestionDiag: true,
     syntaxDiag: true
 };
-var $15c8165b6fc0c3c1$var$commandWithResponse = new Set(Object.keys($15c8165b6fc0c3c1$var$commandWithResponseMap));
-var $15c8165b6fc0c3c1$var$commandWithMultistep = new Set(Object.keys($15c8165b6fc0c3c1$var$commandsWithMultistepMap));
-var $15c8165b6fc0c3c1$var$eventTypes = new Set(Object.keys($15c8165b6fc0c3c1$var$eventTypesMap));
-function $15c8165b6fc0c3c1$var$isCommandWithResponse(command) {
-    return $15c8165b6fc0c3c1$var$commandWithResponse.has(command);
+var $33e0bcf1de16974e$var$commandWithResponse = new Set(Object.keys($33e0bcf1de16974e$var$commandWithResponseMap));
+var $33e0bcf1de16974e$var$commandWithMultistep = new Set(Object.keys($33e0bcf1de16974e$var$commandsWithMultistepMap));
+var $33e0bcf1de16974e$var$eventTypes = new Set(Object.keys($33e0bcf1de16974e$var$eventTypesMap));
+function $33e0bcf1de16974e$var$isCommandWithResponse(command) {
+    return $33e0bcf1de16974e$var$commandWithResponse.has(command);
 }
-function $15c8165b6fc0c3c1$var$isCommandWithMultistep(command) {
-    return $15c8165b6fc0c3c1$var$commandWithMultistep.has(command);
+function $33e0bcf1de16974e$var$isCommandWithMultistep(command) {
+    return $33e0bcf1de16974e$var$commandWithMultistep.has(command);
 }
-function $15c8165b6fc0c3c1$var$isKnownDiagEventType(event) {
-    return $15c8165b6fc0c3c1$var$eventTypes.has(event);
+function $33e0bcf1de16974e$var$isKnownDiagEventType(event) {
+    return $33e0bcf1de16974e$var$eventTypes.has(event);
 }
-var $15c8165b6fc0c3c1$export$21f68d6aa461e875 = /*#__PURE__*/ function() {
+var $33e0bcf1de16974e$export$21f68d6aa461e875 = /*#__PURE__*/ function() {
     "use strict";
     function TypescriptServiceClient(tsServerPath, version, reportBusyWhile) {
         var _this = this;
         var _this1 = this;
-        (0, $8qw4J$swchelperscjs_class_call_checkcjs._)(this, TypescriptServiceClient);
+        (0, $j0dGC$_2)(this, TypescriptServiceClient);
         this.tsServerPath = tsServerPath;
         this.version = version;
         this.reportBusyWhile = reportBusyWhile;
-        this.emitter = new (0, $8qw4J$atom.Emitter)();
+        this.emitter = new (0, $j0dGC$Emitter)();
         this.seq = 0;
         this.lastStderrOutput = "";
         this.on = this.emitter.on.bind(this.emitter);
@@ -1476,23 +1451,23 @@ var $15c8165b6fc0c3c1$export$21f68d6aa461e875 = /*#__PURE__*/ function() {
             else _this.onEvent(res);
         };
         // multistep completion event is supported as of TS version 2.2
-        var _version_split_slice_map = (0, $8qw4J$swchelperscjs_sliced_to_arraycjs._)(version.split(".").slice(0, 2).map(function(x) {
+        var _version_split_slice_map = (0, $j0dGC$_5)(version.split(".").slice(0, 2).map(function(x) {
             return parseInt(x, 10);
         }), 2), major = _version_split_slice_map[0], minor = _version_split_slice_map[1];
         this.multistepSupported = major > 2 || major === 2 && minor >= 2;
-        this.callbacks = new (0, $c6112536605178e1$export$2b3937e1c5d995d8)(this.reportBusyWhile);
+        this.callbacks = new (0, $853179f3674bb25b$export$2b3937e1c5d995d8)(this.reportBusyWhile);
         this.server = this.startServer();
     }
-    (0, $8qw4J$swchelperscjs_create_classcjs._)(TypescriptServiceClient, [
+    (0, $j0dGC$_3)(TypescriptServiceClient, [
         {
             key: "execute",
             value: function execute(command) {
                 for(var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++){
                     args[_key - 1] = arguments[_key];
                 }
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                     var req, result;
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         if (!this.server) {
                             this.server = this.startServer();
                             this.emitter.emit("restarted");
@@ -1504,7 +1479,7 @@ var $15c8165b6fc0c3c1$export$21f68d6aa461e875 = /*#__PURE__*/ function() {
                         };
                         if (window.atom_typescript_debug) console.log("sending request", req);
                         result = undefined;
-                        if ($15c8165b6fc0c3c1$var$isCommandWithResponse(command) || this.multistepSupported && $15c8165b6fc0c3c1$var$isCommandWithMultistep(command)) result = this.callbacks.add(req.seq, command);
+                        if ($33e0bcf1de16974e$var$isCommandWithResponse(command) || this.multistepSupported && $33e0bcf1de16974e$var$isCommandWithMultistep(command)) result = this.callbacks.add(req.seq, command);
                         try {
                             if (!this.server.stdin) throw new Error("Server stdin is missing");
                             this.server.stdin.write(JSON.stringify(req) + "\n");
@@ -1522,8 +1497,8 @@ var $15c8165b6fc0c3c1$export$21f68d6aa461e875 = /*#__PURE__*/ function() {
         {
             key: "restartServer",
             value: function restartServer() {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
                                 return [
@@ -1548,9 +1523,9 @@ var $15c8165b6fc0c3c1$export$21f68d6aa461e875 = /*#__PURE__*/ function() {
         {
             key: "destroy",
             value: function destroy() {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                     var _this, terminated;
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         _this = this;
                         terminated = new Promise(function(resolve) {
                             var disp = _this.emitter.once("terminated", function() {
@@ -1573,9 +1548,9 @@ var $15c8165b6fc0c3c1$export$21f68d6aa461e875 = /*#__PURE__*/ function() {
         {
             key: "stopServer",
             value: function stopServer() {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                     var _this, server, graceTimer;
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
                                 _this = this;
@@ -1617,7 +1592,7 @@ var $15c8165b6fc0c3c1$export$21f68d6aa461e875 = /*#__PURE__*/ function() {
             value: function startServer1() {
                 var _this = this;
                 if (window.atom_typescript_debug) console.log("starting", this.tsServerPath);
-                var cp = $15c8165b6fc0c3c1$var$startServer(this.tsServerPath);
+                var cp = $33e0bcf1de16974e$var$startServer(this.tsServerPath);
                 if (!cp) throw new Error("ChildProcess failed to start");
                 var h = this.exitHandler;
                 cp.once("error", h);
@@ -1629,7 +1604,7 @@ var $15c8165b6fc0c3c1$export$21f68d6aa461e875 = /*#__PURE__*/ function() {
                 // Pipe both stdout and stderr appropriately
                 if (!cp.stdout) throw new Error("ChildProcess stdout missing");
                 if (!cp.stderr) throw new Error("ChildProcess stderr missing");
-                $15c8165b6fc0c3c1$var$messageStream(cp.stdout).on("data", this.onMessage);
+                $33e0bcf1de16974e$var$messageStream(cp.stdout).on("data", this.onMessage);
                 cp.stderr.on("data", function(data) {
                     console.warn("tsserver stderr:", _this.lastStderrOutput = data.toString());
                 });
@@ -1641,7 +1616,7 @@ var $15c8165b6fc0c3c1$export$21f68d6aa461e875 = /*#__PURE__*/ function() {
             value: function onEvent(res) {
                 if (window.atom_typescript_debug) console.log("received event", res);
                 if (res.body) {
-                    if ($15c8165b6fc0c3c1$var$isKnownDiagEventType(res.event)) this.emitter.emit(res.event, res.body);
+                    if ($33e0bcf1de16974e$var$isKnownDiagEventType(res.event)) this.emitter.emit(res.event, res.body);
                     else if (res.event === "requestCompleted") this.callbacks.resolveMS(res.body);
                 }
             }
@@ -1649,39 +1624,39 @@ var $15c8165b6fc0c3c1$export$21f68d6aa461e875 = /*#__PURE__*/ function() {
     ]);
     return TypescriptServiceClient;
 }();
-function $15c8165b6fc0c3c1$var$startServer(tsServerPath) {
+function $33e0bcf1de16974e$var$startServer(tsServerPath) {
     var locale = atom.config.get("atom-typescript-updated").locale;
     var tsServerArgs = locale ? [
         "--locale",
         locale
     ] : [];
-    if ($15c8165b6fc0c3c1$var$INSPECT_TSSERVER) return new (0, $8qw4J$atom.BufferedProcess)({
+    if ($33e0bcf1de16974e$var$INSPECT_TSSERVER) return new (0, $j0dGC$BufferedProcess)({
         command: "node",
         args: [
             "--inspect",
             tsServerPath
         ].concat(tsServerArgs)
     }).process;
-    else return new (0, $8qw4J$atom.BufferedNodeProcess)({
+    else return new (0, $j0dGC$BufferedNodeProcess)({
         command: tsServerPath,
         args: tsServerArgs
     }).process;
 }
-function $15c8165b6fc0c3c1$var$messageStream(input) {
-    return input.pipe((0, ($parcel$interopDefault($8qw4J$byline)))()).pipe(new $15c8165b6fc0c3c1$var$MessageStream());
+function $33e0bcf1de16974e$var$messageStream(input) {
+    return input.pipe((0, $j0dGC$byline)()).pipe(new $33e0bcf1de16974e$var$MessageStream());
 }
-/** Helper to parse the tsserver output stream to a message stream  */ var $15c8165b6fc0c3c1$var$MessageStream = /*#__PURE__*/ function(Transform) {
+/** Helper to parse the tsserver output stream to a message stream  */ var $33e0bcf1de16974e$var$MessageStream = /*#__PURE__*/ function(Transform) {
     "use strict";
-    (0, $8qw4J$swchelperscjs_inheritscjs._)(MessageStream, Transform);
+    (0, $j0dGC$_9)(MessageStream, Transform);
     function MessageStream() {
-        (0, $8qw4J$swchelperscjs_class_call_checkcjs._)(this, MessageStream);
-        return (0, $8qw4J$swchelperscjs_call_supercjs._)(this, MessageStream, [
+        (0, $j0dGC$_2)(this, MessageStream);
+        return (0, $j0dGC$_8)(this, MessageStream, [
             {
                 objectMode: true
             }
         ]);
     }
-    (0, $8qw4J$swchelperscjs_create_classcjs._)(MessageStream, [
+    (0, $j0dGC$_3)(MessageStream, [
         {
             key: "_transform",
             value: function _transform(buf, _encoding, callback) {
@@ -1689,7 +1664,7 @@ function $15c8165b6fc0c3c1$var$messageStream(input) {
                 try {
                     if (line.startsWith("{")) this.push(JSON.parse(line));
                     else if (!line.startsWith("Content-Length:")) console.warn(line);
-                } catch (error) {
+                } catch (_) {
                     console.error("client: failed to parse: ", line);
                 } finally{
                     callback(undefined);
@@ -1698,7 +1673,7 @@ function $15c8165b6fc0c3c1$var$messageStream(input) {
         }
     ]);
     return MessageStream;
-}((0, $8qw4J$stream.Transform));
+}((0, $j0dGC$Transform));
 
 
 
@@ -1709,28 +1684,28 @@ function $15c8165b6fc0c3c1$var$messageStream(input) {
 
 
 
-function $c628f355f099b93a$export$369fb36245591db0(sourcePath, binBaseName) {
-    return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+function $72d690c724d8b3e8$export$369fb36245591db0(sourcePath, binBaseName) {
+    return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
         var NODE_PATH, binName, resolvedPath, packagePath, version;
-        return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+        return (0, $j0dGC$_1)(this, function(_state) {
             switch(_state.label){
                 case 0:
                     NODE_PATH = process.env.NODE_PATH;
                     binName = "".concat(binBaseName, ".js");
                     return [
                         4,
-                        $c628f355f099b93a$var$resolveModule("typescript/lib/".concat(binName), {
-                            basedir: $8qw4J$path.dirname(sourcePath),
-                            paths: NODE_PATH !== undefined ? NODE_PATH.split($8qw4J$path.delimiter) : undefined
+                        $72d690c724d8b3e8$var$resolveModule("typescript/lib/".concat(binName), {
+                            basedir: $j0dGC$path.dirname(sourcePath),
+                            paths: NODE_PATH !== undefined ? NODE_PATH.split($j0dGC$path.delimiter) : undefined
                         })["catch"](function() {
-                            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+                            return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                                 var auxTsdkPath, binPath, exists, tsdkPath, binPath1, exists1, defaultPath;
-                                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                                return (0, $j0dGC$_1)(this, function(_state) {
                                     switch(_state.label){
                                         case 0:
                                             return [
                                                 4,
-                                                $c628f355f099b93a$var$getSDKPath($8qw4J$path.dirname(sourcePath))
+                                                $72d690c724d8b3e8$var$getSDKPath($j0dGC$path.dirname(sourcePath))
                                             ];
                                         case 1:
                                             auxTsdkPath = _state.sent();
@@ -1738,10 +1713,10 @@ function $c628f355f099b93a$export$369fb36245591db0(sourcePath, binBaseName) {
                                                 3,
                                                 3
                                             ];
-                                            binPath = $8qw4J$path.join(auxTsdkPath, "lib", binName);
+                                            binPath = $j0dGC$path.join(auxTsdkPath, "lib", binName);
                                             return [
                                                 4,
-                                                $c628f355f099b93a$var$fsExists(binPath)
+                                                $72d690c724d8b3e8$var$fsExists(binPath)
                                             ];
                                         case 2:
                                             exists = _state.sent();
@@ -1757,10 +1732,10 @@ function $c628f355f099b93a$export$369fb36245591db0(sourcePath, binBaseName) {
                                                 3,
                                                 5
                                             ];
-                                            binPath1 = $8qw4J$path.join(tsdkPath, "lib", binName);
+                                            binPath1 = $j0dGC$path.join(tsdkPath, "lib", binName);
                                             return [
                                                 4,
-                                                $c628f355f099b93a$var$fsExists(binPath1)
+                                                $72d690c724d8b3e8$var$fsExists(binPath1)
                                             ];
                                         case 4:
                                             exists1 = _state.sent();
@@ -1783,7 +1758,7 @@ function $c628f355f099b93a$export$369fb36245591db0(sourcePath, binBaseName) {
                     ];
                 case 1:
                     resolvedPath = _state.sent();
-                    packagePath = $8qw4J$path.resolve(resolvedPath, "../../package.json");
+                    packagePath = $j0dGC$path.resolve(resolvedPath, "../../package.json");
                     version = require(packagePath).version;
                     return [
                         2,
@@ -1797,13 +1772,13 @@ function $c628f355f099b93a$export$369fb36245591db0(sourcePath, binBaseName) {
     })();
 }
 // Promisify the async resolve function
-function $c628f355f099b93a$var$resolveModule(id, opts) {
-    return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-        return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+function $72d690c724d8b3e8$var$resolveModule(id, opts) {
+    return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+        return (0, $j0dGC$_1)(this, function(_state) {
             return [
                 2,
                 new Promise(function(resolve, reject) {
-                    return (0, ($parcel$interopDefault($8qw4J$resolve)))(id, opts, function(err, result) {
+                    return (0, $j0dGC$resolve)(id, opts, function(err, result) {
                         if (err) reject(err);
                         else if (result === undefined) reject(new Error("Module path is undefined"));
                         else resolve(result);
@@ -1813,13 +1788,13 @@ function $c628f355f099b93a$var$resolveModule(id, opts) {
         });
     })();
 }
-function $c628f355f099b93a$var$fsExists(p) {
-    return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-        return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+function $72d690c724d8b3e8$var$fsExists(p) {
+    return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+        return (0, $j0dGC$_1)(this, function(_state) {
             return [
                 2,
                 new Promise(function(resolve) {
-                    return $8qw4J$fs.access(p, $8qw4J$fs.constants.F_OK, function(err) {
+                    return $j0dGC$access(p, $j0dGC$constants.F_OK, function(err) {
                         if (err) resolve(false);
                         else resolve(true);
                     });
@@ -1828,13 +1803,13 @@ function $c628f355f099b93a$var$fsExists(p) {
         });
     })();
 }
-function $c628f355f099b93a$var$fsReadFile(p) {
-    return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-        return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+function $72d690c724d8b3e8$var$fsReadFile(p) {
+    return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+        return (0, $j0dGC$_1)(this, function(_state) {
             return [
                 2,
                 new Promise(function(resolve, reject) {
-                    return $8qw4J$fs.readFile(p, function(error, data) {
+                    return $j0dGC$readFile(p, function(error, data) {
                         if (error) reject(error);
                         else resolve(data.toString("utf-8"));
                     });
@@ -1843,10 +1818,10 @@ function $c628f355f099b93a$var$fsReadFile(p) {
         });
     })();
 }
-function $c628f355f099b93a$var$tryConfigFiles(basedir, relpaths) {
-    return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+function $72d690c724d8b3e8$var$tryConfigFiles(basedir, relpaths) {
+    return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
         var _iteratorNormalCompletion, _didIteratorError, _iteratorError, _iterator, _step, relpath, _path, configFile, err;
-        return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+        return (0, $j0dGC$_1)(this, function(_state) {
             switch(_state.label){
                 case 0:
                     _iteratorNormalCompletion = true, _didIteratorError = false, _iteratorError = undefined;
@@ -1866,12 +1841,12 @@ function $c628f355f099b93a$var$tryConfigFiles(basedir, relpaths) {
                         5
                     ];
                     relpath = _step.value;
-                    configFile = (_path = $8qw4J$path).join.apply(_path, [
+                    configFile = (_path = $j0dGC$path).join.apply(_path, [
                         basedir
-                    ].concat((0, $8qw4J$swchelperscjs_to_consumable_arraycjs._)(relpath)));
+                    ].concat((0, $j0dGC$_6)(relpath)));
                     return [
                         4,
-                        $c628f355f099b93a$var$fsExists(configFile)
+                        $72d690c724d8b3e8$var$fsExists(configFile)
                     ];
                 case 3:
                     if (_state.sent()) return [
@@ -1919,14 +1894,14 @@ function $c628f355f099b93a$var$tryConfigFiles(basedir, relpaths) {
         });
     })();
 }
-function $c628f355f099b93a$var$resolveConfigFile(initialBaseDir) {
-    return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+function $72d690c724d8b3e8$var$resolveConfigFile(initialBaseDir) {
+    return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
         var basedir, parent, configFile;
-        return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+        return (0, $j0dGC$_1)(this, function(_state) {
             switch(_state.label){
                 case 0:
                     basedir = initialBaseDir;
-                    parent = $8qw4J$path.dirname(basedir);
+                    parent = $j0dGC$path.dirname(basedir);
                     _state.label = 1;
                 case 1:
                     if (!(basedir !== parent)) return [
@@ -1935,7 +1910,7 @@ function $c628f355f099b93a$var$resolveConfigFile(initialBaseDir) {
                     ];
                     return [
                         4,
-                        $c628f355f099b93a$var$tryConfigFiles(basedir, [
+                        $72d690c724d8b3e8$var$tryConfigFiles(basedir, [
                             [
                                 ".atom-typescript.json"
                             ],
@@ -1959,7 +1934,7 @@ function $c628f355f099b93a$var$resolveConfigFile(initialBaseDir) {
                         }
                     ];
                     basedir = parent;
-                    parent = $8qw4J$path.dirname(basedir);
+                    parent = $j0dGC$path.dirname(basedir);
                     return [
                         3,
                         1
@@ -1972,21 +1947,21 @@ function $c628f355f099b93a$var$resolveConfigFile(initialBaseDir) {
         });
     })();
 }
-function $c628f355f099b93a$var$isConfigObject(x) {
-    return (typeof x === "undefined" ? "undefined" : (0, $8qw4J$swchelperscjs_type_ofcjs._)(x)) === "object" && x !== null && typeof x.tsdkPath === "string";
+function $72d690c724d8b3e8$var$isConfigObject(x) {
+    return (typeof x === "undefined" ? "undefined" : (0, $j0dGC$_10)(x)) === "object" && x !== null && typeof x.tsdkPath === "string";
 }
-function $c628f355f099b93a$var$isVSCodeConfigObject(x) {
-    return (typeof x === "undefined" ? "undefined" : (0, $8qw4J$swchelperscjs_type_ofcjs._)(x)) === "object" && x !== null && typeof x["typescript.tsdk"] === "string";
+function $72d690c724d8b3e8$var$isVSCodeConfigObject(x) {
+    return (typeof x === "undefined" ? "undefined" : (0, $j0dGC$_10)(x)) === "object" && x !== null && typeof x["typescript.tsdk"] === "string";
 }
-function $c628f355f099b93a$var$getSDKPath(dirname) {
-    return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+function $72d690c724d8b3e8$var$getSDKPath(dirname) {
+    return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
         var configFile, configFileContents, _, tsdkPath, e;
-        return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+        return (0, $j0dGC$_1)(this, function(_state) {
             switch(_state.label){
                 case 0:
                     return [
                         4,
-                        $c628f355f099b93a$var$resolveConfigFile(dirname)
+                        $72d690c724d8b3e8$var$resolveConfigFile(dirname)
                     ];
                 case 1:
                     configFile = _state.sent();
@@ -2002,26 +1977,26 @@ function $c628f355f099b93a$var$getSDKPath(dirname) {
                         ,
                         5
                     ]);
-                    _ = $8qw4J$jsoncparser.parse;
+                    _ = $j0dGC$jsoncparser.parse;
                     return [
                         4,
-                        $c628f355f099b93a$var$fsReadFile(configFile.configFile)
+                        $72d690c724d8b3e8$var$fsReadFile(configFile.configFile)
                     ];
                 case 3:
-                    configFileContents = _.apply($8qw4J$jsoncparser, [
+                    configFileContents = _.apply($j0dGC$jsoncparser, [
                         _state.sent()
                     ]);
-                    if ($c628f355f099b93a$var$isConfigObject(configFileContents)) tsdkPath = configFileContents.tsdkPath;
-                    else if ($c628f355f099b93a$var$isVSCodeConfigObject(configFileContents)) // NOTE: VSCode asks for path to "typescript/lib", while
+                    if ($72d690c724d8b3e8$var$isConfigObject(configFileContents)) tsdkPath = configFileContents.tsdkPath;
+                    else if ($72d690c724d8b3e8$var$isVSCodeConfigObject(configFileContents)) // NOTE: VSCode asks for path to "typescript/lib", while
                     // we only want path to "typescript". Hence the dirname here
-                    tsdkPath = $8qw4J$path.dirname(configFileContents["typescript.tsdk"]);
+                    tsdkPath = $j0dGC$path.dirname(configFileContents["typescript.tsdk"]);
                     else return [
                         2,
                         undefined
                     ];
                     return [
                         2,
-                        $8qw4J$path.isAbsolute(tsdkPath) ? tsdkPath : $8qw4J$path.join(configFile.basedir, tsdkPath)
+                        $j0dGC$path.isAbsolute(tsdkPath) ? tsdkPath : $j0dGC$path.join(configFile.basedir, tsdkPath)
                     ];
                 case 4:
                     e = _state.sent();
@@ -2040,22 +2015,22 @@ function $c628f355f099b93a$var$getSDKPath(dirname) {
 }
 
 
-var $656dc62ff40b3cc7$export$dceb19333e080e82 = /*#__PURE__*/ function() {
+var $d86d165b76686502$export$dceb19333e080e82 = /*#__PURE__*/ function() {
     "use strict";
     function ClientResolver(reportBusyWhile) {
         var _this = this;
-        (0, $8qw4J$swchelperscjs_class_call_checkcjs._)(this, ClientResolver);
+        (0, $j0dGC$_2)(this, ClientResolver);
         this.reportBusyWhile = reportBusyWhile;
         this.clients = new Map();
         this.memoizedClients = new Map();
-        this.emitter = new (0, $8qw4J$atom.Emitter)();
-        this.subscriptions = new (0, $8qw4J$atom.CompositeDisposable)();
+        this.emitter = new (0, $j0dGC$Emitter)();
+        this.subscriptions = new (0, $j0dGC$CompositeDisposable)();
         this.tsserverInstancePerTsconfig = atom.config.get("atom-typescript-updated").tsserverInstancePerTsconfig;
         // This is just here so TypeScript can infer the types of the callbacks when using "on" method
         this.on = this.emitter.on.bind(this.emitter);
         this.diagnosticHandler = function(serverPath, type) {
             return function(result) {
-                var filePath = $656dc62ff40b3cc7$var$isConfDiagBody(result) ? result.configFile : result.file;
+                var filePath = $d86d165b76686502$var$isConfDiagBody(result) ? result.configFile : result.file;
                 if (filePath) _this.emitter.emit("diagnostics", {
                     type: type,
                     serverPath: serverPath,
@@ -2065,13 +2040,13 @@ var $656dc62ff40b3cc7$export$dceb19333e080e82 = /*#__PURE__*/ function() {
             };
         };
     }
-    (0, $8qw4J$swchelperscjs_create_classcjs._)(ClientResolver, [
+    (0, $j0dGC$_3)(ClientResolver, [
         {
             key: "restartAllServers",
             value: function restartAllServers() {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                     var _this;
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
                                 _this = this;
@@ -2096,9 +2071,9 @@ var $656dc62ff40b3cc7$export$dceb19333e080e82 = /*#__PURE__*/ function() {
         {
             key: "get",
             value: function get(pFilePath) {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                     var memo, client, e;
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
                                 memo = this.memoizedClients.get(pFilePath);
@@ -2151,7 +2126,7 @@ var $656dc62ff40b3cc7$export$dceb19333e080e82 = /*#__PURE__*/ function() {
                         try {
                             for(var _iterator1 = tsconfigMap.values()[Symbol.iterator](), _step1; !(_iteratorNormalCompletion = (_step1 = _iterator1.next()).done); _iteratorNormalCompletion = true){
                                 var client = _step1.value;
-                                (0, $2893351583386024$export$8080b7556d9d6445)(client.destroy());
+                                (0, $e61b31fac60530e8$export$8080b7556d9d6445)(client.destroy());
                             }
                         } catch (err) {
                             _didIteratorError = true;
@@ -2188,19 +2163,19 @@ var $656dc62ff40b3cc7$export$dceb19333e080e82 = /*#__PURE__*/ function() {
         {
             key: "_get",
             value: function _get(pFilePath) {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                     var _ref, pathToBin, version, tsconfigPath, tsconfigMap, client, newClient;
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
                                 return [
                                     4,
-                                    (0, $c628f355f099b93a$export$369fb36245591db0)(pFilePath, "tsserver")
+                                    (0, $72d690c724d8b3e8$export$369fb36245591db0)(pFilePath, "tsserver")
                                 ];
                             case 1:
                                 _ref = _state.sent(), pathToBin = _ref.pathToBin, version = _ref.version;
-                                tsconfigPath = this.tsserverInstancePerTsconfig ? (0, ($parcel$interopDefault($8qw4J$typescript))).findConfigFile(pFilePath, function(f) {
-                                    return (0, ($parcel$interopDefault($8qw4J$typescript))).sys.fileExists(f);
+                                tsconfigPath = this.tsserverInstancePerTsconfig ? (0, $j0dGC$typescript).findConfigFile(pFilePath, function(f) {
+                                    return (0, $j0dGC$typescript).sys.fileExists(f);
                                 }) : undefined;
                                 tsconfigMap = this.clients.get(pathToBin);
                                 if (!tsconfigMap) {
@@ -2212,7 +2187,7 @@ var $656dc62ff40b3cc7$export$dceb19333e080e82 = /*#__PURE__*/ function() {
                                     2,
                                     client
                                 ];
-                                newClient = new (0, $15c8165b6fc0c3c1$export$21f68d6aa461e875)(pathToBin, version, this.reportBusyWhile);
+                                newClient = new (0, $33e0bcf1de16974e$export$21f68d6aa461e875)(pathToBin, version, this.reportBusyWhile);
                                 tsconfigMap.set(tsconfigPath, newClient);
                                 this.subscriptions.add(newClient.on("configFileDiag", this.diagnosticHandler(pathToBin, "configFileDiag")), newClient.on("semanticDiag", this.diagnosticHandler(pathToBin, "semanticDiag")), newClient.on("syntaxDiag", this.diagnosticHandler(pathToBin, "syntaxDiag")), newClient.on("suggestionDiag", this.diagnosticHandler(pathToBin, "suggestionDiag")));
                                 return [
@@ -2228,7 +2203,7 @@ var $656dc62ff40b3cc7$export$dceb19333e080e82 = /*#__PURE__*/ function() {
             key: "getAllClients",
             value: function getAllClients() {
                 var _iteratorNormalCompletion, _didIteratorError, _iteratorError, _iterator, _step, tsconfigMap, err;
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (0, $j0dGC$_1)(this, function(_state) {
                     switch(_state.label){
                         case 0:
                             _iteratorNormalCompletion = true, _didIteratorError = false, _iteratorError = undefined;
@@ -2250,7 +2225,7 @@ var $656dc62ff40b3cc7$export$dceb19333e080e82 = /*#__PURE__*/ function() {
                             tsconfigMap = _step.value;
                             return [
                                 5,
-                                (0, $8qw4J$swchelperscjs_ts_valuescjs._)(tsconfigMap.values())
+                                (0, $j0dGC$_7)(tsconfigMap.values())
                             ];
                         case 3:
                             _state.sent();
@@ -2298,7 +2273,7 @@ var $656dc62ff40b3cc7$export$dceb19333e080e82 = /*#__PURE__*/ function() {
     ]);
     return ClientResolver;
 }();
-function $656dc62ff40b3cc7$var$isConfDiagBody(body) {
+function $d86d165b76686502$var$isConfDiagBody(body) {
     return body && body.triggerFile && body.configFile;
 }
 
@@ -2311,13 +2286,13 @@ function $656dc62ff40b3cc7$var$isConfDiagBody(body) {
 
 
 
-function $824935c6fe894b0b$export$d21c11139c8fe8ee(codefixProvider) {
+function $206be3042dd17018$export$d21c11139c8fe8ee(codefixProvider) {
     return {
-        grammarScopes: (0, $7580a2909a181bf5$export$d9994fe0923974a5)(),
+        grammarScopes: (0, $47ae2d5cb2e495d2$export$d9994fe0923974a5)(),
         priority: 0,
         getCodeActions: function(textEditor, range) {
-            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+            return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                return (0, $j0dGC$_1)(this, function(_state) {
                     switch(_state.label){
                         case 0:
                             return [
@@ -2330,8 +2305,8 @@ function $824935c6fe894b0b$export$d21c11139c8fe8ee(codefixProvider) {
                                 _state.sent().map(function(fix) {
                                     return {
                                         getTitle: function() {
-                                            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                                                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                                            return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                                                return (0, $j0dGC$_1)(this, function(_state) {
                                                     return [
                                                         2,
                                                         "description" in fix ? fix.description : fix.actionDescription
@@ -2341,8 +2316,8 @@ function $824935c6fe894b0b$export$d21c11139c8fe8ee(codefixProvider) {
                                         },
                                         dispose: function() {},
                                         apply: function() {
-                                            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                                                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                                            return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                                                return (0, $j0dGC$_1)(this, function(_state) {
                                                     switch(_state.label){
                                                         case 0:
                                                             return [
@@ -2375,20 +2350,20 @@ function $824935c6fe894b0b$export$d21c11139c8fe8ee(codefixProvider) {
 
 
 
-function $593b916ea2f68ad2$export$6413bc8b6e281ffa(getClient) {
+function $acdd57131752f306$export$6413bc8b6e281ffa(getClient) {
     return {
-        grammarScopes: (0, $7580a2909a181bf5$export$d9994fe0923974a5)(),
+        grammarScopes: (0, $47ae2d5cb2e495d2$export$d9994fe0923974a5)(),
         priority: 100,
         highlight: function(editor, position) {
-            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+            return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                 var location, client, result;
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (0, $j0dGC$_1)(this, function(_state) {
                     switch(_state.label){
                         case 0:
-                            if (!(0, $7580a2909a181bf5$export$3aecee58e23ede2c)(editor)) return [
+                            if (!(0, $47ae2d5cb2e495d2$export$3aecee58e23ede2c)(editor)) return [
                                 2
                             ];
-                            location = (0, $7580a2909a181bf5$export$f25e34a2b31a939c)(editor, position);
+                            location = (0, $47ae2d5cb2e495d2$export$f25e34a2b31a939c)(editor, position);
                             if (!location) return [
                                 2
                             ];
@@ -2400,7 +2375,7 @@ function $593b916ea2f68ad2$export$6413bc8b6e281ffa(getClient) {
                             client = _state.sent();
                             return [
                                 4,
-                                client.execute("documentHighlights", (0, $8qw4J$swchelperscjs_object_spread_propscjs._)((0, $8qw4J$swchelperscjs_object_spreadcjs._)({}, location), {
+                                client.execute("documentHighlights", (0, $j0dGC$_11)((0, $j0dGC$_4)({}, location), {
                                     filesToSearch: [
                                         location.file
                                     ]
@@ -2413,7 +2388,7 @@ function $593b916ea2f68ad2$export$6413bc8b6e281ffa(getClient) {
                             ];
                             return [
                                 2,
-                                Array.from($593b916ea2f68ad2$var$getSpans(location.file, result.body))
+                                Array.from($acdd57131752f306$var$getSpans(location.file, result.body))
                             ];
                     }
                 });
@@ -2421,9 +2396,9 @@ function $593b916ea2f68ad2$export$6413bc8b6e281ffa(getClient) {
         }
     };
 }
-function $593b916ea2f68ad2$var$getSpans(file, data) {
+function $acdd57131752f306$var$getSpans(file, data) {
     var _iteratorNormalCompletion, _didIteratorError, _iteratorError, _iterator, _step, fileInfo, err;
-    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+    return (0, $j0dGC$_1)(this, function(_state) {
         switch(_state.label){
             case 0:
                 _iteratorNormalCompletion = true, _didIteratorError = false, _iteratorError = undefined;
@@ -2449,7 +2424,7 @@ function $593b916ea2f68ad2$var$getSpans(file, data) {
                 ];
                 return [
                     5,
-                    (0, $8qw4J$swchelperscjs_ts_valuescjs._)(fileInfo.highlightSpans.map((0, $ee93806a41573bb4$export$477d491a08b070ec)))
+                    (0, $j0dGC$_7)(fileInfo.highlightSpans.map((0, $ee2d752c6bad64f9$export$477d491a08b070ec)))
                 ];
             case 3:
                 _state.sent();
@@ -2505,10 +2480,10 @@ function $593b916ea2f68ad2$var$getSpans(file, data) {
 
 
 
-function $002ef260a7981892$export$2c9a28f937ef04fb(data, etch, codeRenderer) {
-    return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+function $4278b589e5f5160c$export$2c9a28f937ef04fb(data, etch, codeRenderer) {
+    return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
         var kind, tags, docs, codeText;
-        return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+        return (0, $j0dGC$_1)(this, function(_state) {
             switch(_state.label){
                 case 0:
                     if (data === undefined) return [
@@ -2517,14 +2492,15 @@ function $002ef260a7981892$export$2c9a28f937ef04fb(data, etch, codeRenderer) {
                     ];
                     kind = etch.dom("div", {
                         className: "atom-typescript-datatip-tooltip-kind"
-                    }, data.kind, $002ef260a7981892$var$formatKindModifiers(data.kindModifiers));
-                    tags = data.tags ? data.tags.map(function(tag) {
+                    }, data.kind, $4278b589e5f5160c$var$formatKindModifiers(data.kindModifiers));
+                    tags = data.tags ? data.tags.map(function(tag, idx) {
                         var tagClass = "atom-typescript-datatip-tooltip-doc-tag " + "atom-typescript-datatip-tooltip-doc-tag-name-".concat(tag.name);
                         return etch.dom("div", {
-                            className: tagClass
+                            className: tagClass,
+                            key: idx
                         }, etch.dom("span", {
                             className: "atom-typescript-datatip-tooltip-doc-tag-name"
-                        }, tag.name), $002ef260a7981892$var$formatTagText(etch, tag.text));
+                        }, tag.name), $4278b589e5f5160c$var$formatTagText(etch, tag.text));
                     }) : null;
                     docs = etch.dom("div", {
                         className: "atom-typescript-datatip-tooltip-doc"
@@ -2547,15 +2523,15 @@ function $002ef260a7981892$export$2c9a28f937ef04fb(data, etch, codeRenderer) {
         });
     })();
 }
-function $002ef260a7981892$var$formatKindModifiers(etch, text) {
+function $4278b589e5f5160c$var$formatKindModifiers(etch, text) {
     if (text === undefined) return null;
     return etch.dom("span", {
         className: "atom-typescript-datatip-tooltip-kind-modifiers"
     }, text);
 }
-function $002ef260a7981892$var$formatTagText(etch, tagText) {
+function $4278b589e5f5160c$var$formatTagText(etch, tagText) {
     if (tagText === undefined) return null;
-    var _exec = (0, $8qw4J$swchelperscjs_sliced_to_arraycjs._)(/^\s*(\S*)([^]*)$/.exec(tagText), 3), firstWord = _exec[1], restOfText = _exec[2];
+    var _exec = (0, $j0dGC$_5)(/^\s*(\S*)([^]*)$/.exec(tagText), 3), firstWord = _exec[1], restOfText = _exec[2];
     return etch.dom("span", {
         className: "atom-typescript-datatip-tooltip-doc-tag-text"
     }, etch.dom("span", {
@@ -2566,44 +2542,44 @@ function $002ef260a7981892$var$formatTagText(etch, tagText) {
 
 
 // Note: a horrible hack to avoid dependency on React
-var $3dec627a7b52de57$var$REACT_ELEMENT_SYMBOL = Symbol["for"]("react.element");
-var $3dec627a7b52de57$var$etch = {
+var $a62b15b9bf6501f7$var$REACT_ELEMENT_SYMBOL = Symbol["for"]("react.element");
+var $a62b15b9bf6501f7$var$etch = {
     dom: function(type, props) {
         for(var _len = arguments.length, children = new Array(_len > 2 ? _len - 2 : 0), _key = 2; _key < _len; _key++){
             children[_key - 2] = arguments[_key];
         }
         if (children.length > 0) return {
-            $$typeof: $3dec627a7b52de57$var$REACT_ELEMENT_SYMBOL,
+            $$typeof: $a62b15b9bf6501f7$var$REACT_ELEMENT_SYMBOL,
             type: type,
             ref: null,
-            props: (0, $8qw4J$swchelperscjs_object_spread_propscjs._)((0, $8qw4J$swchelperscjs_object_spreadcjs._)({}, props), {
+            props: (0, $j0dGC$_11)((0, $j0dGC$_4)({}, props), {
                 children: children
             })
         };
         else return {
-            $$typeof: $3dec627a7b52de57$var$REACT_ELEMENT_SYMBOL,
+            $$typeof: $a62b15b9bf6501f7$var$REACT_ELEMENT_SYMBOL,
             type: type,
             ref: null,
-            props: (0, $8qw4J$swchelperscjs_object_spreadcjs._)({}, props)
+            props: (0, $j0dGC$_4)({}, props)
         };
     }
 };
-var $3dec627a7b52de57$export$62181cd26290fa50 = /*#__PURE__*/ function() {
+var $a62b15b9bf6501f7$export$62181cd26290fa50 = /*#__PURE__*/ function() {
     "use strict";
     function TSDatatipProvider(getClient) {
-        (0, $8qw4J$swchelperscjs_class_call_checkcjs._)(this, TSDatatipProvider);
+        (0, $j0dGC$_2)(this, TSDatatipProvider);
         this.getClient = getClient;
         this.providerName = "TypeScript type tooltips";
         this.priority = 100;
-        this.grammarScopes = (0, $7580a2909a181bf5$export$d9994fe0923974a5)();
+        this.grammarScopes = (0, $47ae2d5cb2e495d2$export$d9994fe0923974a5)();
     }
-    (0, $8qw4J$swchelperscjs_create_classcjs._)(TSDatatipProvider, [
+    (0, $j0dGC$_3)(TSDatatipProvider, [
         {
             key: "datatip",
             value: function datatip(editor, bufferPt) {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                    var filePath, client, result, data, tooltip, e;
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                    var filePath, client, result, data, tooltip, _;
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
                                 _state.trys.push([
@@ -2635,7 +2611,7 @@ var $3dec627a7b52de57$export$62181cd26290fa50 = /*#__PURE__*/ function() {
                                 data = result.body;
                                 return [
                                     4,
-                                    (0, $002ef260a7981892$export$2c9a28f937ef04fb)(data, $3dec627a7b52de57$var$etch, $3dec627a7b52de57$var$highlightCode)
+                                    (0, $4278b589e5f5160c$export$2c9a28f937ef04fb)(data, $a62b15b9bf6501f7$var$etch, $a62b15b9bf6501f7$var$highlightCode)
                                 ];
                             case 3:
                                 tooltip = _state.sent();
@@ -2643,18 +2619,18 @@ var $3dec627a7b52de57$export$62181cd26290fa50 = /*#__PURE__*/ function() {
                                     2,
                                     {
                                         component: function() {
-                                            return $3dec627a7b52de57$var$etch.dom("div", {
+                                            return $a62b15b9bf6501f7$var$etch.dom("div", {
                                                 className: "atom-typescript-datatip-tooltip"
                                             }, tooltip);
                                         },
-                                        range: $8qw4J$atom.Range.fromObject([
-                                            (0, $ee93806a41573bb4$export$2b9d56ac2fba440c)(data.start),
-                                            (0, $ee93806a41573bb4$export$2b9d56ac2fba440c)(data.end)
+                                        range: $j0dGC$Range.fromObject([
+                                            (0, $ee2d752c6bad64f9$export$2b9d56ac2fba440c)(data.start),
+                                            (0, $ee2d752c6bad64f9$export$2b9d56ac2fba440c)(data.end)
                                         ])
                                     }
                                 ];
                             case 4:
-                                e = _state.sent();
+                                _ = _state.sent();
                                 return [
                                     2
                                 ];
@@ -2670,22 +2646,22 @@ var $3dec627a7b52de57$export$62181cd26290fa50 = /*#__PURE__*/ function() {
     ]);
     return TSDatatipProvider;
 }();
-function $3dec627a7b52de57$var$highlightCode(code) {
-    return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+function $a62b15b9bf6501f7$var$highlightCode(code) {
+    return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
         var fontFamily, html;
-        return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+        return (0, $j0dGC$_1)(this, function(_state) {
             switch(_state.label){
                 case 0:
                     fontFamily = atom.config.get("editor.fontFamily");
                     return [
                         4,
-                        (0, $cf8cb216522ae432$export$e4043f67d36cbb26)(code.replace(/\r?\n$/, ""), "source.ts")
+                        (0, $e452e33174581f1c$export$e4043f67d36cbb26)(code.replace(/\r?\n$/, ""), "source.ts")
                     ];
                 case 1:
                     html = _state.sent();
                     return [
                         2,
-                        $3dec627a7b52de57$var$etch.dom("div", {
+                        $a62b15b9bf6501f7$var$etch.dom("div", {
                             style: {
                                 fontFamily: fontFamily
                             },
@@ -2704,22 +2680,22 @@ function $3dec627a7b52de57$var$highlightCode(code) {
 
 
 
-function $d2f9fe9bb7e67a01$export$a9ca9b3a8941e92e(getClient) {
+function $bc2cbd8768a1aa8b$export$a9ca9b3a8941e92e(getClient) {
     return {
         name: "atom-typescript",
         priority: 0,
-        grammarScopes: (0, $7580a2909a181bf5$export$d9994fe0923974a5)(),
+        grammarScopes: (0, $47ae2d5cb2e495d2$export$d9994fe0923974a5)(),
         wordRegExp: /([A-Za-z0-9_])+|['"`](\\.|[^'"`\\\\])*['"`]/g,
         getDefinition: function(editor, position) {
-            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+            return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                 var location, client, result;
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (0, $j0dGC$_1)(this, function(_state) {
                     switch(_state.label){
                         case 0:
-                            if (!(0, $7580a2909a181bf5$export$3aecee58e23ede2c)(editor)) return [
+                            if (!(0, $47ae2d5cb2e495d2$export$3aecee58e23ede2c)(editor)) return [
                                 2
                             ];
-                            location = (0, $7580a2909a181bf5$export$f25e34a2b31a939c)(editor, position);
+                            location = (0, $47ae2d5cb2e495d2$export$f25e34a2b31a939c)(editor, position);
                             if (!location) return [
                                 2
                             ];
@@ -2745,7 +2721,7 @@ function $d2f9fe9bb7e67a01$export$a9ca9b3a8941e92e(getClient) {
                                 2,
                                 {
                                     queryRange: undefined,
-                                    definitions: result.body.map($d2f9fe9bb7e67a01$var$fileSpanToDefinition)
+                                    definitions: result.body.map($bc2cbd8768a1aa8b$var$fileSpanToDefinition)
                                 }
                             ];
                     }
@@ -2754,8 +2730,8 @@ function $d2f9fe9bb7e67a01$export$a9ca9b3a8941e92e(getClient) {
         }
     };
 }
-function $d2f9fe9bb7e67a01$var$fileSpanToDefinition(span) {
-    var range = (0, $ee93806a41573bb4$export$477d491a08b070ec)(span);
+function $bc2cbd8768a1aa8b$var$fileSpanToDefinition(span) {
+    var range = (0, $ee2d752c6bad64f9$export$477d491a08b070ec)(span);
     return {
         path: span.file,
         position: range.start,
@@ -2768,25 +2744,25 @@ function $d2f9fe9bb7e67a01$var$fileSpanToDefinition(span) {
 
 
 
-function $532eb743eaf241e3$export$b797847259776697(getClient) {
+function $7ab631458cefe15a$export$b797847259776697(getClient) {
     return {
         isEditorSupported: function(editor) {
-            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+            return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                return (0, $j0dGC$_1)(this, function(_state) {
                     return [
                         2,
-                        (0, $7580a2909a181bf5$export$3aecee58e23ede2c)(editor)
+                        (0, $47ae2d5cb2e495d2$export$3aecee58e23ede2c)(editor)
                     ];
                 });
             })();
         },
         findReferences: function(editor, position) {
-            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+            return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                 var location, client, result;
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (0, $j0dGC$_1)(this, function(_state) {
                     switch(_state.label){
                         case 0:
-                            location = (0, $7580a2909a181bf5$export$f25e34a2b31a939c)(editor, position);
+                            location = (0, $47ae2d5cb2e495d2$export$f25e34a2b31a939c)(editor, position);
                             if (!location) return [
                                 2
                             ];
@@ -2811,7 +2787,7 @@ function $532eb743eaf241e3$export$b797847259776697(getClient) {
                                     type: "data",
                                     baseUri: location.file,
                                     referencedSymbolName: result.body.symbolDisplayString,
-                                    references: result.body.refs.map($532eb743eaf241e3$var$refTsToIde)
+                                    references: result.body.refs.map($7ab631458cefe15a$var$refTsToIde)
                                 }
                             ];
                     }
@@ -2820,10 +2796,10 @@ function $532eb743eaf241e3$export$b797847259776697(getClient) {
         }
     };
 }
-function $532eb743eaf241e3$var$refTsToIde(ref) {
+function $7ab631458cefe15a$var$refTsToIde(ref) {
     return {
         uri: ref.file,
-        range: (0, $ee93806a41573bb4$export$19d00dfc4e734f8b)(ref.start, ref.end),
+        range: (0, $ee2d752c6bad64f9$export$19d00dfc4e734f8b)(ref.start, ref.end),
         name: undefined
     };
 }
@@ -2843,23 +2819,23 @@ function $532eb743eaf241e3$var$refTsToIde(ref) {
 
 
 
-var $3a2f125535af08fb$export$275be3d1a3f62fb = /*#__PURE__*/ function() {
+var $449f68c4d2ba210e$export$275be3d1a3f62fb = /*#__PURE__*/ function() {
     "use strict";
     function TsView(props) {
-        (0, $8qw4J$swchelperscjs_class_call_checkcjs._)(this, TsView);
+        (0, $j0dGC$_2)(this, TsView);
         this.props = props;
-        $8qw4J$etch.initialize(this);
+        $j0dGC$initialize(this);
     }
-    (0, $8qw4J$swchelperscjs_create_classcjs._)(TsView, [
+    (0, $j0dGC$_3)(TsView, [
         {
             key: "update",
             value: function update(props) {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
-                        this.props = (0, $8qw4J$swchelperscjs_object_spreadcjs._)({}, this.props, props);
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                    return (0, $j0dGC$_1)(this, function(_state) {
+                        this.props = (0, $j0dGC$_4)({}, this.props, props);
                         return [
                             2,
-                            $8qw4J$etch.update(this)
+                            $j0dGC$update(this)
                         ];
                     });
                 }).call(this);
@@ -2871,7 +2847,7 @@ var $3a2f125535af08fb$export$275be3d1a3f62fb = /*#__PURE__*/ function() {
                 var style = {
                     fontFamily: atom.config.get("editor.fontFamily")
                 };
-                return $8qw4J$etch.dom("div", {
+                return $j0dGC$dom("div", {
                     className: "editor editor-colors",
                     style: style,
                     innerHTML: this.props.highlightedText
@@ -2891,27 +2867,27 @@ var $3a2f125535af08fb$export$275be3d1a3f62fb = /*#__PURE__*/ function() {
 
 
 
-var $5f8857790714307e$export$31d5f5740e2c2887 = /*#__PURE__*/ function() {
+var $a3783a40399b9047$export$31d5f5740e2c2887 = /*#__PURE__*/ function() {
     "use strict";
     function HighlightComponent(props) {
-        (0, $8qw4J$swchelperscjs_class_call_checkcjs._)(this, HighlightComponent);
+        (0, $j0dGC$_2)(this, HighlightComponent);
         this.props = props;
         this.matches = this.match(this.props);
-        $8qw4J$etch.initialize(this);
+        $j0dGC$initialize(this);
     }
-    (0, $8qw4J$swchelperscjs_create_classcjs._)(HighlightComponent, [
+    (0, $j0dGC$_3)(HighlightComponent, [
         {
             key: "update",
             value: function update(props) {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
-                                this.props = (0, $8qw4J$swchelperscjs_object_spreadcjs._)({}, this.props, props);
+                                this.props = (0, $j0dGC$_4)({}, this.props, props);
                                 this.matches = this.match(this.props);
                                 return [
                                     4,
-                                    $8qw4J$etch.update(this)
+                                    $j0dGC$update(this)
                                 ];
                             case 1:
                                 _state.sent();
@@ -2926,13 +2902,13 @@ var $5f8857790714307e$export$31d5f5740e2c2887 = /*#__PURE__*/ function() {
         {
             key: "destroy",
             value: function destroy() {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
                                 return [
                                     4,
-                                    $8qw4J$etch.destroy(this)
+                                    $j0dGC$destroy(this)
                                 ];
                             case 1:
                                 _state.sent();
@@ -2947,9 +2923,10 @@ var $5f8857790714307e$export$31d5f5740e2c2887 = /*#__PURE__*/ function() {
         {
             key: "render",
             value: function render() {
-                return $8qw4J$etch.dom("span", null, this.matches.map(function(m) {
-                    return $8qw4J$etch.dom("span", {
-                        className: m.type
+                return $j0dGC$dom("span", null, this.matches.map(function(m, i) {
+                    return $j0dGC$dom("span", {
+                        className: m.type,
+                        key: i
                     }, m.text);
                 }));
             }
@@ -2957,7 +2934,7 @@ var $5f8857790714307e$export$31d5f5740e2c2887 = /*#__PURE__*/ function() {
         {
             key: "match",
             value: function match(props) {
-                if (props.query) return $5f8857790714307e$export$d775a8cf3adcd3a0(props.label, props.query);
+                if (props.query) return $a3783a40399b9047$export$d775a8cf3adcd3a0(props.label, props.query);
                 return [
                     {
                         text: props.label
@@ -2968,11 +2945,11 @@ var $5f8857790714307e$export$31d5f5740e2c2887 = /*#__PURE__*/ function() {
     ]);
     return HighlightComponent;
 }();
-function $5f8857790714307e$export$d775a8cf3adcd3a0(name, query) {
+function $a3783a40399b9047$export$d775a8cf3adcd3a0(name, query) {
     var lastIndex = 0;
     var matchedChars = []; // Build up a set of matched chars to be more semantic
     var queryMatches = [];
-    var matches = (0, $8qw4J$fuzzaldrin.match)(name, query);
+    var matches = (0, $j0dGC$match)(name, query);
     var matchIndex;
     var _iteratorNormalCompletion = true, _didIteratorError = false, _iteratorError = undefined;
     try {
@@ -3024,10 +3001,10 @@ function $5f8857790714307e$export$d775a8cf3adcd3a0(name, query) {
 
 
 
-function $f55d59ecd155c40a$export$12cb8c60c107136e(_0) {
-    return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function(param) {
+function $0be5325d1bf82077$export$12cb8c60c107136e(_0) {
+    return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function(param) {
         var items, itemTemplate, itemFilterKey, didChangeSelection, panel, currentFocus;
-        return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+        return (0, $j0dGC$_1)(this, function(_state) {
             switch(_state.label){
                 case 0:
                     items = param.items, itemTemplate = param.itemTemplate, itemFilterKey = param.itemFilterKey, didChangeSelection = param.didChangeSelection;
@@ -3049,13 +3026,13 @@ function $f55d59ecd155c40a$export$12cb8c60c107136e(_0) {
                             var resolved = false;
                             var update = function(props) {
                                 if (resolved) return;
-                                (0, $2893351583386024$export$8080b7556d9d6445)(select.update(props));
+                                (0, $e61b31fac60530e8$export$8080b7556d9d6445)(select.update(props));
                             };
                             if (typeof items === "function") {
                                 didChangeQuery = function(query) {
-                                    return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+                                    return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                                         var timeout, is;
-                                        return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                                        return (0, $j0dGC$_1)(this, function(_state) {
                                             switch(_state.label){
                                                 case 0:
                                                     timeout = setTimeout(function() {
@@ -3085,10 +3062,10 @@ function $f55d59ecd155c40a$export$12cb8c60c107136e(_0) {
                                 loadingMessage = undefined;
                                 emptyMessage = "Please enter a search value";
                             }
-                            var select = new (0, ($parcel$interopDefault($8qw4J$atomselectlist)))({
+                            var select = new (0, $j0dGC$atomselectlist)({
                                 items: [],
                                 elementForItem: function(item) {
-                                    return $8qw4J$etch.render(itemTemplate(item, select));
+                                    return $j0dGC$render(itemTemplate(item, select));
                                 },
                                 filterKeyForItem: function(item) {
                                     return "".concat(item[itemFilterKey]);
@@ -3109,7 +3086,7 @@ function $f55d59ecd155c40a$export$12cb8c60c107136e(_0) {
                                     "atom-typescript"
                                 ]
                             });
-                            if (typeof items !== "function") (0, $2893351583386024$export$8080b7556d9d6445)(Promise.resolve(items).then(function(is) {
+                            if (typeof items !== "function") (0, $e61b31fac60530e8$export$8080b7556d9d6445)(Promise.resolve(items).then(function(is) {
                                 update({
                                     items: is,
                                     loadingMessage: undefined
@@ -3146,29 +3123,29 @@ function $f55d59ecd155c40a$export$12cb8c60c107136e(_0) {
 // To allow using dependency injection, but avoid having to type a lot of boilerplate, we have the
 // individual command files register themselves in the below map. When the package is initializing,
 // the constructors are passed the deps and return the actual commands handlers.
-var $095c7bfbba93f9a3$var$commands = [];
-function $095c7bfbba93f9a3$export$35e8f4a3c2d7c0da(selector, command, desc) {
-    $095c7bfbba93f9a3$var$commands.push({
+var $011f9689c199e25f$var$commands = [];
+function $011f9689c199e25f$export$35e8f4a3c2d7c0da(selector, command, desc) {
+    $011f9689c199e25f$var$commands.push({
         selector: selector,
         command: command,
         desc: desc
     });
 }
-function $095c7bfbba93f9a3$export$7a6092e2ae7e1845() {
-    return $095c7bfbba93f9a3$var$commands;
+function $011f9689c199e25f$export$7a6092e2ae7e1845() {
+    return $011f9689c199e25f$var$commands;
 }
 
 
-(0, $095c7bfbba93f9a3$export$35e8f4a3c2d7c0da)("atom-text-editor", "typescript:find-references", function(deps) {
+(0, $011f9689c199e25f$export$35e8f4a3c2d7c0da)("atom-text-editor", "typescript:find-references", function(deps) {
     return {
         description: "Find where symbol under text cursor is referenced",
         didDispatch: function(editor) {
-            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+            return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                 var location, client, result;
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (0, $j0dGC$_1)(this, function(_state) {
                     switch(_state.label){
                         case 0:
-                            location = (0, $7580a2909a181bf5$export$f25e34a2b31a939c)(editor);
+                            location = (0, $47ae2d5cb2e495d2$export$f25e34a2b31a939c)(editor);
                             if (!location) return [
                                 2
                             ];
@@ -3186,7 +3163,7 @@ function $095c7bfbba93f9a3$export$7a6092e2ae7e1845() {
                             result = _state.sent();
                             return [
                                 4,
-                                $bd6f96bfb4d02b8e$export$2904681fe8c977be(result, editor, deps.histGoForward)
+                                $296b83751e460336$export$2904681fe8c977be(result, editor, deps.histGoForward)
                             ];
                         case 3:
                             _state.sent();
@@ -3199,22 +3176,22 @@ function $095c7bfbba93f9a3$export$7a6092e2ae7e1845() {
         }
     };
 });
-function $bd6f96bfb4d02b8e$export$2904681fe8c977be(result, editor, histGoForward) {
-    return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+function $296b83751e460336$export$2904681fe8c977be(result, editor, histGoForward) {
+    return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
         var refs, res;
-        return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+        return (0, $j0dGC$_1)(this, function(_state) {
             switch(_state.label){
                 case 0:
                     refs = Promise.all(result.body.refs.map(function(ref) {
-                        return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                            var _a, _b, fileContents, context, fileHlText, lineText;
-                            return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                        return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                            var _ref_contextStart, fileContents, context, fileHlText, _ref_contextStart_line, lineText;
+                            return (0, $j0dGC$_1)(this, function(_state) {
                                 switch(_state.label){
                                     case 0:
                                         return [
                                             4,
                                             new Promise(function(resolve, reject) {
-                                                return $8qw4J$fs.readFile(ref.file, function(error, data) {
+                                                return $j0dGC$readFile(ref.file, function(error, data) {
                                                     if (error) reject(error);
                                                     else resolve(data.toString("utf-8"));
                                                 });
@@ -3225,14 +3202,14 @@ function $bd6f96bfb4d02b8e$export$2904681fe8c977be(result, editor, histGoForward
                                         context = ref.contextStart !== undefined && ref.contextEnd !== undefined ? fileContents.slice(ref.contextStart.line - 1, ref.contextEnd.line) : fileContents;
                                         return [
                                             4,
-                                            (0, $cf8cb216522ae432$export$e4043f67d36cbb26)(context.join("\n"), "source.tsx")
+                                            (0, $e452e33174581f1c$export$e4043f67d36cbb26)(context.join("\n"), "source.tsx")
                                         ];
                                     case 2:
                                         fileHlText = _state.sent().split("\n");
-                                        lineText = fileHlText[ref.start.line - ((_b = (_a = ref.contextStart) === null || _a === void 0 ? void 0 : _a.line) !== null && _b !== void 0 ? _b : 1)];
+                                        lineText = fileHlText[ref.start.line - ((_ref_contextStart_line = (_ref_contextStart = ref.contextStart) === null || _ref_contextStart === void 0 ? void 0 : _ref_contextStart.line) !== null && _ref_contextStart_line !== void 0 ? _ref_contextStart_line : 1)];
                                         return [
                                             2,
-                                            (0, $8qw4J$swchelperscjs_object_spread_propscjs._)((0, $8qw4J$swchelperscjs_object_spreadcjs._)({}, ref), {
+                                            (0, $j0dGC$_11)((0, $j0dGC$_4)({}, ref), {
                                                 hlText: lineText
                                             })
                                         ];
@@ -3242,15 +3219,15 @@ function $bd6f96bfb4d02b8e$export$2904681fe8c977be(result, editor, histGoForward
                     }));
                     return [
                         4,
-                        (0, $f55d59ecd155c40a$export$12cb8c60c107136e)({
+                        (0, $0be5325d1bf82077$export$12cb8c60c107136e)({
                             items: refs,
                             itemTemplate: function(item, ctx) {
-                                return $8qw4J$etch.dom("li", null, $8qw4J$etch.dom((0, $5f8857790714307e$export$31d5f5740e2c2887), {
+                                return $j0dGC$dom("li", null, $j0dGC$dom((0, $a3783a40399b9047$export$31d5f5740e2c2887), {
                                     label: atom.project.relativize(item.file),
                                     query: ctx.getFilterQuery()
-                                }), $8qw4J$etch.dom("div", {
+                                }), $j0dGC$dom("div", {
                                     className: "pull-right"
-                                }, "line: ", item.start.line), $8qw4J$etch.dom((0, $3a2f125535af08fb$export$275be3d1a3f62fb), {
+                                }, "line: ", item.start.line), $j0dGC$dom((0, $449f68c4d2ba210e$export$275be3d1a3f62fb), {
                                     highlightedText: item.hlText
                                 }));
                             },
@@ -3287,16 +3264,16 @@ function $bd6f96bfb4d02b8e$export$2904681fe8c977be(result, editor, histGoForward
 
 
 
-(0, $095c7bfbba93f9a3$export$35e8f4a3c2d7c0da)("atom-text-editor", "typescript:go-to-declaration", function(deps) {
+(0, $011f9689c199e25f$export$35e8f4a3c2d7c0da)("atom-text-editor", "typescript:go-to-declaration", function(deps) {
     return {
         description: "Go to declaration of symbol under text cursor",
         didDispatch: function(editor) {
-            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+            return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                 var location, client, result;
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (0, $j0dGC$_1)(this, function(_state) {
                     switch(_state.label){
                         case 0:
-                            location = (0, $7580a2909a181bf5$export$f25e34a2b31a939c)(editor);
+                            location = (0, $47ae2d5cb2e495d2$export$f25e34a2b31a939c)(editor);
                             if (!location) return [
                                 2
                             ];
@@ -3314,7 +3291,7 @@ function $bd6f96bfb4d02b8e$export$2904681fe8c977be(result, editor, histGoForward
                             result = _state.sent();
                             return [
                                 4,
-                                $71d6fd6c1ba3e8dc$export$680a91dbc2dcff04(result, editor, deps.histGoForward)
+                                $bcfd5758b4b0a968$export$680a91dbc2dcff04(result, editor, deps.histGoForward)
                             ];
                         case 3:
                             _state.sent();
@@ -3327,10 +3304,10 @@ function $bd6f96bfb4d02b8e$export$2904681fe8c977be(result, editor, histGoForward
         }
     };
 });
-function $71d6fd6c1ba3e8dc$export$680a91dbc2dcff04(result, editor, histGoForward) {
-    return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+function $bcfd5758b4b0a968$export$680a91dbc2dcff04(result, editor, histGoForward) {
+    return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
         var res;
-        return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+        return (0, $j0dGC$_1)(this, function(_state) {
             switch(_state.label){
                 case 0:
                     if (!!result.body) return [
@@ -3347,13 +3324,13 @@ function $71d6fd6c1ba3e8dc$export$680a91dbc2dcff04(result, editor, histGoForward
                     ];
                     return [
                         4,
-                        (0, $f55d59ecd155c40a$export$12cb8c60c107136e)({
+                        (0, $0be5325d1bf82077$export$12cb8c60c107136e)({
                             items: result.body,
                             itemTemplate: function(item, ctx) {
-                                return $8qw4J$etch.dom("li", null, $8qw4J$etch.dom((0, $5f8857790714307e$export$31d5f5740e2c2887), {
+                                return $j0dGC$dom("li", null, $j0dGC$dom((0, $a3783a40399b9047$export$31d5f5740e2c2887), {
                                     label: item.file,
                                     query: ctx.getFilterQuery()
-                                }), $8qw4J$etch.dom("div", {
+                                }), $j0dGC$dom("div", {
                                     className: "pull-right"
                                 }, "line: ", item.start.line));
                             },
@@ -3401,16 +3378,16 @@ function $71d6fd6c1ba3e8dc$export$680a91dbc2dcff04(result, editor, histGoForward
 
 
 
-function $f208e1245e4db9fc$export$51c07c30fb16d966(getClient, histGoForward) {
+function $006be3b9d96979d1$export$51c07c30fb16d966(getClient, histGoForward) {
     return {
         priority: 0,
         providerName: "typescript-hyperclick-provider",
         wordRegExp: /([A-Za-z0-9_])+|['"`](\\.|[^'"`\\\\])*['"`]/g,
         getSuggestionForWord: function(editor, _text, range) {
-            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+            return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                 var filePath;
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
-                    if (!(0, $7580a2909a181bf5$export$3aecee58e23ede2c)(editor)) return [
+                return (0, $j0dGC$_1)(this, function(_state) {
+                    if (!(0, $47ae2d5cb2e495d2$export$3aecee58e23ede2c)(editor)) return [
                         2
                     ];
                     filePath = editor.getPath();
@@ -3422,9 +3399,9 @@ function $f208e1245e4db9fc$export$51c07c30fb16d966(getClient, histGoForward) {
                         {
                             range: range,
                             callback: function() {
-                                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                                    var _a, location, client, result, resLoc, references;
-                                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                                    var _result_body, location, client, result, resLoc, references;
+                                    return (0, $j0dGC$_1)(this, function(_state) {
                                         switch(_state.label){
                                             case 0:
                                                 location = {
@@ -3445,7 +3422,7 @@ function $f208e1245e4db9fc$export$51c07c30fb16d966(getClient, histGoForward) {
                                             case 2:
                                                 result = _state.sent();
                                                 resLoc = result.body ? result.body[0] : undefined;
-                                                if (!(((_a = result.body) === null || _a === void 0 ? void 0 : _a.length) === 1 && (resLoc === null || resLoc === void 0 ? void 0 : resLoc.start.line) === location.line && (resLoc === null || resLoc === void 0 ? void 0 : resLoc.start.offset) === location.offset)) return [
+                                                if (!(((_result_body = result.body) === null || _result_body === void 0 ? void 0 : _result_body.length) === 1 && (resLoc === null || resLoc === void 0 ? void 0 : resLoc.start.line) === location.line && (resLoc === null || resLoc === void 0 ? void 0 : resLoc.start.offset) === location.offset)) return [
                                                     3,
                                                     5
                                                 ];
@@ -3457,7 +3434,7 @@ function $f208e1245e4db9fc$export$51c07c30fb16d966(getClient, histGoForward) {
                                                 references = _state.sent();
                                                 return [
                                                     4,
-                                                    (0, $bd6f96bfb4d02b8e$export$2904681fe8c977be)(references, editor, histGoForward)
+                                                    (0, $296b83751e460336$export$2904681fe8c977be)(references, editor, histGoForward)
                                                 ];
                                             case 4:
                                                 _state.sent();
@@ -3468,7 +3445,7 @@ function $f208e1245e4db9fc$export$51c07c30fb16d966(getClient, histGoForward) {
                                             case 5:
                                                 return [
                                                     4,
-                                                    (0, $71d6fd6c1ba3e8dc$export$680a91dbc2dcff04)(result, editor, histGoForward)
+                                                    (0, $bcfd5758b4b0a968$export$680a91dbc2dcff04)(result, editor, histGoForward)
                                                 ];
                                             case 6:
                                                 _state.sent();
@@ -3493,16 +3470,16 @@ function $f208e1245e4db9fc$export$51c07c30fb16d966(getClient, histGoForward) {
 
 
 
-function $c5ee2b7644db248e$export$2b92277a69331cbb(getClient) {
+function $1d67a428a312fc1b$export$2b92277a69331cbb(getClient) {
     return {
         name: "Atom-TypeScript",
-        grammarScopes: (0, $7580a2909a181bf5$export$d9994fe0923974a5)(),
+        grammarScopes: (0, $47ae2d5cb2e495d2$export$d9994fe0923974a5)(),
         priority: 100,
         updateOnEdit: true,
         getOutline: function(editor) {
-            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+            return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                 var filePath, client, navTreeResult, navTree;
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (0, $j0dGC$_1)(this, function(_state) {
                     switch(_state.label){
                         case 0:
                             filePath = editor.getPath();
@@ -3531,7 +3508,7 @@ function $c5ee2b7644db248e$export$2b92277a69331cbb(getClient) {
                                 2,
                                 {
                                     outlineTrees: [
-                                        $c5ee2b7644db248e$var$navTreeToOutline(navTree)
+                                        $1d67a428a312fc1b$var$navTreeToOutline(navTree)
                                     ]
                                 }
                             ];
@@ -3541,26 +3518,26 @@ function $c5ee2b7644db248e$export$2b92277a69331cbb(getClient) {
         }
     };
 }
-function $c5ee2b7644db248e$var$navTreeToOutline(navTree) {
-    var ranges = navTree.spans.map((0, $ee93806a41573bb4$export$477d491a08b070ec));
+function $1d67a428a312fc1b$var$navTreeToOutline(navTree) {
+    var ranges = navTree.spans.map((0, $ee2d752c6bad64f9$export$477d491a08b070ec));
     var range = ranges.reduce(function(prev, cur) {
         return cur.union(prev);
     });
     return {
-        kind: $c5ee2b7644db248e$var$kindMap[navTree.kind],
+        kind: $1d67a428a312fc1b$var$kindMap[navTree.kind],
         plainText: navTree.text,
         startPosition: range.start,
         endPosition: range.end,
-        landingPosition: navTree.nameSpan ? (0, $ee93806a41573bb4$export$477d491a08b070ec)(navTree.nameSpan).start : undefined,
-        children: navTree.childItems ? navTree.childItems.map($c5ee2b7644db248e$var$navTreeToOutline).sort($c5ee2b7644db248e$var$compareNodes) : []
+        landingPosition: navTree.nameSpan ? (0, $ee2d752c6bad64f9$export$477d491a08b070ec)(navTree.nameSpan).start : undefined,
+        children: navTree.childItems ? navTree.childItems.map($1d67a428a312fc1b$var$navTreeToOutline).sort($1d67a428a312fc1b$var$compareNodes) : []
     };
 }
-function $c5ee2b7644db248e$var$compareNodes(a, b) {
+function $1d67a428a312fc1b$var$compareNodes(a, b) {
     var apos = a.landingPosition ? a.landingPosition : a.startPosition;
     var bpos = b.landingPosition ? b.landingPosition : b.startPosition;
     return apos.compare(bpos);
 }
-var $c5ee2b7644db248e$var$kindMap = {
+var $1d67a428a312fc1b$var$kindMap = {
     // | "file"
     directory: "file",
     // | "module"
@@ -3623,16 +3600,16 @@ var $c5ee2b7644db248e$var$kindMap = {
 
 
 
-var $f0827e2fd290d654$export$11ab8206b5e263e8 = /*#__PURE__*/ function() {
+var $813c06c89c431621$export$11ab8206b5e263e8 = /*#__PURE__*/ function() {
     "use strict";
     function TSSigHelpProvider(getClient) {
         var _this = this;
-        (0, $8qw4J$swchelperscjs_class_call_checkcjs._)(this, TSSigHelpProvider);
+        (0, $j0dGC$_2)(this, TSSigHelpProvider);
         this.getClient = getClient;
         this.triggerCharacters = new Set([]);
-        this.grammarScopes = (0, $7580a2909a181bf5$export$d9994fe0923974a5)();
+        this.grammarScopes = (0, $47ae2d5cb2e495d2$export$d9994fe0923974a5)();
         this.priority = 100;
-        this.disposables = new (0, $8qw4J$atom.CompositeDisposable)();
+        this.disposables = new (0, $j0dGC$CompositeDisposable)();
         var triggerCharsDefault = new Set([
             "<",
             "(",
@@ -3643,7 +3620,7 @@ var $f0827e2fd290d654$export$11ab8206b5e263e8 = /*#__PURE__*/ function() {
             _this.triggerCharacters = newVal ? triggerCharsDefault : triggerCharsDisabled;
         }));
     }
-    (0, $8qw4J$swchelperscjs_create_classcjs._)(TSSigHelpProvider, [
+    (0, $j0dGC$_3)(TSSigHelpProvider, [
         {
             key: "dispose",
             value: function dispose() {
@@ -3653,9 +3630,9 @@ var $f0827e2fd290d654$export$11ab8206b5e263e8 = /*#__PURE__*/ function() {
         {
             key: "getSignatureHelp",
             value: function getSignatureHelp(editor, pos) {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                    var filePath, client, result, data, signatures, e;
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                    var filePath, client, result, data, signatures, _;
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
                                 _state.trys.push([
@@ -3685,7 +3662,7 @@ var $f0827e2fd290d654$export$11ab8206b5e263e8 = /*#__PURE__*/ function() {
                             case 2:
                                 result = _state.sent();
                                 data = result.body;
-                                signatures = data.items.map((0, $ee93806a41573bb4$export$9db02c2ec8f703d4));
+                                signatures = data.items.map((0, $ee2d752c6bad64f9$export$9db02c2ec8f703d4));
                                 return [
                                     2,
                                     {
@@ -3695,7 +3672,7 @@ var $f0827e2fd290d654$export$11ab8206b5e263e8 = /*#__PURE__*/ function() {
                                     }
                                 ];
                             case 3:
-                                e = _state.sent();
+                                _ = _state.sent();
                                 return [
                                     2
                                 ];
@@ -3725,50 +3702,50 @@ var $f0827e2fd290d654$export$11ab8206b5e263e8 = /*#__PURE__*/ function() {
 
 
 
-function $d649cd8c04ef312c$export$d94405aa3cc9bfda(codeAction) {
-    return $8qw4J$etch.dom("li", null, codeAction.description);
+function $843cfb4790d58d36$export$d94405aa3cc9bfda(codeAction) {
+    return $j0dGC$dom("li", null, codeAction.description);
 }
 
 
 
 
-var $2a2076bfbea7a68e$export$536c67bf76d43cfb = /*#__PURE__*/ function() {
+var $82009c0d32a0c9d0$export$536c67bf76d43cfb = /*#__PURE__*/ function() {
     "use strict";
     function AutocompleteProvider(getClient, applyEdits) {
-        (0, $8qw4J$swchelperscjs_class_call_checkcjs._)(this, AutocompleteProvider);
+        (0, $j0dGC$_2)(this, AutocompleteProvider);
         this.getClient = getClient;
         this.applyEdits = applyEdits;
-        this.selector = (0, $7580a2909a181bf5$export$d9994fe0923974a5)().map(function(x) {
+        this.selector = (0, $47ae2d5cb2e495d2$export$d9994fe0923974a5)().map(function(x) {
             return x.includes(".") ? ".".concat(x) : x;
         }).join(", ");
         this.inclusionPriority = atom.config.get("atom-typescript-updated").autocompletionInclusionPriority;
         this.suggestionPriority = atom.config.get("atom-typescript-updated").autocompletionSuggestionPriority;
         this.excludeLowerPriority = atom.config.get("atom-typescript-updated").autocompletionExcludeLowerPriority;
     }
-    (0, $8qw4J$swchelperscjs_create_classcjs._)(AutocompleteProvider, [
+    (0, $j0dGC$_3)(AutocompleteProvider, [
         {
             key: "getSuggestions",
             value: function getSuggestions(opts) {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                    var _this, location, prefix, triggerCharacter, suggestions, config, ignoreCase, longestFirst, score, filter, error;
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                    var _this, location, prefix, triggerCharacter, suggestions, config, ignoreCase, longestFirst, score, filter, _;
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
                                 _this = this;
-                                location = $2a2076bfbea7a68e$var$getLocationQuery(opts);
-                                prefix = $2a2076bfbea7a68e$var$getPrefix(opts);
+                                location = $82009c0d32a0c9d0$var$getLocationQuery(opts);
+                                prefix = $82009c0d32a0c9d0$var$getPrefix(opts);
                                 if (!location) return [
                                     2,
                                     []
                                 ];
                                 // Don't auto-show autocomplete if prefix is empty unless last character is '.'
-                                triggerCharacter = $2a2076bfbea7a68e$var$getTrigger($2a2076bfbea7a68e$var$getLastNonWhitespaceChar(opts.editor.getBuffer(), opts.bufferPosition));
+                                triggerCharacter = $82009c0d32a0c9d0$var$getTrigger($82009c0d32a0c9d0$var$getLastNonWhitespaceChar(opts.editor.getBuffer(), opts.bufferPosition));
                                 if (!prefix && !opts.activatedManually && !triggerCharacter) return [
                                     2,
                                     []
                                 ];
                                 // Don't show autocomplete if we're in a string.template and not in a template expression
-                                if ($2a2076bfbea7a68e$var$containsScope(opts.scopeDescriptor.getScopesArray(), "string.template.") && !$2a2076bfbea7a68e$var$containsScope(opts.scopeDescriptor.getScopesArray(), "template.expression.")) return [
+                                if ($82009c0d32a0c9d0$var$containsScope(opts.scopeDescriptor.getScopesArray(), "string.template.") && !$82009c0d32a0c9d0$var$containsScope(opts.scopeDescriptor.getScopesArray(), "template.expression.")) return [
                                     2,
                                     []
                                 ];
@@ -3792,7 +3769,7 @@ var $2a2076bfbea7a68e$export$536c67bf76d43cfb = /*#__PURE__*/ function() {
                             case 2:
                                 suggestions = _state.sent();
                                 config = atom.config.get("atom-typescript-updated");
-                                if (config.autocompletionUseFuzzyFilter) suggestions = $8qw4J$fuzzaldrin.filter(suggestions, prefix, {
+                                if (config.autocompletionUseFuzzyFilter) suggestions = $j0dGC$filter(suggestions, prefix, {
                                     key: "displayText"
                                 });
                                 else {
@@ -3809,11 +3786,11 @@ var $2a2076bfbea7a68e$export$536c67bf76d43cfb = /*#__PURE__*/ function() {
                                         return 100 * pos + length;
                                     };
                                     filter = ignoreCase ? function(val) {
-                                        var _a;
-                                        return (_a = val.displayText) === null || _a === void 0 ? void 0 : _a.toLowerCase().includes(prefix.toLowerCase());
+                                        var _val_displayText;
+                                        return (_val_displayText = val.displayText) === null || _val_displayText === void 0 ? void 0 : _val_displayText.toLowerCase().includes(prefix.toLowerCase());
                                     } : function(val) {
-                                        var _a;
-                                        return (_a = val.displayText) === null || _a === void 0 ? void 0 : _a.includes(prefix);
+                                        var _val_displayText;
+                                        return (_val_displayText = val.displayText) === null || _val_displayText === void 0 ? void 0 : _val_displayText.includes(prefix);
                                     };
                                     suggestions = suggestions.filter(filter).sort(function(a, b) {
                                         return score(a.displayText) - score(b.displayText);
@@ -3822,14 +3799,14 @@ var $2a2076bfbea7a68e$export$536c67bf76d43cfb = /*#__PURE__*/ function() {
                                 return [
                                     2,
                                     suggestions.map(function(suggestion) {
-                                        return (0, $8qw4J$swchelperscjs_object_spreadcjs._)({
+                                        return (0, $j0dGC$_4)({
                                             replacementPrefix: suggestion.replacementRange ? opts.editor.getTextInBufferRange(suggestion.replacementRange) : prefix,
                                             location: location
-                                        }, _this.getDetailsFromCache(suggestion), $2a2076bfbea7a68e$var$addCallableParens(opts, suggestion));
+                                        }, _this.getDetailsFromCache(suggestion), $82009c0d32a0c9d0$var$addCallableParens(opts, suggestion));
                                     })
                                 ];
                             case 3:
-                                error = _state.sent();
+                                _ = _state.sent();
                                 return [
                                     2,
                                     []
@@ -3846,8 +3823,8 @@ var $2a2076bfbea7a68e$export$536c67bf76d43cfb = /*#__PURE__*/ function() {
         {
             key: "getSuggestionDetailsOnSelect",
             value: function getSuggestionDetailsOnSelect(suggestion) {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         if ("text" in suggestion && !("rightLabel" in suggestion)) return [
                             2,
                             this.getAdditionalDetails(suggestion)
@@ -3872,10 +3849,10 @@ var $2a2076bfbea7a68e$export$536c67bf76d43cfb = /*#__PURE__*/ function() {
                 if (!this.lastSuggestions) return;
                 var client = this.lastSuggestions.client;
                 var details = this.getDetailsFromCache(s);
-                (0, $2893351583386024$export$8080b7556d9d6445)(function() {
-                    return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+                (0, $e61b31fac60530e8$export$8080b7556d9d6445)(function() {
+                    return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                         var action;
-                        return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                        return (0, $j0dGC$_1)(this, function(_state) {
                             switch(_state.label){
                                 case 0:
                                     if (!!details) return [
@@ -3905,9 +3882,9 @@ var $2a2076bfbea7a68e$export$536c67bf76d43cfb = /*#__PURE__*/ function() {
                                 case 3:
                                     return [
                                         4,
-                                        (0, $f55d59ecd155c40a$export$12cb8c60c107136e)({
+                                        (0, $0be5325d1bf82077$export$12cb8c60c107136e)({
                                             items: details.details.codeActions,
-                                            itemTemplate: (0, $d649cd8c04ef312c$export$d94405aa3cc9bfda),
+                                            itemTemplate: (0, $843cfb4790d58d36$export$d94405aa3cc9bfda),
                                             itemFilterKey: "description"
                                         })
                                     ];
@@ -3949,9 +3926,9 @@ var $2a2076bfbea7a68e$export$536c67bf76d43cfb = /*#__PURE__*/ function() {
         {
             key: "getAdditionalDetails",
             value: function getAdditionalDetails(suggestion) {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                    var _a, reply, _reply_body, details, parts, rightLabel, actionDesc, description;
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                    var _details_codeActions, reply, _reply_body, details, parts, rightLabel, actionDesc, description;
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
                                 if (suggestion.identifier === undefined) return [
@@ -3964,7 +3941,7 @@ var $2a2076bfbea7a68e$export$536c67bf76d43cfb = /*#__PURE__*/ function() {
                                 ];
                                 return [
                                     4,
-                                    this.lastSuggestions.client.execute("completionEntryDetails", (0, $8qw4J$swchelperscjs_object_spreadcjs._)({
+                                    this.lastSuggestions.client.execute("completionEntryDetails", (0, $j0dGC$_4)({
                                         entryNames: [
                                             suggestion.identifier
                                         ]
@@ -3976,7 +3953,7 @@ var $2a2076bfbea7a68e$export$536c67bf76d43cfb = /*#__PURE__*/ function() {
                                     2,
                                     null
                                 ];
-                                _reply_body = (0, $8qw4J$swchelperscjs_sliced_to_arraycjs._)(reply.body, 1), details = _reply_body[0];
+                                _reply_body = (0, $j0dGC$_5)(reply.body, 1), details = _reply_body[0];
                                 // apparently, details can be undefined
                                 if (!details) return [
                                     2,
@@ -3987,7 +3964,7 @@ var $2a2076bfbea7a68e$export$536c67bf76d43cfb = /*#__PURE__*/ function() {
                                 rightLabel = parts.map(function(d) {
                                     return d.text;
                                 }).join("");
-                                actionDesc = suggestion.hasAction && ((_a = details.codeActions) === null || _a === void 0 ? void 0 : _a.length) === 1 ? "".concat(details.codeActions[0].description, "\n\n") : "";
+                                actionDesc = suggestion.hasAction && ((_details_codeActions = details.codeActions) === null || _details_codeActions === void 0 ? void 0 : _details_codeActions.length) === 1 ? "".concat(details.codeActions[0].description, "\n\n") : "";
                                 if (actionDesc) rightLabel = actionDesc;
                                 description = actionDesc + details.displayParts.map(function(d) {
                                     return d.text;
@@ -4001,7 +3978,7 @@ var $2a2076bfbea7a68e$export$536c67bf76d43cfb = /*#__PURE__*/ function() {
                                 });
                                 return [
                                     2,
-                                    (0, $8qw4J$swchelperscjs_object_spread_propscjs._)((0, $8qw4J$swchelperscjs_object_spreadcjs._)({}, suggestion), {
+                                    (0, $j0dGC$_11)((0, $j0dGC$_4)({}, suggestion), {
                                         details: details,
                                         rightLabel: rightLabel,
                                         description: description
@@ -4025,16 +4002,16 @@ var $2a2076bfbea7a68e$export$536c67bf76d43cfb = /*#__PURE__*/ function() {
             key: "getSuggestionsWithCache",
             value: // Try to reuse the last completions we got from tsserver if they're for the same position.
             function getSuggestionsWithCache(_0) {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function(param) {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function(param) {
                     var prefix, location, triggerCharacter, activatedManually, lastLoc, lastCol, thisCol, client, suggestions;
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
                                 prefix = param.prefix, location = param.location, triggerCharacter = param.triggerCharacter, activatedManually = param.activatedManually;
                                 if (this.lastSuggestions && !activatedManually) {
                                     lastLoc = this.lastSuggestions.location;
-                                    lastCol = $2a2076bfbea7a68e$var$getNormalizedCol(this.lastSuggestions.prefix, lastLoc.offset);
-                                    thisCol = $2a2076bfbea7a68e$var$getNormalizedCol(prefix, location.offset);
+                                    lastCol = $82009c0d32a0c9d0$var$getNormalizedCol(this.lastSuggestions.prefix, lastLoc.offset);
+                                    thisCol = $82009c0d32a0c9d0$var$getNormalizedCol(prefix, location.offset);
                                     if (lastLoc.file === location.file && lastLoc.line === location.line && lastCol === thisCol) {
                                         if (this.lastSuggestions.suggestions.length !== 0) return [
                                             2,
@@ -4050,7 +4027,7 @@ var $2a2076bfbea7a68e$export$536c67bf76d43cfb = /*#__PURE__*/ function() {
                                 client = _state.sent();
                                 return [
                                     4,
-                                    $2a2076bfbea7a68e$var$getSuggestionsInternal({
+                                    $82009c0d32a0c9d0$var$getSuggestionsInternal({
                                         client: client,
                                         location: location,
                                         triggerCharacter: activatedManually ? undefined : triggerCharacter
@@ -4077,10 +4054,10 @@ var $2a2076bfbea7a68e$export$536c67bf76d43cfb = /*#__PURE__*/ function() {
     ]);
     return AutocompleteProvider;
 }();
-function $2a2076bfbea7a68e$var$getSuggestionsInternal(_0) {
-    return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function(param) {
-        var client, location, triggerCharacter, _a, completions, completions1;
-        return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+function $82009c0d32a0c9d0$var$getSuggestionsInternal(_0) {
+    return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function(param) {
+        var client, location, triggerCharacter, _completions_body, completions, completions1;
+        return (0, $j0dGC$_1)(this, function(_state) {
             switch(_state.label){
                 case 0:
                     client = param.client, location = param.location, triggerCharacter = param.triggerCharacter;
@@ -4090,7 +4067,7 @@ function $2a2076bfbea7a68e$var$getSuggestionsInternal(_0) {
                     ];
                     return [
                         4,
-                        client.execute("completionInfo", (0, $8qw4J$swchelperscjs_object_spreadcjs._)({
+                        client.execute("completionInfo", (0, $j0dGC$_4)({
                             includeExternalModuleExports: false,
                             includeInsertTextCompletions: true,
                             triggerCharacter: triggerCharacter
@@ -4100,12 +4077,12 @@ function $2a2076bfbea7a68e$var$getSuggestionsInternal(_0) {
                     completions = _state.sent();
                     return [
                         2,
-                        completions.body.entries.map($2a2076bfbea7a68e$var$completionEntryToSuggestion.bind(null, (_a = completions.body) === null || _a === void 0 ? void 0 : _a.isMemberCompletion))
+                        completions.body.entries.map($82009c0d32a0c9d0$var$completionEntryToSuggestion.bind(null, (_completions_body = completions.body) === null || _completions_body === void 0 ? void 0 : _completions_body.isMemberCompletion))
                     ];
                 case 2:
                     return [
                         4,
-                        client.execute("completions", (0, $8qw4J$swchelperscjs_object_spreadcjs._)({
+                        client.execute("completions", (0, $j0dGC$_4)({
                             includeExternalModuleExports: false,
                             includeInsertTextCompletions: true
                         }, location))
@@ -4114,7 +4091,7 @@ function $2a2076bfbea7a68e$var$getSuggestionsInternal(_0) {
                     completions1 = _state.sent();
                     return [
                         2,
-                        completions1.body.map($2a2076bfbea7a68e$var$completionEntryToSuggestion.bind(null, undefined))
+                        completions1.body.map($82009c0d32a0c9d0$var$completionEntryToSuggestion.bind(null, undefined))
                     ];
                 case 4:
                     return [
@@ -4125,9 +4102,9 @@ function $2a2076bfbea7a68e$var$getSuggestionsInternal(_0) {
     }).apply(this, arguments);
 }
 // this should more or less match ES6 specification for valid identifiers
-var $2a2076bfbea7a68e$var$identifierMatch = RegExp("(?:(?![\\u{10000}-\\u{10FFFF}])[\\$_\\p{Lu}\\p{Ll}\\p{Lt}\\p{Lm}\\p{Lo}\\p{Nl}])(?:(?![\\u{10000}-\\u{10FFFF}])[\\$_\\p{Lu}\\p{Ll}\\p{Lt}\\p{Lm}\\p{Lo}\\p{Nl}\\u200C\\u200D\\p{Mn}\\p{Mc}\\p{Nd}\\p{Pc}])*$", "u");
+var $82009c0d32a0c9d0$var$identifierMatch = RegExp("(?:(?![\\u{10000}-\\u{10FFFF}])[$_\\p{Lu}\\p{Ll}\\p{Lt}\\p{Lm}\\p{Lo}\\p{Nl}])(?:(?![\\u{10000}-\\u{10FFFF}])[$_\\p{Lu}\\p{Ll}\\p{Lt}\\p{Lm}\\p{Lo}\\p{Nl}\\u200C\\u200D\\p{Mn}\\p{Mc}\\p{Nd}\\p{Pc}])*$", "u");
 // Decide what needs to be replaced in the editor buffer when inserting the completion
-function $2a2076bfbea7a68e$var$getPrefix(opts) {
+function $82009c0d32a0c9d0$var$getPrefix(opts) {
     // see https://github.com/TypeStrong/atom-typescript/issues/1528
     // for the motivating example.
     var line = opts.editor.getBuffer().getTextInRange([
@@ -4137,17 +4114,17 @@ function $2a2076bfbea7a68e$var$getPrefix(opts) {
         ],
         opts.bufferPosition
     ]);
-    var idMatch = line.match($2a2076bfbea7a68e$var$identifierMatch);
+    var idMatch = line.match($82009c0d32a0c9d0$var$identifierMatch);
     if (idMatch) return idMatch[0];
     else return "";
 }
 // When the user types each character in ".hello", we want to normalize the column such that it's
 // the same for every invocation of the getSuggestions. In this case, it would be right after "."
-function $2a2076bfbea7a68e$var$getNormalizedCol(prefix, col) {
+function $82009c0d32a0c9d0$var$getNormalizedCol(prefix, col) {
     var length = prefix === "." ? 0 : prefix.length;
     return col - length;
 }
-function $2a2076bfbea7a68e$var$getLocationQuery(opts) {
+function $82009c0d32a0c9d0$var$getLocationQuery(opts) {
     var path = opts.editor.getPath();
     if (path === undefined) return undefined;
     return {
@@ -4156,9 +4133,9 @@ function $2a2076bfbea7a68e$var$getLocationQuery(opts) {
         offset: opts.bufferPosition.column + 1
     };
 }
-function $2a2076bfbea7a68e$var$getLastNonWhitespaceChar(buffer, pos) {
+function $82009c0d32a0c9d0$var$getLastNonWhitespaceChar(buffer, pos) {
     var lastChar;
-    var range = new $8qw4J$atom.Range([
+    var range = new $j0dGC$Range([
         0,
         0
     ], pos);
@@ -4169,7 +4146,7 @@ function $2a2076bfbea7a68e$var$getLastNonWhitespaceChar(buffer, pos) {
     });
     return lastChar;
 }
-function $2a2076bfbea7a68e$var$containsScope(scopes, matchScope) {
+function $82009c0d32a0c9d0$var$containsScope(scopes, matchScope) {
     var _iteratorNormalCompletion = true, _didIteratorError = false, _iteratorError = undefined;
     try {
         for(var _iterator = scopes[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true){
@@ -4192,13 +4169,13 @@ function $2a2076bfbea7a68e$var$containsScope(scopes, matchScope) {
     }
     return false;
 }
-function $2a2076bfbea7a68e$var$completionEntryToSuggestion(isMemberCompletion, entry) {
+function $82009c0d32a0c9d0$var$completionEntryToSuggestion(isMemberCompletion, entry) {
     return {
         displayText: entry.name,
         text: entry.insertText !== undefined ? entry.insertText : entry.name,
         leftLabel: entry.kind,
-        replacementRange: entry.replacementSpan ? (0, $ee93806a41573bb4$export$477d491a08b070ec)(entry.replacementSpan) : undefined,
-        type: $2a2076bfbea7a68e$var$kindMap[entry.kind],
+        replacementRange: entry.replacementSpan ? (0, $ee2d752c6bad64f9$export$477d491a08b070ec)(entry.replacementSpan) : undefined,
+        type: $82009c0d32a0c9d0$var$kindMap[entry.kind],
         isMemberCompletion: isMemberCompletion,
         identifier: entry.source !== undefined ? {
             name: entry.name,
@@ -4207,7 +4184,7 @@ function $2a2076bfbea7a68e$var$completionEntryToSuggestion(isMemberCompletion, e
         hasAction: entry.hasAction
     };
 }
-function $2a2076bfbea7a68e$var$parens(opts) {
+function $82009c0d32a0c9d0$var$parens(opts) {
     var buffer = opts.editor.getBuffer();
     var pt = opts.bufferPosition;
     var lookahead = buffer.getTextInRange([
@@ -4219,17 +4196,17 @@ function $2a2076bfbea7a68e$var$parens(opts) {
     ]);
     return !!lookahead.match(/\s*\(/);
 }
-function $2a2076bfbea7a68e$var$addCallableParens(opts, s) {
+function $82009c0d32a0c9d0$var$addCallableParens(opts, s) {
     if (atom.config.get("atom-typescript-updated.autocompleteParens") && [
         "function",
         "method"
-    ].includes(s.leftLabel) && !$2a2076bfbea7a68e$var$parens(opts)) return (0, $8qw4J$swchelperscjs_object_spread_propscjs._)((0, $8qw4J$swchelperscjs_object_spreadcjs._)({}, s), {
+    ].includes(s.leftLabel) && !$82009c0d32a0c9d0$var$parens(opts)) return (0, $j0dGC$_11)((0, $j0dGC$_4)({}, s), {
         snippet: "".concat(s.text, "($1)"),
         text: undefined
     });
     else return s;
 }
-var $2a2076bfbea7a68e$var$kindMap = {
+var $82009c0d32a0c9d0$var$kindMap = {
     directory: "require",
     module: "import",
     "external module name": "import",
@@ -4266,7 +4243,7 @@ var $2a2076bfbea7a68e$var$kindMap = {
     construct: undefined
 };
 // This may look strange, but it guarantees the list is consistent with the type
-var $2a2076bfbea7a68e$var$triggerCharactersMap = {
+var $82009c0d32a0c9d0$var$triggerCharactersMap = {
     ".": null,
     '"': null,
     "'": null,
@@ -4276,12 +4253,12 @@ var $2a2076bfbea7a68e$var$triggerCharactersMap = {
     "<": null,
     "#": null
 };
-var $2a2076bfbea7a68e$var$triggerCharacters = new Set(Object.keys($2a2076bfbea7a68e$var$triggerCharactersMap));
-function $2a2076bfbea7a68e$var$getTrigger(prefix) {
+var $82009c0d32a0c9d0$var$triggerCharacters = new Set(Object.keys($82009c0d32a0c9d0$var$triggerCharactersMap));
+function $82009c0d32a0c9d0$var$getTrigger(prefix) {
     if (prefix === undefined) return undefined;
     if (!prefix) return undefined;
     var c = prefix.slice(-1);
-    if ($2a2076bfbea7a68e$var$triggerCharacters.has(c)) return c;
+    if ($82009c0d32a0c9d0$var$triggerCharacters.has(c)) return c;
     return undefined;
 }
 
@@ -4301,16 +4278,16 @@ function $2a2076bfbea7a68e$var$getTrigger(prefix) {
 
 
 
-(0, $095c7bfbba93f9a3$export$35e8f4a3c2d7c0da)("atom-text-editor", "typescript:refactor-selection", function(deps) {
+(0, $011f9689c199e25f$export$35e8f4a3c2d7c0da)("atom-text-editor", "typescript:refactor-selection", function(deps) {
     return {
         description: "Get a list of applicable refactors to selected code",
         didDispatch: function(editor) {
-            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+            return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                 var location, selection, client, fileRange, actions, selectedAction;
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (0, $j0dGC$_1)(this, function(_state) {
                     switch(_state.label){
                         case 0:
-                            location = (0, $7580a2909a181bf5$export$f25e34a2b31a939c)(editor);
+                            location = (0, $47ae2d5cb2e495d2$export$f25e34a2b31a939c)(editor);
                             if (!location) return [
                                 2
                             ];
@@ -4330,7 +4307,7 @@ function $2a2076bfbea7a68e$var$getTrigger(prefix) {
                             };
                             return [
                                 4,
-                                $26fcb69652a12722$export$724868632c285078(client, fileRange)
+                                $ce87052f039e46c8$export$724868632c285078(client, fileRange)
                             ];
                         case 2:
                             actions = _state.sent();
@@ -4342,10 +4319,10 @@ function $2a2076bfbea7a68e$var$getTrigger(prefix) {
                             }
                             return [
                                 4,
-                                (0, $f55d59ecd155c40a$export$12cb8c60c107136e)({
+                                (0, $0be5325d1bf82077$export$12cb8c60c107136e)({
                                     items: actions,
                                     itemTemplate: function(item, ctx) {
-                                        return $8qw4J$etch.dom("li", null, $8qw4J$etch.dom((0, $5f8857790714307e$export$31d5f5740e2c2887), {
+                                        return $j0dGC$dom("li", null, $j0dGC$dom((0, $a3783a40399b9047$export$31d5f5740e2c2887), {
                                             label: "".concat(item.refactorDescription, ": ").concat(item.actionDescription),
                                             query: ctx.getFilterQuery()
                                         }));
@@ -4360,7 +4337,7 @@ function $2a2076bfbea7a68e$var$getTrigger(prefix) {
                             ];
                             return [
                                 4,
-                                $26fcb69652a12722$export$5522d657b0b2f30(selectedAction, client, deps)
+                                $ce87052f039e46c8$export$5522d657b0b2f30(selectedAction, client, deps)
                             ];
                         case 4:
                             _state.sent();
@@ -4373,15 +4350,15 @@ function $2a2076bfbea7a68e$var$getTrigger(prefix) {
         }
     };
 });
-function $26fcb69652a12722$export$724868632c285078(client, pointOrRange) {
-    return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+function $ce87052f039e46c8$export$724868632c285078(client, pointOrRange) {
+    return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
         var responseApplicable, actions, _iteratorNormalCompletion, _didIteratorError, _iteratorError, _iteratorNormalCompletion1, _didIteratorError1, _iteratorError1, _iterator, _step, refactor, _iterator1, _step1, action;
-        return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+        return (0, $j0dGC$_1)(this, function(_state) {
             switch(_state.label){
                 case 0:
                     return [
                         4,
-                        $26fcb69652a12722$var$getApplicabeRefactors(client, pointOrRange)
+                        $ce87052f039e46c8$var$getApplicabeRefactors(client, pointOrRange)
                     ];
                 case 1:
                     responseApplicable = _state.sent();
@@ -4447,10 +4424,10 @@ function $26fcb69652a12722$export$724868632c285078(client, pointOrRange) {
         });
     })();
 }
-function $26fcb69652a12722$var$getApplicabeRefactors(client, pointOrRange) {
-    return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-        var _a;
-        return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+function $ce87052f039e46c8$var$getApplicabeRefactors(client, pointOrRange) {
+    return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+        var e;
+        return (0, $j0dGC$_1)(this, function(_state) {
             switch(_state.label){
                 case 0:
                     _state.trys.push([
@@ -4461,7 +4438,7 @@ function $26fcb69652a12722$var$getApplicabeRefactors(client, pointOrRange) {
                     ]);
                     return [
                         4,
-                        client.execute("getApplicableRefactors", (0, $8qw4J$swchelperscjs_object_spreadcjs._)({
+                        client.execute("getApplicableRefactors", (0, $j0dGC$_4)({
                             triggerReason: "invoked"
                         }, pointOrRange))
                     ];
@@ -4471,7 +4448,7 @@ function $26fcb69652a12722$var$getApplicabeRefactors(client, pointOrRange) {
                         _state.sent()
                     ];
                 case 2:
-                    _a = _state.sent();
+                    e = _state.sent();
                     return [
                         2,
                         undefined
@@ -4484,15 +4461,15 @@ function $26fcb69652a12722$var$getApplicabeRefactors(client, pointOrRange) {
         });
     })();
 }
-function $26fcb69652a12722$export$5522d657b0b2f30(selectedAction, client, deps) {
-    return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+function $ce87052f039e46c8$export$5522d657b0b2f30(selectedAction, client, deps) {
+    return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
         var responseEdits, _responseEdits_body, edits, renameFilename, renameLocation, editor;
-        return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+        return (0, $j0dGC$_1)(this, function(_state) {
             switch(_state.label){
                 case 0:
                     return [
                         4,
-                        client.execute("getEditsForRefactor", (0, $8qw4J$swchelperscjs_object_spread_propscjs._)((0, $8qw4J$swchelperscjs_object_spreadcjs._)({}, selectedAction.refactorRange), {
+                        client.execute("getEditsForRefactor", (0, $j0dGC$_11)((0, $j0dGC$_4)({}, selectedAction.refactorRange), {
                             refactor: selectedAction.refactorName,
                             action: selectedAction.actionName
                         }))
@@ -4538,22 +4515,22 @@ function $26fcb69652a12722$export$5522d657b0b2f30(selectedAction, client, deps) 
 
 
 
-var $e0bcaafd270c879a$export$9262ee226e3cab9d = /*#__PURE__*/ function() {
+var $8bcf7726b44fc4f6$export$9262ee226e3cab9d = /*#__PURE__*/ function() {
     "use strict";
     function CodefixProvider(clientResolver, errorPusher, applyEdits) {
-        (0, $8qw4J$swchelperscjs_class_call_checkcjs._)(this, CodefixProvider);
+        (0, $j0dGC$_2)(this, CodefixProvider);
         this.clientResolver = clientResolver;
         this.errorPusher = errorPusher;
         this.applyEdits = applyEdits;
         this.supportedFixes = new WeakMap();
     }
-    (0, $8qw4J$swchelperscjs_create_classcjs._)(CodefixProvider, [
+    (0, $j0dGC$_3)(CodefixProvider, [
         {
             key: "getFixableRanges",
             value: function getFixableRanges(textEditor, range) {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                     var filePath, errors, client, supportedCodes, ranges;
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
                                 filePath = textEditor.getPath();
@@ -4577,7 +4554,7 @@ var $e0bcaafd270c879a$export$9262ee226e3cab9d = /*#__PURE__*/ function() {
                                 ranges = Array.from(errors).filter(function(error) {
                                     return error.code !== undefined && supportedCodes.has(error.code);
                                 }).map(function(error) {
-                                    return (0, $ee93806a41573bb4$export$477d491a08b070ec)(error);
+                                    return (0, $ee2d752c6bad64f9$export$477d491a08b070ec)(error);
                                 });
                                 return [
                                     2,
@@ -4591,9 +4568,9 @@ var $e0bcaafd270c879a$export$9262ee226e3cab9d = /*#__PURE__*/ function() {
         {
             key: "runCodeFix",
             value: function runCodeFix(textEditor, bufferPosition) {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                     var _results, filePath, client, supportedCodes, requests, fixes, results, _iteratorNormalCompletion, _didIteratorError, _iteratorError, _iterator, _step, result, _iteratorNormalCompletion1, _didIteratorError1, _iteratorError1, _iterator1, _step1, fix, refactors;
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
                                 filePath = textEditor.getPath();
@@ -4675,13 +4652,13 @@ var $e0bcaafd270c879a$export$9262ee226e3cab9d = /*#__PURE__*/ function() {
                                 }
                                 return [
                                     4,
-                                    (0, $26fcb69652a12722$export$724868632c285078)(client, (0, $8qw4J$swchelperscjs_object_spreadcjs._)({
+                                    (0, $ce87052f039e46c8$export$724868632c285078)(client, (0, $j0dGC$_4)({
                                         file: filePath
-                                    }, (0, $ee93806a41573bb4$export$9978d8c48293dc72)(bufferPosition)))
+                                    }, (0, $ee2d752c6bad64f9$export$9978d8c48293dc72)(bufferPosition)))
                                 ];
                             case 4:
                                 refactors = _state.sent();
-                                (_results = results).push.apply(_results, (0, $8qw4J$swchelperscjs_to_consumable_arraycjs._)(refactors));
+                                (_results = results).push.apply(_results, (0, $j0dGC$_6)(refactors));
                                 return [
                                     2,
                                     results
@@ -4694,9 +4671,9 @@ var $e0bcaafd270c879a$export$9262ee226e3cab9d = /*#__PURE__*/ function() {
         {
             key: "applyFix",
             value: function applyFix(fix) {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                     var client;
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
                                 if (!("changes" in fix)) return [
@@ -4716,7 +4693,7 @@ var $e0bcaafd270c879a$export$9262ee226e3cab9d = /*#__PURE__*/ function() {
                                 client = _state.sent();
                                 return [
                                     2,
-                                    (0, $26fcb69652a12722$export$5522d657b0b2f30)(fix, client, {
+                                    (0, $ce87052f039e46c8$export$5522d657b0b2f30)(fix, client, {
                                         applyEdits: this.applyEdits
                                     })
                                 ];
@@ -4738,9 +4715,9 @@ var $e0bcaafd270c879a$export$9262ee226e3cab9d = /*#__PURE__*/ function() {
         {
             key: "getSupportedFixes",
             value: function getSupportedFixes(client) {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                     var codes, result;
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
                                 codes = this.supportedFixes.get(client);
@@ -4778,15 +4755,15 @@ var $e0bcaafd270c879a$export$9262ee226e3cab9d = /*#__PURE__*/ function() {
 
 
 
-function $a4b711801eb3f0ef$export$c0ac1f0dd4073b70(codefixProvider) {
+function $f335a673678f02eb$export$c0ac1f0dd4073b70(codefixProvider) {
     return {
         grammarScopes: [
             "*"
         ],
         getIntentions: function(_0) {
-            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function(param) {
+            return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function(param) {
                 var bufferPosition, textEditor;
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (0, $j0dGC$_1)(this, function(_state) {
                     switch(_state.label){
                         case 0:
                             bufferPosition = param.bufferPosition, textEditor = param.textEditor;
@@ -4802,7 +4779,7 @@ function $a4b711801eb3f0ef$export$c0ac1f0dd4073b70(codefixProvider) {
                                         priority: 100,
                                         title: "description" in fix ? fix.description : fix.actionDescription,
                                         selected: function() {
-                                            (0, $2893351583386024$export$8080b7556d9d6445)(codefixProvider.applyFix(fix));
+                                            (0, $e61b31fac60530e8$export$8080b7556d9d6445)(codefixProvider.applyFix(fix));
                                         }
                                     };
                                 })
@@ -4813,15 +4790,15 @@ function $a4b711801eb3f0ef$export$c0ac1f0dd4073b70(codefixProvider) {
         }
     };
 }
-function $a4b711801eb3f0ef$export$bbfa3896d0c562e(codefixProvider) {
+function $f335a673678f02eb$export$bbfa3896d0c562e(codefixProvider) {
     return {
         grammarScopes: [
             "*"
         ],
         getIntentions: function(_0) {
-            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function(param) {
+            return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function(param) {
                 var visibleRange, textEditor;
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (0, $j0dGC$_1)(this, function(_state) {
                     switch(_state.label){
                         case 0:
                             visibleRange = param.visibleRange, textEditor = param.textEditor;
@@ -4860,13 +4837,13 @@ function $a4b711801eb3f0ef$export$bbfa3896d0c562e(codefixProvider) {
 
 
 
-(0, $095c7bfbba93f9a3$export$35e8f4a3c2d7c0da)("atom-text-editor", "typescript:build", function(deps) {
+(0, $011f9689c199e25f$export$35e8f4a3c2d7c0da)("atom-text-editor", "typescript:build", function(deps) {
     return {
         description: "Compile all files in project related to current active text editor",
         didDispatch: function(editor) {
-            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+            return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                 var file, client, projectInfo, files, filesSoFar, promises, results, error, err;
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (0, $j0dGC$_1)(this, function(_state) {
                     switch(_state.label){
                         case 0:
                             file = editor.getPath();
@@ -4892,8 +4869,8 @@ function $a4b711801eb3f0ef$export$bbfa3896d0c562e(codefixProvider) {
                             files = new Set(projectInfo.body.fileNames);
                             files["delete"](projectInfo.body.configFileName);
                             filesSoFar = 0;
-                            promises = (0, $8qw4J$swchelperscjs_to_consumable_arraycjs._)(files.values()).map(function(f) {
-                                return $8006872929ecb29e$var$_finally(client.execute("compileOnSaveEmitFile", {
+                            promises = (0, $j0dGC$_6)(files.values()).map(function(f) {
+                                return $967513901adc4a39$var$_finally(client.execute("compileOnSaveEmitFile", {
                                     file: f,
                                     forced: true
                                 }), function() {
@@ -4950,7 +4927,7 @@ function $a4b711801eb3f0ef$export$bbfa3896d0c562e(codefixProvider) {
         }
     };
 });
-function $8006872929ecb29e$var$_finally(promise, callback) {
+function $967513901adc4a39$var$_finally(promise, callback) {
     promise.then(callback, callback);
     return promise;
 }
@@ -4960,13 +4937,13 @@ function $8006872929ecb29e$var$_finally(promise, callback) {
 
 
 
-(0, $095c7bfbba93f9a3$export$35e8f4a3c2d7c0da)("atom-text-editor", "typescript:check-all-files", function(deps) {
+(0, $011f9689c199e25f$export$35e8f4a3c2d7c0da)("atom-text-editor", "typescript:check-all-files", function(deps) {
     return {
         description: "Typecheck all files in project related to current active text editor",
         didDispatch: function(editor) {
-            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                var _a, file, client, projectInfo, files, max, disp, cancelTimeout, disp1;
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+            return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                var _projectInfo_body_fileNames, file, client, projectInfo, files, max, disp, cancelTimeout, disp1;
+                return (0, $j0dGC$_1)(this, function(_state) {
                     switch(_state.label){
                         case 0:
                             file = editor.getPath();
@@ -4988,9 +4965,9 @@ function $8006872929ecb29e$var$_finally(promise, callback) {
                             ];
                         case 2:
                             projectInfo = _state.sent();
-                            files = new Set((_a = projectInfo.body.fileNames) === null || _a === void 0 ? void 0 : _a.filter(function(fn) {
+                            files = new Set((_projectInfo_body_fileNames = projectInfo.body.fileNames) === null || _projectInfo_body_fileNames === void 0 ? void 0 : _projectInfo_body_fileNames.filter(function(fn) {
                                 return(// filter out obvious potholes
-                                !fn.endsWith("tsconfig.json") && !fn.includes("".concat($8qw4J$path.sep, "node_modules").concat($8qw4J$path.sep)));
+                                !fn.endsWith("tsconfig.json") && !fn.includes("".concat($j0dGC$sep, "node_modules").concat($j0dGC$sep)));
                             }));
                             max = files.size;
                             if (!client.multistepSupported) return [
@@ -5070,7 +5047,7 @@ function $8006872929ecb29e$var$_finally(promise, callback) {
 
 
 
-(0, $095c7bfbba93f9a3$export$35e8f4a3c2d7c0da)("atom-workspace", "typescript:clear-errors", function(deps) {
+(0, $011f9689c199e25f$export$35e8f4a3c2d7c0da)("atom-workspace", "typescript:clear-errors", function(deps) {
     return {
         description: "Clear error messages",
         didDispatch: function() {
@@ -5088,13 +5065,13 @@ function $8006872929ecb29e$var$_finally(promise, callback) {
 
 
 
-(0, $095c7bfbba93f9a3$export$35e8f4a3c2d7c0da)("atom-text-editor", "typescript:format-code", function(deps) {
+(0, $011f9689c199e25f$export$35e8f4a3c2d7c0da)("atom-text-editor", "typescript:format-code", function(deps) {
     return {
         description: "Format code in currently active text editor",
         didDispatch: function(editor) {
-            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+            return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                 var filePath, ranges, _iteratorNormalCompletion, _didIteratorError, _iteratorError, _iterator, _step, selection, end, client, edits, _iteratorNormalCompletion1, _didIteratorError1, _iteratorError1, _iterator1, _step1, range, _edits, result, err;
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (0, $j0dGC$_1)(this, function(_state) {
                     switch(_state.label){
                         case 0:
                             filePath = editor.getPath();
@@ -5106,7 +5083,7 @@ function $8006872929ecb29e$var$_finally(promise, callback) {
                             try {
                                 for(_iterator = editor.getSelectedBufferRanges()[Symbol.iterator](); !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true){
                                     selection = _step.value;
-                                    if (!selection.isEmpty()) ranges.push((0, $ee93806a41573bb4$export$430a7b9c6c8900f6)(selection));
+                                    if (!selection.isEmpty()) ranges.push((0, $ee2d752c6bad64f9$export$430a7b9c6c8900f6)(selection));
                                 }
                             } catch (err) {
                                 _didIteratorError = true;
@@ -5158,13 +5135,13 @@ function $8006872929ecb29e$var$_finally(promise, callback) {
                             range = _step1.value;
                             return [
                                 4,
-                                client.execute("format", (0, $8qw4J$swchelperscjs_object_spread_propscjs._)((0, $8qw4J$swchelperscjs_object_spreadcjs._)({}, range), {
+                                client.execute("format", (0, $j0dGC$_11)((0, $j0dGC$_4)({}, range), {
                                     file: filePath
                                 }))
                             ];
                         case 4:
                             result = _state.sent();
-                            if (result.body) (_edits = edits).push.apply(_edits, (0, $8qw4J$swchelperscjs_to_consumable_arraycjs._)(result.body));
+                            if (result.body) (_edits = edits).push.apply(_edits, (0, $j0dGC$_6)(result.body));
                             _state.label = 5;
                         case 5:
                             _iteratorNormalCompletion1 = true;
@@ -5200,7 +5177,7 @@ function $8006872929ecb29e$var$_finally(promise, callback) {
                             ];
                         case 9:
                             if (edits.length > 0) editor.transact(function() {
-                                $585c4a318f71f147$var$formatCode(editor, edits);
+                                $e1945497aae899e1$var$formatCode(editor, edits);
                             });
                             return [
                                 2
@@ -5211,9 +5188,9 @@ function $8006872929ecb29e$var$_finally(promise, callback) {
         }
     };
 });
-function $585c4a318f71f147$var$formatCode(editor, edits) {
+function $e1945497aae899e1$var$formatCode(editor, edits) {
     // The code edits need to be applied in reverse order
-    for(var i = edits.length - 1; i >= 0; i--)editor.setTextInBufferRange((0, $ee93806a41573bb4$export$477d491a08b070ec)(edits[i]), edits[i].newText);
+    for(var i = edits.length - 1; i >= 0; i--)editor.setTextInBufferRange((0, $ee2d752c6bad64f9$export$477d491a08b070ec)(edits[i]), edits[i].newText);
 }
 
 
@@ -5223,13 +5200,13 @@ function $585c4a318f71f147$var$formatCode(editor, edits) {
 
 
 
-(0, $095c7bfbba93f9a3$export$35e8f4a3c2d7c0da)("atom-text-editor", "typescript:initialize-config", function() {
+(0, $011f9689c199e25f$export$35e8f4a3c2d7c0da)("atom-text-editor", "typescript:initialize-config", function() {
     return {
         description: "Create tsconfig.json in the project related to currently-active text edtior",
         didDispatch: function(editor, abort) {
-            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+            return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                 var projectDirs, currentPath, pathToTsc, _iteratorNormalCompletion, _didIteratorError, _iteratorError, _iterator, _step, projectDir, err;
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (0, $j0dGC$_1)(this, function(_state) {
                     switch(_state.label){
                         case 0:
                             projectDirs = atom.project.getDirectories();
@@ -5243,7 +5220,7 @@ function $585c4a318f71f147$var$formatCode(editor, edits) {
                             ];
                             return [
                                 4,
-                                (0, $c628f355f099b93a$export$369fb36245591db0)(currentPath, "tsc")
+                                (0, $72d690c724d8b3e8$export$369fb36245591db0)(currentPath, "tsc")
                             ];
                         case 1:
                             pathToTsc = _state.sent().pathToBin;
@@ -5270,7 +5247,7 @@ function $585c4a318f71f147$var$formatCode(editor, edits) {
                             ];
                             return [
                                 4,
-                                $07795ade26c8b8d0$var$initConfig(pathToTsc, projectDir.getPath())
+                                $4e4eb5f1842c7489$var$initConfig(pathToTsc, projectDir.getPath())
                             ];
                         case 4:
                             _state.sent();
@@ -5318,10 +5295,10 @@ function $585c4a318f71f147$var$formatCode(editor, edits) {
         }
     };
 });
-function $07795ade26c8b8d0$var$initConfig(tsc, projectRoot) {
-    return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+function $4e4eb5f1842c7489$var$initConfig(tsc, projectRoot) {
+    return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
         var disp;
-        return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+        return (0, $j0dGC$_1)(this, function(_state) {
             switch(_state.label){
                 case 0:
                     _state.trys.push([
@@ -5334,7 +5311,7 @@ function $07795ade26c8b8d0$var$initConfig(tsc, projectRoot) {
                         4,
                         new Promise(function(resolve, reject) {
                             try {
-                                var bnp = new (0, $8qw4J$atom.BufferedNodeProcess)({
+                                var bnp = new (0, $j0dGC$BufferedNodeProcess)({
                                     command: tsc,
                                     args: [
                                         "--init"
@@ -5376,13 +5353,13 @@ function $07795ade26c8b8d0$var$initConfig(tsc, projectRoot) {
 
 
 
-(0, $095c7bfbba93f9a3$export$35e8f4a3c2d7c0da)("atom-text-editor", "typescript:organize-imports", function(deps) {
+(0, $011f9689c199e25f$export$35e8f4a3c2d7c0da)("atom-text-editor", "typescript:organize-imports", function(deps) {
     return {
         description: "Organize module imports",
         didDispatch: function(editor) {
-            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+            return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                 var filePath, client, result;
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (0, $j0dGC$_1)(this, function(_state) {
                     switch(_state.label){
                         case 0:
                             filePath = editor.getPath();
@@ -5435,13 +5412,13 @@ function $07795ade26c8b8d0$var$initConfig(tsc, projectRoot) {
 
 
 
-(0, $095c7bfbba93f9a3$export$35e8f4a3c2d7c0da)("atom-text-editor", "typescript:reload-projects", function(deps) {
+(0, $011f9689c199e25f$export$35e8f4a3c2d7c0da)("atom-text-editor", "typescript:reload-projects", function(deps) {
     return {
         description: "Reload projects",
         didDispatch: function(editor) {
-            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+            return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                 var path, client;
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (0, $j0dGC$_1)(this, function(_state) {
                     switch(_state.label){
                         case 0:
                             path = editor.getPath();
@@ -5487,10 +5464,10 @@ function $07795ade26c8b8d0$var$initConfig(tsc, projectRoot) {
 
 
 
-var $495f9b8b886fe9a0$export$1224b0b157f2244c = /*#__PURE__*/ function() {
+var $5dab35c82ec412f5$export$1224b0b157f2244c = /*#__PURE__*/ function() {
     "use strict";
     function MiniEditor(props) {
-        (0, $8qw4J$swchelperscjs_class_call_checkcjs._)(this, MiniEditor);
+        (0, $j0dGC$_2)(this, MiniEditor);
         this.props = props;
         this.model = atom.workspace.buildTextEditor({
             mini: true,
@@ -5508,14 +5485,14 @@ var $495f9b8b886fe9a0$export$1224b0b157f2244c = /*#__PURE__*/ function() {
             0
         ]);
     }
-    (0, $8qw4J$swchelperscjs_create_classcjs._)(MiniEditor, [
+    (0, $j0dGC$_3)(MiniEditor, [
         {
             key: "update",
             value: function update(props) {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         this.element = atom.views.getView(this.model);
-                        this.props = (0, $8qw4J$swchelperscjs_object_spreadcjs._)({}, this.props, props);
+                        this.props = (0, $j0dGC$_4)({}, this.props, props);
                         this.setReadOnly();
                         this.setGrammar();
                         return [
@@ -5555,25 +5532,25 @@ var $495f9b8b886fe9a0$export$1224b0b157f2244c = /*#__PURE__*/ function() {
 }();
 
 
-var $8a39902ae655894e$var$RenameView = /*#__PURE__*/ function() {
+var $858897a262ea86ed$var$RenameView = /*#__PURE__*/ function() {
     "use strict";
     function RenameView(props) {
-        (0, $8qw4J$swchelperscjs_class_call_checkcjs._)(this, RenameView);
+        (0, $j0dGC$_2)(this, RenameView);
         this.props = props;
-        $8qw4J$etch.initialize(this);
+        $j0dGC$initialize(this);
     }
-    (0, $8qw4J$swchelperscjs_create_classcjs._)(RenameView, [
+    (0, $j0dGC$_3)(RenameView, [
         {
             key: "update",
             value: function update(props) {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
-                                this.props = (0, $8qw4J$swchelperscjs_object_spreadcjs._)({}, this.props, props);
+                                this.props = (0, $j0dGC$_4)({}, this.props, props);
                                 return [
                                     4,
-                                    $8qw4J$etch.update(this)
+                                    $j0dGC$update(this)
                                 ];
                             case 1:
                                 _state.sent();
@@ -5588,24 +5565,24 @@ var $8a39902ae655894e$var$RenameView = /*#__PURE__*/ function() {
         {
             key: "render",
             value: function render() {
-                return $8qw4J$etch.dom("div", {
+                return $j0dGC$dom("div", {
                     className: "atomts-rename-view",
                     ref: "main"
-                }, $8qw4J$etch.dom("div", {
+                }, $j0dGC$dom("div", {
                     className: "block"
-                }, $8qw4J$etch.dom("div", null, $8qw4J$etch.dom("span", {
+                }, $j0dGC$dom("div", null, $j0dGC$dom("span", {
                     ref: "title"
-                }, this.props.title), $8qw4J$etch.dom("span", {
+                }, this.props.title), $j0dGC$dom("span", {
                     className: "subtle-info-message"
-                }, $8qw4J$etch.dom("span", null, "Close this panel with "), $8qw4J$etch.dom("span", {
+                }, $j0dGC$dom("span", null, "Close this panel with "), $j0dGC$dom("span", {
                     className: "highlight"
-                }, "esc"), $8qw4J$etch.dom("span", null, " key. And commit with the "), $8qw4J$etch.dom("span", {
+                }, "esc"), $j0dGC$dom("span", null, " key. And commit with the "), $j0dGC$dom("span", {
                     className: "highlight"
-                }, "enter"), $8qw4J$etch.dom("span", null, " key."))), $8qw4J$etch.dom("div", {
+                }, "enter"), $j0dGC$dom("span", null, " key."))), $j0dGC$dom("div", {
                     className: "find-container block"
-                }, $8qw4J$etch.dom("div", {
+                }, $j0dGC$dom("div", {
                     className: "editor-container"
-                }, $8qw4J$etch.dom((0, $495f9b8b886fe9a0$export$1224b0b157f2244c), {
+                }, $j0dGC$dom((0, $5dab35c82ec412f5$export$1224b0b157f2244c), {
                     ref: "editor",
                     initialText: this.props.initialText,
                     selectAll: this.props.selectAll
@@ -5615,13 +5592,13 @@ var $8a39902ae655894e$var$RenameView = /*#__PURE__*/ function() {
         {
             key: "destroy",
             value: function destroy() {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
                                 return [
                                     4,
-                                    $8qw4J$etch.destroy(this)
+                                    $j0dGC$destroy(this)
                                 ];
                             case 1:
                                 _state.sent();
@@ -5648,7 +5625,7 @@ var $8a39902ae655894e$var$RenameView = /*#__PURE__*/ function() {
         {
             key: "renderValidationMessage",
             value: function renderValidationMessage() {
-                if (this.props.validationMessage !== undefined) return $8qw4J$etch.dom("div", {
+                if (this.props.validationMessage !== undefined) return $j0dGC$dom("div", {
                     className: "highlight-error"
                 }, this.props.validationMessage);
                 return null;
@@ -5657,13 +5634,13 @@ var $8a39902ae655894e$var$RenameView = /*#__PURE__*/ function() {
     ]);
     return RenameView;
 }();
-function $8a39902ae655894e$export$530eb201df098d49(options) {
-    return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+function $858897a262ea86ed$export$530eb201df098d49(options) {
+    return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
         var item, panel, currentFocus, disposables;
-        return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+        return (0, $j0dGC$_1)(this, function(_state) {
             switch(_state.label){
                 case 0:
-                    item = new $8a39902ae655894e$var$RenameView({
+                    item = new $858897a262ea86ed$var$RenameView({
                         title: options.title,
                         initialText: options.text,
                         selectAll: options.autoSelect
@@ -5674,7 +5651,7 @@ function $8a39902ae655894e$export$530eb201df098d49(options) {
                     });
                     currentFocus = document.activeElement;
                     item.focus();
-                    disposables = new (0, $8qw4J$atom.CompositeDisposable)();
+                    disposables = new (0, $j0dGC$CompositeDisposable)();
                     _state.label = 1;
                 case 1:
                     _state.trys.push([
@@ -5694,7 +5671,7 @@ function $8a39902ae655894e$export$530eb201df098d49(options) {
                                     var newText = item.getText();
                                     var invalid = options.onValidate(newText);
                                     if (invalid) {
-                                        (0, $2893351583386024$export$8080b7556d9d6445)(item.update({
+                                        (0, $e61b31fac60530e8$export$8080b7556d9d6445)(item.update({
                                             validationMessage: invalid
                                         }));
                                         return;
@@ -5727,13 +5704,13 @@ function $8a39902ae655894e$export$530eb201df098d49(options) {
 
 
 
-(0, $095c7bfbba93f9a3$export$35e8f4a3c2d7c0da)("atom-text-editor", "typescript:rename-file", function(deps) {
+(0, $011f9689c199e25f$export$35e8f4a3c2d7c0da)("atom-text-editor", "typescript:rename-file", function(deps) {
     return {
         description: "Rename current file",
         didDispatch: function(editor) {
-            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+            return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                 var location, newLocation, client, response;
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (0, $j0dGC$_1)(this, function(_state) {
                     switch(_state.label){
                         case 0:
                             location = editor.getPath();
@@ -5742,7 +5719,7 @@ function $8a39902ae655894e$export$530eb201df098d49(options) {
                             ];
                             return [
                                 4,
-                                (0, $8a39902ae655894e$export$530eb201df098d49)({
+                                (0, $858897a262ea86ed$export$530eb201df098d49)({
                                     autoSelect: true,
                                     title: "Rename File",
                                     text: location,
@@ -5781,7 +5758,7 @@ function $8a39902ae655894e$export$530eb201df098d49(options) {
                             return [
                                 4,
                                 new Promise(function(resolve, reject) {
-                                    $8qw4J$fsplus.move(location, newLocation, function(err) {
+                                    $j0dGC$move(location, newLocation, function(err) {
                                         if (err) reject(err);
                                         else {
                                             editor.getBuffer().setPath(newLocation);
@@ -5810,16 +5787,16 @@ function $8a39902ae655894e$export$530eb201df098d49(options) {
 
 
 
-(0, $095c7bfbba93f9a3$export$35e8f4a3c2d7c0da)("atom-text-editor", "typescript:rename-refactor", function(deps) {
+(0, $011f9689c199e25f$export$35e8f4a3c2d7c0da)("atom-text-editor", "typescript:rename-refactor", function(deps) {
     return {
         description: "Rename symbol under text cursor everywhere it is used",
         didDispatch: function(editor) {
-            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+            return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                 var location, client, response, _response_body, info, locs, newName;
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (0, $j0dGC$_1)(this, function(_state) {
                     switch(_state.label){
                         case 0:
-                            location = (0, $7580a2909a181bf5$export$f25e34a2b31a939c)(editor);
+                            location = (0, $47ae2d5cb2e495d2$export$f25e34a2b31a939c)(editor);
                             if (!location) return [
                                 2
                             ];
@@ -5844,7 +5821,7 @@ function $8a39902ae655894e$export$530eb201df098d49(options) {
                             }
                             return [
                                 4,
-                                (0, $8a39902ae655894e$export$530eb201df098d49)({
+                                (0, $858897a262ea86ed$export$530eb201df098d49)({
                                     autoSelect: true,
                                     title: "Rename Variable",
                                     text: info.displayName,
@@ -5867,7 +5844,7 @@ function $8a39902ae655894e$export$530eb201df098d49(options) {
                                     return {
                                         fileName: span.file,
                                         textChanges: span.locs.map(function(loc) {
-                                            return (0, $8qw4J$swchelperscjs_object_spread_propscjs._)((0, $8qw4J$swchelperscjs_object_spreadcjs._)({}, loc), {
+                                            return (0, $j0dGC$_11)((0, $j0dGC$_4)({}, loc), {
                                                 newText: newName
                                             });
                                         })
@@ -5892,12 +5869,12 @@ function $8a39902ae655894e$export$530eb201df098d49(options) {
 
 
 
-(0, $095c7bfbba93f9a3$export$35e8f4a3c2d7c0da)("atom-workspace", "typescript:restart-all-servers", function(deps) {
+(0, $011f9689c199e25f$export$35e8f4a3c2d7c0da)("atom-workspace", "typescript:restart-all-servers", function(deps) {
     return {
         description: "Kill all tsserver instances. They will be auto-restarted",
         didDispatch: function() {
-            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+            return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                return (0, $j0dGC$_1)(this, function(_state) {
                     deps.killAllServers();
                     return [
                         2
@@ -5912,12 +5889,12 @@ function $8a39902ae655894e$export$530eb201df098d49(options) {
 
 
 
-(0, $095c7bfbba93f9a3$export$35e8f4a3c2d7c0da)("atom-workspace", "typescript:return-from-declaration", function(deps) {
+(0, $011f9689c199e25f$export$35e8f4a3c2d7c0da)("atom-workspace", "typescript:return-from-declaration", function(deps) {
     return {
         description: "If used `go-to-declaration`, return to previous text cursor position",
         didDispatch: function() {
-            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+            return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                return (0, $j0dGC$_1)(this, function(_state) {
                     switch(_state.label){
                         case 0:
                             return [
@@ -5935,12 +5912,12 @@ function $8a39902ae655894e$export$530eb201df098d49(options) {
         }
     };
 });
-(0, $095c7bfbba93f9a3$export$35e8f4a3c2d7c0da)("atom-workspace", "typescript:show-editor-position-history", function(deps) {
+(0, $011f9689c199e25f$export$35e8f4a3c2d7c0da)("atom-workspace", "typescript:show-editor-position-history", function(deps) {
     return {
         description: "If used `go-to-declaration`, return to previous text cursor position",
         didDispatch: function() {
-            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+            return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                return (0, $j0dGC$_1)(this, function(_state) {
                     switch(_state.label){
                         case 0:
                             return [
@@ -5961,7 +5938,7 @@ function $8a39902ae655894e$export$530eb201df098d49(options) {
 
 
 
-(0, $095c7bfbba93f9a3$export$35e8f4a3c2d7c0da)("atom-text-editor", "typescript:toggle-semantic-view", function(deps) {
+(0, $011f9689c199e25f$export$35e8f4a3c2d7c0da)("atom-text-editor", "typescript:toggle-semantic-view", function(deps) {
     return {
         description: "Toggle semantic view outline",
         didDispatch: function() {
@@ -5974,12 +5951,12 @@ function $8a39902ae655894e$export$530eb201df098d49(options) {
 
 
 
-(0, $095c7bfbba93f9a3$export$35e8f4a3c2d7c0da)("atom-text-editor", "typescript:show-tooltip", function(deps) {
+(0, $011f9689c199e25f$export$35e8f4a3c2d7c0da)("atom-text-editor", "typescript:show-tooltip", function(deps) {
     return {
         description: "Show type tooltip at current text cursor position",
         didDispatch: function(ed) {
-            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+            return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                return (0, $j0dGC$_1)(this, function(_state) {
                     return [
                         2,
                         deps.showTooltipAt(ed)
@@ -5994,12 +5971,12 @@ function $8a39902ae655894e$export$530eb201df098d49(options) {
 
 
 
-(0, $095c7bfbba93f9a3$export$35e8f4a3c2d7c0da)("atom-text-editor", "typescript:show-signature-help", function(deps) {
+(0, $011f9689c199e25f$export$35e8f4a3c2d7c0da)("atom-text-editor", "typescript:show-signature-help", function(deps) {
     return {
         description: "Show signature help tooltip at current text cursor position",
         didDispatch: function(ed) {
-            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+            return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                return (0, $j0dGC$_1)(this, function(_state) {
                     return [
                         2,
                         deps.showSigHelpAt(ed)
@@ -6009,12 +5986,12 @@ function $8a39902ae655894e$export$530eb201df098d49(options) {
         }
     };
 });
-(0, $095c7bfbba93f9a3$export$35e8f4a3c2d7c0da)("atom-text-editor", "typescript:hide-signature-help", function(deps) {
+(0, $011f9689c199e25f$export$35e8f4a3c2d7c0da)("atom-text-editor", "typescript:hide-signature-help", function(deps) {
     return {
         description: "Hide the currently visible signature help",
         didDispatch: function(ed, ignore) {
-            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+            return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                return (0, $j0dGC$_1)(this, function(_state) {
                     if (!deps.hideSigHelpAt(ed)) ignore();
                     return [
                         2
@@ -6024,12 +6001,12 @@ function $8a39902ae655894e$export$530eb201df098d49(options) {
         }
     };
 });
-(0, $095c7bfbba93f9a3$export$35e8f4a3c2d7c0da)("atom-text-editor", "typescript:signature-help-next", function(deps) {
+(0, $011f9689c199e25f$export$35e8f4a3c2d7c0da)("atom-text-editor", "typescript:signature-help-next", function(deps) {
     return {
         description: "Show next signature help if available",
         didDispatch: function(ed, ignore) {
-            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+            return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                return (0, $j0dGC$_1)(this, function(_state) {
                     if (!deps.rotateSigHelp(ed, 1)) ignore();
                     return [
                         2
@@ -6039,12 +6016,12 @@ function $8a39902ae655894e$export$530eb201df098d49(options) {
         }
     };
 });
-(0, $095c7bfbba93f9a3$export$35e8f4a3c2d7c0da)("atom-text-editor", "typescript:signature-help-prev", function(deps) {
+(0, $011f9689c199e25f$export$35e8f4a3c2d7c0da)("atom-text-editor", "typescript:signature-help-prev", function(deps) {
     return {
         description: "Show previous signature help if available",
         didDispatch: function(ed, ignore) {
-            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+            return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                return (0, $j0dGC$_1)(this, function(_state) {
                     if (!deps.rotateSigHelp(ed, -1)) ignore();
                     return [
                         2
@@ -6059,12 +6036,12 @@ function $8a39902ae655894e$export$530eb201df098d49(options) {
 
 
 
-(0, $095c7bfbba93f9a3$export$35e8f4a3c2d7c0da)("atom-text-editor", "typescript:toggle-file-symbols", function(deps) {
+(0, $011f9689c199e25f$export$35e8f4a3c2d7c0da)("atom-text-editor", "typescript:toggle-file-symbols", function(deps) {
     return {
         description: "Toggle view for finding file symbols",
         didDispatch: function(editor) {
-            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+            return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                return (0, $j0dGC$_1)(this, function(_state) {
                     deps.toggleFileSymbolsView(editor);
                     return [
                         2
@@ -6074,12 +6051,12 @@ function $8a39902ae655894e$export$530eb201df098d49(options) {
         }
     };
 });
-(0, $095c7bfbba93f9a3$export$35e8f4a3c2d7c0da)("atom-text-editor", "typescript:toggle-project-symbols", function(deps) {
+(0, $011f9689c199e25f$export$35e8f4a3c2d7c0da)("atom-text-editor", "typescript:toggle-project-symbols", function(deps) {
     return {
         description: "Toggle view for finding file symbols",
         didDispatch: function(editor) {
-            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+            return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                return (0, $j0dGC$_1)(this, function(_state) {
                     deps.toggleProjectSymbolsView(editor);
                     return [
                         2
@@ -6091,19 +6068,19 @@ function $8a39902ae655894e$export$530eb201df098d49(options) {
 });
 
 
-function $d7106e5ca616cb06$export$f647bfc0a5fe4336(deps) {
-    var disp = new (0, $8qw4J$atom.CompositeDisposable)();
+function $c2b50f0312d4c499$export$f647bfc0a5fe4336(deps) {
+    var disp = new (0, $j0dGC$CompositeDisposable)();
     var _iteratorNormalCompletion = true, _didIteratorError = false, _iteratorError = undefined;
     try {
         var _loop = function() {
             var cmd = _step.value;
             if (cmd.selector === "atom-text-editor") {
                 var d = cmd.desc(deps);
-                disp.add(atom.commands.add(cmd.selector, cmd.command, (0, $8qw4J$swchelperscjs_object_spread_propscjs._)((0, $8qw4J$swchelperscjs_object_spreadcjs._)({}, d), {
+                disp.add(atom.commands.add(cmd.selector, cmd.command, (0, $j0dGC$_11)((0, $j0dGC$_4)({}, d), {
                     didDispatch: function(e) {
-                        return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+                        return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                             var editor, error;
-                            return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                            return (0, $j0dGC$_1)(this, function(_state) {
                                 switch(_state.label){
                                     case 0:
                                         _state.trys.push([
@@ -6113,7 +6090,7 @@ function $d7106e5ca616cb06$export$f647bfc0a5fe4336(deps) {
                                             5
                                         ]);
                                         editor = e.currentTarget.getModel();
-                                        if (!(0, $7580a2909a181bf5$export$3aecee58e23ede2c)(editor)) return [
+                                        if (!(0, $47ae2d5cb2e495d2$export$3aecee58e23ede2c)(editor)) return [
                                             3,
                                             2
                                         ];
@@ -6131,7 +6108,7 @@ function $d7106e5ca616cb06$export$f647bfc0a5fe4336(deps) {
                                         ];
                                     case 2:
                                         e.abortKeyBinding();
-                                        if ((0, $7580a2909a181bf5$export$bde40b56025b92b9)(editor)) atom.notifications.addWarning("Atom-TypeScript cancelled last command: Current editor has no file path", {
+                                        if ((0, $47ae2d5cb2e495d2$export$bde40b56025b92b9)(editor)) atom.notifications.addWarning("Atom-TypeScript cancelled last command: Current editor has no file path", {
                                             description: "Atom-TypeScript needs to determine the file path of the " + "current editor to execute `".concat(cmd.command, "`, which it failed to do. ") + "You probably just need to save the current file somewhere.",
                                             dismissable: true
                                         });
@@ -6143,7 +6120,7 @@ function $d7106e5ca616cb06$export$f647bfc0a5fe4336(deps) {
                                         ];
                                     case 4:
                                         error = _state.sent();
-                                        $d7106e5ca616cb06$var$handle(error);
+                                        $c2b50f0312d4c499$var$handle(error);
                                         return [
                                             3,
                                             5
@@ -6159,11 +6136,11 @@ function $d7106e5ca616cb06$export$f647bfc0a5fe4336(deps) {
                 })));
             } else {
                 var d1 = cmd.desc(deps);
-                disp.add(atom.commands.add(cmd.selector, cmd.command, (0, $8qw4J$swchelperscjs_object_spread_propscjs._)((0, $8qw4J$swchelperscjs_object_spreadcjs._)({}, d1), {
+                disp.add(atom.commands.add(cmd.selector, cmd.command, (0, $j0dGC$_11)((0, $j0dGC$_4)({}, d1), {
                     didDispatch: function() {
-                        return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+                        return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                             var error;
-                            return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                            return (0, $j0dGC$_1)(this, function(_state) {
                                 switch(_state.label){
                                     case 0:
                                         _state.trys.push([
@@ -6184,7 +6161,7 @@ function $d7106e5ca616cb06$export$f647bfc0a5fe4336(deps) {
                                         ];
                                     case 2:
                                         error = _state.sent();
-                                        $d7106e5ca616cb06$var$handle(error);
+                                        $c2b50f0312d4c499$var$handle(error);
                                         return [
                                             3,
                                             3
@@ -6200,7 +6177,7 @@ function $d7106e5ca616cb06$export$f647bfc0a5fe4336(deps) {
                 })));
             }
         };
-        for(var _iterator = (0, $095c7bfbba93f9a3$export$7a6092e2ae7e1845)()[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true)_loop();
+        for(var _iterator = (0, $011f9689c199e25f$export$7a6092e2ae7e1845)()[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true)_loop();
     } catch (err) {
         _didIteratorError = true;
         _iteratorError = err;
@@ -6217,7 +6194,7 @@ function $d7106e5ca616cb06$export$f647bfc0a5fe4336(deps) {
     }
     return disp;
 }
-function $d7106e5ca616cb06$var$handle(err) {
+function $c2b50f0312d4c499$var$handle(err) {
     if (err.message === "Server stopped normally") console.warn("TypeScript server exited normally while executing a command", err);
     else atom.notifications.addFatalError("Something went wrong, see details below.", {
         detail: err.message,
@@ -6250,33 +6227,33 @@ function $d7106e5ca616cb06$var$handle(err) {
 
 
 
-var $a6288a0b26704c12$export$28c660c63b792dea = /*#__PURE__*/ function() {
+var $501de4a2a344f687$export$28c660c63b792dea = /*#__PURE__*/ function() {
     "use strict";
     function Tooltip(props, children) {
-        (0, $8qw4J$swchelperscjs_class_call_checkcjs._)(this, Tooltip);
+        (0, $j0dGC$_2)(this, Tooltip);
         this.children = children;
-        this.props = (0, $8qw4J$swchelperscjs_object_spread_propscjs._)((0, $8qw4J$swchelperscjs_object_spreadcjs._)({}, props), {
+        this.props = (0, $j0dGC$_11)((0, $j0dGC$_4)({}, props), {
             delay: {
                 show: 0,
                 hide: 0
             }
         });
-        $8qw4J$etch.initialize(this);
+        $j0dGC$initialize(this);
         this.tooltipDisposable = atom.tooltips.add(this.element, this.props);
     }
-    (0, $8qw4J$swchelperscjs_create_classcjs._)(Tooltip, [
+    (0, $j0dGC$_3)(Tooltip, [
         {
             key: "update",
             value: function update(props, children) {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
-                                this.props = (0, $8qw4J$swchelperscjs_object_spreadcjs._)({}, this.props, props);
+                                this.props = (0, $j0dGC$_4)({}, this.props, props);
                                 this.children = children;
                                 return [
                                     4,
-                                    $8qw4J$etch.update(this)
+                                    $j0dGC$update(this)
                                 ];
                             case 1:
                                 _state.sent();
@@ -6293,7 +6270,7 @@ var $a6288a0b26704c12$export$28c660c63b792dea = /*#__PURE__*/ function() {
         {
             key: "render",
             value: function render() {
-                return $8qw4J$etch.dom("div", {
+                return $j0dGC$dom("div", {
                     className: "inline-block"
                 }, this.children ? this.children : null);
             }
@@ -6301,13 +6278,13 @@ var $a6288a0b26704c12$export$28c660c63b792dea = /*#__PURE__*/ function() {
         {
             key: "destroy",
             value: function destroy() {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
                                 return [
                                     4,
-                                    $8qw4J$etch.destroy(this)
+                                    $j0dGC$destroy(this)
                                 ];
                             case 1:
                                 _state.sent();
@@ -6325,44 +6302,44 @@ var $a6288a0b26704c12$export$28c660c63b792dea = /*#__PURE__*/ function() {
 }();
 
 
-var $8e8ce2d77e3fcd58$export$d2110dce2e582144 = /*#__PURE__*/ function() {
+var $d3897f954f2a12f1$export$d2110dce2e582144 = /*#__PURE__*/ function() {
     "use strict";
     function BuildStatus(props) {
         var _this = this;
-        (0, $8qw4J$swchelperscjs_class_call_checkcjs._)(this, BuildStatus);
+        (0, $j0dGC$_2)(this, BuildStatus);
         this.hiddenBuildStatus = false;
-        this.disposables = new (0, $8qw4J$atom.CompositeDisposable)();
+        this.disposables = new (0, $j0dGC$CompositeDisposable)();
         this.buildStatusClicked = function() {
             if (!_this.props.buildStatus.success) atom.notifications.addError("Build failed", {
                 detail: _this.props.buildStatus.message,
                 dismissable: true
             });
         };
-        this.props = (0, $8qw4J$swchelperscjs_object_spreadcjs._)({}, props);
+        this.props = (0, $j0dGC$_4)({}, props);
         this.setHideBuildStatus(atom.config.get("atom-typescript-updated").buildStatusTimeout);
         this.resetBuildStatusTimeout();
-        $8qw4J$etch.initialize(this);
+        $j0dGC$initialize(this);
         this.disposables.add(atom.config.onDidChange("atom-typescript-updated.buildStatusTimeout", function(param) {
             var newValue = param.newValue;
             _this.setHideBuildStatus(newValue);
-            (0, $2893351583386024$export$8080b7556d9d6445)(_this.update({}));
+            (0, $e61b31fac60530e8$export$8080b7556d9d6445)(_this.update({}));
         }));
     }
-    (0, $8qw4J$swchelperscjs_create_classcjs._)(BuildStatus, [
+    (0, $j0dGC$_3)(BuildStatus, [
         {
             key: "update",
             value: function update(props) {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                     var successStateChanged;
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
                                 successStateChanged = props.buildStatus !== undefined && props.buildStatus.success !== this.props.buildStatus.success;
-                                this.props = (0, $8qw4J$swchelperscjs_object_spreadcjs._)({}, this.props, props);
+                                this.props = (0, $j0dGC$_4)({}, this.props, props);
                                 if (successStateChanged) this.resetBuildStatusTimeout();
                                 return [
                                     4,
-                                    $8qw4J$etch.update(this)
+                                    $j0dGC$update(this)
                                 ];
                             case 1:
                                 _state.sent();
@@ -6377,7 +6354,7 @@ var $8e8ce2d77e3fcd58$export$d2110dce2e582144 = /*#__PURE__*/ function() {
         {
             key: "render",
             value: function render() {
-                if (this.hiddenBuildStatus) return $8qw4J$etch.dom("span", null);
+                if (this.hiddenBuildStatus) return $j0dGC$dom("span", null);
                 var cls;
                 var text;
                 if (this.props.buildStatus.success) {
@@ -6387,9 +6364,9 @@ var $8e8ce2d77e3fcd58$export$d2110dce2e582144 = /*#__PURE__*/ function() {
                     cls = "highlight-error";
                     text = "Emit Failed";
                 }
-                return $8qw4J$etch.dom((0, $a6288a0b26704c12$export$28c660c63b792dea), {
+                return $j0dGC$dom((0, $501de4a2a344f687$export$28c660c63b792dea), {
                     title: this.props.buildStatus.success ? "Build was successful" : "Build failed; click to show error message"
-                }, $8qw4J$etch.dom("span", {
+                }, $j0dGC$dom("span", {
                     className: cls,
                     on: {
                         click: this.buildStatusClicked
@@ -6400,13 +6377,13 @@ var $8e8ce2d77e3fcd58$export$d2110dce2e582144 = /*#__PURE__*/ function() {
         {
             key: "destroy",
             value: function destroy() {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
                                 return [
                                     4,
-                                    $8qw4J$etch.destroy(this)
+                                    $j0dGC$destroy(this)
                                 ];
                             case 1:
                                 _state.sent();
@@ -6429,9 +6406,9 @@ var $8e8ce2d77e3fcd58$export$d2110dce2e582144 = /*#__PURE__*/ function() {
             key: "setHideBuildStatus",
             value: function setHideBuildStatus(value) {
                 var _this = this;
-                if (value > 0) this.hideBuildStatus = (0, $8qw4J$lodash.debounce)(function() {
+                if (value > 0) this.hideBuildStatus = (0, $j0dGC$debounce)(function() {
                     _this.hiddenBuildStatus = true;
-                    (0, $2893351583386024$export$8080b7556d9d6445)($8qw4J$etch.update(_this));
+                    (0, $e61b31fac60530e8$export$8080b7556d9d6445)($j0dGC$update(_this));
                 }, value * 1000);
                 else if (value === 0) this.hideBuildStatus = function() {
                     _this.hiddenBuildStatus = true;
@@ -6453,25 +6430,25 @@ var $8e8ce2d77e3fcd58$export$d2110dce2e582144 = /*#__PURE__*/ function() {
 
 
 
-var $9d3745b284139e1f$export$ebf7874ab6a8fe0f = /*#__PURE__*/ function() {
+var $775b5c826513b8a6$export$ebf7874ab6a8fe0f = /*#__PURE__*/ function() {
     "use strict";
     function ConfigPath(props) {
-        (0, $8qw4J$swchelperscjs_class_call_checkcjs._)(this, ConfigPath);
-        this.props = (0, $8qw4J$swchelperscjs_object_spreadcjs._)({}, props);
-        $8qw4J$etch.initialize(this);
+        (0, $j0dGC$_2)(this, ConfigPath);
+        this.props = (0, $j0dGC$_4)({}, props);
+        $j0dGC$initialize(this);
     }
-    (0, $8qw4J$swchelperscjs_create_classcjs._)(ConfigPath, [
+    (0, $j0dGC$_3)(ConfigPath, [
         {
             key: "update",
             value: function update(props) {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
-                                this.props = (0, $8qw4J$swchelperscjs_object_spreadcjs._)({}, this.props, props);
+                                this.props = (0, $j0dGC$_4)({}, this.props, props);
                                 return [
                                     4,
-                                    $8qw4J$etch.update(this)
+                                    $j0dGC$update(this)
                                 ];
                             case 1:
                                 _state.sent();
@@ -6487,11 +6464,11 @@ var $9d3745b284139e1f$export$ebf7874ab6a8fe0f = /*#__PURE__*/ function() {
             key: "render",
             value: function render() {
                 var _this = this;
-                return $8qw4J$etch.dom((0, $a6288a0b26704c12$export$28c660c63b792dea), {
+                return $j0dGC$dom((0, $501de4a2a344f687$export$28c660c63b792dea), {
                     title: function() {
                         return _this.props.tsConfigPath.startsWith("/dev/null") ? "No tsconfig.json" : "Click to open ".concat(atom.project.relativize(_this.props.tsConfigPath));
                     }
-                }, $8qw4J$etch.dom("a", {
+                }, $j0dGC$dom("a", {
                     className: "inline-block",
                     href: "",
                     on: {
@@ -6500,19 +6477,19 @@ var $9d3745b284139e1f$export$ebf7874ab6a8fe0f = /*#__PURE__*/ function() {
                             _this.openConfigPath();
                         }
                     }
-                }, this.props.tsConfigPath.startsWith("/dev/null") ? "No project" : (0, $8qw4J$path.dirname)($9d3745b284139e1f$var$getFilePathRelativeToAtomProject(this.props.tsConfigPath))));
+                }, this.props.tsConfigPath.startsWith("/dev/null") ? "No project" : (0, $j0dGC$dirname)($775b5c826513b8a6$var$getFilePathRelativeToAtomProject(this.props.tsConfigPath))));
             }
         },
         {
             key: "destroy",
             value: function destroy() {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
                                 return [
                                     4,
-                                    $8qw4J$etch.destroy(this)
+                                    $j0dGC$destroy(this)
                                 ];
                             case 1:
                                 _state.sent();
@@ -6527,7 +6504,7 @@ var $9d3745b284139e1f$export$ebf7874ab6a8fe0f = /*#__PURE__*/ function() {
         {
             key: "openConfigPath",
             value: function openConfigPath() {
-                if (!this.props.tsConfigPath.startsWith("/dev/null")) (0, $2893351583386024$export$8080b7556d9d6445)(atom.workspace.open(this.props.tsConfigPath));
+                if (!this.props.tsConfigPath.startsWith("/dev/null")) (0, $e61b31fac60530e8$export$8080b7556d9d6445)(atom.workspace.open(this.props.tsConfigPath));
                 else atom.notifications.addInfo("No tsconfig for current file");
             }
         }
@@ -6536,18 +6513,18 @@ var $9d3745b284139e1f$export$ebf7874ab6a8fe0f = /*#__PURE__*/ function() {
 }();
 /**
  * converts "c:\dev\somethin\bar.ts" to "~something\bar".
- */ function $9d3745b284139e1f$var$getFilePathRelativeToAtomProject(filePath) {
+ */ function $775b5c826513b8a6$var$getFilePathRelativeToAtomProject(filePath) {
     return "~" + atom.project.relativize(filePath);
 }
 
 
 
-var $258730bbf662f4ed$export$e46d185d0654294e = /*#__PURE__*/ function() {
+var $0cc2a0b6b51e3bbe$export$e46d185d0654294e = /*#__PURE__*/ function() {
     "use strict";
     function StatusPanel() {
         var props = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : {};
-        (0, $8qw4J$swchelperscjs_class_call_checkcjs._)(this, StatusPanel);
-        this.props = (0, $8qw4J$swchelperscjs_object_spreadcjs._)({
+        (0, $j0dGC$_2)(this, StatusPanel);
+        this.props = (0, $j0dGC$_4)({
             visible: true,
             pending: [],
             progress: {
@@ -6555,20 +6532,20 @@ var $258730bbf662f4ed$export$e46d185d0654294e = /*#__PURE__*/ function() {
                 value: 0
             }
         }, props);
-        $8qw4J$etch.initialize(this);
+        $j0dGC$initialize(this);
     }
-    (0, $8qw4J$swchelperscjs_create_classcjs._)(StatusPanel, [
+    (0, $j0dGC$_3)(StatusPanel, [
         {
             key: "update",
             value: function update(props) {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
-                                this.props = (0, $8qw4J$swchelperscjs_object_spreadcjs._)({}, this.props, props);
+                                this.props = (0, $j0dGC$_4)({}, this.props, props);
                                 return [
                                     4,
-                                    $8qw4J$etch.update(this)
+                                    $j0dGC$update(this)
                                 ];
                             case 1:
                                 _state.sent();
@@ -6583,7 +6560,7 @@ var $258730bbf662f4ed$export$e46d185d0654294e = /*#__PURE__*/ function() {
         {
             key: "render",
             value: function render() {
-                return $8qw4J$etch.dom("ts-status-panel", {
+                return $j0dGC$dom("ts-status-panel", {
                     className: this.props.visible ? "" : "hide"
                 }, this.renderVersion(), this.renderPending(), this.renderConfigPath(), this.renderStatus(), this.renderProgress());
             }
@@ -6591,13 +6568,13 @@ var $258730bbf662f4ed$export$e46d185d0654294e = /*#__PURE__*/ function() {
         {
             key: "destroy",
             value: function destroy() {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
                                 return [
                                     4,
-                                    $8qw4J$etch.destroy(this)
+                                    $j0dGC$destroy(this)
                                 ];
                             case 1:
                                 _state.sent();
@@ -6612,14 +6589,14 @@ var $258730bbf662f4ed$export$e46d185d0654294e = /*#__PURE__*/ function() {
         {
             key: "dispose",
             value: function dispose() {
-                (0, $2893351583386024$export$8080b7556d9d6445)(this.destroy());
+                (0, $e61b31fac60530e8$export$8080b7556d9d6445)(this.destroy());
             }
         },
         {
             key: "show",
             value: function show() {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
                                 return [
@@ -6641,8 +6618,8 @@ var $258730bbf662f4ed$export$e46d185d0654294e = /*#__PURE__*/ function() {
         {
             key: "hide",
             value: function hide() {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
                                 return [
@@ -6664,7 +6641,7 @@ var $258730bbf662f4ed$export$e46d185d0654294e = /*#__PURE__*/ function() {
         {
             key: "renderVersion",
             value: function renderVersion() {
-                if (this.props.clientVersion !== undefined) return $8qw4J$etch.dom((0, $a6288a0b26704c12$export$28c660c63b792dea), {
+                if (this.props.clientVersion !== undefined) return $j0dGC$dom((0, $501de4a2a344f687$export$28c660c63b792dea), {
                     title: "Active TypeScript version"
                 }, this.props.clientVersion);
                 return null;
@@ -6673,15 +6650,15 @@ var $258730bbf662f4ed$export$e46d185d0654294e = /*#__PURE__*/ function() {
         {
             key: "renderPending",
             value: function renderPending() {
-                if (this.props.pending.length > 0) return $8qw4J$etch.dom((0, $a6288a0b26704c12$export$28c660c63b792dea), {
+                if (this.props.pending.length > 0) return $j0dGC$dom((0, $501de4a2a344f687$export$28c660c63b792dea), {
                     title: "Pending Requests: <ul>".concat(this.props.pending.map(function(param) {
                         var title = param.title;
                         return "<li>".concat(title, "</li>");
                     }).join(""), "</ul>"),
                     html: true
-                }, $8qw4J$etch.dom("span", {
+                }, $j0dGC$dom("span", {
                     ref: "pendingCounter"
-                }, this.props.pending.length.toString()), $8qw4J$etch.dom("span", {
+                }, this.props.pending.length.toString()), $j0dGC$dom("span", {
                     ref: "pendingSpinner",
                     className: "loading loading-spinner-tiny inline-block",
                     style: {
@@ -6696,7 +6673,7 @@ var $258730bbf662f4ed$export$e46d185d0654294e = /*#__PURE__*/ function() {
         {
             key: "renderConfigPath",
             value: function renderConfigPath() {
-                if (this.props.tsConfigPath !== undefined) return $8qw4J$etch.dom((0, $9d3745b284139e1f$export$ebf7874ab6a8fe0f), {
+                if (this.props.tsConfigPath !== undefined) return $j0dGC$dom((0, $775b5c826513b8a6$export$ebf7874ab6a8fe0f), {
                     tsConfigPath: this.props.tsConfigPath
                 });
                 return null;
@@ -6705,7 +6682,7 @@ var $258730bbf662f4ed$export$e46d185d0654294e = /*#__PURE__*/ function() {
         {
             key: "renderStatus",
             value: function renderStatus() {
-                if (this.props.buildStatus) return $8qw4J$etch.dom((0, $8e8ce2d77e3fcd58$export$d2110dce2e582144), {
+                if (this.props.buildStatus) return $j0dGC$dom((0, $d3897f954f2a12f1$export$d2110dce2e582144), {
                     buildStatus: this.props.buildStatus
                 });
                 return null;
@@ -6714,7 +6691,7 @@ var $258730bbf662f4ed$export$e46d185d0654294e = /*#__PURE__*/ function() {
         {
             key: "renderProgress",
             value: function renderProgress() {
-                if (this.props.progress.value < this.props.progress.max) return $8qw4J$etch.dom("progress", {
+                if (this.props.progress.value < this.props.progress.max) return $j0dGC$dom("progress", {
                     style: {
                         verticalAlign: "baseline"
                     },
@@ -6740,19 +6717,19 @@ var $258730bbf662f4ed$export$e46d185d0654294e = /*#__PURE__*/ function() {
 
 
 
-var $e6778e0cbaaba99c$export$37b735b3f7a16aff = /*#__PURE__*/ function() {
+var $995468ca3443543d$export$37b735b3f7a16aff = /*#__PURE__*/ function() {
     "use strict";
     function EditorPositionHistoryManager() {
         var prevCursorPositions = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : [];
-        (0, $8qw4J$swchelperscjs_class_call_checkcjs._)(this, EditorPositionHistoryManager);
+        (0, $j0dGC$_2)(this, EditorPositionHistoryManager);
         this.prevCursorPositions = prevCursorPositions;
     }
-    (0, $8qw4J$swchelperscjs_create_classcjs._)(EditorPositionHistoryManager, [
+    (0, $j0dGC$_3)(EditorPositionHistoryManager, [
         {
             key: "goBack",
             value: function goBack() {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         return [
                             2,
                             this.goHistory(1)
@@ -6764,9 +6741,9 @@ var $e6778e0cbaaba99c$export$37b735b3f7a16aff = /*#__PURE__*/ function() {
         {
             key: "goHistory",
             value: function goHistory(depth) {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                     var position;
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         while(depth-- > 0)position = this.prevCursorPositions.pop();
                         if (!position) {
                             atom.notifications.addInfo("AtomTS: Previous position not found.");
@@ -6791,10 +6768,10 @@ var $e6778e0cbaaba99c$export$37b735b3f7a16aff = /*#__PURE__*/ function() {
         {
             key: "goForward",
             value: function goForward(currentEditor, item) {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                     var location, maxItems;
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
-                        location = (0, $7580a2909a181bf5$export$f25e34a2b31a939c)(currentEditor);
+                    return (0, $j0dGC$_1)(this, function(_state) {
+                        location = (0, $47ae2d5cb2e495d2$export$f25e34a2b31a939c)(currentEditor);
                         if (location) {
                             this.prevCursorPositions.push(location);
                             maxItems = 100;
@@ -6811,28 +6788,28 @@ var $e6778e0cbaaba99c$export$37b735b3f7a16aff = /*#__PURE__*/ function() {
         {
             key: "showHistory",
             value: function showHistory() {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                     var res;
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
                                 return [
                                     4,
-                                    (0, $f55d59ecd155c40a$export$12cb8c60c107136e)({
+                                    (0, $0be5325d1bf82077$export$12cb8c60c107136e)({
                                         items: this.getHistory().slice().reverse().map(function(item, idx) {
-                                            return (0, $8qw4J$swchelperscjs_object_spread_propscjs._)((0, $8qw4J$swchelperscjs_object_spreadcjs._)({}, item), {
+                                            return (0, $j0dGC$_11)((0, $j0dGC$_4)({}, item), {
                                                 idx: idx
                                             });
                                         }),
                                         itemTemplate: function(item, ctx) {
-                                            return $8qw4J$etch.dom("li", {
+                                            return $j0dGC$dom("li", {
                                                 className: "two-lines"
-                                            }, $8qw4J$etch.dom("div", {
+                                            }, $j0dGC$dom("div", {
                                                 className: "primary-line"
-                                            }, $8qw4J$etch.dom((0, $5f8857790714307e$export$31d5f5740e2c2887), {
+                                            }, $j0dGC$dom((0, $a3783a40399b9047$export$31d5f5740e2c2887), {
                                                 label: item.file,
                                                 query: ctx.getFilterQuery()
-                                            })), $8qw4J$etch.dom("div", {
+                                            })), $j0dGC$dom("div", {
                                                 className: "secondary-line"
                                             }, "Line: ", item.line, ", column: ", item.offset));
                                         },
@@ -6882,9 +6859,9 @@ var $e6778e0cbaaba99c$export$37b735b3f7a16aff = /*#__PURE__*/ function() {
         {
             key: "open",
             value: function open(item) {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                     var editor;
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
                                 return [
@@ -6926,14 +6903,14 @@ var $e6778e0cbaaba99c$export$37b735b3f7a16aff = /*#__PURE__*/ function() {
 
 
 
-var $ec003c8da930295e$export$65a8f6d9bbe649f0 = /*#__PURE__*/ function() {
+var $e677de7395b03093$export$65a8f6d9bbe649f0 = /*#__PURE__*/ function() {
     "use strict";
     function OccurenceController(getClient, editor) {
         var _this = this;
-        (0, $8qw4J$swchelperscjs_class_call_checkcjs._)(this, OccurenceController);
+        (0, $j0dGC$_2)(this, OccurenceController);
         this.getClient = getClient;
         this.editor = editor;
-        this.disposables = new (0, $8qw4J$atom.CompositeDisposable)();
+        this.disposables = new (0, $j0dGC$CompositeDisposable)();
         this.occurrenceMarkers = [];
         this.disposed = false;
         var debouncedUpdate;
@@ -6941,8 +6918,8 @@ var $ec003c8da930295e$export$65a8f6d9bbe649f0 = /*#__PURE__*/ function() {
         var changeDelay;
         var shouldHighlight = false;
         this.disposables.add(atom.config.observe("atom-typescript-updated.occurrenceHighlightDebounceTimeout", function(val) {
-            debouncedUpdate = (0, $8qw4J$lodash.debounce)(function() {
-                (0, $2893351583386024$export$8080b7556d9d6445)(_this.update());
+            debouncedUpdate = (0, $j0dGC$debounce)(function() {
+                (0, $e61b31fac60530e8$export$8080b7556d9d6445)(_this.update());
             }, val);
             changeDelay = val * 3.5;
         }), editor.onDidChangeCursorPosition(function() {
@@ -6963,7 +6940,7 @@ var $ec003c8da930295e$export$65a8f6d9bbe649f0 = /*#__PURE__*/ function() {
             }, changeDelay);
         }));
     }
-    (0, $8qw4J$swchelperscjs_create_classcjs._)(OccurenceController, [
+    (0, $j0dGC$_3)(OccurenceController, [
         {
             key: "dispose",
             value: function dispose() {
@@ -7002,15 +6979,15 @@ var $ec003c8da930295e$export$65a8f6d9bbe649f0 = /*#__PURE__*/ function() {
         {
             key: "update",
             value: function update() {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                     var filePath, client, pos, result, newOccurrenceMarkers, _iteratorNormalCompletion, _didIteratorError, _iteratorError, _iterator, _step, m, e;
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
                                 if (this.disposed) return [
                                     2
                                 ];
-                                if (!(0, $7580a2909a181bf5$export$3aecee58e23ede2c)(this.editor)) {
+                                if (!(0, $47ae2d5cb2e495d2$export$3aecee58e23ede2c)(this.editor)) {
                                     this.clearMarkers();
                                     return [
                                         2
@@ -7100,7 +7077,7 @@ var $ec003c8da930295e$export$65a8f6d9bbe649f0 = /*#__PURE__*/ function() {
             key: "getNewOccurrenceMarkers",
             value: function getNewOccurrenceMarkers(data) {
                 var _iteratorNormalCompletion, _didIteratorError, _iteratorError, _iterator, _step, fileInfo, _iteratorNormalCompletion1, _didIteratorError1, _iteratorError1, _this, _loop, _iterator1, _step1, err, err;
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (0, $j0dGC$_1)(this, function(_state) {
                     switch(_state.label){
                         case 0:
                             _iteratorNormalCompletion = true, _didIteratorError = false, _iteratorError = undefined;
@@ -7135,11 +7112,11 @@ var $ec003c8da930295e$export$65a8f6d9bbe649f0 = /*#__PURE__*/ function() {
                             ]);
                             _loop = function() {
                                 var span, range, oldMarker, marker;
-                                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                                return (0, $j0dGC$_1)(this, function(_state) {
                                     switch(_state.label){
                                         case 0:
                                             span = _step1.value;
-                                            range = (0, $ee93806a41573bb4$export$477d491a08b070ec)(span);
+                                            range = (0, $ee2d752c6bad64f9$export$477d491a08b070ec)(span);
                                             oldMarker = _this.occurrenceMarkers.find(function(m) {
                                                 return m.getBufferRange().isEqual(range);
                                             });
@@ -7187,7 +7164,7 @@ var $ec003c8da930295e$export$65a8f6d9bbe649f0 = /*#__PURE__*/ function() {
                             _this = this;
                             return [
                                 5,
-                                (0, $8qw4J$swchelperscjs_ts_valuescjs._)(_loop())
+                                (0, $j0dGC$_7)(_loop())
                             ];
                         case 5:
                             _state.sent();
@@ -7269,21 +7246,21 @@ var $ec003c8da930295e$export$65a8f6d9bbe649f0 = /*#__PURE__*/ function() {
 }();
 
 
-var $90eb5c792db85504$export$c92097d412f660e6 = /*#__PURE__*/ function() {
+var $ee0f03a1eb887499$export$c92097d412f660e6 = /*#__PURE__*/ function() {
     "use strict";
     function OccurrenceManager(getClient) {
         var _this = this;
-        (0, $8qw4J$swchelperscjs_class_call_checkcjs._)(this, OccurrenceManager);
-        this.disposables = new (0, $8qw4J$atom.CompositeDisposable)();
+        (0, $j0dGC$_2)(this, OccurrenceManager);
+        this.disposables = new (0, $j0dGC$CompositeDisposable)();
         this.disposables.add(atom.workspace.observeTextEditors(function(editor) {
-            var controller = new (0, $ec003c8da930295e$export$65a8f6d9bbe649f0)(getClient, editor);
+            var controller = new (0, $e677de7395b03093$export$65a8f6d9bbe649f0)(getClient, editor);
             _this.disposables.add(controller, editor.onDidDestroy(function() {
                 _this.disposables.remove(controller);
                 controller.dispose();
             }));
         }));
     }
-    (0, $8qw4J$swchelperscjs_create_classcjs._)(OccurrenceManager, [
+    (0, $j0dGC$_3)(OccurrenceManager, [
         {
             key: "dispose",
             value: function dispose() {
@@ -7322,12 +7299,12 @@ var $90eb5c792db85504$export$c92097d412f660e6 = /*#__PURE__*/ function() {
 
 
 // screen position from mouse event -- with <3 from Atom-Haskell
-function $96acb87639d28886$export$4852cabf8dc8bdd1(editor, event) {
+function $035ed48997f43bbd$export$4852cabf8dc8bdd1(editor, event) {
     var sp = atom.views.getView(editor).getComponent().screenPositionForMouseEvent(event);
     if (isNaN(sp.row) || isNaN(sp.column)) return;
     return editor.bufferPositionForScreenPosition(sp);
 }
-function $96acb87639d28886$export$af1f9fcad4e99e85(element, parent, box, pos) {
+function $035ed48997f43bbd$export$af1f9fcad4e99e85(element, parent, box, pos) {
     var offset = 10;
     var left = box.right;
     var right = false;
@@ -7367,10 +7344,10 @@ function $96acb87639d28886$export$af1f9fcad4e99e85(element, parent, box, pos) {
 
 
 
-var $f898a576d15ed49a$export$e25b256a886d7ca4 = /*#__PURE__*/ function() {
+var $15ee3a3e2b468d7c$export$e25b256a886d7ca4 = /*#__PURE__*/ function() {
     "use strict";
     function TooltipView(parent) {
-        (0, $8qw4J$swchelperscjs_class_call_checkcjs._)(this, TooltipView);
+        (0, $j0dGC$_2)(this, TooltipView);
         this.parent = parent;
         this.props = {
             left: 0,
@@ -7378,17 +7355,17 @@ var $f898a576d15ed49a$export$e25b256a886d7ca4 = /*#__PURE__*/ function() {
             top: 0,
             bottom: 0
         };
-        $8qw4J$etch.initialize(this);
+        $j0dGC$initialize(this);
     }
-    (0, $8qw4J$swchelperscjs_create_classcjs._)(TooltipView, [
+    (0, $j0dGC$_3)(TooltipView, [
         {
             key: "destroy",
             value: function destroy() {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         return [
                             2,
-                            $8qw4J$etch.destroy(this)
+                            $j0dGC$destroy(this)
                         ];
                     });
                 }).call(this);
@@ -7397,13 +7374,13 @@ var $f898a576d15ed49a$export$e25b256a886d7ca4 = /*#__PURE__*/ function() {
         {
             key: "update",
             value: function update(props) {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                    var _a, _b, _c;
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                    var _props_sigHelp, _props_sigHelp1, _this_props_sigHelp;
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
-                                if (((_a = props.sigHelp) === null || _a === void 0 ? void 0 : _a.selectedItemIndex) !== undefined && ((_b = props.sigHelp) === null || _b === void 0 ? void 0 : _b.selectedItemIndex) !== ((_c = this.props.sigHelp) === null || _c === void 0 ? void 0 : _c.selectedItemIndex)) this.props.visibleItem = undefined;
-                                this.props = (0, $8qw4J$swchelperscjs_object_spreadcjs._)({}, this.props, props);
+                                if (((_props_sigHelp = props.sigHelp) === null || _props_sigHelp === void 0 ? void 0 : _props_sigHelp.selectedItemIndex) !== undefined && ((_props_sigHelp1 = props.sigHelp) === null || _props_sigHelp1 === void 0 ? void 0 : _props_sigHelp1.selectedItemIndex) !== ((_this_props_sigHelp = this.props.sigHelp) === null || _this_props_sigHelp === void 0 ? void 0 : _this_props_sigHelp.selectedItemIndex)) this.props.visibleItem = undefined;
+                                this.props = (0, $j0dGC$_4)({}, this.props, props);
                                 if (this.props.sigHelp === undefined) this.props.visibleItem = undefined;
                                 else if (this.props.visibleItem !== undefined) {
                                     this.props.visibleItem = this.props.visibleItem % this.props.sigHelp.items.length;
@@ -7411,7 +7388,7 @@ var $f898a576d15ed49a$export$e25b256a886d7ca4 = /*#__PURE__*/ function() {
                                 }
                                 return [
                                     4,
-                                    $8qw4J$etch.update(this)
+                                    $j0dGC$update(this)
                                 ];
                             case 1:
                                 _state.sent();
@@ -7426,16 +7403,16 @@ var $f898a576d15ed49a$export$e25b256a886d7ca4 = /*#__PURE__*/ function() {
         {
             key: "writeAfterUpdate",
             value: function writeAfterUpdate() {
-                (0, $96acb87639d28886$export$af1f9fcad4e99e85)(this.element, this.parent, this.props, atom.config.get("atom-typescript-updated").sigHelpPosition);
+                (0, $035ed48997f43bbd$export$af1f9fcad4e99e85)(this.element, this.parent, this.props, atom.config.get("atom-typescript-updated").sigHelpPosition);
             }
         },
         {
             key: "render",
             value: function render() {
-                return $8qw4J$etch.dom("div", {
+                return $j0dGC$dom("div", {
                     className: "atom-typescript-tooltip tooltip",
                     key: this.sigHelpHash()
-                }, $8qw4J$etch.dom("div", {
+                }, $j0dGC$dom("div", {
                     className: "tooltip-inner"
                 }, this.tooltipContents()));
             }
@@ -7464,14 +7441,15 @@ var $f898a576d15ed49a$export$e25b256a886d7ca4 = /*#__PURE__*/ function() {
                     var newclasses = [];
                     if (idx === sigHelp.selectedItemIndex) newclasses.push("atom-typescript-tooltip-signature-help-selected");
                     if (idx === visibleItem) newclasses.push("atom-typescript-tooltip-signature-help-visible");
-                    return (0, $8qw4J$swchelperscjs_to_consumable_arraycjs._)(classes).concat((0, $8qw4J$swchelperscjs_to_consumable_arraycjs._)(newclasses)).join(" ");
+                    return (0, $j0dGC$_6)(classes).concat((0, $j0dGC$_6)(newclasses)).join(" ");
                 }
                 return sigHelp.items.map(function(sig, idx) {
-                    return $8qw4J$etch.dom("div", {
-                        className: className(idx)
-                    }, $8qw4J$etch.dom("div", null, (0, $ee93806a41573bb4$export$c2a999eb584410f0)(sig.prefixDisplayParts), _this.renderSigHelpParams(sig.parameters, sigHelp.argumentIndex), (0, $ee93806a41573bb4$export$c2a999eb584410f0)(sig.suffixDisplayParts), $8qw4J$etch.dom("div", {
+                    return $j0dGC$dom("div", {
+                        className: className(idx),
+                        key: idx
+                    }, $j0dGC$dom("div", null, (0, $ee2d752c6bad64f9$export$c2a999eb584410f0)(sig.prefixDisplayParts), _this.renderSigHelpParams(sig.parameters, sigHelp.argumentIndex), (0, $ee2d752c6bad64f9$export$c2a999eb584410f0)(sig.suffixDisplayParts), $j0dGC$dom("div", {
                         className: "atom-typescript-tooltip-signature-help-documentation"
-                    }, (0, $ee93806a41573bb4$export$c2a999eb584410f0)(sig.documentation))));
+                    }, (0, $ee2d752c6bad64f9$export$c2a999eb584410f0)(sig.documentation))));
                 });
             }
         },
@@ -7479,11 +7457,12 @@ var $f898a576d15ed49a$export$e25b256a886d7ca4 = /*#__PURE__*/ function() {
             key: "renderSigHelpParams",
             value: function renderSigHelpParams(params, selIdx) {
                 return params.map(function(p, i) {
-                    return $8qw4J$etch.dom("span", {
-                        className: "atom-typescript-tooltip-signature-help-parameter"
-                    }, i > 0 ? ", " : null, $8qw4J$etch.dom("span", {
+                    return $j0dGC$dom("span", {
+                        className: "atom-typescript-tooltip-signature-help-parameter",
+                        key: i
+                    }, i > 0 ? ", " : null, $j0dGC$dom("span", {
                         className: i === selIdx ? "atom-typescript-tooltip-signature-help-selected" : undefined
-                    }, (0, $ee93806a41573bb4$export$c2a999eb584410f0)(p.displayParts)));
+                    }, (0, $ee2d752c6bad64f9$export$c2a999eb584410f0)(p.displayParts)));
                 });
             }
         }
@@ -7492,24 +7471,24 @@ var $f898a576d15ed49a$export$e25b256a886d7ca4 = /*#__PURE__*/ function() {
 }();
 
 
-var $671cf17226575bb7$export$ad76ea7b944b0d8 = /*#__PURE__*/ function() {
+var $c2c0fd9659f2fc1a$export$ad76ea7b944b0d8 = /*#__PURE__*/ function() {
     "use strict";
     function TooltipController(deps, editor, bufferPt) {
         var _this = this;
-        (0, $8qw4J$swchelperscjs_class_call_checkcjs._)(this, TooltipController);
+        (0, $j0dGC$_2)(this, TooltipController);
         this.deps = deps;
         this.editor = editor;
         this.cancelled = false;
-        this.disposables = new $8qw4J$atom.CompositeDisposable();
+        this.disposables = new $j0dGC$CompositeDisposable();
         var rawView = atom.views.getView(this.editor);
-        this.view = new (0, $f898a576d15ed49a$export$e25b256a886d7ca4)(rawView);
+        this.view = new (0, $15ee3a3e2b468d7c$export$e25b256a886d7ca4)(rawView);
         rawView.appendChild(this.view.element);
-        var debouncedUpdate = (0, $8qw4J$lodash.debounce)(this.updateTooltip.bind(this), 100, {
+        var debouncedUpdate = (0, $j0dGC$debounce)(this.updateTooltip.bind(this), 100, {
             leading: true
         });
         this.disposables.add(this.editor.onDidChangeCursorPosition(function(evt) {
             bufferPt = evt.newBufferPosition;
-            (0, $2893351583386024$export$8080b7556d9d6445)(debouncedUpdate(bufferPt));
+            (0, $e61b31fac60530e8$export$8080b7556d9d6445)(debouncedUpdate(bufferPt));
         }), rawView.onDidChangeScrollTop(function() {
             setImmediate(function() {
                 return _this.updateTooltipPosition(bufferPt);
@@ -7519,9 +7498,9 @@ var $671cf17226575bb7$export$ad76ea7b944b0d8 = /*#__PURE__*/ function() {
                 return _this.updateTooltipPosition(bufferPt);
             });
         }));
-        (0, $2893351583386024$export$8080b7556d9d6445)(this.updateTooltip(bufferPt));
+        (0, $e61b31fac60530e8$export$8080b7556d9d6445)(this.updateTooltip(bufferPt));
     }
-    (0, $8qw4J$swchelperscjs_create_classcjs._)(TooltipController, [
+    (0, $j0dGC$_3)(TooltipController, [
         {
             key: "isDisposed",
             value: function isDisposed() {
@@ -7534,15 +7513,15 @@ var $671cf17226575bb7$export$ad76ea7b944b0d8 = /*#__PURE__*/ function() {
                 if (this.cancelled) return;
                 this.cancelled = true;
                 this.disposables.dispose();
-                (0, $2893351583386024$export$8080b7556d9d6445)(this.view.destroy());
+                (0, $e61b31fac60530e8$export$8080b7556d9d6445)(this.view.destroy());
             }
         },
         {
             key: "rotateSigHelp",
             value: function rotateSigHelp(shift) {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                     var _this_view_props, visibleItem, sigHelp, curVisItem;
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
                                 _this_view_props = this.view.props, visibleItem = _this_view_props.visibleItem, sigHelp = _this_view_props.sigHelp;
@@ -7566,9 +7545,9 @@ var $671cf17226575bb7$export$ad76ea7b944b0d8 = /*#__PURE__*/ function() {
         {
             key: "updateTooltip",
             value: function updateTooltip(bufferPt) {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                     var tooltipRect, msg;
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
                                 if (this.cancelled) return [
@@ -7599,7 +7578,7 @@ var $671cf17226575bb7$export$ad76ea7b944b0d8 = /*#__PURE__*/ function() {
                                 }
                                 return [
                                     4,
-                                    this.view.update((0, $8qw4J$swchelperscjs_object_spread_propscjs._)((0, $8qw4J$swchelperscjs_object_spreadcjs._)({}, tooltipRect), {
+                                    this.view.update((0, $j0dGC$_11)((0, $j0dGC$_4)({}, tooltipRect), {
                                         sigHelp: msg
                                     }))
                                 ];
@@ -7618,7 +7597,7 @@ var $671cf17226575bb7$export$ad76ea7b944b0d8 = /*#__PURE__*/ function() {
             value: function updateTooltipPosition(bufferPt) {
                 if (this.cancelled) return;
                 var tooltipRect = this.computeTooltipPosition(bufferPt);
-                (0, $2893351583386024$export$8080b7556d9d6445)(this.view.update((0, $8qw4J$swchelperscjs_object_spreadcjs._)({}, tooltipRect)));
+                (0, $e61b31fac60530e8$export$8080b7556d9d6445)(this.view.update((0, $j0dGC$_4)({}, tooltipRect)));
             }
         },
         {
@@ -7644,12 +7623,12 @@ var $671cf17226575bb7$export$ad76ea7b944b0d8 = /*#__PURE__*/ function() {
         {
             key: "getMessage",
             value: function getMessage(bufferPt) {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                    var filePath, client, result, e;
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                    var filePath, client, result, _;
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
-                                if (!(0, $7580a2909a181bf5$export$3aecee58e23ede2c)(this.editor)) return [
+                                if (!(0, $47ae2d5cb2e495d2$export$3aecee58e23ede2c)(this.editor)) return [
                                     2
                                 ];
                                 filePath = this.editor.getPath();
@@ -7685,7 +7664,7 @@ var $671cf17226575bb7$export$ad76ea7b944b0d8 = /*#__PURE__*/ function() {
                                     result.body
                                 ];
                             case 4:
-                                e = _state.sent();
+                                _ = _state.sent();
                                 return [
                                     2
                                 ];
@@ -7703,13 +7682,13 @@ var $671cf17226575bb7$export$ad76ea7b944b0d8 = /*#__PURE__*/ function() {
 }();
 
 
-var $7eb4bb965f023e19$export$de743bb5ce1c9811 = /*#__PURE__*/ function() {
+var $94922988c5ae5d45$export$de743bb5ce1c9811 = /*#__PURE__*/ function() {
     "use strict";
     function SigHelpManager(deps) {
         var _this = this;
-        (0, $8qw4J$swchelperscjs_class_call_checkcjs._)(this, SigHelpManager);
+        (0, $j0dGC$_2)(this, SigHelpManager);
         this.deps = deps;
-        this.subscriptions = new $8qw4J$atom.CompositeDisposable();
+        this.subscriptions = new $j0dGC$CompositeDisposable();
         this.editorMap = new WeakMap();
         this.stoppedChanging = function(editor) {
             return function(event) {
@@ -7717,14 +7696,14 @@ var $7eb4bb965f023e19$export$de743bb5ce1c9811 = /*#__PURE__*/ function() {
                 var filePath = editor.getPath();
                 if (filePath === undefined) return;
                 var pos = editor.getLastCursor().getBufferPosition();
-                var _event_changes_filter = (0, $8qw4J$swchelperscjs_sliced_to_arraycjs._)(event.changes.filter(function(x) {
+                var _event_changes_filter = (0, $j0dGC$_5)(event.changes.filter(function(x) {
                     return x.newRange.containsPoint(pos);
                 }), 1), ch = _event_changes_filter[0];
-                if (ch && ch.newText.match(/[<(,]/) !== null) (0, $2893351583386024$export$8080b7556d9d6445)(_this.showTooltip(editor, pos));
+                if (ch && ch.newText.match(/[<(,]/) !== null) (0, $e61b31fac60530e8$export$8080b7556d9d6445)(_this.showTooltip(editor, pos));
             };
         };
         this.subscriptions.add(atom.workspace.observeTextEditors(function(editor) {
-            var disp = new $8qw4J$atom.CompositeDisposable();
+            var disp = new $j0dGC$CompositeDisposable();
             disp.add(editor.onDidDestroy(function() {
                 disp.dispose();
                 _this.subscriptions.remove(disp);
@@ -7734,7 +7713,7 @@ var $7eb4bb965f023e19$export$de743bb5ce1c9811 = /*#__PURE__*/ function() {
             _this.subscriptions.add(disp);
         }));
     }
-    (0, $8qw4J$swchelperscjs_create_classcjs._)(SigHelpManager, [
+    (0, $j0dGC$_3)(SigHelpManager, [
         {
             key: "dispose",
             value: function dispose() {
@@ -7765,9 +7744,9 @@ var $7eb4bb965f023e19$export$de743bb5ce1c9811 = /*#__PURE__*/ function() {
         {
             key: "showTooltipAt",
             value: function showTooltipAt(editor) {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                     var pt;
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         pt = editor.getLastCursor().getBufferPosition();
                         return [
                             2,
@@ -7782,7 +7761,7 @@ var $7eb4bb965f023e19$export$de743bb5ce1c9811 = /*#__PURE__*/ function() {
             value: function rotateSigHelp(editor, shift) {
                 var controller = this.editorMap.get(editor);
                 if (controller && !controller.isDisposed()) {
-                    (0, $2893351583386024$export$8080b7556d9d6445)(controller.rotateSigHelp(shift));
+                    (0, $e61b31fac60530e8$export$8080b7556d9d6445)(controller.rotateSigHelp(shift));
                     return true;
                 } else return false;
             }
@@ -7800,11 +7779,11 @@ var $7eb4bb965f023e19$export$de743bb5ce1c9811 = /*#__PURE__*/ function() {
         {
             key: "showTooltip",
             value: function showTooltip(editor, pos) {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                     var controller;
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         controller = this.editorMap.get(editor);
-                        if (!controller || controller.isDisposed()) this.editorMap.set(editor, new (0, $671cf17226575bb7$export$ad76ea7b944b0d8)(this.deps, editor, pos));
+                        if (!controller || controller.isDisposed()) this.editorMap.set(editor, new (0, $c2c0fd9659f2fc1a$export$ad76ea7b944b0d8)(this.deps, editor, pos));
                         return [
                             2
                         ];
@@ -7827,13 +7806,13 @@ var $7eb4bb965f023e19$export$de743bb5ce1c9811 = /*#__PURE__*/ function() {
 
 
 
-function $90795085fffcb985$export$63174c828edd6ff8(element, event, selector, callback) {
+function $d0a97c2059c6b680$export$63174c828edd6ff8(element, event, selector, callback) {
     var bound = function(evt) {
         var sel = evt.target.closest(selector);
         if (sel && element.contains(sel)) callback(evt);
     };
     element.addEventListener(event, bound);
-    return new (0, $8qw4J$atom.Disposable)(function() {
+    return new (0, $j0dGC$Disposable)(function() {
         element.removeEventListener(event, bound);
     });
 }
@@ -7854,10 +7833,10 @@ function $90795085fffcb985$export$63174c828edd6ff8(element, event, selector, cal
 
 
 
-var $4561ba87e6653b51$export$e25b256a886d7ca4 = /*#__PURE__*/ function() {
+var $482f918d461710b8$export$e25b256a886d7ca4 = /*#__PURE__*/ function() {
     "use strict";
     function TooltipView() {
-        (0, $8qw4J$swchelperscjs_class_call_checkcjs._)(this, TooltipView);
+        (0, $j0dGC$_2)(this, TooltipView);
         this.tooltip = null;
         this.props = {
             left: 0,
@@ -7865,17 +7844,17 @@ var $4561ba87e6653b51$export$e25b256a886d7ca4 = /*#__PURE__*/ function() {
             top: 0,
             bottom: 0
         };
-        $8qw4J$etch.initialize(this);
+        $j0dGC$etch1.initialize(this);
     }
-    (0, $8qw4J$swchelperscjs_create_classcjs._)(TooltipView, [
+    (0, $j0dGC$_3)(TooltipView, [
         {
             key: "destroy",
             value: function destroy() {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         return [
                             2,
-                            $8qw4J$etch.destroy(this)
+                            $j0dGC$etch1.destroy(this)
                         ];
                     });
                 }).call(this);
@@ -7884,17 +7863,17 @@ var $4561ba87e6653b51$export$e25b256a886d7ca4 = /*#__PURE__*/ function() {
         {
             key: "update",
             value: function update(props) {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                     var _;
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
-                                this.props = (0, $8qw4J$swchelperscjs_object_spreadcjs._)({}, this.props, props);
+                                this.props = (0, $j0dGC$_4)({}, this.props, props);
                                 _ = this;
                                 return [
                                     4,
-                                    (0, $002ef260a7981892$export$2c9a28f937ef04fb)(this.props.info, $8qw4J$etch, function(x) {
-                                        return $8qw4J$etch.dom("div", {
+                                    (0, $4278b589e5f5160c$export$2c9a28f937ef04fb)(this.props.info, $j0dGC$etch1, function(x) {
+                                        return $j0dGC$etch1.dom("div", {
                                             className: "atom-typescript-tooltip-tooltip-code"
                                         }, x);
                                     })
@@ -7903,7 +7882,7 @@ var $4561ba87e6653b51$export$e25b256a886d7ca4 = /*#__PURE__*/ function() {
                                 _.tooltip = _state.sent();
                                 return [
                                     4,
-                                    $8qw4J$etch.update(this)
+                                    $j0dGC$etch1.update(this)
                                 ];
                             case 2:
                                 _state.sent();
@@ -7918,15 +7897,15 @@ var $4561ba87e6653b51$export$e25b256a886d7ca4 = /*#__PURE__*/ function() {
         {
             key: "writeAfterUpdate",
             value: function writeAfterUpdate() {
-                (0, $96acb87639d28886$export$af1f9fcad4e99e85)(this.element, document.body, this.props, atom.config.get("atom-typescript-updated").tooltipPosition);
+                (0, $035ed48997f43bbd$export$af1f9fcad4e99e85)(this.element, document.body, this.props, atom.config.get("atom-typescript-updated").tooltipPosition);
             }
         },
         {
             key: "render",
             value: function render() {
-                return $8qw4J$etch.dom("div", {
+                return $j0dGC$etch1.dom("div", {
                     className: "atom-typescript-tooltip tooltip"
-                }, $8qw4J$etch.dom("div", {
+                }, $j0dGC$etch1.dom("div", {
                     className: "tooltip-inner"
                 }, this.tooltip));
             }
@@ -7936,21 +7915,21 @@ var $4561ba87e6653b51$export$e25b256a886d7ca4 = /*#__PURE__*/ function() {
 }();
 
 
-var $36210dbf6541a136$export$ad76ea7b944b0d8 = /*#__PURE__*/ function() {
+var $32ec3b1967ab1971$export$ad76ea7b944b0d8 = /*#__PURE__*/ function() {
     "use strict";
     function TooltipController(getClient, editor, e, bufferPt) {
-        (0, $8qw4J$swchelperscjs_class_call_checkcjs._)(this, TooltipController);
+        (0, $j0dGC$_2)(this, TooltipController);
         this.getClient = getClient;
         this.cancelled = false;
-        (0, $2893351583386024$export$8080b7556d9d6445)(this.initialize(editor, e, bufferPt));
+        (0, $e61b31fac60530e8$export$8080b7556d9d6445)(this.initialize(editor, e, bufferPt));
     }
-    (0, $8qw4J$swchelperscjs_create_classcjs._)(TooltipController, [
+    (0, $j0dGC$_3)(TooltipController, [
         {
             key: "dispose",
             value: function dispose() {
                 this.cancelled = true;
                 if (this.view) {
-                    (0, $2893351583386024$export$8080b7556d9d6445)(this.view.destroy());
+                    (0, $e61b31fac60530e8$export$8080b7556d9d6445)(this.view.destroy());
                     this.view = undefined;
                 }
             }
@@ -7958,9 +7937,9 @@ var $36210dbf6541a136$export$ad76ea7b944b0d8 = /*#__PURE__*/ function() {
         {
             key: "initialize",
             value: function initialize(editor, e, bufferPt) {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                     var rawView, curCharPixelPt, nextCharPixelPt, offset, tooltipRect, msg;
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
                                 rawView = atom.views.getView(editor);
@@ -8019,9 +7998,9 @@ var $36210dbf6541a136$export$ad76ea7b944b0d8 = /*#__PURE__*/ function() {
         {
             key: "getMessage",
             value: function getMessage(editor, bufferPt) {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                    var result, client, filePath, e;
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                    var result, client, filePath, _;
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
                                 return [
@@ -8060,7 +8039,7 @@ var $36210dbf6541a136$export$ad76ea7b944b0d8 = /*#__PURE__*/ function() {
                                     5
                                 ];
                             case 4:
-                                e = _state.sent();
+                                _ = _state.sent();
                                 return [
                                     2
                                 ];
@@ -8077,15 +8056,15 @@ var $36210dbf6541a136$export$ad76ea7b944b0d8 = /*#__PURE__*/ function() {
         {
             key: "showTooltip",
             value: function showTooltip(tooltipRect, info) {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
-                                this.view = new (0, $4561ba87e6653b51$export$e25b256a886d7ca4)();
+                                this.view = new (0, $482f918d461710b8$export$e25b256a886d7ca4)();
                                 document.body.appendChild(this.view.element);
                                 return [
                                     4,
-                                    this.view.update((0, $8qw4J$swchelperscjs_object_spread_propscjs._)((0, $8qw4J$swchelperscjs_object_spreadcjs._)({}, tooltipRect), {
+                                    this.view.update((0, $j0dGC$_11)((0, $j0dGC$_4)({}, tooltipRect), {
                                         info: info
                                     }))
                                 ];
@@ -8105,28 +8084,28 @@ var $36210dbf6541a136$export$ad76ea7b944b0d8 = /*#__PURE__*/ function() {
 
 
 
-var $e508d76e41e98c6a$export$3cf29e47efa41626 = /*#__PURE__*/ function() {
+var $31f5665072708b9b$export$3cf29e47efa41626 = /*#__PURE__*/ function() {
     "use strict";
     function TooltipManager(getClientInternal) {
         var _this = this;
-        (0, $8qw4J$swchelperscjs_class_call_checkcjs._)(this, TooltipManager);
+        (0, $j0dGC$_2)(this, TooltipManager);
         this.getClientInternal = getClientInternal;
-        this.subscriptions = new $8qw4J$atom.CompositeDisposable();
+        this.subscriptions = new $j0dGC$CompositeDisposable();
         this.editorMap = new WeakMap();
         this.getClient = function(editor) {
-            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+            return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                 var filePath;
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (0, $j0dGC$_1)(this, function(_state) {
                     // Only on ".ts" files
                     filePath = editor.getPath();
                     if (filePath === undefined) return [
                         2
                     ];
-                    if (!$7580a2909a181bf5$export$3aecee58e23ede2c(editor)) return [
+                    if (!$47ae2d5cb2e495d2$export$3aecee58e23ede2c(editor)) return [
                         2
                     ];
                     // We only create a "program" once the file is persisted to disk
-                    if (!(0, ($parcel$interopDefault($8qw4J$fs))).existsSync(filePath)) return [
+                    if (!(0, $j0dGC$fs).existsSync(filePath)) return [
                         2
                     ];
                     return [
@@ -8146,7 +8125,7 @@ var $e508d76e41e98c6a$export$3cf29e47efa41626 = /*#__PURE__*/ function() {
         this.trackMouseMovement = function(editor) {
             var lastExprTypeBufferPt;
             return function(e) {
-                var bufferPt = (0, $96acb87639d28886$export$4852cabf8dc8bdd1)(editor, e);
+                var bufferPt = (0, $035ed48997f43bbd$export$4852cabf8dc8bdd1)(editor, e);
                 if (!bufferPt) return;
                 if (lastExprTypeBufferPt && lastExprTypeBufferPt.isEqual(bufferPt) && _this.pendingTooltip) return;
                 lastExprTypeBufferPt = bufferPt;
@@ -8163,8 +8142,8 @@ var $e508d76e41e98c6a$export$3cf29e47efa41626 = /*#__PURE__*/ function() {
                 rawView: rawView,
                 lines: lines
             });
-            var disp = new $8qw4J$atom.CompositeDisposable();
-            disp.add((0, $90795085fffcb985$export$63174c828edd6ff8)(rawView, "mousemove", ".scroll-view", _this.trackMouseMovement(editor)), (0, $90795085fffcb985$export$63174c828edd6ff8)(rawView, "mouseout", ".scroll-view", _this.clearExprTypeTimeout), (0, $90795085fffcb985$export$63174c828edd6ff8)(rawView, "keydown", ".scroll-view", _this.clearExprTypeTimeout), rawView.onDidChangeScrollTop(_this.clearExprTypeTimeout), rawView.onDidChangeScrollLeft(_this.clearExprTypeTimeout), editor.onDidDestroy(function() {
+            var disp = new $j0dGC$CompositeDisposable();
+            disp.add((0, $d0a97c2059c6b680$export$63174c828edd6ff8)(rawView, "mousemove", ".scroll-view", _this.trackMouseMovement(editor)), (0, $d0a97c2059c6b680$export$63174c828edd6ff8)(rawView, "mouseout", ".scroll-view", _this.clearExprTypeTimeout), (0, $d0a97c2059c6b680$export$63174c828edd6ff8)(rawView, "keydown", ".scroll-view", _this.clearExprTypeTimeout), rawView.onDidChangeScrollTop(_this.clearExprTypeTimeout), rawView.onDidChangeScrollLeft(_this.clearExprTypeTimeout), editor.onDidDestroy(function() {
                 disp.dispose();
                 _this.subscriptions.remove(disp);
                 _this.clearExprTypeTimeout();
@@ -8172,7 +8151,7 @@ var $e508d76e41e98c6a$export$3cf29e47efa41626 = /*#__PURE__*/ function() {
             _this.subscriptions.add(disp);
         }));
     }
-    (0, $8qw4J$swchelperscjs_create_classcjs._)(TooltipManager, [
+    (0, $j0dGC$_3)(TooltipManager, [
         {
             key: "dispose",
             value: function dispose() {
@@ -8211,7 +8190,7 @@ var $e508d76e41e98c6a$export$3cf29e47efa41626 = /*#__PURE__*/ function() {
             key: "showExpressionType",
             value: function showExpressionType(editor, e, bufferPt) {
                 if (this.pendingTooltip) this.pendingTooltip.dispose();
-                this.pendingTooltip = new (0, $36210dbf6541a136$export$ad76ea7b944b0d8)(this.getClient, editor, e, bufferPt);
+                this.pendingTooltip = new (0, $32ec3b1967ab1971$export$ad76ea7b944b0d8)(this.getClient, editor, e, bufferPt);
             }
         },
         {
@@ -8235,27 +8214,27 @@ var $e508d76e41e98c6a$export$3cf29e47efa41626 = /*#__PURE__*/ function() {
 
 
 
-var $1e8c6b8d10c1d614$export$951a8e3d4c79262 = /*#__PURE__*/ function() {
+var $bbbe7b214522b8df$export$951a8e3d4c79262 = /*#__PURE__*/ function() {
     "use strict";
     function SemanticViewController(getClient) {
         var _this = this;
-        (0, $8qw4J$swchelperscjs_class_call_checkcjs._)(this, SemanticViewController);
+        (0, $j0dGC$_2)(this, SemanticViewController);
         this.getClient = getClient;
-        this.subscriptions = new (0, $8qw4J$atom.CompositeDisposable)();
-        var pane = atom.workspace.paneForURI((0, $4759e62349e0b646$export$c5c441a5719d665b));
-        if (pane) this.view = pane.itemForURI((0, $4759e62349e0b646$export$c5c441a5719d665b));
-        if (this.view) (0, $2893351583386024$export$8080b7556d9d6445)(this.view.setGetClient(this.getClient));
-        this.subscriptions.add(new (0, $8qw4J$atom.Disposable)(function() {
+        this.subscriptions = new (0, $j0dGC$CompositeDisposable)();
+        var pane = atom.workspace.paneForURI((0, $cea6b8bc91af2731$export$c5c441a5719d665b));
+        if (pane) this.view = pane.itemForURI((0, $cea6b8bc91af2731$export$c5c441a5719d665b));
+        if (this.view) (0, $e61b31fac60530e8$export$8080b7556d9d6445)(this.view.setGetClient(this.getClient));
+        this.subscriptions.add(new (0, $j0dGC$Disposable)(function() {
             if (_this.view) {
                 atom.workspace.hide(_this.view);
-                (0, $2893351583386024$export$8080b7556d9d6445)(_this.view.destroy());
+                (0, $e61b31fac60530e8$export$8080b7556d9d6445)(_this.view.destroy());
             }
         }), atom.config.observe("atom-typescript-updated.showSemanticView", function(val) {
-            if (val) (0, $2893351583386024$export$8080b7556d9d6445)(_this.show());
+            if (val) (0, $e61b31fac60530e8$export$8080b7556d9d6445)(_this.show());
             else _this.hide();
         }));
     }
-    (0, $8qw4J$swchelperscjs_create_classcjs._)(SemanticViewController, [
+    (0, $j0dGC$_3)(SemanticViewController, [
         {
             key: "dispose",
             value: function dispose() {
@@ -8265,8 +8244,8 @@ var $1e8c6b8d10c1d614$export$951a8e3d4c79262 = /*#__PURE__*/ function() {
         {
             key: "toggle",
             value: function toggle() {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
                                 if (!!this.view) return [
@@ -8303,15 +8282,15 @@ var $1e8c6b8d10c1d614$export$951a8e3d4c79262 = /*#__PURE__*/ function() {
         {
             key: "show",
             value: function show() {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
                                 if (!!this.view) return [
                                     3,
                                     2
                                 ];
-                                this.view = (0, $4759e62349e0b646$export$a3a95952d8506109).create({
+                                this.view = (0, $cea6b8bc91af2731$export$a3a95952d8506109).create({
                                     navTree: null
                                 });
                                 return [
@@ -8363,17 +8342,17 @@ var $1e8c6b8d10c1d614$export$951a8e3d4c79262 = /*#__PURE__*/ function() {
 
 
 
-var $46ff9c914e9ca5cd$export$3288d34c523a1192 = /*#__PURE__*/ function() {
+var $9f17059b29ad2ecc$export$3288d34c523a1192 = /*#__PURE__*/ function() {
     "use strict";
     function Tag(props) {
-        (0, $8qw4J$swchelperscjs_class_call_checkcjs._)(this, Tag);
+        (0, $j0dGC$_2)(this, Tag);
         this.position = props.position;
         this.name = props.name;
         this.type = props.type;
         this.parent = props.parent;
         this.file = props.file;
     }
-    (0, $8qw4J$swchelperscjs_create_classcjs._)(Tag, null, [
+    (0, $j0dGC$_3)(Tag, null, [
         {
             key: "fromNavTree",
             value: function fromNavTree(navTree, parent) {
@@ -8410,22 +8389,22 @@ var $46ff9c914e9ca5cd$export$3288d34c523a1192 = /*#__PURE__*/ function() {
 }();
 
 
-function $8074ca8d37a076ff$export$3d887693d0007350(filePath, deps) {
-    return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+function $845445e9858d490b$export$3d887693d0007350(filePath, deps) {
+    return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
         var navtree;
-        return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+        return (0, $j0dGC$_1)(this, function(_state) {
             switch(_state.label){
                 case 0:
                     return [
                         4,
-                        $8074ca8d37a076ff$var$getNavTree(filePath, deps)
+                        $845445e9858d490b$var$getNavTree(filePath, deps)
                     ];
                 case 1:
                     navtree = _state.sent();
                     if (navtree && navtree.childItems) // NOTE omit root NavigationTree tree element (which corresponds to the file itself)
                     return [
                         2,
-                        Array.from($8074ca8d37a076ff$var$parseNavTree(navtree.childItems))
+                        Array.from($845445e9858d490b$var$parseNavTree(navtree.childItems))
                     ];
                     else return [
                         2,
@@ -8438,21 +8417,21 @@ function $8074ca8d37a076ff$export$3d887693d0007350(filePath, deps) {
         });
     })();
 }
-function $8074ca8d37a076ff$export$84b9b1d45a7e55b8(filePath, search, deps) {
-    return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+function $845445e9858d490b$export$84b9b1d45a7e55b8(filePath, search, deps) {
+    return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
         var navtree;
-        return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+        return (0, $j0dGC$_1)(this, function(_state) {
             switch(_state.label){
                 case 0:
                     return [
                         4,
-                        $8074ca8d37a076ff$var$getNavTo(filePath, search, deps)
+                        $845445e9858d490b$var$getNavTo(filePath, search, deps)
                     ];
                 case 1:
                     navtree = _state.sent();
                     if (navtree) return [
                         2,
-                        Array.from($8074ca8d37a076ff$var$parseNavTo(navtree))
+                        Array.from($845445e9858d490b$var$parseNavTo(navtree))
                     ];
                     else return [
                         2,
@@ -8465,9 +8444,9 @@ function $8074ca8d37a076ff$export$84b9b1d45a7e55b8(filePath, search, deps) {
         });
     })();
 }
-function $8074ca8d37a076ff$var$parseNavTree(navTree, parent) {
+function $845445e9858d490b$var$parseNavTree(navTree, parent) {
     var _iteratorNormalCompletion, _didIteratorError, _iteratorError, _iterator, _step, item, tag, err;
-    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+    return (0, $j0dGC$_1)(this, function(_state) {
         switch(_state.label){
             case 0:
                 navTree.sort(function(a, b) {
@@ -8490,7 +8469,7 @@ function $8074ca8d37a076ff$var$parseNavTree(navTree, parent) {
                     6
                 ];
                 item = _step.value;
-                tag = (0, $46ff9c914e9ca5cd$export$3288d34c523a1192).fromNavTree(item, parent);
+                tag = (0, $9f17059b29ad2ecc$export$3288d34c523a1192).fromNavTree(item, parent);
                 return [
                     4,
                     tag
@@ -8503,7 +8482,7 @@ function $8074ca8d37a076ff$var$parseNavTree(navTree, parent) {
                 ];
                 return [
                     5,
-                    (0, $8qw4J$swchelperscjs_ts_valuescjs._)($8074ca8d37a076ff$var$parseNavTree(item.childItems, tag))
+                    (0, $j0dGC$_7)($845445e9858d490b$var$parseNavTree(item.childItems, tag))
                 ];
             case 4:
                 _state.sent();
@@ -8547,9 +8526,9 @@ function $8074ca8d37a076ff$var$parseNavTree(navTree, parent) {
         }
     });
 }
-function $8074ca8d37a076ff$var$parseNavTo(navTree, parent) {
+function $845445e9858d490b$var$parseNavTo(navTree, parent) {
     var _iteratorNormalCompletion, _didIteratorError, _iteratorError, _iterator, _step, item, err;
-    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+    return (0, $j0dGC$_1)(this, function(_state) {
         switch(_state.label){
             case 0:
                 _iteratorNormalCompletion = true, _didIteratorError = false, _iteratorError = undefined;
@@ -8571,7 +8550,7 @@ function $8074ca8d37a076ff$var$parseNavTo(navTree, parent) {
                 item = _step.value;
                 return [
                     4,
-                    (0, $46ff9c914e9ca5cd$export$3288d34c523a1192).fromNavto(item, parent)
+                    (0, $9f17059b29ad2ecc$export$3288d34c523a1192).fromNavto(item, parent)
                 ];
             case 3:
                 _state.sent();
@@ -8615,10 +8594,10 @@ function $8074ca8d37a076ff$var$parseNavTo(navTree, parent) {
         }
     });
 }
-function $8074ca8d37a076ff$var$getNavTree(filePath, deps) {
-    return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+function $845445e9858d490b$var$getNavTree(filePath, deps) {
+    return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
         var client, navtreeResult, e;
-        return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+        return (0, $j0dGC$_1)(this, function(_state) {
             switch(_state.label){
                 case 0:
                     _state.trys.push([
@@ -8660,10 +8639,10 @@ function $8074ca8d37a076ff$var$getNavTree(filePath, deps) {
         });
     })();
 }
-function $8074ca8d37a076ff$var$getNavTo(filePath, search, deps) {
-    return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+function $845445e9858d490b$var$getNavTo(filePath, search, deps) {
+    return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
         var client, navtoResult, e;
-        return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+        return (0, $j0dGC$_1)(this, function(_state) {
             switch(_state.label){
                 case 0:
                     _state.trys.push([
@@ -8712,9 +8691,9 @@ function $8074ca8d37a076ff$var$getNavTo(filePath, search, deps) {
 
 
 
-function $1df742126c288bbc$export$1d50c664485a457a(tag, editor, histGoForward) {
-    return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-        return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+function $d31fcc512247a658$export$1d50c664485a457a(tag, editor, histGoForward) {
+    return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+        return (0, $j0dGC$_1)(this, function(_state) {
             if (tag.file !== undefined) return [
                 2,
                 histGoForward(editor, {
@@ -8731,7 +8710,7 @@ function $1df742126c288bbc$export$1d50c664485a457a(tag, editor, histGoForward) {
         });
     })();
 }
-function $1df742126c288bbc$export$f52e1de408b9499d(editor) {
+function $d31fcc512247a658$export$f52e1de408b9499d(editor) {
     var editorElement = atom.views.getView(editor);
     var scrollTop = editorElement.getScrollTop();
     return {
@@ -8739,7 +8718,7 @@ function $1df742126c288bbc$export$f52e1de408b9499d(editor) {
         scrollTop: scrollTop
     };
 }
-function $1df742126c288bbc$export$f514d2bb3b6ad37e(editor, param) {
+function $d31fcc512247a658$export$f514d2bb3b6ad37e(editor, param) {
     var bufferRanges = param.bufferRanges, scrollTop = param.scrollTop;
     var editorElement = atom.views.getView(editor);
     editor.setSelectedBufferRanges(bufferRanges);
@@ -8747,10 +8726,10 @@ function $1df742126c288bbc$export$f514d2bb3b6ad37e(editor, param) {
 }
 
 
-function $864f74e447044864$export$e03c1c3201ee8bb7(editor, deps) {
-    return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+function $b376d786bdfd8420$export$e03c1c3201ee8bb7(editor, deps) {
+    return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
         var filePath, initialState, tag;
-        return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+        return (0, $j0dGC$_1)(this, function(_state) {
             switch(_state.label){
                 case 0:
                     filePath = editor.getPath();
@@ -8758,21 +8737,21 @@ function $864f74e447044864$export$e03c1c3201ee8bb7(editor, deps) {
                         3,
                         4
                     ];
-                    if (atom.config.get("symbols-view.quickJumpToFileSymbol")) initialState = $1df742126c288bbc$export$f52e1de408b9499d(editor);
+                    if (atom.config.get("symbols-view.quickJumpToFileSymbol")) initialState = $d31fcc512247a658$export$f52e1de408b9499d(editor);
                     return [
                         4,
-                        (0, $f55d59ecd155c40a$export$12cb8c60c107136e)({
-                            items: (0, $8074ca8d37a076ff$export$3d887693d0007350)(filePath, deps),
+                        (0, $0be5325d1bf82077$export$12cb8c60c107136e)({
+                            items: (0, $845445e9858d490b$export$3d887693d0007350)(filePath, deps),
                             itemTemplate: function(param, ctx) {
                                 var name = param.name, position = param.position;
-                                return $8qw4J$etch.dom("li", {
+                                return $j0dGC$dom("li", {
                                     className: "two-lines"
-                                }, $8qw4J$etch.dom("div", {
+                                }, $j0dGC$dom("div", {
                                     className: "primary-line"
-                                }, $8qw4J$etch.dom((0, $5f8857790714307e$export$31d5f5740e2c2887), {
+                                }, $j0dGC$dom((0, $a3783a40399b9047$export$31d5f5740e2c2887), {
                                     label: name,
                                     query: ctx.getFilterQuery()
-                                })), $8qw4J$etch.dom("div", {
+                                })), $j0dGC$dom("div", {
                                     className: "secondary-line"
                                 }, "Line ".concat(position.row + 1)));
                             },
@@ -8791,7 +8770,7 @@ function $864f74e447044864$export$e03c1c3201ee8bb7(editor, deps) {
                     ];
                     return [
                         4,
-                        $1df742126c288bbc$export$1d50c664485a457a(tag, editor, deps.histGoForward)
+                        $d31fcc512247a658$export$1d50c664485a457a(tag, editor, deps.histGoForward)
                     ];
                 case 2:
                     _state.sent();
@@ -8800,7 +8779,7 @@ function $864f74e447044864$export$e03c1c3201ee8bb7(editor, deps) {
                         4
                     ];
                 case 3:
-                    if (initialState) $1df742126c288bbc$export$f514d2bb3b6ad37e(editor, initialState);
+                    if (initialState) $d31fcc512247a658$export$f514d2bb3b6ad37e(editor, initialState);
                     _state.label = 4;
                 case 4:
                     return [
@@ -8819,10 +8798,10 @@ function $864f74e447044864$export$e03c1c3201ee8bb7(editor, deps) {
 
 
 
-function $2fd23eb078060f30$export$e03c1c3201ee8bb7(editor, deps) {
-    return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+function $d9ac089b9417e13d$export$e03c1c3201ee8bb7(editor, deps) {
+    return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
         var filePath, tag;
-        return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+        return (0, $j0dGC$_1)(this, function(_state) {
             switch(_state.label){
                 case 0:
                     filePath = editor.getPath();
@@ -8832,21 +8811,21 @@ function $2fd23eb078060f30$export$e03c1c3201ee8bb7(editor, deps) {
                     ];
                     return [
                         4,
-                        (0, $f55d59ecd155c40a$export$12cb8c60c107136e)({
+                        (0, $0be5325d1bf82077$export$12cb8c60c107136e)({
                             items: function(search) {
-                                return (0, $8074ca8d37a076ff$export$84b9b1d45a7e55b8)(filePath, search, deps);
+                                return (0, $845445e9858d490b$export$84b9b1d45a7e55b8)(filePath, search, deps);
                             },
                             itemTemplate: function(param, ctx) {
                                 var name = param.name, position = param.position, file = param.file;
                                 var relfile = atom.project.relativize(file);
-                                return $8qw4J$etch.dom("li", {
+                                return $j0dGC$dom("li", {
                                     className: "two-lines"
-                                }, $8qw4J$etch.dom("div", {
+                                }, $j0dGC$dom("div", {
                                     className: "primary-line"
-                                }, $8qw4J$etch.dom((0, $5f8857790714307e$export$31d5f5740e2c2887), {
+                                }, $j0dGC$dom((0, $a3783a40399b9047$export$31d5f5740e2c2887), {
                                     label: name,
                                     query: ctx.getFilterQuery()
-                                })), $8qw4J$etch.dom("div", {
+                                })), $j0dGC$dom("div", {
                                     className: "secondary-line"
                                 }, "File ".concat(relfile, " line ").concat(position.row + 1)));
                             },
@@ -8861,7 +8840,7 @@ function $2fd23eb078060f30$export$e03c1c3201ee8bb7(editor, deps) {
                     ];
                     return [
                         4,
-                        $1df742126c288bbc$export$1d50c664485a457a(tag, editor, deps.histGoForward)
+                        $d31fcc512247a658$export$1d50c664485a457a(tag, editor, deps.histGoForward)
                     ];
                 case 2:
                     _state.sent();
@@ -8876,23 +8855,23 @@ function $2fd23eb078060f30$export$e03c1c3201ee8bb7(editor, deps) {
 }
 
 
-var $c69ac4021c07c8b9$export$bf8eec42fec7719 = /*#__PURE__*/ function() {
+var $dd2f950237a8b876$export$bf8eec42fec7719 = /*#__PURE__*/ function() {
     "use strict";
     function SymbolsViewController(deps) {
-        (0, $8qw4J$swchelperscjs_class_call_checkcjs._)(this, SymbolsViewController);
+        (0, $j0dGC$_2)(this, SymbolsViewController);
         this.deps = deps;
     }
-    (0, $8qw4J$swchelperscjs_create_classcjs._)(SymbolsViewController, [
+    (0, $j0dGC$_3)(SymbolsViewController, [
         {
             key: "toggleFileView",
             value: function toggleFileView1(editor) {
-                (0, $2893351583386024$export$8080b7556d9d6445)((0, $864f74e447044864$export$e03c1c3201ee8bb7)(editor, this.deps));
+                (0, $e61b31fac60530e8$export$8080b7556d9d6445)((0, $b376d786bdfd8420$export$e03c1c3201ee8bb7)(editor, this.deps));
             }
         },
         {
             key: "toggleProjectView",
             value: function toggleProjectView1(editor) {
-                (0, $2893351583386024$export$8080b7556d9d6445)((0, $2fd23eb078060f30$export$e03c1c3201ee8bb7)(editor, this.deps));
+                (0, $e61b31fac60530e8$export$8080b7556d9d6445)((0, $d9ac089b9417e13d$export$e03c1c3201ee8bb7)(editor, this.deps));
             }
         },
         {
@@ -8914,20 +8893,20 @@ var $c69ac4021c07c8b9$export$bf8eec42fec7719 = /*#__PURE__*/ function() {
 
 
 
-var $80c6b1f413ab5323$export$a4d36ae2cf2e8cd = /*#__PURE__*/ function() {
+var $2923d5837bbcb0ae$export$a4d36ae2cf2e8cd = /*#__PURE__*/ function() {
     "use strict";
     function ErrorPusher() {
-        (0, $8qw4J$swchelperscjs_class_call_checkcjs._)(this, ErrorPusher);
+        (0, $j0dGC$_2)(this, ErrorPusher);
         this.errors = new Map();
         this.fileGrammars = new Map();
-        this.pushErrors = (0, $8qw4J$lodash.debounce)(this.pushErrors.bind(this), 100);
+        this.pushErrors = (0, $j0dGC$debounce)(this.pushErrors.bind(this), 100);
     }
-    (0, $8qw4J$swchelperscjs_create_classcjs._)(ErrorPusher, [
+    (0, $j0dGC$_3)(ErrorPusher, [
         {
             key: "getErrorsInRange",
             value: function getErrorsInRange(filePath, range) {
                 var _iteratorNormalCompletion, _didIteratorError, _iteratorError, _iterator, _step, prefixed, errors, err;
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (0, $j0dGC$_1)(this, function(_state) {
                     switch(_state.label){
                         case 0:
                             _iteratorNormalCompletion = true, _didIteratorError = false, _iteratorError = undefined;
@@ -8947,15 +8926,15 @@ var $80c6b1f413ab5323$export$a4d36ae2cf2e8cd = /*#__PURE__*/ function() {
                                 5
                             ];
                             prefixed = _step.value;
-                            errors = prefixed.get($8qw4J$path.normalize(filePath));
+                            errors = prefixed.get($j0dGC$normalize(filePath));
                             if (!errors) return [
                                 3,
                                 4
                             ];
                             return [
                                 5,
-                                (0, $8qw4J$swchelperscjs_ts_valuescjs._)(errors.filter(function(err) {
-                                    return (0, $ee93806a41573bb4$export$477d491a08b070ec)(err).intersectsWith(range);
+                                (0, $j0dGC$_7)(errors.filter(function(err) {
+                                    return (0, $ee2d752c6bad64f9$export$477d491a08b070ec)(err).intersectsWith(range);
                                 }))
                             ];
                         case 3:
@@ -9005,7 +8984,7 @@ var $80c6b1f413ab5323$export$a4d36ae2cf2e8cd = /*#__PURE__*/ function() {
             key: "getErrorsAt",
             value: /** Return any errors that cover the given location */ function getErrorsAt(filePath, loc) {
                 var _iteratorNormalCompletion, _didIteratorError, _iteratorError, _iterator, _step, prefixed, errors, err;
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (0, $j0dGC$_1)(this, function(_state) {
                     switch(_state.label){
                         case 0:
                             _iteratorNormalCompletion = true, _didIteratorError = false, _iteratorError = undefined;
@@ -9025,15 +9004,15 @@ var $80c6b1f413ab5323$export$a4d36ae2cf2e8cd = /*#__PURE__*/ function() {
                                 5
                             ];
                             prefixed = _step.value;
-                            errors = prefixed.get($8qw4J$path.normalize(filePath));
+                            errors = prefixed.get($j0dGC$normalize(filePath));
                             if (!errors) return [
                                 3,
                                 4
                             ];
                             return [
                                 5,
-                                (0, $8qw4J$swchelperscjs_ts_valuescjs._)(errors.filter(function(err) {
-                                    return (0, $ee93806a41573bb4$export$477d491a08b070ec)(err).containsPoint(loc);
+                                (0, $j0dGC$_7)(errors.filter(function(err) {
+                                    return (0, $ee2d752c6bad64f9$export$477d491a08b070ec)(err).containsPoint(loc);
                                 }))
                             ];
                         case 3:
@@ -9087,7 +9066,7 @@ var $80c6b1f413ab5323$export$a4d36ae2cf2e8cd = /*#__PURE__*/ function() {
                     prefixed = new Map();
                     this.errors.set(prefix, prefixed);
                 }
-                prefixed.set($8qw4J$path.normalize(filePath), errors);
+                prefixed.set($j0dGC$normalize(filePath), errors);
                 this.pushErrors();
             }
         },
@@ -9156,20 +9135,20 @@ var $80c6b1f413ab5323$export$a4d36ae2cf2e8cd = /*#__PURE__*/ function() {
                         var fileErrors = _step.value;
                         try {
                             var _this, _loop = function() {
-                                var _step_value = (0, $8qw4J$swchelperscjs_sliced_to_arraycjs._)(_step1.value, 2), filePath = _step_value[0], diagnostics = _step_value[1];
+                                var _step_value = (0, $j0dGC$_5)(_step1.value, 2), filePath = _step_value[0], diagnostics = _step_value[1];
                                 var ed = atom.workspace.getTextEditors().find(function(x) {
                                     return x.getPath() === filePath;
                                 });
                                 var scopeName = ed ? ed.getGrammar().scopeName : _this.selectGrammar(filePath);
-                                if ($80c6b1f413ab5323$var$config("suppressAllDiagnostics", scopeName)) return "continue";
+                                if ($2923d5837bbcb0ae$var$config("suppressAllDiagnostics", scopeName)) return "continue";
                                 var _iteratorNormalCompletion = true, _didIteratorError = false, _iteratorError = undefined;
                                 try {
                                     for(var _iterator = diagnostics[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true){
                                         var diagnostic = _step.value;
-                                        if ($80c6b1f413ab5323$var$config("ignoredDiagnosticCodes", scopeName).includes("".concat(diagnostic.code))) continue;
-                                        if ($80c6b1f413ab5323$var$config("ignoreUnusedSuggestionDiagnostics", scopeName) && diagnostic.reportsUnnecessary) continue;
-                                        if (diagnostic.category === "suggestion" && $80c6b1f413ab5323$var$config("ignoredSuggestionDiagnostics", scopeName).includes("".concat(diagnostic.code))) continue;
-                                        if ($80c6b1f413ab5323$var$config("ignoreNonSuggestionSuggestionDiagnostics", scopeName) && diagnostic.category === "suggestion" && !(0, $ee93806a41573bb4$export$8b10423be8ce987b)(diagnostic.code, (0, $ee93806a41573bb4$export$70bfa4f5700cfeae).Suggestion)) continue;
+                                        if ($2923d5837bbcb0ae$var$config("ignoredDiagnosticCodes", scopeName).includes("".concat(diagnostic.code))) continue;
+                                        if ($2923d5837bbcb0ae$var$config("ignoreUnusedSuggestionDiagnostics", scopeName) && diagnostic.reportsUnnecessary) continue;
+                                        if (diagnostic.category === "suggestion" && $2923d5837bbcb0ae$var$config("ignoredSuggestionDiagnostics", scopeName).includes("".concat(diagnostic.code))) continue;
+                                        if ($2923d5837bbcb0ae$var$config("ignoreNonSuggestionSuggestionDiagnostics", scopeName) && diagnostic.category === "suggestion" && !(0, $ee2d752c6bad64f9$export$8b10423be8ce987b)(diagnostic.code, (0, $ee2d752c6bad64f9$export$70bfa4f5700cfeae).Suggestion)) continue;
                                         // Add a bit of extra validation that we have the necessary locations since linter v2
                                         // does not allow range-less messages anymore. This happens with configFileDiagnostics.
                                         var start = diagnostic.start, end = diagnostic.end;
@@ -9178,11 +9157,11 @@ var $80c6b1f413ab5323$export$a4d36ae2cf2e8cd = /*#__PURE__*/ function() {
                                             offset: 1
                                         };
                                         result.push({
-                                            severity: _this.getSeverity($80c6b1f413ab5323$var$config("unusedAsInfo", scopeName), diagnostic),
+                                            severity: _this.getSeverity($2923d5837bbcb0ae$var$config("unusedAsInfo", scopeName), diagnostic),
                                             excerpt: diagnostic.text,
                                             location: {
                                                 file: filePath,
-                                                position: (0, $ee93806a41573bb4$export$19d00dfc4e734f8b)(start, end)
+                                                position: (0, $ee2d752c6bad64f9$export$19d00dfc4e734f8b)(start, end)
                                             }
                                         });
                                     }
@@ -9261,7 +9240,7 @@ var $80c6b1f413ab5323$export$a4d36ae2cf2e8cd = /*#__PURE__*/ function() {
     ]);
     return ErrorPusher;
 }();
-function $80c6b1f413ab5323$var$config(option, scope) {
+function $2923d5837bbcb0ae$var$config(option, scope) {
     return atom.config.get("atom-typescript-updated.".concat(option), {
         scope: [
             scope
@@ -9284,20 +9263,20 @@ function $80c6b1f413ab5323$var$config(option, scope) {
 
 
 
-var $26f43d04544e9b7a$export$6932e15e784422f9 = /*#__PURE__*/ function() {
+var $c78024eeed3bc40b$export$6932e15e784422f9 = /*#__PURE__*/ function() {
     "use strict";
     function TypescriptBuffer(buffer, deps) {
         var _this = this;
-        (0, $8qw4J$swchelperscjs_class_call_checkcjs._)(this, TypescriptBuffer);
+        (0, $j0dGC$_2)(this, TypescriptBuffer);
         this.buffer = buffer;
         this.deps = deps;
-        this.events = new $8qw4J$atom.Emitter();
+        this.events = new $j0dGC$Emitter();
         this.compileOnSave = false;
-        this.subscriptions = new $8qw4J$atom.CompositeDisposable();
+        this.subscriptions = new $j0dGC$CompositeDisposable();
         this.on = this.events.on.bind(this.events);
         this.dispose = function() {
-            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+            return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                return (0, $j0dGC$_1)(this, function(_state) {
                     switch(_state.label){
                         case 0:
                             TypescriptBuffer.bufferMap["delete"](this.buffer);
@@ -9316,8 +9295,8 @@ var $26f43d04544e9b7a$export$6932e15e784422f9 = /*#__PURE__*/ function() {
             }).call(_this);
         };
         this.init = function() {
-            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+            return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                return (0, $j0dGC$_1)(this, function(_state) {
                     switch(_state.label){
                         case 0:
                             if (!this.state) return [
@@ -9332,7 +9311,7 @@ var $26f43d04544e9b7a$export$6932e15e784422f9 = /*#__PURE__*/ function() {
                             ];
                         case 1:
                             _state.sent();
-                            (0, $2893351583386024$export$8080b7556d9d6445)(this.getErr({
+                            (0, $e61b31fac60530e8$export$8080b7556d9d6445)(this.getErr({
                                 allFiles: false,
                                 delay: 0
                             }));
@@ -9344,9 +9323,9 @@ var $26f43d04544e9b7a$export$6932e15e784422f9 = /*#__PURE__*/ function() {
             }).call(_this);
         };
         this.close = function() {
-            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+            return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                 var client, file;
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (0, $j0dGC$_1)(this, function(_state) {
                     switch(_state.label){
                         case 0:
                             return [
@@ -9382,13 +9361,13 @@ var $26f43d04544e9b7a$export$6932e15e784422f9 = /*#__PURE__*/ function() {
             }).call(_this);
         };
         this.onDidChangePath = function(newPath) {
-            (0, $2893351583386024$export$8080b7556d9d6445)(_this.close().then(function() {
+            (0, $e61b31fac60530e8$export$8080b7556d9d6445)(_this.close().then(function() {
                 _this.openPromise = _this.open(newPath);
             }));
         };
         this.onDidSave = function() {
-            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+            return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                return (0, $j0dGC$_1)(this, function(_state) {
                     switch(_state.label){
                         case 0:
                             return [
@@ -9412,9 +9391,9 @@ var $26f43d04544e9b7a$export$6932e15e784422f9 = /*#__PURE__*/ function() {
         };
         this.onDidChangeText = function(param) {
             var changes = param.changes;
-            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+            return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                 var _this_state, client, filePath;
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (0, $j0dGC$_1)(this, function(_state) {
                     switch(_state.label){
                         case 0:
                             // If there are no actual changes, or the file isn't open, we have nothing to do
@@ -9453,28 +9432,28 @@ var $26f43d04544e9b7a$export$6932e15e784422f9 = /*#__PURE__*/ function() {
         };
         var debouncedGetErr;
         this.subscriptions.add(atom.config.observe("atom-typescript-updated.getErrDebounceTimeout", function(val) {
-            debouncedGetErr = (0, $8qw4J$lodash.debounce)(function() {
-                (0, $2893351583386024$export$8080b7556d9d6445)(_this.getErr({
+            debouncedGetErr = (0, $j0dGC$debounce)(function() {
+                (0, $e61b31fac60530e8$export$8080b7556d9d6445)(_this.getErr({
                     allFiles: false,
                     delay: 0
                 }));
             }, val);
         }), buffer.onDidChangePath(this.onDidChangePath), buffer.onDidDestroy(function() {
-            (0, $2893351583386024$export$8080b7556d9d6445)(_this.dispose());
+            (0, $e61b31fac60530e8$export$8080b7556d9d6445)(_this.dispose());
         }), buffer.onDidSave(function() {
-            (0, $2893351583386024$export$8080b7556d9d6445)(_this.onDidSave());
+            (0, $e61b31fac60530e8$export$8080b7556d9d6445)(_this.onDidSave());
         }), buffer.onDidStopChanging(function(param) {
             var changes = param.changes;
             if (changes.length > 0) _this.deps.reportBuildStatus(undefined);
         }), buffer.onDidChangeText(function(arg) {
             // NOTE: we don't need to worry about interleaving here,
             // because onDidChangeText pushes all changes at once
-            (0, $2893351583386024$export$8080b7556d9d6445)(_this.onDidChangeText(arg));
+            (0, $e61b31fac60530e8$export$8080b7556d9d6445)(_this.onDidChangeText(arg));
             debouncedGetErr();
         }));
         this.openPromise = this.open(this.buffer.getPath());
     }
-    (0, $8qw4J$swchelperscjs_create_classcjs._)(TypescriptBuffer, [
+    (0, $j0dGC$_3)(TypescriptBuffer, [
         {
             key: "getPath",
             value: function getPath() {
@@ -9494,15 +9473,15 @@ var $26f43d04544e9b7a$export$6932e15e784422f9 = /*#__PURE__*/ function() {
         {
             key: "getErr",
             value: function getErr(opts) {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                     var files;
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
                                 if (!this.state) return [
                                     2
                                 ];
-                                files = opts.allFiles ? Array.from((0, $7580a2909a181bf5$export$d121654372a91687)()) : [
+                                files = opts.allFiles ? Array.from((0, $47ae2d5cb2e495d2$export$d121654372a91687)()) : [
                                     this.state.filePath
                                 ];
                                 return [
@@ -9525,9 +9504,9 @@ var $26f43d04544e9b7a$export$6932e15e784422f9 = /*#__PURE__*/ function() {
         {
             key: "compile",
             value: /** Throws! */ function compile() {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                     var _this_state, client, filePath, result, fileNames, promises, saved;
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
                                 if (!this.state) return [
@@ -9542,7 +9521,7 @@ var $26f43d04544e9b7a$export$6932e15e784422f9 = /*#__PURE__*/ function() {
                                 ];
                             case 1:
                                 result = _state.sent();
-                                fileNames = (0, $8qw4J$lodash.flatten)(result.body.map(function(project) {
+                                fileNames = (0, $j0dGC$flatten)(result.body.map(function(project) {
                                     return project.fileNames;
                                 }));
                                 if (fileNames.length === 0) return [
@@ -9573,9 +9552,9 @@ var $26f43d04544e9b7a$export$6932e15e784422f9 = /*#__PURE__*/ function() {
         {
             key: "doCompileOnSave",
             value: function doCompileOnSave() {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                     var error, e;
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
                                 if (!this.compileOnSave) return [
@@ -9627,13 +9606,13 @@ var $26f43d04544e9b7a$export$6932e15e784422f9 = /*#__PURE__*/ function() {
         {
             key: "open",
             value: function open(filePath) {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                     var _this, client, result;
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
                                 _this = this;
-                                if (!(filePath !== undefined && (0, $7580a2909a181bf5$export$225e59ca209a506)(filePath))) return [
+                                if (!(filePath !== undefined && (0, $47ae2d5cb2e495d2$export$225e59ca209a506)(filePath))) return [
                                     3,
                                     6
                                 ];
@@ -9647,10 +9626,10 @@ var $26f43d04544e9b7a$export$6932e15e784422f9 = /*#__PURE__*/ function() {
                                     client: client,
                                     filePath: filePath,
                                     configFile: undefined,
-                                    subscriptions: new $8qw4J$atom.CompositeDisposable()
+                                    subscriptions: new $j0dGC$CompositeDisposable()
                                 };
                                 this.state.subscriptions.add(client.on("restarted", function() {
-                                    return (0, $2893351583386024$export$8080b7556d9d6445)(_this.init());
+                                    return (0, $e61b31fac60530e8$export$8080b7556d9d6445)(_this.init());
                                 }));
                                 return [
                                     4,
@@ -9671,7 +9650,7 @@ var $26f43d04544e9b7a$export$6932e15e784422f9 = /*#__PURE__*/ function() {
                                     3,
                                     5
                                 ];
-                                this.state.configFile = new $8qw4J$atom.File(result.body.configFileName);
+                                this.state.configFile = new $j0dGC$File(result.body.configFileName);
                                 return [
                                     4,
                                     this.readConfigFile()
@@ -9679,7 +9658,7 @@ var $26f43d04544e9b7a$export$6932e15e784422f9 = /*#__PURE__*/ function() {
                             case 4:
                                 _state.sent();
                                 this.state.subscriptions.add(this.state.configFile.onDidChange(function() {
-                                    return (0, $2893351583386024$export$8080b7556d9d6445)(_this.readConfigFile());
+                                    return (0, $e61b31fac60530e8$export$8080b7556d9d6445)(_this.readConfigFile());
                                 }));
                                 _state.label = 5;
                             case 5:
@@ -9705,15 +9684,15 @@ var $26f43d04544e9b7a$export$6932e15e784422f9 = /*#__PURE__*/ function() {
         {
             key: "readConfigFile",
             value: function readConfigFile() {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                     var options, cfg;
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                    return (0, $j0dGC$_1)(this, function(_state) {
                         switch(_state.label){
                             case 0:
                                 if (!this.state || !this.state.configFile) return [
                                     2
                                 ];
-                                options = (0, $ee93806a41573bb4$export$bad43d745a81bbd5)(this.state.configFile.getPath());
+                                options = (0, $ee2d752c6bad64f9$export$bad43d745a81bbd5)(this.state.configFile.getPath());
                                 this.compileOnSave = options.compileOnSave;
                                 cfg = atom.config.get("atom-typescript-updated");
                                 return [
@@ -9721,7 +9700,7 @@ var $26f43d04544e9b7a$export$6932e15e784422f9 = /*#__PURE__*/ function() {
                                     this.state.client.execute("configure", {
                                         file: this.state.filePath,
                                         formatOptions: options.formatCodeOptions,
-                                        preferences: (0, $8qw4J$swchelperscjs_object_spreadcjs._)({
+                                        preferences: (0, $j0dGC$_4)({
                                             includeCompletionsWithInsertText: true,
                                             includeCompletionsForModuleExports: cfg.includeCompletionsForModuleExports,
                                             quotePreference: cfg.quotePreference,
@@ -9756,23 +9735,23 @@ var $26f43d04544e9b7a$export$6932e15e784422f9 = /*#__PURE__*/ function() {
     ]);
     return TypescriptBuffer;
 }();
-$26f43d04544e9b7a$export$6932e15e784422f9.bufferMap = new WeakMap();
+$c78024eeed3bc40b$export$6932e15e784422f9.bufferMap = new WeakMap();
 
 
-var $a568bbacdc99572d$export$a0bbaae59860162e = /*#__PURE__*/ function() {
+var $ffa8edc637117fbb$export$a0bbaae59860162e = /*#__PURE__*/ function() {
     "use strict";
     function TypescriptEditorPane(editor, opts) {
         var _this = this;
-        (0, $8qw4J$swchelperscjs_class_call_checkcjs._)(this, TypescriptEditorPane);
+        (0, $j0dGC$_2)(this, TypescriptEditorPane);
         this.editor = editor;
         this.opts = opts;
-        this.subscriptions = new (0, $8qw4J$atom.CompositeDisposable)();
+        this.subscriptions = new (0, $j0dGC$CompositeDisposable)();
         this.isTypescript = false;
         this.destroy = function() {
             TypescriptEditorPane.editorMap["delete"](_this.editor);
             atom.views.getView(_this.editor).classList.remove("typescript-editor");
             _this.subscriptions.dispose();
-            (0, $2893351583386024$export$8080b7556d9d6445)(_this.buffer.dispose());
+            (0, $e61b31fac60530e8$export$8080b7556d9d6445)(_this.buffer.dispose());
         };
         /** NOTE:
          * it is implicitly assumed that `atom.workspace.getActiveTextEditor() === this.editor`
@@ -9785,18 +9764,18 @@ var $a568bbacdc99572d$export$a0bbaae59860162e = /*#__PURE__*/ function() {
             if (isActive) _this.reportInfo();
         };
         this.checkIfTypescript = function() {
-            _this.isTypescript = (0, $7580a2909a181bf5$export$3aecee58e23ede2c)(_this.editor);
+            _this.isTypescript = (0, $47ae2d5cb2e495d2$export$3aecee58e23ede2c)(_this.editor);
             if (_this.isTypescript) atom.views.getView(_this.editor).classList.add("typescript-editor");
             else atom.views.getView(_this.editor).classList.remove("typescript-editor");
         };
-        this.buffer = (0, $26f43d04544e9b7a$export$6932e15e784422f9).create(editor.getBuffer(), opts);
+        this.buffer = (0, $c78024eeed3bc40b$export$6932e15e784422f9).create(editor.getBuffer(), opts);
         this.subscriptions.add(this.buffer.on("opened", this.onOpened));
         this.checkIfTypescript();
         this.subscriptions.add(editor.onDidChangePath(this.checkIfTypescript), editor.onDidChangeGrammar(this.checkIfTypescript), editor.onDidDestroy(this.destroy), editor.onDidSave(function() {
             if (atom.config.get("atom-typescript-updated.checkAllFilesOnSave")) atom.commands.dispatch(atom.views.getView(editor), "typescript:check-all-files");
         }));
     }
-    (0, $8qw4J$swchelperscjs_create_classcjs._)(TypescriptEditorPane, [
+    (0, $j0dGC$_3)(TypescriptEditorPane, [
         {
             key: "reportInfo",
             value: function reportInfo() {
@@ -9827,14 +9806,14 @@ var $a568bbacdc99572d$export$a0bbaae59860162e = /*#__PURE__*/ function() {
     ]);
     return TypescriptEditorPane;
 }();
-$a568bbacdc99572d$export$a0bbaae59860162e.editorMap = new WeakMap();
+$ffa8edc637117fbb$export$a0bbaae59860162e.editorMap = new WeakMap();
 
 
-var $8655349229b8a3fd$export$f2c0a16002429d72 = /*#__PURE__*/ function() {
+var $c495706121dd3643$export$f2c0a16002429d72 = /*#__PURE__*/ function() {
     "use strict";
     function PluginManager(state) {
         var _this = this;
-        (0, $8qw4J$swchelperscjs_class_call_checkcjs._)(this, PluginManager);
+        (0, $j0dGC$_2)(this, PluginManager);
         this.usingBuiltinTooltipManager = true;
         this.usingBuiltinSigHelpManager = true;
         this.pending = new Set();
@@ -9845,8 +9824,8 @@ var $8655349229b8a3fd$export$f2c0a16002429d72 = /*#__PURE__*/ function() {
             _this.errorPusher.clearFileErrors(filePath);
         };
         this.getClient = function(filePath) {
-            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+            return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                return (0, $j0dGC$_1)(this, function(_state) {
                     return [
                         2,
                         this.clientResolver.get(filePath)
@@ -9855,15 +9834,15 @@ var $8655349229b8a3fd$export$f2c0a16002429d72 = /*#__PURE__*/ function() {
             }).call(_this);
         };
         this.killAllServers = function() {
-            (0, $2893351583386024$export$8080b7556d9d6445)(_this.clientResolver.restartAllServers());
+            (0, $e61b31fac60530e8$export$8080b7556d9d6445)(_this.clientResolver.restartAllServers());
         };
         this.withBuffer = function(filePath, action) {
-            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+            return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                 var normalizedFilePath, ed, buffer;
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (0, $j0dGC$_1)(this, function(_state) {
                     switch(_state.label){
                         case 0:
-                            normalizedFilePath = $8qw4J$path.normalize(filePath);
+                            normalizedFilePath = $j0dGC$normalize(filePath);
                             ed = atom.workspace.getTextEditors().find(function(p) {
                                 return p.getPath() === normalizedFilePath;
                             });
@@ -9874,7 +9853,7 @@ var $8655349229b8a3fd$export$f2c0a16002429d72 = /*#__PURE__*/ function() {
                             ];
                             return [
                                 4,
-                                $8qw4J$atom.TextBuffer.load(normalizedFilePath)
+                                $j0dGC$TextBuffer.load(normalizedFilePath)
                             ];
                         case 1:
                             buffer = _state.sent();
@@ -9921,9 +9900,9 @@ var $8655349229b8a3fd$export$f2c0a16002429d72 = /*#__PURE__*/ function() {
             })();
         };
         this.reportBusyWhile = function(title, generator) {
-            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+            return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                 var event;
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (0, $j0dGC$_1)(this, function(_state) {
                     switch(_state.label){
                         case 0:
                             if (!this.busySignalService) return [
@@ -9972,33 +9951,33 @@ var $8655349229b8a3fd$export$f2c0a16002429d72 = /*#__PURE__*/ function() {
             }).call(_this);
         };
         this.reportProgress = function(progress) {
-            (0, $2893351583386024$export$8080b7556d9d6445)(_this.statusPanel.update({
+            (0, $e61b31fac60530e8$export$8080b7556d9d6445)(_this.statusPanel.update({
                 progress: progress
             }));
         };
         this.reportBuildStatus = function(buildStatus) {
-            (0, $2893351583386024$export$8080b7556d9d6445)(_this.statusPanel.update({
+            (0, $e61b31fac60530e8$export$8080b7556d9d6445)(_this.statusPanel.update({
                 buildStatus: buildStatus
             }));
         };
         this.reportClientInfo = function(info) {
-            (0, $2893351583386024$export$8080b7556d9d6445)(_this.statusPanel.update(info));
+            (0, $e61b31fac60530e8$export$8080b7556d9d6445)(_this.statusPanel.update(info));
         };
         this.applyEdits = function(edits) {
-            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+            return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
                 var _this;
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                return (0, $j0dGC$_1)(this, function(_state) {
                     _this = this;
                     return [
                         2,
                         void Promise.all(edits.map(function(edit) {
                             return _this.withBuffer(edit.fileName, function(buffer) {
-                                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+                                return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                                    return (0, $j0dGC$_1)(this, function(_state) {
                                         buffer.transact(function() {
                                             var changes = edit.textChanges.map(function(e) {
                                                 return {
-                                                    range: (0, $ee93806a41573bb4$export$477d491a08b070ec)(e),
+                                                    range: (0, $ee2d752c6bad64f9$export$477d491a08b070ec)(e),
                                                     newText: e.newText
                                                 };
                                             }).reverse() // NOTE: needs reverse for cases where ranges are same for two changes
@@ -10038,8 +10017,8 @@ var $8655349229b8a3fd$export$f2c0a16002429d72 = /*#__PURE__*/ function() {
             }).call(_this);
         };
         this.showTooltipAt = function(ed) {
-            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+            return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                return (0, $j0dGC$_1)(this, function(_state) {
                     switch(_state.label){
                         case 0:
                             if (!this.usingBuiltinTooltipManager) return [
@@ -10068,8 +10047,8 @@ var $8655349229b8a3fd$export$f2c0a16002429d72 = /*#__PURE__*/ function() {
             }).call(_this);
         };
         this.showSigHelpAt = function(ed) {
-            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+            return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
+                return (0, $j0dGC$_1)(this, function(_state) {
                     switch(_state.label){
                         case 0:
                             if (!this.usingBuiltinSigHelpManager) return [
@@ -10113,40 +10092,40 @@ var $8655349229b8a3fd$export$f2c0a16002429d72 = /*#__PURE__*/ function() {
         this.histGoForward = function(ed, opts) {
             return _this.editorPosHist.goForward(ed, opts);
         };
-        this.drawPending = (0, $8qw4J$lodash.throttle)(function(pending) {
-            return (0, $2893351583386024$export$8080b7556d9d6445)(_this.statusPanel.update({
+        this.drawPending = (0, $j0dGC$throttle)(function(pending) {
+            return (0, $e61b31fac60530e8$export$8080b7556d9d6445)(_this.statusPanel.update({
                 pending: pending
             }));
         }, 100, {
             leading: false
         });
-        this.subscriptions = new (0, $8qw4J$atom.CompositeDisposable)();
-        this.clientResolver = new (0, $656dc62ff40b3cc7$export$dceb19333e080e82)(this.reportBusyWhile);
+        this.subscriptions = new (0, $j0dGC$CompositeDisposable)();
+        this.clientResolver = new (0, $d86d165b76686502$export$dceb19333e080e82)(this.reportBusyWhile);
         this.subscriptions.add(this.clientResolver);
-        this.statusPanel = new (0, $258730bbf662f4ed$export$e46d185d0654294e)();
+        this.statusPanel = new (0, $0cc2a0b6b51e3bbe$export$e46d185d0654294e)();
         this.subscriptions.add(this.statusPanel);
-        this.errorPusher = new (0, $80c6b1f413ab5323$export$a4d36ae2cf2e8cd)();
+        this.errorPusher = new (0, $2923d5837bbcb0ae$export$a4d36ae2cf2e8cd)();
         this.subscriptions.add(this.errorPusher);
-        this.codefixProvider = new (0, $e0bcaafd270c879a$export$9262ee226e3cab9d)(this.clientResolver, this.errorPusher, this.applyEdits);
+        this.codefixProvider = new (0, $8bcf7726b44fc4f6$export$9262ee226e3cab9d)(this.clientResolver, this.errorPusher, this.applyEdits);
         this.subscriptions.add(this.codefixProvider);
-        this.semanticViewController = new (0, $1e8c6b8d10c1d614$export$951a8e3d4c79262)(this.getClient);
+        this.semanticViewController = new (0, $bbbe7b214522b8df$export$951a8e3d4c79262)(this.getClient);
         this.subscriptions.add(this.semanticViewController);
-        this.editorPosHist = new (0, $e6778e0cbaaba99c$export$37b735b3f7a16aff)(state && state.editorPosHistState);
+        this.editorPosHist = new (0, $995468ca3443543d$export$37b735b3f7a16aff)(state && state.editorPosHistState);
         this.subscriptions.add(this.editorPosHist);
-        this.symbolsViewController = new (0, $c69ac4021c07c8b9$export$bf8eec42fec7719)({
+        this.symbolsViewController = new (0, $dd2f950237a8b876$export$bf8eec42fec7719)({
             histGoForward: this.histGoForward,
             getClient: this.getClient
         });
         this.subscriptions.add(this.symbolsViewController);
-        this.tooltipManager = new (0, $e508d76e41e98c6a$export$3cf29e47efa41626)(this.getClient);
+        this.tooltipManager = new (0, $31f5665072708b9b$export$3cf29e47efa41626)(this.getClient);
         this.subscriptions.add(this.tooltipManager);
-        this.sigHelpManager = new (0, $7eb4bb965f023e19$export$de743bb5ce1c9811)({
+        this.sigHelpManager = new (0, $94922988c5ae5d45$export$de743bb5ce1c9811)({
             getClient: this.getClient
         });
         this.subscriptions.add(this.sigHelpManager);
-        this.occurrenceManager = new (0, $90eb5c792db85504$export$c92097d412f660e6)(this.getClient);
+        this.occurrenceManager = new (0, $ee0f03a1eb887499$export$c92097d412f660e6)(this.getClient);
         this.subscriptions.add(this.occurrenceManager);
-        this.typescriptPaneFactory = (0, $a568bbacdc99572d$export$a0bbaae59860162e).createFactory({
+        this.typescriptPaneFactory = (0, $ffa8edc637117fbb$export$a0bbaae59860162e).createFactory({
             clearFileErrors: this.clearFileErrors,
             getClient: this.getClient,
             reportBuildStatus: this.reportBuildStatus,
@@ -10154,7 +10133,7 @@ var $8655349229b8a3fd$export$f2c0a16002429d72 = /*#__PURE__*/ function() {
         });
         this.subscribeEditors();
         // Register the commands
-        this.subscriptions.add((0, $d7106e5ca616cb06$export$f647bfc0a5fe4336)({
+        this.subscriptions.add((0, $c2b50f0312d4c499$export$f647bfc0a5fe4336)({
             getClient: this.getClient,
             applyEdits: this.applyEdits,
             clearErrors: this.clearErrors,
@@ -10162,7 +10141,7 @@ var $8655349229b8a3fd$export$f2c0a16002429d72 = /*#__PURE__*/ function() {
             reportProgress: this.reportProgress,
             reportBuildStatus: this.reportBuildStatus,
             toggleSemanticViewController: function() {
-                (0, $2893351583386024$export$8080b7556d9d6445)(_this.semanticViewController.toggle());
+                (0, $e61b31fac60530e8$export$8080b7556d9d6445)(_this.semanticViewController.toggle());
             },
             toggleFileSymbolsView: function(ed) {
                 _this.symbolsViewController.toggleFileView(ed);
@@ -10183,7 +10162,7 @@ var $8655349229b8a3fd$export$f2c0a16002429d72 = /*#__PURE__*/ function() {
             rotateSigHelp: this.rotateSigHelp
         }));
     }
-    (0, $8qw4J$swchelperscjs_create_classcjs._)(PluginManager, [
+    (0, $j0dGC$_3)(PluginManager, [
         {
             key: "destroy",
             value: function destroy() {
@@ -10192,7 +10171,7 @@ var $8655349229b8a3fd$export$f2c0a16002429d72 = /*#__PURE__*/ function() {
                 try {
                     for(var _iterator = atom.workspace.getTextEditors()[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true){
                         var ed = _step.value;
-                        var pane = (0, $a568bbacdc99572d$export$a0bbaae59860162e).lookupPane(ed);
+                        var pane = (0, $ffa8edc637117fbb$export$a0bbaae59860162e).lookupPane(ed);
                         if (pane) pane.destroy();
                     }
                 } catch (err) {
@@ -10263,7 +10242,7 @@ var $8655349229b8a3fd$export$f2c0a16002429d72 = /*#__PURE__*/ function() {
                     item: this.statusPanel,
                     priority: statusPriority
                 });
-                var disp = new $8qw4J$atom.Disposable(function() {
+                var disp = new $j0dGC$Disposable(function() {
                     tile.destroy();
                 });
                 this.subscriptions.add(disp);
@@ -10274,7 +10253,7 @@ var $8655349229b8a3fd$export$f2c0a16002429d72 = /*#__PURE__*/ function() {
             key: "consumeDatatipService",
             value: function consumeDatatipService(datatip) {
                 if (atom.config.get("atom-typescript-updated").preferBuiltinTooltips) return;
-                var disp = datatip.addProvider(new (0, $3dec627a7b52de57$export$62181cd26290fa50)(this.getClient));
+                var disp = datatip.addProvider(new (0, $a62b15b9bf6501f7$export$62181cd26290fa50)(this.getClient));
                 this.subscriptions.add(disp);
                 this.tooltipManager.dispose();
                 this.usingBuiltinTooltipManager = false;
@@ -10285,7 +10264,7 @@ var $8655349229b8a3fd$export$f2c0a16002429d72 = /*#__PURE__*/ function() {
             key: "consumeSigHelpService",
             value: function consumeSigHelpService(registry) {
                 if (atom.config.get("atom-typescript-updated").preferBuiltinSigHelp) return;
-                var provider = new (0, $f0827e2fd290d654$export$11ab8206b5e263e8)(this.getClient);
+                var provider = new (0, $813c06c89c431621$export$11ab8206b5e263e8)(this.getClient);
                 var disp = registry(provider);
                 this.subscriptions.add(disp, provider);
                 this.sigHelpManager.dispose();
@@ -10314,51 +10293,51 @@ var $8655349229b8a3fd$export$f2c0a16002429d72 = /*#__PURE__*/ function() {
             key: "provideAutocomplete",
             value: function provideAutocomplete() {
                 return [
-                    new (0, $2a2076bfbea7a68e$export$536c67bf76d43cfb)(this.getClient, this.applyEdits)
+                    new (0, $82009c0d32a0c9d0$export$536c67bf76d43cfb)(this.getClient, this.applyEdits)
                 ];
             }
         },
         {
             key: "provideIntentions",
             value: function provideIntentions() {
-                return (0, $a4b711801eb3f0ef$export$c0ac1f0dd4073b70)(this.codefixProvider);
+                return (0, $f335a673678f02eb$export$c0ac1f0dd4073b70)(this.codefixProvider);
             }
         },
         {
             key: "provideIntentionsHighlight",
             value: function provideIntentionsHighlight() {
-                return (0, $a4b711801eb3f0ef$export$bbfa3896d0c562e)(this.codefixProvider);
+                return (0, $f335a673678f02eb$export$bbfa3896d0c562e)(this.codefixProvider);
             }
         },
         {
             key: "provideCodeActions",
             value: function provideCodeActions() {
-                return (0, $824935c6fe894b0b$export$d21c11139c8fe8ee)(this.codefixProvider);
+                return (0, $206be3042dd17018$export$d21c11139c8fe8ee)(this.codefixProvider);
             }
         },
         {
             key: "provideHyperclick",
             value: function provideHyperclick() {
-                return (0, $f208e1245e4db9fc$export$51c07c30fb16d966)(this.getClient, this.histGoForward);
+                return (0, $006be3b9d96979d1$export$51c07c30fb16d966)(this.getClient, this.histGoForward);
             }
         },
         {
             key: "provideReferences",
             value: function provideReferences() {
-                return (0, $532eb743eaf241e3$export$b797847259776697)(this.getClient);
+                return (0, $7ab631458cefe15a$export$b797847259776697)(this.getClient);
             }
         },
         {
             key: "provideOutlines",
             value: function provideOutlines() {
-                return (0, $c5ee2b7644db248e$export$2b92277a69331cbb)(this.getClient);
+                return (0, $1d67a428a312fc1b$export$2b92277a69331cbb)(this.getClient);
             }
         },
         {
             key: "provideDefinitions",
             value: function provideDefinitions() {
                 if (atom.config.get("atom-typescript-updated").disableAtomIdeDefinitions) return;
-                return (0, $d2f9fe9bb7e67a01$export$a9ca9b3a8941e92e)(this.getClient);
+                return (0, $bc2cbd8768a1aa8b$export$a9ca9b3a8941e92e)(this.getClient);
             }
         },
         {
@@ -10366,7 +10345,7 @@ var $8655349229b8a3fd$export$f2c0a16002429d72 = /*#__PURE__*/ function() {
             value: function provideCodeHighlight() {
                 if (atom.config.get("atom-typescript-updated").preferBuiltinOccurrenceHighlight) return;
                 this.occurrenceManager.dispose();
-                return (0, $593b916ea2f68ad2$export$6413bc8b6e281ffa)(this.getClient);
+                return (0, $acdd57131752f306$export$6413bc8b6e281ffa)(this.getClient);
             }
         },
         {
@@ -10376,11 +10355,11 @@ var $8655349229b8a3fd$export$f2c0a16002429d72 = /*#__PURE__*/ function() {
                 this.subscriptions.add(atom.workspace.observeTextEditors(function(editor) {
                     _this.typescriptPaneFactory(editor);
                 }), atom.workspace.onDidChangeActiveTextEditor(function(ed) {
-                    if (ed && (0, $7580a2909a181bf5$export$3aecee58e23ede2c)(ed)) {
-                        (0, $2893351583386024$export$8080b7556d9d6445)(_this.statusPanel.show());
-                        var tep = (0, $a568bbacdc99572d$export$a0bbaae59860162e).lookupPane(ed);
+                    if (ed && (0, $47ae2d5cb2e495d2$export$3aecee58e23ede2c)(ed)) {
+                        (0, $e61b31fac60530e8$export$8080b7556d9d6445)(_this.statusPanel.show());
+                        var tep = (0, $ffa8edc637117fbb$export$a0bbaae59860162e).lookupPane(ed);
                         if (tep) tep.didActivate();
-                    } else (0, $2893351583386024$export$8080b7556d9d6445)(_this.statusPanel.hide());
+                    } else (0, $e61b31fac60530e8$export$8080b7556d9d6445)(_this.statusPanel.hide());
                 }));
             }
         }
@@ -10389,18 +10368,18 @@ var $8655349229b8a3fd$export$f2c0a16002429d72 = /*#__PURE__*/ function() {
 }();
 
 
-var $64e7645780377c6f$var$pluginManager;
-function $64e7645780377c6f$export$234c45b355edd85b(state) {
-    (0, ($parcel$interopDefault($8qw4J$etch))).setScheduler(atom.views);
-    $64e7645780377c6f$var$pluginManager = new (0, $8655349229b8a3fd$export$f2c0a16002429d72)(state);
+var $4e74d3c17e31b8db$var$pluginManager;
+function $4e74d3c17e31b8db$export$234c45b355edd85b(state) {
+    (0, $j0dGC$etch).setScheduler(atom.views);
+    $4e74d3c17e31b8db$var$pluginManager = new (0, $c495706121dd3643$export$f2c0a16002429d72)(state);
     setImmediate(function() {
-        return (0, $2893351583386024$export$8080b7556d9d6445)($64e7645780377c6f$var$checkAndInstallDependencies());
+        return (0, $e61b31fac60530e8$export$8080b7556d9d6445)($4e74d3c17e31b8db$var$checkAndInstallDependencies());
     });
 }
-function $64e7645780377c6f$var$checkAndInstallDependencies() {
-    return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+function $4e74d3c17e31b8db$var$checkAndInstallDependencies() {
+    return (/*#__PURE__*/ 0, /*#__PURE__*/ $j0dGC$_)(function() {
         var packagesProvidingUIServices;
-        return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+        return (0, $j0dGC$_1)(this, function(_state) {
             switch(_state.label){
                 case 0:
                     packagesProvidingUIServices = [
@@ -10416,7 +10395,7 @@ function $64e7645780377c6f$var$checkAndInstallDependencies() {
                     ];
                     return [
                         4,
-                        $8qw4J$atompackagedeps.install("atom-typescript-updated", true)
+                        $j0dGC$install("atom-typescript-updated", true)
                     ];
                 case 1:
                     _state.sent();
@@ -10429,59 +10408,60 @@ function $64e7645780377c6f$var$checkAndInstallDependencies() {
         });
     })();
 }
-function $64e7645780377c6f$export$e96c1edfdaf2d1db() {
-    if ($64e7645780377c6f$var$pluginManager) $64e7645780377c6f$var$pluginManager.destroy();
-    $64e7645780377c6f$var$pluginManager = undefined;
+function $4e74d3c17e31b8db$export$e96c1edfdaf2d1db() {
+    if ($4e74d3c17e31b8db$var$pluginManager) $4e74d3c17e31b8db$var$pluginManager.destroy();
+    $4e74d3c17e31b8db$var$pluginManager = undefined;
 }
-function $64e7645780377c6f$export$dfdc1655ccc5b9cb() {
-    if ($64e7645780377c6f$var$pluginManager) return $64e7645780377c6f$var$pluginManager.serialize();
+function $4e74d3c17e31b8db$export$dfdc1655ccc5b9cb() {
+    if ($4e74d3c17e31b8db$var$pluginManager) return $4e74d3c17e31b8db$var$pluginManager.serialize();
     else return undefined;
 }
-function $64e7645780377c6f$export$a44ae7a0ffe32de(serialized) {
-    return (0, $4759e62349e0b646$export$a3a95952d8506109).create(serialized.data);
+function $4e74d3c17e31b8db$export$a44ae7a0ffe32de(serialized) {
+    return (0, $cea6b8bc91af2731$export$a3a95952d8506109).create(serialized.data);
 }
-function $64e7645780377c6f$export$7513da91a6067379(register) {
-    if ($64e7645780377c6f$var$pluginManager) return $64e7645780377c6f$var$pluginManager.consumeLinter(register);
+function $4e74d3c17e31b8db$export$7513da91a6067379(register) {
+    if ($4e74d3c17e31b8db$var$pluginManager) return $4e74d3c17e31b8db$var$pluginManager.consumeLinter(register);
 }
-function $64e7645780377c6f$export$a51a2902ac3affa7(statusBar) {
-    if ($64e7645780377c6f$var$pluginManager) return $64e7645780377c6f$var$pluginManager.consumeStatusBar(statusBar);
+function $4e74d3c17e31b8db$export$a51a2902ac3affa7(statusBar) {
+    if ($4e74d3c17e31b8db$var$pluginManager) return $4e74d3c17e31b8db$var$pluginManager.consumeStatusBar(statusBar);
 }
-function $64e7645780377c6f$export$ca7950270ff61d66(datatipService) {
-    if ($64e7645780377c6f$var$pluginManager) return $64e7645780377c6f$var$pluginManager.consumeDatatipService(datatipService);
+function $4e74d3c17e31b8db$export$ca7950270ff61d66(datatipService) {
+    if ($4e74d3c17e31b8db$var$pluginManager) return $4e74d3c17e31b8db$var$pluginManager.consumeDatatipService(datatipService);
 }
-function $64e7645780377c6f$export$3ceee8b9bf304299(registry) {
-    if ($64e7645780377c6f$var$pluginManager) return $64e7645780377c6f$var$pluginManager.consumeSigHelpService(registry);
+function $4e74d3c17e31b8db$export$3ceee8b9bf304299(registry) {
+    if ($4e74d3c17e31b8db$var$pluginManager) return $4e74d3c17e31b8db$var$pluginManager.consumeSigHelpService(registry);
 }
-function $64e7645780377c6f$export$29fa66c1419daddc(busySignalService) {
-    if ($64e7645780377c6f$var$pluginManager) return $64e7645780377c6f$var$pluginManager.consumeBusySignal(busySignalService);
+function $4e74d3c17e31b8db$export$29fa66c1419daddc(busySignalService) {
+    if ($4e74d3c17e31b8db$var$pluginManager) return $4e74d3c17e31b8db$var$pluginManager.consumeBusySignal(busySignalService);
 }
-function $64e7645780377c6f$export$71db97b929e8341b() {
-    if ($64e7645780377c6f$var$pluginManager) return $64e7645780377c6f$var$pluginManager.provideAutocomplete();
+function $4e74d3c17e31b8db$export$71db97b929e8341b() {
+    if ($4e74d3c17e31b8db$var$pluginManager) return $4e74d3c17e31b8db$var$pluginManager.provideAutocomplete();
 }
-function $64e7645780377c6f$export$3781320452d1dce8() {
-    if ($64e7645780377c6f$var$pluginManager) return $64e7645780377c6f$var$pluginManager.provideIntentions();
+function $4e74d3c17e31b8db$export$3781320452d1dce8() {
+    if ($4e74d3c17e31b8db$var$pluginManager) return $4e74d3c17e31b8db$var$pluginManager.provideIntentions();
 }
-function $64e7645780377c6f$export$6f2bf0ac3e405d7b() {
-    if ($64e7645780377c6f$var$pluginManager) return $64e7645780377c6f$var$pluginManager.provideIntentionsHighlight();
+function $4e74d3c17e31b8db$export$6f2bf0ac3e405d7b() {
+    if ($4e74d3c17e31b8db$var$pluginManager) return $4e74d3c17e31b8db$var$pluginManager.provideIntentionsHighlight();
 }
-function $64e7645780377c6f$export$7990dc4c350e7387() {
-    if ($64e7645780377c6f$var$pluginManager) return $64e7645780377c6f$var$pluginManager.provideCodeActions();
+function $4e74d3c17e31b8db$export$7990dc4c350e7387() {
+    if ($4e74d3c17e31b8db$var$pluginManager) return $4e74d3c17e31b8db$var$pluginManager.provideCodeActions();
 }
-function $64e7645780377c6f$export$1c7ef754fc81a243() {
-    if ($64e7645780377c6f$var$pluginManager) return $64e7645780377c6f$var$pluginManager.provideHyperclick();
+function $4e74d3c17e31b8db$export$1c7ef754fc81a243() {
+    if ($4e74d3c17e31b8db$var$pluginManager) return $4e74d3c17e31b8db$var$pluginManager.provideHyperclick();
 }
-function $64e7645780377c6f$export$e32ae1c830f39f16() {
-    if ($64e7645780377c6f$var$pluginManager) return $64e7645780377c6f$var$pluginManager.provideReferences();
+function $4e74d3c17e31b8db$export$e32ae1c830f39f16() {
+    if ($4e74d3c17e31b8db$var$pluginManager) return $4e74d3c17e31b8db$var$pluginManager.provideReferences();
 }
-function $64e7645780377c6f$export$cec97b3152a9a2a4() {
-    if ($64e7645780377c6f$var$pluginManager) return $64e7645780377c6f$var$pluginManager.provideOutlines();
+function $4e74d3c17e31b8db$export$cec97b3152a9a2a4() {
+    if ($4e74d3c17e31b8db$var$pluginManager) return $4e74d3c17e31b8db$var$pluginManager.provideOutlines();
 }
-function $64e7645780377c6f$export$60b479b2c6dcce92() {
-    if ($64e7645780377c6f$var$pluginManager) return $64e7645780377c6f$var$pluginManager.provideDefinitions();
+function $4e74d3c17e31b8db$export$60b479b2c6dcce92() {
+    if ($4e74d3c17e31b8db$var$pluginManager) return $4e74d3c17e31b8db$var$pluginManager.provideDefinitions();
 }
-function $64e7645780377c6f$export$67b00a253126c08e() {
-    if ($64e7645780377c6f$var$pluginManager) return $64e7645780377c6f$var$pluginManager.provideCodeHighlight();
+function $4e74d3c17e31b8db$export$67b00a253126c08e() {
+    if ($4e74d3c17e31b8db$var$pluginManager) return $4e74d3c17e31b8db$var$pluginManager.provideCodeHighlight();
 }
 
 
+export {$4e74d3c17e31b8db$export$234c45b355edd85b as activate, $4e74d3c17e31b8db$export$e96c1edfdaf2d1db as deactivate, $4e74d3c17e31b8db$export$dfdc1655ccc5b9cb as serialize, $4e74d3c17e31b8db$export$a44ae7a0ffe32de as deserializeSemanticView, $4e74d3c17e31b8db$export$7513da91a6067379 as consumeLinter, $4e74d3c17e31b8db$export$a51a2902ac3affa7 as consumeStatusBar, $4e74d3c17e31b8db$export$ca7950270ff61d66 as consumeDatatipService, $4e74d3c17e31b8db$export$3ceee8b9bf304299 as consumeSignatureHelp, $4e74d3c17e31b8db$export$29fa66c1419daddc as consumeBusySignal, $4e74d3c17e31b8db$export$71db97b929e8341b as provideAutocomplete, $4e74d3c17e31b8db$export$3781320452d1dce8 as provideIntentions, $4e74d3c17e31b8db$export$6f2bf0ac3e405d7b as provideIntentionsHighlight, $4e74d3c17e31b8db$export$7990dc4c350e7387 as provideCodeActions, $4e74d3c17e31b8db$export$1c7ef754fc81a243 as provideHyperclick, $4e74d3c17e31b8db$export$e32ae1c830f39f16 as provideReferences, $4e74d3c17e31b8db$export$cec97b3152a9a2a4 as provideOutlines, $4e74d3c17e31b8db$export$60b479b2c6dcce92 as provideDefinitions, $4e74d3c17e31b8db$export$67b00a253126c08e as provideCodeHighlight};
 //# sourceMappingURL=main.js.map

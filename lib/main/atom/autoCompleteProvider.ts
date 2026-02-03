@@ -119,7 +119,7 @@ export class AutocompleteProvider implements ACP.AutocompleteProvider {
         ...this.getDetailsFromCache(suggestion),
         ...addCallableParens(opts, suggestion),
       }))
-    } catch (error) {
+    } catch (_) {
       return []
     }
   }
@@ -289,7 +289,7 @@ async function getSuggestionsInternal({
 
 // this should more or less match ES6 specification for valid identifiers
 const identifierMatch =
-  /(?:(?![\u{10000}-\u{10FFFF}])[\$_\p{Lu}\p{Ll}\p{Lt}\p{Lm}\p{Lo}\p{Nl}])(?:(?![\u{10000}-\u{10FFFF}])[\$_\p{Lu}\p{Ll}\p{Lt}\p{Lm}\p{Lo}\p{Nl}\u200C\u200D\p{Mn}\p{Mc}\p{Nd}\p{Pc}])*$/u
+  /(?:(?![\u{10000}-\u{10FFFF}])[$_\p{Lu}\p{Ll}\p{Lt}\p{Lm}\p{Lo}\p{Nl}])(?:(?![\u{10000}-\u{10FFFF}])[$_\p{Lu}\p{Ll}\p{Lt}\p{Lm}\p{Lo}\p{Nl}\u200C\u200D\p{Mn}\p{Mc}\p{Nd}\p{Pc}])*$/u
 
 // Decide what needs to be replaced in the editor buffer when inserting the completion
 function getPrefix(opts: ACP.SuggestionsRequestedEvent): string {

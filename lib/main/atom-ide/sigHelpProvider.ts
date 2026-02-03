@@ -43,7 +43,7 @@ export class TSSigHelpProvider implements SignatureHelpProvider {
         activeParameter: data.argumentIndex,
         activeSignature: data.selectedItemIndex,
       }
-    } catch (e) {
+    } catch (_) {
       return
     }
   }

@@ -74,7 +74,7 @@ export class TooltipController {
         line: bufferPt.row + 1,
         offset: bufferPt.column + 1,
       })
-    } catch (e) {
+    } catch (_) {
       return
     }
 

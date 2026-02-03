@@ -52,7 +52,7 @@ export class TSDatatipProvider implements DatatipProvider {
         component: () => <div className="atom-typescript-datatip-tooltip">{tooltip}</div>,
         range: Atom.Range.fromObject([locationToPoint(data.start), locationToPoint(data.end)]),
       }
-    } catch (e) {
+    } catch (_) {
       return
     }
   }
