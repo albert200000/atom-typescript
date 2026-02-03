@@ -2,7 +2,6 @@
   "name": "atom-typescript-updated",
   "version": "14.4.0",
   "main": "./dist/main.js",
-  "type": "module",
   "description": "The only TypeScript plugin you will ever need.",
   "atomTestRunner": "./node_modules/atom-ts-spec-runner/runner.js",
   "activationHooks": [

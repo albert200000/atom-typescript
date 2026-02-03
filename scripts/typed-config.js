@@ -1,10 +1,7 @@
 #!/usr/bin/env ts-node
-import { join } from 'path'
-import { readFileSync, writeFileSync } from 'fs'
-import process from 'process'
-import { createRequire } from 'module'
-
-const require = createRequire(import.meta.url)
+const { join } = require('path')
+const { readFileSync, writeFileSync } = require('fs')
+const process = require('process')
 
 if (!process.argv[2]) {
   process.stderr.write(`Usage: ${process.argv[1]} <filename>\n`)
