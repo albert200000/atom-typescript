@@ -1,14 +1,14 @@
 # FAQ
 
 Please check out [the
-FAQ](https://github.com/TypeStrong/atom-typescript/blob/master/docs/faq.md)
+FAQ](https://github.com/albert200000/atom-typescript/blob/master/docs/faq.md)
 before creating a new issue :rose:
 
 # TIP
 
 Before doing any meaningful work or even investigating [please create an
 issue for
-discussion](https://github.com/TypeStrong/atom-typescript/issues) so we
+discussion](https://github.com/albert200000/atom-typescript/issues) so we
 don't have duplicate work and we don't step on your toes.
 
 # Hacking on atom-typescript
@@ -152,7 +152,7 @@ Some shortcuts:
 
 1.  We open `atom-typescript` source in one Atom window
 2.  We have
-    [`atom-typescript-examples`](https://github.com/TypeStrong/atom-typescript-examples)
+    [`atom-typescript-examples`](https://github.com/albert200000/atom-typescript-examples)
     open in another atom window as such: `atom --dev <examplesFolder>`
 3.  We make changes to `atom-typescript` and save to get the JS
     (optionally run `typescript:build` command to rebuild everything)

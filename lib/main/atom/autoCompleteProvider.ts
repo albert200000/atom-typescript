@@ -293,7 +293,7 @@ const identifierMatch =
 
 // Decide what needs to be replaced in the editor buffer when inserting the completion
 function getPrefix(opts: ACP.SuggestionsRequestedEvent): string {
-  // see https://github.com/TypeStrong/atom-typescript/issues/1528
+  // see https://github.com/albert200000/atom-typescript/issues/1528
   // for the motivating example.
   const line = opts.editor
     .getBuffer()

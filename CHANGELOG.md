@@ -323,7 +323,7 @@ This changes the style of builtin semantic view. You can revert to old style (wh
 
     This hopefully fixes an array of relatively infrequent, but annoying
     bugs when confirming an autocompletion suggestion would remove some part
-    of the preceding code. See [#1528](https://github.com/TypeStrong/atom-typescript/issues/1528) for an example.
+    of the preceding code. See [#1528](https://github.com/albert200000/atom-typescript/issues/1528) for an example.
 
 ## 13.4.0
 
@@ -575,7 +575,7 @@ On the plus side, inherited `tsconfig.json` should work as expected now.
 
 ## 12.6.1
 
--   Fix [#1437](https://github.com/TypeStrong/atom-typescript/issues/1437)
+-   Fix [#1437](https://github.com/albert200000/atom-typescript/issues/1437)
 
 ## 12.6.0
 
@@ -587,7 +587,7 @@ On the plus side, inherited `tsconfig.json` should work as expected now.
 
 -   Added an option to ignore unused\* suggestion diagnostics specifically
 
-    See [#1433](https://github.com/TypeStrong/atom-typescript/issues/1433)
+    See [#1433](https://github.com/albert200000/atom-typescript/issues/1433)
     for context.
 
     Long story short, TypeScript 2.9 will report unused locals/parameters/etc
@@ -754,7 +754,7 @@ On the plus side, inherited `tsconfig.json` should work as expected now.
 -   Switch to ES2017 target
 -   Update dependencies
 -   Add `typescript:initialize-config` command
-    ([\#1248](https://github.com/TypeStrong/atom-typescript/issues/1248))
+    ([\#1248](https://github.com/albert200000/atom-typescript/issues/1248))
     (by Paul Ermolin)
 
     Command is `typescript:initialize-config`, and it uses `tsc init`
@@ -771,7 +771,7 @@ On the plus side, inherited `tsconfig.json` should work as expected now.
 -   Remove obsolete `filesGlob` snippet
 -   Don't use deprecated `.editor` class in grammar style
 -   Add locale setting to control TypeScript's message locale
-    ([\#1371](https://github.com/TypeStrong/atom-typescript/issues/1371))
+    ([\#1371](https://github.com/albert200000/atom-typescript/issues/1371))
 
 ## 12.0.0
 
@@ -839,7 +839,7 @@ On the plus side, inherited `tsconfig.json` should work as expected now.
 Please note only breaking changes are logged beyond this point. You can
 use GitHub's branch/tag comparison tool to get a full changeset, for
 example,
-<https://github.com/TypeStrong/atom-typescript/compare/v7.0.0...v8.0.0>
+<https://github.com/albert200000/atom-typescript/compare/v7.0.0...v8.0.0>
 shows all changes since v7.0.0 until v8.0.0
 
 ## v11.0.0
@@ -851,7 +851,7 @@ shows all changes since v7.0.0 until v8.0.0
 
 -   Removed the (already ignored in any significant way) `version`
     option from tsconfig.
-    [More](https://github.com/TypeStrong/atom-typescript/issues/617)
+    [More](https://github.com/albert200000/atom-typescript/issues/617)
 
 ## v6.0.0
 
@@ -887,14 +887,14 @@ shows all changes since v7.0.0 until v8.0.0
 -   New default shortcuts for `build` : `F6` an `goto definition`:
     `F12`. Because I don't want to mess with your atom defaults and a
     major use base is VS users. [Link
-    \#145](https://github.com/TypeStrong/atom-typescript/issues/145)
+    \#145](https://github.com/albert200000/atom-typescript/issues/145)
 
 ## v1
 
 -   `format` → `formatCodeOptions`
-    https://github.com/TypeStrong/atom-typescript/issues/178
+    https://github.com/albert200000/atom-typescript/issues/178
 -   `compileOnSave` is now a tsconfig option :
-    https://github.com/TypeStrong/atom-typescript/issues/187
+    https://github.com/albert200000/atom-typescript/issues/187
 
 ## 0.x
 

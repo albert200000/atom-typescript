@@ -4122,7 +4122,7 @@ function $2a2076bfbea7a68e$var$getSuggestionsInternal(_0) {
 var $2a2076bfbea7a68e$var$identifierMatch = RegExp("(?:(?![\\u{10000}-\\u{10FFFF}])[$_\\p{Lu}\\p{Ll}\\p{Lt}\\p{Lm}\\p{Lo}\\p{Nl}])(?:(?![\\u{10000}-\\u{10FFFF}])[$_\\p{Lu}\\p{Ll}\\p{Lt}\\p{Lm}\\p{Lo}\\p{Nl}\\u200C\\u200D\\p{Mn}\\p{Mc}\\p{Nd}\\p{Pc}])*$", "u");
 // Decide what needs to be replaced in the editor buffer when inserting the completion
 function $2a2076bfbea7a68e$var$getPrefix(opts) {
-    // see https://github.com/TypeStrong/atom-typescript/issues/1528
+    // see https://github.com/albert200000/atom-typescript/issues/1528
     // for the motivating example.
     var line = opts.editor.getBuffer().getTextInRange([
         [

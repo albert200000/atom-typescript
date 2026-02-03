@@ -1,15 +1,4 @@
-# Project status
-
-As of May, 25th 2022, this project is officially unmaintained.
-
-The last maintainer (me) doesn't have admin access to the repository, and couldn't get the organization owner's attention to get it, so if you'd like to take over, feel free to fork.
-
-- @lierdakil
-
 # Atom TypeScript
-
-[![Join the chat at
-https://gitter.im/TypeStrong/atom-typescript](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/TypeStrong/atom-typescript?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 JavaScript developers can now just open a `.ts` file and start hacking
 away like they are used to. No `grunt`, no `Visual Studio`. Just pure
@@ -48,31 +37,6 @@ its GUI. You basically have two options.
 -   `hyperclick`
 -   `intentions`
 
-**Additional Notes**: [Some packages we
-love](https://github.com/TypeStrong/atom-typescript/blob/master/docs/packages.md).
-
-## Reviews
-
-*Featured on the TypeScript home page under tools
-http://www.typescriptlang.org/* and [demoed by **Anders
-Hejlsberg**](https://twitter.com/schwarty/status/593858817894404096).
-
-"I was shocked at how good it felt to poke around on the compiler with
-it." [Jonathan Turner](https://twitter.com/jntrnr) 
-"And guess what, it
-worked perfectly. Like everything else! Faster than Visual Studio!"
-[Daniel
-Earwicker](http://stackoverflow.com/users/27423/daniel-earwicker) 
-"It's
-a thing of beauty - they had me at '*Type information on hover*'.
-Discovering `tsconfig.json` support as well was just an enormous bonus."
-[John Reilly](https://twitter.com/johnny_reilly)
-"This may be your best
-option for editing TypeScript at the moment - very nice!" [Rasmus
-Schultz](https://twitter.com/mindplaydk)
-
-[*Add yours!*](https://github.com/TypeStrong/atom-typescript/issues/66)
-
 # Features
 
 -   Autocomplete
@@ -93,7 +57,7 @@ Schultz](https://twitter.com/mindplaydk)
 # FAQ
 
 Located online:
-https://github.com/TypeStrong/atom-typescript/blob/master/docs/faq.md
+https://github.com/albert200000/atom-typescript/blob/master/docs/faq.md
 
 ------------------------------------------------------------------------
 
@@ -110,7 +74,7 @@ Press `tab` to make a selection.
 Just hover
 
 ![you definitely get the
-point](https://raw.githubusercontent.com/TypeStrong/atom-typescript/master/docs/screens/hover.png)
+point](https://raw.githubusercontent.com/albert200000/atom-typescript/master/docs/screens/hover.png)
 
 ## Compile on save
 
@@ -145,14 +109,14 @@ A bird's eye view of the current file. Use command
 `toggle semantic view`. The view updates while you edit the code. You
 can also click to jump to any portion of the file.
 
-![](https://raw.githubusercontent.com/TypeStrong/atom-typescript-examples/master/screens/semanticView.png)
+![](https://raw.githubusercontent.com/albert200000/atom-typescript-examples/master/screens/semanticView.png)
 
 ## Refactoring
 
 ### Rename
 
 `f2` to initiate rename. `enter` to commit and `esc` to cancel.
-![](https://raw.githubusercontent.com/TypeStrong/atom-typescript/master/docs/screens/renameRefactoring.png)
+![](https://raw.githubusercontent.com/albert200000/atom-typescript/master/docs/screens/renameRefactoring.png)
 
 ## Quick Fix
 
@@ -179,11 +143,11 @@ by default:
 ## Contributing
 
 Look at
-[CONTRIBUTING.md](https://github.com/TypeStrong/atom-typescript/blob/master/CONTRIBUTING.md)
+[CONTRIBUTING.md](https://github.com/albert200000/atom-typescript/blob/master/CONTRIBUTING.md)
 for curiosity. We work hard to keep the code as approachable as possible
 and are highly keen on helping you help us.
 
 ## Changelog
 
 Breaking changes [available
-online](https://github.com/TypeStrong/atom-typescript/blob/master/CHANGELOG.md).
+online](https://github.com/albert200000/atom-typescript/blob/master/CHANGELOG.md).

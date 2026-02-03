@@ -61,28 +61,7 @@ do (grammarPackageImUsing = "typescript-grammar-you-want-to-use") ->
     atom.packages.triggerActivationHook 'language-typescript:grammar-used'
 ```
 
-See [here](https://github.com/TypeStrong/atom-typescript/issues/1451#issuecomment-428151082) for more information.
-
-## I want to use Atom-TypeScript with JavaScript, too
-
-This is an experimental feature, so any issues you encounter, you are
-encouraged to report.
-
-First of all, go to Atom-TypeScript settings and enable the
-'Enable Atom-TypeScript for JavaScript files'.
-
-For Atom-TypeScript to auto-start when you open a JavaScript file, see the [previous question](#i-want-to-use-package-x-for-syntax-highlighting-instead-of-language-typescript-but-atom-typescript-doesnt-work). TL;DR if you're using the default `language-javascript`
-grammar package for JavaScript syntax highlighting, add this to your Atom init
-script:
-
-
-```coffee
-#CHANGE THE PACKAGE NAME IN THE NEXT LINE IF YOU'RE USING
-#A DIFFERENT GRAMMAR PACKAGE
-do (grammarPackageImUsing = "language-javascript") ->
-  atom.packages.onDidTriggerActivationHook "#{grammarPackageImUsing}:grammar-used", ->
-    atom.packages.triggerActivationHook 'language-typescript:grammar-used'
-```
+See [here](https://github.com/albert200000/atom-typescript/issues/1451#issuecomment-428151082) for more information.
 
 ## I want to use the keyboard to control type tooltips instead of hovering the mouse
 
@@ -91,22 +70,6 @@ For keyboard-activated tooltips, bind a shortcut you like to `typescript:show-to
 It's recommended to add the key binding to `atom-text-editor` selector, since the command is editor-bound. If you want a more specific selector, use `atom-text-editor:not([mini]).typescript-editor`, which will only trigger on editors managed by atom-typescript.
 
 Also see the next question.
-
-## I want to disable type tooltips on hover
-
-If you want to disable tooltips on hover, the easy way to do this is by setting tooltip delay to a very high value (`86400000` for instance is a delay of 24 hours, which should be reasonably large for tooltips to never appear at all).
-
-If you're using built-in tooltips (the baby blue ones -- or whatever colour the generic tooltips are in your ui theme), then adjust "Type tooltip delay" setting in atom-typescript settings accordingly.
-
-With atom-ide-ui, you can find a similar option in atom-ide-ui settings under "Datatips".
-
-## Signature help tooltips are popping up on keystroke, this is annoying, how do I turn it off?
-
-You can turn this off via an option in atom-typescript settings, called "Display signature help tooltips on keystroke" in the settings UI, and `sigHelpDisplayOnChange` in the config.
-
-You can still display signature help manually via `typescript:show-signature-help` command, which you can also bind to a keyboard shortcut if you want. See [Atom Flight Manual section on customizing keybindings](https://flight-manual.atom.io/using-atom/sections/basic-customization/#customizing-keybindings) for more information on the topic.
-
-## Atom can't find modules/files that I just added
 
 ## Atom complains about errors that shouldn't happen with my tsconfig on new files
 
@@ -147,21 +110,7 @@ This by design, since TypeScript doesn't really assign any special meaning to `n
 }
 ```
 
-## Failed to Update
-
-This can happen particularly on windows ([relevant
-issue](https://github.com/TypeStrong/atom-typescript/issues/195)) as it
-is not possible to delete a file if it is executing. Close all atom
-instances and run the following commands:
-
-    apm uninstall atom-typescript
-    apm install atom-typescript
-
-## Failed to install
-
-Follow the same steps as specified in [failed to update](#failed-to-update).
-
 ## How can I contribute
 
 see
-<https://github.com/TypeStrong/atom-typescript/blob/master/CONTRIBUTING.md>
+<https://github.com/albert200000/atom-typescript/blob/master/CONTRIBUTING.md>

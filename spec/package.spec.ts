@@ -17,6 +17,6 @@ describe("atom-typescript", function () {
 
     await promise
 
-    expect(atom.packages.isPackageActive("atom-typescript")).to.equal(true)
+    expect(atom.packages.isPackageActive("atom-typescript-updated")).to.equal(true)
   })
 })
