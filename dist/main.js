@@ -8990,7 +8990,6 @@ var $8655349229b8a3fd$export$f2c0a16002429d72 = /*#__PURE__*/ function() {
         {
             key: "provideDefinitions",
             value: function provideDefinitions() {
-                if (atom.config.get("atom-typescript-updated").disableAtomIdeDefinitions) return;
                 return (0, $d2f9fe9bb7e67a01$export$a9ca9b3a8941e92e)(this.getClient);
             }
         },

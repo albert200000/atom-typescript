@@ -11,7 +11,6 @@ declare module "atom" {
     "atom-typescript-updated.autocompletionStrictFilterIgnoreCase": boolean
     "atom-typescript-updated.autocompletionStrictFilterLongestMatchFirst": boolean
     "atom-typescript-updated.locale": string
-    "atom-typescript-updated.disableAtomIdeDefinitions": boolean
     "atom-typescript-updated.buildStatusTimeout": number
     "atom-typescript-updated.getErrDebounceTimeout": number
     "atom-typescript-updated.showSemanticView": boolean
@@ -50,7 +49,6 @@ declare module "atom" {
       autocompletionStrictFilterIgnoreCase: boolean
       autocompletionStrictFilterLongestMatchFirst: boolean
       locale: string
-      disableAtomIdeDefinitions: boolean
       buildStatusTimeout: number
       getErrDebounceTimeout: number
       showSemanticView: boolean

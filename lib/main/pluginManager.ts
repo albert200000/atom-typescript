@@ -227,7 +227,6 @@ export class PluginManager {
   }
 
   public provideDefinitions() {
-    if (atom.config.get("atom-typescript-updated").disableAtomIdeDefinitions) return
     return getDefinitionProvider(this.getClient)
   }
 
