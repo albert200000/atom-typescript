@@ -367,7 +367,7 @@ function $7580a2909a181bf5$export$225e59ca209a506(filePath) {
     return $7580a2909a181bf5$var$isAllowedExtension($8qw4J$path.extname(filePath));
 }
 function $7580a2909a181bf5$export$d9994fe0923974a5() {
-    var config = atom.config.get("pulsar-typescript-updated");
+    var config = atom.config.get("pulsar-typescript");
     var tsScopes = (0, $8qw4J$swchelperscjs_to_consumable_arraycjs._)(config.tsSyntaxScopes).concat((0, $8qw4J$swchelperscjs_to_consumable_arraycjs._)(config.jsSyntaxScopes));
     return tsScopes;
 }
@@ -393,7 +393,7 @@ function $7580a2909a181bf5$var$memoizeThrottle(func, wait) {
 }
 var $7580a2909a181bf5$var$isAllowedExtension = $7580a2909a181bf5$var$memoizeThrottle(function(ext) {
     var _a;
-    var config = atom.config.get("pulsar-typescript-updated");
+    var config = atom.config.get("pulsar-typescript");
     var tsExts = (0, $8qw4J$swchelperscjs_to_consumable_arraycjs._)(config.tsFileExtensions).concat((0, $8qw4J$swchelperscjs_to_consumable_arraycjs._)(config.jsFileExtensions));
     if (config.extensionsFromGrammars) {
         var _instance, _tsExts;
@@ -890,7 +890,7 @@ var $cd15631f259ad2e9$export$1beacdeb2d370927 = /*#__PURE__*/ function() {
                         case 1:
                             _state.sent();
                             lineCount = this.lineCountIfLarge(editor);
-                            if (!atom.config.get("pulsar-typescript-updated.largeFileNoFollowCursor") || lineCount === 0) this.editorScrolling = editor.onDidChangeCursorPosition(this.selectAtCursorLine);
+                            if (!atom.config.get("pulsar-typescript.largeFileNoFollowCursor") || lineCount === 0) this.editorScrolling = editor.onDidChangeCursorPosition(this.selectAtCursorLine);
                             this.editorChanging = editor.onDidStopChanging(lineCount === 0 ? this.loadNavTree : (0, ($parcel$interopDefault($8qw4J$lodashdebounce)))(this.loadNavTree, Math.max(lineCount / 5, 300)));
                             return [
                                 2
@@ -911,15 +911,15 @@ var $cd15631f259ad2e9$export$1beacdeb2d370927 = /*#__PURE__*/ function() {
                     });
                 }
             }
-        }), atom.config.observe("pulsar-typescript-updated.longLineLength", function(value) {
+        }), atom.config.observe("pulsar-typescript.longLineLength", function(value) {
             if (value > 0) _this.longLineLength = value;
-        }), atom.config.observe("pulsar-typescript-updated.largeFileLineCount", function(value) {
+        }), atom.config.observe("pulsar-typescript.largeFileLineCount", function(value) {
             if (value > 0) _this.largeFileLineCount = value;
         }), atom.config.observe("linter-ui-default.longLineLength", function(value) {
-            if (atom.config.get("pulsar-typescript-updated.longLineLength") > 0) return;
+            if (atom.config.get("pulsar-typescript.longLineLength") > 0) return;
             if (typeof value === "number") _this.longLineLength = value;
         }), atom.config.observe("linter-ui-default.largeFileLineCount", function(value) {
-            if (atom.config.get("pulsar-typescript-updated.largeFileLineCount") > 0) return;
+            if (atom.config.get("pulsar-typescript.largeFileLineCount") > 0) return;
             if (typeof value === "number") _this.largeFileLineCount = value / 6;
         }));
     }
@@ -1651,7 +1651,7 @@ var $15c8165b6fc0c3c1$export$21f68d6aa461e875 = /*#__PURE__*/ function() {
     return TypescriptServiceClient;
 }();
 function $15c8165b6fc0c3c1$var$startServer(tsServerPath) {
-    var locale = atom.config.get("pulsar-typescript-updated").locale;
+    var locale = atom.config.get("pulsar-typescript").locale;
     var tsServerArgs = locale ? [
         "--locale",
         locale
@@ -1753,7 +1753,7 @@ function $c628f355f099b93a$export$369fb36245591db0(sourcePath, binBaseName) {
                                             _state.label = 3;
                                         case 3:
                                             // try to get typescript from configured tsdkPath
-                                            tsdkPath = atom.config.get("pulsar-typescript-updated.tsdkPath");
+                                            tsdkPath = atom.config.get("pulsar-typescript.tsdkPath");
                                             if (!tsdkPath) return [
                                                 3,
                                                 5
@@ -2051,7 +2051,7 @@ var $656dc62ff40b3cc7$export$dceb19333e080e82 = /*#__PURE__*/ function() {
         this.memoizedClients = new Map();
         this.emitter = new (0, $8qw4J$atom.Emitter)();
         this.subscriptions = new (0, $8qw4J$atom.CompositeDisposable)();
-        this.tsserverInstancePerTsconfig = atom.config.get("pulsar-typescript-updated").tsserverInstancePerTsconfig;
+        this.tsserverInstancePerTsconfig = atom.config.get("pulsar-typescript").tsserverInstancePerTsconfig;
         // This is just here so TypeScript can infer the types of the callbacks when using "on" method
         this.on = this.emitter.on.bind(this.emitter);
         this.diagnosticHandler = function(serverPath, type) {
@@ -3734,9 +3734,9 @@ var $2a2076bfbea7a68e$export$536c67bf76d43cfb = /*#__PURE__*/ function() {
         this.selector = (0, $7580a2909a181bf5$export$d9994fe0923974a5)().map(function(x) {
             return x.includes(".") ? ".".concat(x) : x;
         }).join(", ");
-        this.inclusionPriority = atom.config.get("pulsar-typescript-updated").autocompletionInclusionPriority;
-        this.suggestionPriority = atom.config.get("pulsar-typescript-updated").autocompletionSuggestionPriority;
-        this.excludeLowerPriority = atom.config.get("pulsar-typescript-updated").autocompletionExcludeLowerPriority;
+        this.inclusionPriority = atom.config.get("pulsar-typescript").autocompletionInclusionPriority;
+        this.suggestionPriority = atom.config.get("pulsar-typescript").autocompletionSuggestionPriority;
+        this.excludeLowerPriority = atom.config.get("pulsar-typescript").autocompletionExcludeLowerPriority;
     }
     (0, $8qw4J$swchelperscjs_create_classcjs._)(AutocompleteProvider, [
         {
@@ -3784,7 +3784,7 @@ var $2a2076bfbea7a68e$export$536c67bf76d43cfb = /*#__PURE__*/ function() {
                                 ];
                             case 2:
                                 suggestions = _state.sent();
-                                config = atom.config.get("pulsar-typescript-updated");
+                                config = atom.config.get("pulsar-typescript");
                                 if (config.autocompletionUseFuzzyFilter) suggestions = $8qw4J$fuzzaldrin.filter(suggestions, prefix, {
                                     key: "displayText"
                                 });
@@ -4213,7 +4213,7 @@ function $2a2076bfbea7a68e$var$parens(opts) {
     return !!lookahead.match(/\s*\(/);
 }
 function $2a2076bfbea7a68e$var$addCallableParens(opts, s) {
-    if (atom.config.get("pulsar-typescript-updated.autocompleteParens") && [
+    if (atom.config.get("pulsar-typescript.autocompleteParens") && [
         "function",
         "method"
     ].includes(s.leftLabel) && !$2a2076bfbea7a68e$var$parens(opts)) return (0, $8qw4J$swchelperscjs_object_spread_propscjs._)((0, $8qw4J$swchelperscjs_object_spreadcjs._)({}, s), {
@@ -6332,10 +6332,10 @@ var $8e8ce2d77e3fcd58$export$d2110dce2e582144 = /*#__PURE__*/ function() {
             });
         };
         this.props = (0, $8qw4J$swchelperscjs_object_spreadcjs._)({}, props);
-        this.setHideBuildStatus(atom.config.get("pulsar-typescript-updated").buildStatusTimeout);
+        this.setHideBuildStatus(atom.config.get("pulsar-typescript").buildStatusTimeout);
         this.resetBuildStatusTimeout();
         $8qw4J$etch.initialize(this);
-        this.disposables.add(atom.config.onDidChange("pulsar-typescript-updated.buildStatusTimeout", function(param) {
+        this.disposables.add(atom.config.onDidChange("pulsar-typescript.buildStatusTimeout", function(param) {
             var newValue = param.newValue;
             _this.setHideBuildStatus(newValue);
             (0, $2893351583386024$export$8080b7556d9d6445)(_this.update({}));
@@ -6930,7 +6930,7 @@ var $1e8c6b8d10c1d614$export$951a8e3d4c79262 = /*#__PURE__*/ function() {
                 atom.workspace.hide(_this.view);
                 (0, $2893351583386024$export$8080b7556d9d6445)(_this.view.destroy());
             }
-        }), atom.config.observe("pulsar-typescript-updated.showSemanticView", function(val) {
+        }), atom.config.observe("pulsar-typescript.showSemanticView", function(val) {
             if (val) (0, $2893351583386024$export$8080b7556d9d6445)(_this.show());
             else _this.hide();
         }));
@@ -7828,7 +7828,7 @@ var $80c6b1f413ab5323$export$a4d36ae2cf2e8cd = /*#__PURE__*/ function() {
         {
             key: "getLinterErrors",
             value: function getLinterErrors() {
-                if (atom.config.get("pulsar-typescript-updated.suppressAllDiagnostics")) return [];
+                if (atom.config.get("pulsar-typescript.suppressAllDiagnostics")) return [];
                 var result = [];
                 var _iteratorNormalCompletion = true, _didIteratorError = false, _iteratorError = undefined, _iteratorNormalCompletion1 = true, _didIteratorError1 = false, _iteratorError1 = undefined;
                 try {
@@ -7942,7 +7942,7 @@ var $80c6b1f413ab5323$export$a4d36ae2cf2e8cd = /*#__PURE__*/ function() {
     return ErrorPusher;
 }();
 function $80c6b1f413ab5323$var$config(option, scope) {
-    return atom.config.get("pulsar-typescript-updated.".concat(option), {
+    return atom.config.get("pulsar-typescript.".concat(option), {
         scope: [
             scope
         ]
@@ -8132,7 +8132,7 @@ var $26f43d04544e9b7a$export$6932e15e784422f9 = /*#__PURE__*/ function() {
             }).call(_this);
         };
         var debouncedGetErr;
-        this.subscriptions.add(atom.config.observe("pulsar-typescript-updated.getErrDebounceTimeout", function(val) {
+        this.subscriptions.add(atom.config.observe("pulsar-typescript.getErrDebounceTimeout", function(val) {
             debouncedGetErr = (0, $8qw4J$lodash.debounce)(function() {
                 (0, $2893351583386024$export$8080b7556d9d6445)(_this.getErr({
                     allFiles: false,
@@ -8395,7 +8395,7 @@ var $26f43d04544e9b7a$export$6932e15e784422f9 = /*#__PURE__*/ function() {
                                 ];
                                 options = (0, $ee93806a41573bb4$export$bad43d745a81bbd5)(this.state.configFile.getPath());
                                 this.compileOnSave = options.compileOnSave;
-                                cfg = atom.config.get("pulsar-typescript-updated");
+                                cfg = atom.config.get("pulsar-typescript");
                                 return [
                                     4,
                                     this.state.client.execute("configure", {
@@ -8473,7 +8473,7 @@ var $a568bbacdc99572d$export$a0bbaae59860162e = /*#__PURE__*/ function() {
         this.subscriptions.add(this.buffer.on("opened", this.onOpened));
         this.checkIfTypescript();
         this.subscriptions.add(editor.onDidChangePath(this.checkIfTypescript), editor.onDidChangeGrammar(this.checkIfTypescript), editor.onDidDestroy(this.destroy), editor.onDidSave(function() {
-            if (atom.config.get("pulsar-typescript-updated.checkAllFilesOnSave")) atom.commands.dispatch(atom.views.getView(editor), "typescript:check-all-files");
+            if (atom.config.get("pulsar-typescript.checkAllFilesOnSave")) atom.commands.dispatch(atom.views.getView(editor), "typescript:check-all-files");
         }));
     }
     (0, $8qw4J$swchelperscjs_create_classcjs._)(TypescriptEditorPane, [
@@ -9045,7 +9045,7 @@ function $64e7645780377c6f$var$checkAndInstallDependencies() {
                     ];
                     return [
                         4,
-                        $8qw4J$atompackagedeps.install("pulsar-typescript-updated", true)
+                        $8qw4J$atompackagedeps.install("pulsar-typescript", true)
                     ];
                 case 1:
                     _state.sent();

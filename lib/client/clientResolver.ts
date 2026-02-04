@@ -33,7 +33,7 @@ export class ClientResolver {
   private emitter = new Emitter<{}, EventTypes>()
   private subscriptions = new CompositeDisposable()
   private tsserverInstancePerTsconfig =
-    atom.config.get("pulsar-typescript-updated").tsserverInstancePerTsconfig
+    atom.config.get("pulsar-typescript").tsserverInstancePerTsconfig
   // This is just here so TypeScript can infer the types of the callbacks when using "on" method
   public on = this.emitter.on.bind(this.emitter)
 

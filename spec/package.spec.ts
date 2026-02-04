@@ -17,6 +17,6 @@ describe("pulsar-typescript", function () {
 
     await promise
 
-    expect(atom.packages.isPackageActive("pulsar-typescript-updated")).to.equal(true)
+    expect(atom.packages.isPackageActive("pulsar-typescript")).to.equal(true)
   })
 })

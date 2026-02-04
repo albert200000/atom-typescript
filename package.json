@@ -1,5 +1,5 @@
 {
-  "name": "pulsar-typescript-updated",
+  "name": "pulsar-typescript",
   "version": "0.4.0",
   "main": "./dist/main.js",
   "description": "The only TypeScript plugin you will ever need.",

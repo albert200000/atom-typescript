@@ -77,7 +77,7 @@ export class ErrorPusher {
   }
 
   private getLinterErrors(): Message[] {
-    if (atom.config.get("pulsar-typescript-updated.suppressAllDiagnostics")) return []
+    if (atom.config.get("pulsar-typescript.suppressAllDiagnostics")) return []
     const result: Message[] = []
     for (const fileErrors of this.errors.values()) {
       for (const [filePath, diagnostics] of fileErrors) {
@@ -148,9 +148,9 @@ export class ErrorPusher {
   }
 }
 
-function config<T extends keyof ConfigValues["pulsar-typescript-updated"]>(
+function config<T extends keyof ConfigValues["pulsar-typescript"]>(
   option: T,
   scope: string,
-): ConfigValues["pulsar-typescript-updated"][typeof option] {
-  return atom.config.get(`pulsar-typescript-updated.${option}`, {scope: [scope]}) as any
+): ConfigValues["pulsar-typescript"][typeof option] {
+  return atom.config.get(`pulsar-typescript.${option}`, {scope: [scope]}) as any
 }
