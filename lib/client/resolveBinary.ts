@@ -44,7 +44,7 @@ export async function resolveBinary(
     }
 
     // use bundled version
-    const defaultPath = require.resolve(`typescript/lib/${binName}`)
+    const defaultPath = Resolve.sync(`typescript/lib/${binName}`)
     return defaultPath
   })
 

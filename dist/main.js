@@ -392,16 +392,16 @@ function $7580a2909a181bf5$var$memoizeThrottle(func, wait) {
     }; // NOTE: leading MUST be true for this ! to hold
 }
 var $7580a2909a181bf5$var$isAllowedExtension = $7580a2909a181bf5$var$memoizeThrottle(function(ext) {
+    var _a;
     var config = atom.config.get("atom-typescript-updated");
     var tsExts = (0, $8qw4J$swchelperscjs_to_consumable_arraycjs._)(config.tsFileExtensions).concat((0, $8qw4J$swchelperscjs_to_consumable_arraycjs._)(config.jsFileExtensions));
     if (config.extensionsFromGrammars) {
         var _instance, _tsExts;
-        var _atom_config_get;
-        var custom = (_atom_config_get = atom.config.get("core.customFileTypes")) !== null && _atom_config_get !== void 0 ? _atom_config_get : {};
+        var custom = (_a = atom.config.get("core.customFileTypes")) !== null && _a !== void 0 ? _a : {};
         var scopes = $7580a2909a181bf5$export$d9994fe0923974a5();
         (_tsExts = tsExts).push.apply(_tsExts, (0, $8qw4J$swchelperscjs_to_consumable_arraycjs._)((_instance = []).concat.apply(_instance, (0, $8qw4J$swchelperscjs_to_consumable_arraycjs._)(scopes.map(function(scope) {
-            var _atom_grammars_grammarForScopeName;
-            return (_atom_grammars_grammarForScopeName = atom.grammars.grammarForScopeName(scope)) === null || _atom_grammars_grammarForScopeName === void 0 ? void 0 : _atom_grammars_grammarForScopeName.fileTypes;
+            var _a;
+            return (_a = atom.grammars.grammarForScopeName(scope)) === null || _a === void 0 ? void 0 : _a.fileTypes;
         })).concat((0, $8qw4J$swchelperscjs_to_consumable_arraycjs._)(scopes.map(function(scope) {
             return custom[scope];
         })))).filter($7580a2909a181bf5$var$notNullary).map(function(s) {
@@ -709,7 +709,7 @@ var $3c84f55e2ff649f2$export$814b29caa594376c = /*#__PURE__*/ function() {
             key: "render",
             value: function render() {
                 var _this = this;
-                var _this_props_navTree_spans__start, _this_props_navTree_spans_, _this_props_navTree_spans__end, _this_props_navTree_spans_1;
+                var _a, _b, _c, _d;
                 var node = this.props.navTree;
                 var ctrl = this.props.ctrl;
                 var classes = (node.childItems ? "nested-" : "") + "item" + (node.collapsed ? " collapsed" : " expanded");
@@ -717,8 +717,8 @@ var $3c84f55e2ff649f2$export$814b29caa594376c = /*#__PURE__*/ function() {
                 return $8qw4J$etch.dom("li", {
                     className: "node entry exanded list-" + classes,
                     dataset: {
-                        startLine: (_this_props_navTree_spans_ = this.props.navTree.spans[0]) === null || _this_props_navTree_spans_ === void 0 ? void 0 : (_this_props_navTree_spans__start = _this_props_navTree_spans_.start) === null || _this_props_navTree_spans__start === void 0 ? void 0 : _this_props_navTree_spans__start.line,
-                        endLine: (_this_props_navTree_spans_1 = this.props.navTree.spans[0]) === null || _this_props_navTree_spans_1 === void 0 ? void 0 : (_this_props_navTree_spans__end = _this_props_navTree_spans_1.end) === null || _this_props_navTree_spans__end === void 0 ? void 0 : _this_props_navTree_spans__end.line
+                        startLine: (_b = (_a = this.props.navTree.spans[0]) === null || _a === void 0 ? void 0 : _a.start) === null || _b === void 0 ? void 0 : _b.line,
+                        endLine: (_d = (_c = this.props.navTree.spans[0]) === null || _c === void 0 ? void 0 : _c.end) === null || _d === void 0 ? void 0 : _d.line
                     }
                 }, $8qw4J$etch.dom("div", {
                     className: "header list-item",
@@ -855,12 +855,11 @@ var $cd15631f259ad2e9$export$1beacdeb2d370927 = /*#__PURE__*/ function() {
          *        current cursor position
          */ this.selectAtCursorLine = function(param) {
             var newBufferPosition = param.newBufferPosition;
-            var _findNodeAt;
+            var _a, _b;
             var firstNodeElem = _this.firstNode();
             if (!firstNodeElem) return;
             var cursorLine = newBufferPosition.row;
-            var _findNodeAt_querySelector;
-            var selectedChild = (_findNodeAt_querySelector = (_findNodeAt = (0, $495e5651dd8d899e$export$a4ea95adf60c92fc)(cursorLine, cursorLine, firstNodeElem)) === null || _findNodeAt === void 0 ? void 0 : _findNodeAt.querySelector(".header")) !== null && _findNodeAt_querySelector !== void 0 ? _findNodeAt_querySelector : undefined;
+            var selectedChild = (_b = (_a = (0, $495e5651dd8d899e$export$a4ea95adf60c92fc)(cursorLine, cursorLine, firstNodeElem)) === null || _a === void 0 ? void 0 : _a.querySelector(".header")) !== null && _b !== void 0 ? _b : undefined;
             var currentSelection = _this.getSelectedNode();
             if (selectedChild !== currentSelection) {
                 if (currentSelection) currentSelection.classList.remove("selected");
@@ -999,8 +998,8 @@ var $cd15631f259ad2e9$export$1beacdeb2d370927 = /*#__PURE__*/ function() {
         {
             key: "getSelectedNode",
             value: function getSelectedNode() {
-                var _this_element_querySelector;
-                return (_this_element_querySelector = this.element.querySelector(".header.selected")) !== null && _this_element_querySelector !== void 0 ? _this_element_querySelector : undefined;
+                var _a;
+                return (_a = this.element.querySelector(".header.selected")) !== null && _a !== void 0 ? _a : undefined;
             }
         },
         {
@@ -1022,8 +1021,8 @@ var $cd15631f259ad2e9$export$1beacdeb2d370927 = /*#__PURE__*/ function() {
         {
             key: "firstNode",
             value: function firstNode() {
-                var _this_element_querySelector;
-                return (_this_element_querySelector = this.element.querySelector("li.node")) !== null && _this_element_querySelector !== void 0 ? _this_element_querySelector : undefined;
+                var _a;
+                return (_a = this.element.querySelector("li.node")) !== null && _a !== void 0 ? _a : undefined;
             }
         },
         {
@@ -1773,7 +1772,7 @@ function $c628f355f099b93a$export$369fb36245591db0(sourcePath, binBaseName) {
                                             _state.label = 5;
                                         case 5:
                                             // use bundled version
-                                            defaultPath = undefined("typescript/lib/".concat(binName));
+                                            defaultPath = (0, ($parcel$interopDefault($8qw4J$resolve))).sync("typescript/lib/".concat(binName));
                                             return [
                                                 2,
                                                 defaultPath
@@ -3211,7 +3210,7 @@ function $bd6f96bfb4d02b8e$export$2904681fe8c977be(result, editor, histGoForward
                 case 0:
                     refs = Promise.all(result.body.refs.map(function(ref) {
                         return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                            var _ref_contextStart, fileContents, context, fileHlText, _ref_contextStart_line, lineText;
+                            var _a, _b, fileContents, context, fileHlText, lineText;
                             return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
                                 switch(_state.label){
                                     case 0:
@@ -3233,7 +3232,7 @@ function $bd6f96bfb4d02b8e$export$2904681fe8c977be(result, editor, histGoForward
                                         ];
                                     case 2:
                                         fileHlText = _state.sent().split("\n");
-                                        lineText = fileHlText[ref.start.line - ((_ref_contextStart_line = (_ref_contextStart = ref.contextStart) === null || _ref_contextStart === void 0 ? void 0 : _ref_contextStart.line) !== null && _ref_contextStart_line !== void 0 ? _ref_contextStart_line : 1)];
+                                        lineText = fileHlText[ref.start.line - ((_b = (_a = ref.contextStart) === null || _a === void 0 ? void 0 : _a.line) !== null && _b !== void 0 ? _b : 1)];
                                         return [
                                             2,
                                             (0, $8qw4J$swchelperscjs_object_spread_propscjs._)((0, $8qw4J$swchelperscjs_object_spreadcjs._)({}, ref), {
@@ -3427,7 +3426,7 @@ function $f208e1245e4db9fc$export$51c07c30fb16d966(getClient, histGoForward) {
                             range: range,
                             callback: function() {
                                 return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                                    var _result_body, location, client, result, resLoc, references;
+                                    var _a, location, client, result, resLoc, references;
                                     return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
                                         switch(_state.label){
                                             case 0:
@@ -3449,7 +3448,7 @@ function $f208e1245e4db9fc$export$51c07c30fb16d966(getClient, histGoForward) {
                                             case 2:
                                                 result = _state.sent();
                                                 resLoc = result.body ? result.body[0] : undefined;
-                                                if (!(((_result_body = result.body) === null || _result_body === void 0 ? void 0 : _result_body.length) === 1 && (resLoc === null || resLoc === void 0 ? void 0 : resLoc.start.line) === location.line && (resLoc === null || resLoc === void 0 ? void 0 : resLoc.start.offset) === location.offset)) return [
+                                                if (!(((_a = result.body) === null || _a === void 0 ? void 0 : _a.length) === 1 && (resLoc === null || resLoc === void 0 ? void 0 : resLoc.start.line) === location.line && (resLoc === null || resLoc === void 0 ? void 0 : resLoc.start.offset) === location.offset)) return [
                                                     3,
                                                     5
                                                 ];
@@ -3803,11 +3802,11 @@ var $2a2076bfbea7a68e$export$536c67bf76d43cfb = /*#__PURE__*/ function() {
                                         return 100 * pos + length;
                                     };
                                     filter = ignoreCase ? function(val) {
-                                        var _val_displayText;
-                                        return (_val_displayText = val.displayText) === null || _val_displayText === void 0 ? void 0 : _val_displayText.toLowerCase().includes(prefix.toLowerCase());
+                                        var _a;
+                                        return (_a = val.displayText) === null || _a === void 0 ? void 0 : _a.toLowerCase().includes(prefix.toLowerCase());
                                     } : function(val) {
-                                        var _val_displayText;
-                                        return (_val_displayText = val.displayText) === null || _val_displayText === void 0 ? void 0 : _val_displayText.includes(prefix);
+                                        var _a;
+                                        return (_a = val.displayText) === null || _a === void 0 ? void 0 : _a.includes(prefix);
                                     };
                                     suggestions = suggestions.filter(filter).sort(function(a, b) {
                                         return score(a.displayText) - score(b.displayText);
@@ -3944,7 +3943,7 @@ var $2a2076bfbea7a68e$export$536c67bf76d43cfb = /*#__PURE__*/ function() {
             key: "getAdditionalDetails",
             value: function getAdditionalDetails(suggestion) {
                 return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                    var _details_codeActions, reply, _reply_body, details, parts, rightLabel, actionDesc, description;
+                    var _a, reply, _reply_body, details, parts, rightLabel, actionDesc, description;
                     return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
                         switch(_state.label){
                             case 0:
@@ -3981,7 +3980,7 @@ var $2a2076bfbea7a68e$export$536c67bf76d43cfb = /*#__PURE__*/ function() {
                                 rightLabel = parts.map(function(d) {
                                     return d.text;
                                 }).join("");
-                                actionDesc = suggestion.hasAction && ((_details_codeActions = details.codeActions) === null || _details_codeActions === void 0 ? void 0 : _details_codeActions.length) === 1 ? "".concat(details.codeActions[0].description, "\n\n") : "";
+                                actionDesc = suggestion.hasAction && ((_a = details.codeActions) === null || _a === void 0 ? void 0 : _a.length) === 1 ? "".concat(details.codeActions[0].description, "\n\n") : "";
                                 if (actionDesc) rightLabel = actionDesc;
                                 description = actionDesc + details.displayParts.map(function(d) {
                                     return d.text;
@@ -4073,7 +4072,7 @@ var $2a2076bfbea7a68e$export$536c67bf76d43cfb = /*#__PURE__*/ function() {
 }();
 function $2a2076bfbea7a68e$var$getSuggestionsInternal(_0) {
     return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function(param) {
-        var client, location, triggerCharacter, _completions_body, completions, completions1;
+        var client, location, triggerCharacter, _a, completions, completions1;
         return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
             switch(_state.label){
                 case 0:
@@ -4094,7 +4093,7 @@ function $2a2076bfbea7a68e$var$getSuggestionsInternal(_0) {
                     completions = _state.sent();
                     return [
                         2,
-                        completions.body.entries.map($2a2076bfbea7a68e$var$completionEntryToSuggestion.bind(null, (_completions_body = completions.body) === null || _completions_body === void 0 ? void 0 : _completions_body.isMemberCompletion))
+                        completions.body.entries.map($2a2076bfbea7a68e$var$completionEntryToSuggestion.bind(null, (_a = completions.body) === null || _a === void 0 ? void 0 : _a.isMemberCompletion))
                     ];
                 case 2:
                     return [
@@ -4959,7 +4958,7 @@ function $8006872929ecb29e$var$_finally(promise, callback) {
         description: "Typecheck all files in project related to current active text editor",
         didDispatch: function(editor) {
             return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                var _projectInfo_body_fileNames, file, client, projectInfo, files, max, disp, cancelTimeout, disp1;
+                var _a, file, client, projectInfo, files, max, disp, cancelTimeout, disp1;
                 return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
                     switch(_state.label){
                         case 0:
@@ -4982,7 +4981,7 @@ function $8006872929ecb29e$var$_finally(promise, callback) {
                             ];
                         case 2:
                             projectInfo = _state.sent();
-                            files = new Set((_projectInfo_body_fileNames = projectInfo.body.fileNames) === null || _projectInfo_body_fileNames === void 0 ? void 0 : _projectInfo_body_fileNames.filter(function(fn) {
+                            files = new Set((_a = projectInfo.body.fileNames) === null || _a === void 0 ? void 0 : _a.filter(function(fn) {
                                 return(// filter out obvious potholes
                                 !fn.endsWith("tsconfig.json") && !fn.includes("".concat($8qw4J$path.sep, "node_modules").concat($8qw4J$path.sep)));
                             }));
