@@ -1,17 +1,17 @@
 # FAQ
 
 Please check out [the
-FAQ](https://github.com/albert200000/atom-typescript/blob/master/docs/faq.md)
+FAQ](https://github.com/albert200000/pulsar-typescript/blob/master/docs/faq.md)
 before creating a new issue :rose:
 
 # TIP
 
 Before doing any meaningful work or even investigating [please create an
 issue for
-discussion](https://github.com/albert200000/atom-typescript/issues) so we
+discussion](https://github.com/albert200000/pulsar-typescript/issues) so we
 don't have duplicate work and we don't step on your toes.
 
-# Hacking on atom-typescript
+# Hacking on pulsar-typescript
 
 This project is developed in TypeScript. TypeScript isn't directly
 supported by Atom, so it requires transpilation into JavaScript. Atom
@@ -29,7 +29,7 @@ guide](https://github.com/atom/atom/blob/master/CONTRIBUTING.md)
 Is rather simple. Here are some steps to get you running:
 
 Hack on it using your favorite TypeScript package. There are a couple packages in Atom to select from:
-https://atom.io/packages/atom-typescript
+https://atom.io/packages/pulsar-typescript
 https://atom.io/packages/ide-typescript
 Prettify the code by running npm run prettier
 Run static checks with npm test (this will run typecheck and linter, and check if formatting is OK)
@@ -43,18 +43,18 @@ Create a pull request.
 2.  Clone your fork
 
     -   With SSH:
-        `git clone git@github.com:yourusername/atom-typescript.git`
+        `git clone git@github.com:yourusername/pulsar-typescript.git`
 
     Or
 
     -   With HTTPS:
-        `git clone https://github.com/yourusername/atom-typescript.git`
+        `git clone https://github.com/yourusername/pulsar-typescript.git`
 
     Either of these commands will create a working copy of the
-    repository in `atom-typescript` directory.
+    repository in `pulsar-typescript` directory.
 
     All further commands in this list are assumed to be run from root of
-    the working copy (i.e. `atom-typescript` directory, the one
+    the working copy (i.e. `pulsar-typescript` directory, the one
     containing `package.json`)
 
 3.  Create a new branch! `git checkout -b my-awesome-contribution`.
@@ -66,8 +66,8 @@ Create a pull request.
 
     Run `apm link --dev` to enable your fork in Atom's dev-mode. To check your changes, run Atom in dev-mode (start with `atom --dev` or run `application:open-dev` from command palette).
 
-    Be careful if you're using `atom-typescript` to hack on
-    `atom-typescript` though! You'd be hacking on the software using the
+    Be careful if you're using `pulsar-typescript` to hack on
+    `pulsar-typescript` though! You'd be hacking on the software using the
     same software you're currently hacking on, which sounds somewhat
     convoluted because it is. See [section on workflow](#workflow) below
     for some tips.
@@ -136,7 +136,7 @@ The config schema lives in `package.json`. If you change it, update the typings 
 
 ## Workflow
 
-**We develop atom-typescript with atom-typescript**
+**We develop pulsar-typescript with pulsar-typescript**
 
 Some shortcuts:
 
@@ -150,24 +150,24 @@ Some shortcuts:
 
 ### General Steps
 
-1.  We open `atom-typescript` source in one Atom window
+1.  We open `pulsar-typescript` source in one Atom window
 2.  We have
-    [`atom-typescript-examples`](https://github.com/albert200000/atom-typescript-examples)
+    [`pulsar-typescript-examples`](https://github.com/albert200000/pulsar-typescript-examples)
     open in another atom window as such: `atom --dev <examplesFolder>`
-3.  We make changes to `atom-typescript` and save to get the JS
+3.  We make changes to `pulsar-typescript` and save to get the JS
     (optionally run `typescript:build` command to rebuild everything)
 4.  We typecheck whole project with `typescript:check-all-files` command
     to see if our changes accidentally broke anything.
-5.  We reload the `atom-typescript-examples` (`ctrl+alt+r` or
+5.  We reload the `pulsar-typescript-examples` (`ctrl+alt+r` or
     `ctrl+shift+f5`) window to see the effects of our change.
-6.  Only reload the `atom-typescript` window once we are sure that our
+6.  Only reload the `pulsar-typescript` window once we are sure that our
     new code is functional.
 
-### When you break atom-typescript during development
+### When you break pulsar-typescript during development
 
-This shouldn't happen as long as you start the `atom-typescript` window
+This shouldn't happen as long as you start the `pulsar-typescript` window
 *without* the `--dev` flag, and do testing in another atom instance. If
-you reload the `atom-typescript` window thinking its going to be stable
+you reload the `pulsar-typescript` window thinking its going to be stable
 but it turns out to be unstable, discard *JavaScript* changes that you
 think broke it and reload the atom instance.
 

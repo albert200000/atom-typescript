@@ -45,18 +45,18 @@ export class NavigationTreeComponent
           },
         },
       }),
-      atom.config.observe("atom-typescript-updated.longLineLength", (value) => {
+      atom.config.observe("pulsar-typescript-updated.longLineLength", (value) => {
         if (value > 0) this.longLineLength = value
       }),
-      atom.config.observe("atom-typescript-updated.largeFileLineCount", (value) => {
+      atom.config.observe("pulsar-typescript-updated.largeFileLineCount", (value) => {
         if (value > 0) this.largeFileLineCount = value
       }),
       atom.config.observe("linter-ui-default.longLineLength", (value) => {
-        if (atom.config.get("atom-typescript-updated.longLineLength") > 0) return
+        if (atom.config.get("pulsar-typescript-updated.longLineLength") > 0) return
         if (typeof value === "number") this.longLineLength = value
       }),
       atom.config.observe("linter-ui-default.largeFileLineCount", (value) => {
-        if (atom.config.get("atom-typescript-updated.largeFileLineCount") > 0) return
+        if (atom.config.get("pulsar-typescript-updated.largeFileLineCount") > 0) return
         if (typeof value === "number") this.largeFileLineCount = value / 6
       }),
     )
@@ -224,7 +224,7 @@ export class NavigationTreeComponent
     await this.loadNavTree()
 
     const lineCount = this.lineCountIfLarge(editor)
-    if (!atom.config.get("atom-typescript-updated.largeFileNoFollowCursor") || lineCount === 0) {
+    if (!atom.config.get("pulsar-typescript-updated.largeFileNoFollowCursor") || lineCount === 0) {
       this.editorScrolling = editor.onDidChangeCursorPosition(this.selectAtCursorLine)
     }
     this.editorChanging = editor.onDidStopChanging(

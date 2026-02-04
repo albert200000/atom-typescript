@@ -60,14 +60,14 @@ $parcel$export(module.exports, "provideCodeHighlight", function () { return $64e
 function $2893351583386024$export$8080b7556d9d6445(promise) {
     if (promise === undefined) return;
     if (typeof promise["catch"] !== "function") {
-        atom.notifications.addFatalError("Atom-Typescript: non-promise passed to handlePromise. Please report this.", {
+        atom.notifications.addFatalError("pulsar-typescript: non-promise passed to handlePromise. Please report this.", {
             stack: new Error().stack,
             dismissable: true
         });
         return;
     }
     promise["catch"](function(err) {
-        atom.notifications.addFatalError("Atom-Typescript error: ".concat(err.message), {
+        atom.notifications.addFatalError("pulsar-typescript error: ".concat(err.message), {
             detail: err.toString(),
             stack: err.stack,
             dismissable: true
@@ -292,7 +292,7 @@ function $cf8cb216522ae432$export$e4043f67d36cbb26(sourceCode, scopeName) {
                     ];
                 case 4:
                     if (!_state.sent()) {
-                        console.error($cf8cb216522ae432$var$maxTimeError("Atom-TypeScript: Highlighter", 5));
+                        console.error($cf8cb216522ae432$var$maxTimeError("pulsar-typescript: Highlighter", 5));
                         return [
                             3,
                             5
@@ -367,7 +367,7 @@ function $7580a2909a181bf5$export$225e59ca209a506(filePath) {
     return $7580a2909a181bf5$var$isAllowedExtension($8qw4J$path.extname(filePath));
 }
 function $7580a2909a181bf5$export$d9994fe0923974a5() {
-    var config = atom.config.get("atom-typescript-updated");
+    var config = atom.config.get("pulsar-typescript-updated");
     var tsScopes = (0, $8qw4J$swchelperscjs_to_consumable_arraycjs._)(config.tsSyntaxScopes).concat((0, $8qw4J$swchelperscjs_to_consumable_arraycjs._)(config.jsSyntaxScopes));
     return tsScopes;
 }
@@ -393,7 +393,7 @@ function $7580a2909a181bf5$var$memoizeThrottle(func, wait) {
 }
 var $7580a2909a181bf5$var$isAllowedExtension = $7580a2909a181bf5$var$memoizeThrottle(function(ext) {
     var _a;
-    var config = atom.config.get("atom-typescript-updated");
+    var config = atom.config.get("pulsar-typescript-updated");
     var tsExts = (0, $8qw4J$swchelperscjs_to_consumable_arraycjs._)(config.tsFileExtensions).concat((0, $8qw4J$swchelperscjs_to_consumable_arraycjs._)(config.jsFileExtensions));
     if (config.extensionsFromGrammars) {
         var _instance, _tsExts;
@@ -890,7 +890,7 @@ var $cd15631f259ad2e9$export$1beacdeb2d370927 = /*#__PURE__*/ function() {
                         case 1:
                             _state.sent();
                             lineCount = this.lineCountIfLarge(editor);
-                            if (!atom.config.get("atom-typescript-updated.largeFileNoFollowCursor") || lineCount === 0) this.editorScrolling = editor.onDidChangeCursorPosition(this.selectAtCursorLine);
+                            if (!atom.config.get("pulsar-typescript-updated.largeFileNoFollowCursor") || lineCount === 0) this.editorScrolling = editor.onDidChangeCursorPosition(this.selectAtCursorLine);
                             this.editorChanging = editor.onDidStopChanging(lineCount === 0 ? this.loadNavTree : (0, ($parcel$interopDefault($8qw4J$lodashdebounce)))(this.loadNavTree, Math.max(lineCount / 5, 300)));
                             return [
                                 2
@@ -911,15 +911,15 @@ var $cd15631f259ad2e9$export$1beacdeb2d370927 = /*#__PURE__*/ function() {
                     });
                 }
             }
-        }), atom.config.observe("atom-typescript-updated.longLineLength", function(value) {
+        }), atom.config.observe("pulsar-typescript-updated.longLineLength", function(value) {
             if (value > 0) _this.longLineLength = value;
-        }), atom.config.observe("atom-typescript-updated.largeFileLineCount", function(value) {
+        }), atom.config.observe("pulsar-typescript-updated.largeFileLineCount", function(value) {
             if (value > 0) _this.largeFileLineCount = value;
         }), atom.config.observe("linter-ui-default.longLineLength", function(value) {
-            if (atom.config.get("atom-typescript-updated.longLineLength") > 0) return;
+            if (atom.config.get("pulsar-typescript-updated.longLineLength") > 0) return;
             if (typeof value === "number") _this.longLineLength = value;
         }), atom.config.observe("linter-ui-default.largeFileLineCount", function(value) {
-            if (atom.config.get("atom-typescript-updated.largeFileLineCount") > 0) return;
+            if (atom.config.get("pulsar-typescript-updated.largeFileLineCount") > 0) return;
             if (typeof value === "number") _this.largeFileLineCount = value / 6;
         }));
     }
@@ -1119,7 +1119,7 @@ var $cd15631f259ad2e9$export$1beacdeb2d370927 = /*#__PURE__*/ function() {
 }();
 
 
-var $4759e62349e0b646$export$c5c441a5719d665b = "atom-typescript://semantic-view";
+var $4759e62349e0b646$export$c5c441a5719d665b = "pulsar-typescript://semantic-view";
 var $4759e62349e0b646$export$a3a95952d8506109 = /*#__PURE__*/ function() {
     "use strict";
     function SemanticView(config) {
@@ -1651,7 +1651,7 @@ var $15c8165b6fc0c3c1$export$21f68d6aa461e875 = /*#__PURE__*/ function() {
     return TypescriptServiceClient;
 }();
 function $15c8165b6fc0c3c1$var$startServer(tsServerPath) {
-    var locale = atom.config.get("atom-typescript-updated").locale;
+    var locale = atom.config.get("pulsar-typescript-updated").locale;
     var tsServerArgs = locale ? [
         "--locale",
         locale
@@ -1753,7 +1753,7 @@ function $c628f355f099b93a$export$369fb36245591db0(sourcePath, binBaseName) {
                                             _state.label = 3;
                                         case 3:
                                             // try to get typescript from configured tsdkPath
-                                            tsdkPath = atom.config.get("atom-typescript-updated.tsdkPath");
+                                            tsdkPath = atom.config.get("pulsar-typescript-updated.tsdkPath");
                                             if (!tsdkPath) return [
                                                 3,
                                                 5
@@ -1938,11 +1938,11 @@ function $c628f355f099b93a$var$resolveConfigFile(initialBaseDir) {
                         4,
                         $c628f355f099b93a$var$tryConfigFiles(basedir, [
                             [
-                                ".atom-typescript.json"
+                                ".pulsar-typescript.json"
                             ],
                             [
                                 ".atom",
-                                "atom-typescript.json"
+                                "pulsar-typescript.json"
                             ],
                             [
                                 ".vscode",
@@ -2051,7 +2051,7 @@ var $656dc62ff40b3cc7$export$dceb19333e080e82 = /*#__PURE__*/ function() {
         this.memoizedClients = new Map();
         this.emitter = new (0, $8qw4J$atom.Emitter)();
         this.subscriptions = new (0, $8qw4J$atom.CompositeDisposable)();
-        this.tsserverInstancePerTsconfig = atom.config.get("atom-typescript-updated").tsserverInstancePerTsconfig;
+        this.tsserverInstancePerTsconfig = atom.config.get("pulsar-typescript-updated").tsserverInstancePerTsconfig;
         // This is just here so TypeScript can infer the types of the callbacks when using "on" method
         this.on = this.emitter.on.bind(this.emitter);
         this.diagnosticHandler = function(serverPath, type) {
@@ -2517,19 +2517,19 @@ function $002ef260a7981892$export$2c9a28f937ef04fb(data, etch, codeRenderer) {
                         null
                     ];
                     kind = etch.dom("div", {
-                        className: "atom-typescript-datatip-tooltip-kind"
+                        className: "pulsar-typescript-datatip-tooltip-kind"
                     }, data.kind, $002ef260a7981892$var$formatKindModifiers(data.kindModifiers));
                     tags = data.tags ? data.tags.map(function(tag, idx) {
-                        var tagClass = "atom-typescript-datatip-tooltip-doc-tag " + "atom-typescript-datatip-tooltip-doc-tag-name-".concat(tag.name);
+                        var tagClass = "pulsar-typescript-datatip-tooltip-doc-tag " + "pulsar-typescript-datatip-tooltip-doc-tag-name-".concat(tag.name);
                         return etch.dom("div", {
                             className: tagClass,
                             key: idx
                         }, etch.dom("span", {
-                            className: "atom-typescript-datatip-tooltip-doc-tag-name"
+                            className: "pulsar-typescript-datatip-tooltip-doc-tag-name"
                         }, tag.name), $002ef260a7981892$var$formatTagText(etch, tag.text));
                     }) : null;
                     docs = etch.dom("div", {
-                        className: "atom-typescript-datatip-tooltip-doc"
+                        className: "pulsar-typescript-datatip-tooltip-doc"
                     }, data.documentation, tags);
                     codeText = data.displayString.replace(/^\(.+?\)\s+/, "");
                     return [
@@ -2552,16 +2552,16 @@ function $002ef260a7981892$export$2c9a28f937ef04fb(data, etch, codeRenderer) {
 function $002ef260a7981892$var$formatKindModifiers(etch, text) {
     if (text === undefined) return null;
     return etch.dom("span", {
-        className: "atom-typescript-datatip-tooltip-kind-modifiers"
+        className: "pulsar-typescript-datatip-tooltip-kind-modifiers"
     }, text);
 }
 function $002ef260a7981892$var$formatTagText(etch, tagText) {
     if (tagText === undefined) return null;
     var _exec = (0, $8qw4J$swchelperscjs_sliced_to_arraycjs._)(/^\s*(\S*)([^]*)$/.exec(tagText), 3), firstWord = _exec[1], restOfText = _exec[2];
     return etch.dom("span", {
-        className: "atom-typescript-datatip-tooltip-doc-tag-text"
+        className: "pulsar-typescript-datatip-tooltip-doc-tag-text"
     }, etch.dom("span", {
-        className: "atom-typescript-datatip-tooltip-doc-tag-text-first-word"
+        className: "pulsar-typescript-datatip-tooltip-doc-tag-text-first-word"
     }, firstWord), restOfText);
 }
 
@@ -2646,7 +2646,7 @@ var $3dec627a7b52de57$export$62181cd26290fa50 = /*#__PURE__*/ function() {
                                     {
                                         component: function() {
                                             return $3dec627a7b52de57$var$etch.dom("div", {
-                                                className: "atom-typescript-datatip-tooltip"
+                                                className: "pulsar-typescript-datatip-tooltip"
                                             }, tooltip);
                                         },
                                         range: $8qw4J$atom.Range.fromObject([
@@ -2691,7 +2691,7 @@ function $3dec627a7b52de57$var$highlightCode(code) {
                             style: {
                                 fontFamily: fontFamily
                             },
-                            className: "atom-typescript-datatip-tooltip-code",
+                            className: "pulsar-typescript-datatip-tooltip-code",
                             dangerouslySetInnerHTML: {
                                 __html: html
                             }
@@ -2708,7 +2708,7 @@ function $3dec627a7b52de57$var$highlightCode(code) {
 
 function $d2f9fe9bb7e67a01$export$a9ca9b3a8941e92e(getClient) {
     return {
-        name: "atom-typescript",
+        name: "pulsar-typescript",
         priority: 0,
         grammarScopes: (0, $7580a2909a181bf5$export$d9994fe0923974a5)(),
         wordRegExp: /([A-Za-z0-9_])+|['"`](\\.|[^'"`\\\\])*['"`]/g,
@@ -3109,7 +3109,7 @@ function $f55d59ecd155c40a$export$12cb8c60c107136e(_0) {
                                 didChangeQuery: didChangeQuery,
                                 emptyMessage: emptyMessage,
                                 itemsClassList: [
-                                    "atom-typescript"
+                                    "pulsar-typescript"
                                 ]
                             });
                             if (typeof items !== "function") (0, $2893351583386024$export$8080b7556d9d6445)(Promise.resolve(items).then(function(is) {
@@ -3498,7 +3498,7 @@ function $f208e1245e4db9fc$export$51c07c30fb16d966(getClient, histGoForward) {
 
 function $c5ee2b7644db248e$export$2b92277a69331cbb(getClient) {
     return {
-        name: "Atom-TypeScript",
+        name: "pulsar-typescript",
         grammarScopes: (0, $7580a2909a181bf5$export$d9994fe0923974a5)(),
         priority: 100,
         updateOnEdit: true,
@@ -3734,9 +3734,9 @@ var $2a2076bfbea7a68e$export$536c67bf76d43cfb = /*#__PURE__*/ function() {
         this.selector = (0, $7580a2909a181bf5$export$d9994fe0923974a5)().map(function(x) {
             return x.includes(".") ? ".".concat(x) : x;
         }).join(", ");
-        this.inclusionPriority = atom.config.get("atom-typescript-updated").autocompletionInclusionPriority;
-        this.suggestionPriority = atom.config.get("atom-typescript-updated").autocompletionSuggestionPriority;
-        this.excludeLowerPriority = atom.config.get("atom-typescript-updated").autocompletionExcludeLowerPriority;
+        this.inclusionPriority = atom.config.get("pulsar-typescript-updated").autocompletionInclusionPriority;
+        this.suggestionPriority = atom.config.get("pulsar-typescript-updated").autocompletionSuggestionPriority;
+        this.excludeLowerPriority = atom.config.get("pulsar-typescript-updated").autocompletionExcludeLowerPriority;
     }
     (0, $8qw4J$swchelperscjs_create_classcjs._)(AutocompleteProvider, [
         {
@@ -3784,7 +3784,7 @@ var $2a2076bfbea7a68e$export$536c67bf76d43cfb = /*#__PURE__*/ function() {
                                 ];
                             case 2:
                                 suggestions = _state.sent();
-                                config = atom.config.get("atom-typescript-updated");
+                                config = atom.config.get("pulsar-typescript-updated");
                                 if (config.autocompletionUseFuzzyFilter) suggestions = $8qw4J$fuzzaldrin.filter(suggestions, prefix, {
                                     key: "displayText"
                                 });
@@ -4121,7 +4121,7 @@ function $2a2076bfbea7a68e$var$getSuggestionsInternal(_0) {
 var $2a2076bfbea7a68e$var$identifierMatch = RegExp("(?:(?![\\u{10000}-\\u{10FFFF}])[$_\\p{Lu}\\p{Ll}\\p{Lt}\\p{Lm}\\p{Lo}\\p{Nl}])(?:(?![\\u{10000}-\\u{10FFFF}])[$_\\p{Lu}\\p{Ll}\\p{Lt}\\p{Lm}\\p{Lo}\\p{Nl}\\u200C\\u200D\\p{Mn}\\p{Mc}\\p{Nd}\\p{Pc}])*$", "u");
 // Decide what needs to be replaced in the editor buffer when inserting the completion
 function $2a2076bfbea7a68e$var$getPrefix(opts) {
-    // see https://github.com/albert200000/atom-typescript/issues/1528
+    // see https://github.com/albert200000/pulsar-typescript/issues/1528
     // for the motivating example.
     var line = opts.editor.getBuffer().getTextInRange([
         [
@@ -4213,7 +4213,7 @@ function $2a2076bfbea7a68e$var$parens(opts) {
     return !!lookahead.match(/\s*\(/);
 }
 function $2a2076bfbea7a68e$var$addCallableParens(opts, s) {
-    if (atom.config.get("atom-typescript-updated.autocompleteParens") && [
+    if (atom.config.get("pulsar-typescript-updated.autocompleteParens") && [
         "function",
         "method"
     ].includes(s.leftLabel) && !$2a2076bfbea7a68e$var$parens(opts)) return (0, $8qw4J$swchelperscjs_object_spread_propscjs._)((0, $8qw4J$swchelperscjs_object_spreadcjs._)({}, s), {
@@ -6124,8 +6124,8 @@ function $d7106e5ca616cb06$export$f647bfc0a5fe4336(deps) {
                                         ];
                                     case 2:
                                         e.abortKeyBinding();
-                                        if ((0, $7580a2909a181bf5$export$bde40b56025b92b9)(editor)) atom.notifications.addWarning("Atom-TypeScript cancelled last command: Current editor has no file path", {
-                                            description: "Atom-TypeScript needs to determine the file path of the " + "current editor to execute `".concat(cmd.command, "`, which it failed to do. ") + "You probably just need to save the current file somewhere.",
+                                        if ((0, $7580a2909a181bf5$export$bde40b56025b92b9)(editor)) atom.notifications.addWarning("pulsar-typescript cancelled last command: Current editor has no file path", {
+                                            description: "pulsar-typescript needs to determine the file path of the " + "current editor to execute `".concat(cmd.command, "`, which it failed to do. ") + "You probably just need to save the current file somewhere.",
                                             dismissable: true
                                         });
                                         _state.label = 3;
@@ -6332,10 +6332,10 @@ var $8e8ce2d77e3fcd58$export$d2110dce2e582144 = /*#__PURE__*/ function() {
             });
         };
         this.props = (0, $8qw4J$swchelperscjs_object_spreadcjs._)({}, props);
-        this.setHideBuildStatus(atom.config.get("atom-typescript-updated").buildStatusTimeout);
+        this.setHideBuildStatus(atom.config.get("pulsar-typescript-updated").buildStatusTimeout);
         this.resetBuildStatusTimeout();
         $8qw4J$etch.initialize(this);
-        this.disposables.add(atom.config.onDidChange("atom-typescript-updated.buildStatusTimeout", function(param) {
+        this.disposables.add(atom.config.onDidChange("pulsar-typescript-updated.buildStatusTimeout", function(param) {
             var newValue = param.newValue;
             _this.setHideBuildStatus(newValue);
             (0, $2893351583386024$export$8080b7556d9d6445)(_this.update({}));
@@ -6930,7 +6930,7 @@ var $1e8c6b8d10c1d614$export$951a8e3d4c79262 = /*#__PURE__*/ function() {
                 atom.workspace.hide(_this.view);
                 (0, $2893351583386024$export$8080b7556d9d6445)(_this.view.destroy());
             }
-        }), atom.config.observe("atom-typescript-updated.showSemanticView", function(val) {
+        }), atom.config.observe("pulsar-typescript-updated.showSemanticView", function(val) {
             if (val) (0, $2893351583386024$export$8080b7556d9d6445)(_this.show());
             else _this.hide();
         }));
@@ -7828,7 +7828,7 @@ var $80c6b1f413ab5323$export$a4d36ae2cf2e8cd = /*#__PURE__*/ function() {
         {
             key: "getLinterErrors",
             value: function getLinterErrors() {
-                if (atom.config.get("atom-typescript-updated.suppressAllDiagnostics")) return [];
+                if (atom.config.get("pulsar-typescript-updated.suppressAllDiagnostics")) return [];
                 var result = [];
                 var _iteratorNormalCompletion = true, _didIteratorError = false, _iteratorError = undefined, _iteratorNormalCompletion1 = true, _didIteratorError1 = false, _iteratorError1 = undefined;
                 try {
@@ -7942,7 +7942,7 @@ var $80c6b1f413ab5323$export$a4d36ae2cf2e8cd = /*#__PURE__*/ function() {
     return ErrorPusher;
 }();
 function $80c6b1f413ab5323$var$config(option, scope) {
-    return atom.config.get("atom-typescript-updated.".concat(option), {
+    return atom.config.get("pulsar-typescript-updated.".concat(option), {
         scope: [
             scope
         ]
@@ -8132,7 +8132,7 @@ var $26f43d04544e9b7a$export$6932e15e784422f9 = /*#__PURE__*/ function() {
             }).call(_this);
         };
         var debouncedGetErr;
-        this.subscriptions.add(atom.config.observe("atom-typescript-updated.getErrDebounceTimeout", function(val) {
+        this.subscriptions.add(atom.config.observe("pulsar-typescript-updated.getErrDebounceTimeout", function(val) {
             debouncedGetErr = (0, $8qw4J$lodash.debounce)(function() {
                 (0, $2893351583386024$export$8080b7556d9d6445)(_this.getErr({
                     allFiles: false,
@@ -8395,7 +8395,7 @@ var $26f43d04544e9b7a$export$6932e15e784422f9 = /*#__PURE__*/ function() {
                                 ];
                                 options = (0, $ee93806a41573bb4$export$bad43d745a81bbd5)(this.state.configFile.getPath());
                                 this.compileOnSave = options.compileOnSave;
-                                cfg = atom.config.get("atom-typescript-updated");
+                                cfg = atom.config.get("pulsar-typescript-updated");
                                 return [
                                     4,
                                     this.state.client.execute("configure", {
@@ -8473,7 +8473,7 @@ var $a568bbacdc99572d$export$a0bbaae59860162e = /*#__PURE__*/ function() {
         this.subscriptions.add(this.buffer.on("opened", this.onOpened));
         this.checkIfTypescript();
         this.subscriptions.add(editor.onDidChangePath(this.checkIfTypescript), editor.onDidChangeGrammar(this.checkIfTypescript), editor.onDidDestroy(this.destroy), editor.onDidSave(function() {
-            if (atom.config.get("atom-typescript-updated.checkAllFilesOnSave")) atom.commands.dispatch(atom.views.getView(editor), "typescript:check-all-files");
+            if (atom.config.get("pulsar-typescript-updated.checkAllFilesOnSave")) atom.commands.dispatch(atom.views.getView(editor), "typescript:check-all-files");
         }));
     }
     (0, $8qw4J$swchelperscjs_create_classcjs._)(TypescriptEditorPane, [
@@ -9045,7 +9045,7 @@ function $64e7645780377c6f$var$checkAndInstallDependencies() {
                     ];
                     return [
                         4,
-                        $8qw4J$atompackagedeps.install("atom-typescript-updated", true)
+                        $8qw4J$atompackagedeps.install("pulsar-typescript-updated", true)
                     ];
                 case 1:
                     _state.sent();

@@ -96,7 +96,7 @@
 
 -   Add support for completions with code actions
 
-    Some completions (e.g. ones for externally-defined identifiers) can require additional actions for the code to work. Atom-TypeScript now supports such completions and should apply the required actions (like adding `import` directives)
+    Some completions (e.g. ones for externally-defined identifiers) can require additional actions for the code to work. pulsar-typescript now supports such completions and should apply the required actions (like adding `import` directives)
 
 ### Maintenance
 
@@ -138,11 +138,11 @@ This release primarily focuses on improving latency.
 
 -   Make occurrence highlight delay configurable when using built-in provider
 
-    The delay is configurable via `"atom-typescript.occurrenceHighlightDebounceTimeout"` option ("Occurrence Highlight Debounce Timeout" in settings GUI). The default value of 300ms is consistent with the default Atom behaviour.
+    The delay is configurable via `"pulsar-typescript.occurrenceHighlightDebounceTimeout"` option ("Occurrence Highlight Debounce Timeout" in settings GUI). The default value of 300ms is consistent with the default Atom behaviour.
 
 -   Make getErr delay configurable instead of relying on Atom default
 
-    The delay is configurable via `"atom-typescript.getErrDebounceTimeout"` ("getErr Debounce Timeout" in settings GUI). The default value of 150ms is about half as low as before, which should hopefully help with the percieved latency.
+    The delay is configurable via `"pulsar-typescript.getErrDebounceTimeout"` ("getErr Debounce Timeout" in settings GUI). The default value of 150ms is about half as low as before, which should hopefully help with the percieved latency.
 
 ### Fixes
 
@@ -235,7 +235,7 @@ This changes the style of builtin semantic view. You can revert to old style (wh
 
 -   Option to ignore non-suggestion suggestion diagnostics
 
-    TypeScript server reports some error-type diagnostics on the suggestion channel. Enabling `atom-typescript.ignoreNonSuggestionSuggestionDiagnostics` ("Ignore suggestion diagnostics that are not actionable suggestions" in UI) option will suppress those.
+    TypeScript server reports some error-type diagnostics on the suggestion channel. Enabling `pulsar-typescript.ignoreNonSuggestionSuggestionDiagnostics` ("Ignore suggestion diagnostics that are not actionable suggestions" in UI) option will suppress those.
 
 ## 13.6.1
 
@@ -265,7 +265,7 @@ This changes the style of builtin semantic view. You can revert to old style (wh
     This adds an ability to specify custom TypeScript SDK per-project or
     globally (the latter will replace bundled TypeScript version)
 
-    The overview of how Atom-TypeScript decides what SDK it should use and how to configure that is available in `docs/advanced.md`
+    The overview of how pulsar-typescript decides what SDK it should use and how to configure that is available in `docs/advanced.md`
 
 -   A new configuration option `autocompleteParens` ("Autocomplete parentheses" in Atom settings UI) to insert parentheses after autocompleting functions\/methods (disabled by default)
 
@@ -323,7 +323,7 @@ This changes the style of builtin semantic view. You can revert to old style (wh
 
     This hopefully fixes an array of relatively infrequent, but annoying
     bugs when confirming an autocompletion suggestion would remove some part
-    of the preceding code. See [#1528](https://github.com/albert200000/atom-typescript/issues/1528) for an example.
+    of the preceding code. See [#1528](https://github.com/albert200000/pulsar-typescript/issues/1528) for an example.
 
 ## 13.4.0
 
@@ -381,7 +381,7 @@ This changes the style of builtin semantic view. You can revert to old style (wh
     a more common thing to want than deterministic project assignment.
 
     So, the instance-per-tsconfig code is now disabled by default. You can
-    enable it in the Atom-TypeScript settings. The option is called
+    enable it in the pulsar-typescript settings. The option is called
     `tsserverInstancePerTsconfig` and is titled "Spawn separate tsserver
     instance for each tsconfig.json" in the settings GUI.
 
@@ -404,7 +404,7 @@ This changes the style of builtin semantic view. You can revert to old style (wh
 
     Notice: currently, the bundled TypeScript implementation is used. This
     should work fine in most cases, however, some edge cases might produce
-    confusing behaviour (e.g. Atom-TypeScript might parse `tsconfig.json`, but
+    confusing behaviour (e.g. pulsar-typescript might parse `tsconfig.json`, but
     `tsc` might not -- or vice versa). Please report any issues related to
     `tsconfig.json` parsing.
 
@@ -416,7 +416,7 @@ This changes the style of builtin semantic view. You can revert to old style (wh
 
 This essentially makes it so TypeScript prior to v1.5.3 is no longer
 supported. TypeScript v1.5.3 has been released in July 2015, so I feel
-that it's old enough to be nearly ubiquitous. If you need to work with TypeScript prior to v1.5.3, please use older release of Atom-TypeScript.
+that it's old enough to be nearly ubiquitous. If you need to work with TypeScript prior to v1.5.3, please use older release of pulsar-typescript.
 
 On the plus side, inherited `tsconfig.json` should work as expected now.
 
@@ -445,7 +445,7 @@ On the plus side, inherited `tsconfig.json` should work as expected now.
 -   Fix typo in `package.json` (Wes Moberly)
 -   Add proper LICENSE text
 
-    Atom-TypeScript has always been licensed under the MIT license, but
+    pulsar-typescript has always been licensed under the MIT license, but
     the license text was missing, instead the license file only contained the
     word "MIT". This has been fixed.
 
@@ -458,7 +458,7 @@ On the plus side, inherited `tsconfig.json` should work as expected now.
     Since v3.0.0, TypeScript deprecated old completion commands, and instead
     implemented new ones. Since we obviously want to support TypeScript
     prior to v3.0.0 for the time being, the new interface is preferred when
-    available, but Atom-TypeScript will fall back to the old one on TypeScript
+    available, but pulsar-typescript will fall back to the old one on TypeScript
     versions prior to v3.0.0.
 
 ## 12.7.3
@@ -489,7 +489,7 @@ On the plus side, inherited `tsconfig.json` should work as expected now.
 
 -   Atom-IDE interfaces are preferred to builtin ones if available. This
     includes tooltips, occurrence markers, etc. Most of these changes can
-    be reverted by choosing appropriate preferences in the Atom-TypeScript
+    be reverted by choosing appropriate preferences in the pulsar-typescript
     settings.
 
 ### New features
@@ -575,7 +575,7 @@ On the plus side, inherited `tsconfig.json` should work as expected now.
 
 ## 12.6.1
 
--   Fix [#1437](https://github.com/albert200000/atom-typescript/issues/1437)
+-   Fix [#1437](https://github.com/albert200000/pulsar-typescript/issues/1437)
 
 ## 12.6.0
 
@@ -587,7 +587,7 @@ On the plus side, inherited `tsconfig.json` should work as expected now.
 
 -   Added an option to ignore unused\* suggestion diagnostics specifically
 
-    See [#1433](https://github.com/albert200000/atom-typescript/issues/1433)
+    See [#1433](https://github.com/albert200000/pulsar-typescript/issues/1433)
     for context.
 
     Long story short, TypeScript 2.9 will report unused locals/parameters/etc
@@ -754,7 +754,7 @@ On the plus side, inherited `tsconfig.json` should work as expected now.
 -   Switch to ES2017 target
 -   Update dependencies
 -   Add `typescript:initialize-config` command
-    ([\#1248](https://github.com/albert200000/atom-typescript/issues/1248))
+    ([\#1248](https://github.com/albert200000/pulsar-typescript/issues/1248))
     (by Paul Ermolin)
 
     Command is `typescript:initialize-config`, and it uses `tsc init`
@@ -771,7 +771,7 @@ On the plus side, inherited `tsconfig.json` should work as expected now.
 -   Remove obsolete `filesGlob` snippet
 -   Don't use deprecated `.editor` class in grammar style
 -   Add locale setting to control TypeScript's message locale
-    ([\#1371](https://github.com/albert200000/atom-typescript/issues/1371))
+    ([\#1371](https://github.com/albert200000/pulsar-typescript/issues/1371))
 
 ## 12.0.0
 
@@ -839,7 +839,7 @@ On the plus side, inherited `tsconfig.json` should work as expected now.
 Please note only breaking changes are logged beyond this point. You can
 use GitHub's branch/tag comparison tool to get a full changeset, for
 example,
-<https://github.com/albert200000/atom-typescript/compare/v7.0.0...v8.0.0>
+<https://github.com/albert200000/pulsar-typescript/compare/v7.0.0...v8.0.0>
 shows all changes since v7.0.0 until v8.0.0
 
 ## v11.0.0
@@ -851,7 +851,7 @@ shows all changes since v7.0.0 until v8.0.0
 
 -   Removed the (already ignored in any significant way) `version`
     option from tsconfig.
-    [More](https://github.com/albert200000/atom-typescript/issues/617)
+    [More](https://github.com/albert200000/pulsar-typescript/issues/617)
 
 ## v6.0.0
 
@@ -887,14 +887,14 @@ shows all changes since v7.0.0 until v8.0.0
 -   New default shortcuts for `build` : `F6` an `goto definition`:
     `F12`. Because I don't want to mess with your atom defaults and a
     major use base is VS users. [Link
-    \#145](https://github.com/albert200000/atom-typescript/issues/145)
+    \#145](https://github.com/albert200000/pulsar-typescript/issues/145)
 
 ## v1
 
 -   `format` → `formatCodeOptions`
-    https://github.com/albert200000/atom-typescript/issues/178
+    https://github.com/albert200000/pulsar-typescript/issues/178
 -   `compileOnSave` is now a tsconfig option :
-    https://github.com/albert200000/atom-typescript/issues/187
+    https://github.com/albert200000/pulsar-typescript/issues/187
 
 ## 0.x
 

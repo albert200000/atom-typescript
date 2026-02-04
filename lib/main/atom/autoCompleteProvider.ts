@@ -32,10 +32,10 @@ export class AutocompleteProvider implements ACP.AutocompleteProvider {
     .map((x) => (x.includes(".") ? `.${x}` : x))
     .join(", ")
 
-  public inclusionPriority = atom.config.get("atom-typescript-updated").autocompletionInclusionPriority
-  public suggestionPriority = atom.config.get("atom-typescript-updated").autocompletionSuggestionPriority
+  public inclusionPriority = atom.config.get("pulsar-typescript-updated").autocompletionInclusionPriority
+  public suggestionPriority = atom.config.get("pulsar-typescript-updated").autocompletionSuggestionPriority
   public excludeLowerPriority =
-    atom.config.get("atom-typescript-updated").autocompletionExcludeLowerPriority
+    atom.config.get("pulsar-typescript-updated").autocompletionExcludeLowerPriority
 
   private lastSuggestions?: {
     // Client used to get the suggestions
@@ -82,7 +82,7 @@ export class AutocompleteProvider implements ACP.AutocompleteProvider {
         activatedManually: opts.activatedManually,
       })
 
-      const config = atom.config.get("atom-typescript-updated")
+      const config = atom.config.get("pulsar-typescript-updated")
       if (config.autocompletionUseFuzzyFilter) {
         suggestions = fuzzaldrin.filter(suggestions, prefix, {
           key: "displayText",
@@ -293,7 +293,7 @@ const identifierMatch =
 
 // Decide what needs to be replaced in the editor buffer when inserting the completion
 function getPrefix(opts: ACP.SuggestionsRequestedEvent): string {
-  // see https://github.com/albert200000/atom-typescript/issues/1528
+  // see https://github.com/albert200000/pulsar-typescript/issues/1528
   // for the motivating example.
   const line = opts.editor
     .getBuffer()
@@ -374,7 +374,7 @@ function addCallableParens(
   s: SuggestionWithDetails,
 ): ACP.TextSuggestion | ACP.SnippetSuggestion {
   if (
-    atom.config.get("atom-typescript-updated.autocompleteParens") &&
+    atom.config.get("pulsar-typescript-updated.autocompleteParens") &&
     ["function", "method"].includes(s.leftLabel!) &&
     !parens(opts)
   ) {

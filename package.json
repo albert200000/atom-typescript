@@ -1,5 +1,5 @@
 {
-  "name": "atom-typescript-updated",
+  "name": "pulsar-typescript-updated",
   "version": "0.2.0",
   "main": "./dist/main.js",
   "description": "The only TypeScript plugin you will ever need.",
@@ -29,14 +29,14 @@
     "atom": ">=1.31.0 <2.0.0",
     "node": "*"
   },
-  "homepage": "https://github.com/albert200000/atom-typescript",
+  "homepage": "https://github.com/albert200000/pulsar-typescript",
   "repository": {
     "type": "git",
-    "url": "https://github.com/albert200000/atom-typescript.git"
+    "url": "https://github.com/albert200000/pulsar-typescript.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/albert200000/atom-typescript/issues"
+    "url": "https://github.com/albert200000/pulsar-typescript/issues"
   },
   "dependencies": {
     "@swc/helpers": "^0.5.18",

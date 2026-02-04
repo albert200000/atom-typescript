@@ -51,7 +51,7 @@ export async function highlight(sourceCode: string, scopeName: string) {
         res.push(escapeHTML(buf.getTextInRange([pos, nextPos])))
 
         if (!(await yielder())) {
-          console.error(maxTimeError("Atom-TypeScript: Highlighter", 5))
+          console.error(maxTimeError("pulsar-typescript: Highlighter", 5))
           break
         }
         pos = nextPos

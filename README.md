@@ -11,7 +11,7 @@ Microsoft's TextMate grammar repackaged, and there's little reason to
 bundle our own if there's one available by default.
 
 **NOTE**: This branch contains a major rewrite (**v11**) of the
-`atom-typescript` plugin that is lighter and faster, but lacks a few
+`pulsar-typescript` plugin that is lighter and faster, but lacks a few
 major features that you might miss. The previous version is still
 available in the `legacy` branch and will continue to receive minor
 bugfixes. However, I wouldn't count on any new developments for that version.
@@ -20,12 +20,12 @@ bugfixes. However, I wouldn't count on any new developments for that version.
 
 1.  Install [atom](https://atom.io).
 2.  Install dependencies (see below).
-3.  `apm install atom-typescript` (`apm` needs `git` in your path).
+3.  `apm install pulsar-typescript` (`apm` needs `git` in your path).
 4.  Fire up atom. Open a TypeScript file.
 
 **Dependencies**:
 
-Atom-TypeScript relies on some external packages for providing some of
+pulsar-typescript relies on some external packages for providing some of
 its GUI. You basically have two options.
 
 **Option 1**: Install `atom-ide-ui` package.
@@ -57,7 +57,7 @@ its GUI. You basically have two options.
 # FAQ
 
 Located online:
-https://github.com/albert200000/atom-typescript/blob/master/docs/faq.md
+https://github.com/albert200000/pulsar-typescript/blob/master/docs/faq.md
 
 ------------------------------------------------------------------------
 
@@ -74,7 +74,7 @@ Press `tab` to make a selection.
 Just hover
 
 ![you definitely get the
-point](https://raw.githubusercontent.com/albert200000/atom-typescript/master/docs/screens/hover.png)
+point](https://raw.githubusercontent.com/albert200000/pulsar-typescript/master/docs/screens/hover.png)
 
 ## Compile on save
 
@@ -84,9 +84,9 @@ emit something, even if there are semantic errors in the file.
 
 ## Project Support
 
-`atom-typescript` supports all the same options the TypeScript compiler
+`pulsar-typescript` supports all the same options the TypeScript compiler
 does as it's using it behind the scenes to do all of the heavy lifting.
-In fact, `atom-typescript` will use the exact version of TypeScript you
+In fact, `pulsar-typescript` will use the exact version of TypeScript you
 have installed in your `node_modules` directory.
 
 ## Format Code
@@ -109,14 +109,14 @@ A bird's eye view of the current file. Use command
 `toggle semantic view`. The view updates while you edit the code. You
 can also click to jump to any portion of the file.
 
-![](https://raw.githubusercontent.com/albert200000/atom-typescript-examples/master/screens/semanticView.png)
+![](https://raw.githubusercontent.com/albert200000/pulsar-typescript-examples/master/screens/semanticView.png)
 
 ## Refactoring
 
 ### Rename
 
 `f2` to initiate rename. `enter` to commit and `esc` to cancel.
-![](https://raw.githubusercontent.com/albert200000/atom-typescript/master/docs/screens/renameRefactoring.png)
+![](https://raw.githubusercontent.com/albert200000/pulsar-typescript/master/docs/screens/renameRefactoring.png)
 
 ## Quick Fix
 
@@ -143,11 +143,11 @@ by default:
 ## Contributing
 
 Look at
-[CONTRIBUTING.md](https://github.com/albert200000/atom-typescript/blob/master/CONTRIBUTING.md)
+[CONTRIBUTING.md](https://github.com/albert200000/pulsar-typescript/blob/master/CONTRIBUTING.md)
 for curiosity. We work hard to keep the code as approachable as possible
 and are highly keen on helping you help us.
 
 ## Changelog
 
 Breaking changes [available
-online](https://github.com/albert200000/atom-typescript/blob/master/CHANGELOG.md).
+online](https://github.com/albert200000/pulsar-typescript/blob/master/CHANGELOG.md).

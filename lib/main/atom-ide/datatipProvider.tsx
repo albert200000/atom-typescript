@@ -49,7 +49,7 @@ export class TSDatatipProvider implements DatatipProvider {
       const data = result.body!
       const tooltip = await renderTooltip(data, etch, highlightCode)
       return {
-        component: () => <div className="atom-typescript-datatip-tooltip">{tooltip}</div>,
+        component: () => <div className="pulsar-typescript-datatip-tooltip">{tooltip}</div>,
         range: Atom.Range.fromObject([locationToPoint(data.start), locationToPoint(data.end)]),
       }
     } catch (_) {
@@ -65,7 +65,7 @@ async function highlightCode(code: string) {
   return (
     <div
       style={{fontFamily}}
-      className="atom-typescript-datatip-tooltip-code"
+      className="pulsar-typescript-datatip-tooltip-code"
       dangerouslySetInnerHTML={{__html: html}}
     />
   )

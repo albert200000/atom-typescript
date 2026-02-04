@@ -39,10 +39,10 @@ export function registerCommands(deps: Dependencies): DisposableLike {
                 e.abortKeyBinding()
                 if (isTypescriptGrammar(editor)) {
                   atom.notifications.addWarning(
-                    "Atom-TypeScript cancelled last command: Current editor has no file path",
+                    "pulsar-typescript cancelled last command: Current editor has no file path",
                     {
                       description:
-                        "Atom-TypeScript needs to determine the file path of the " +
+                        "pulsar-typescript needs to determine the file path of the " +
                         `current editor to execute \`${cmd.command}\`, which it failed to do. ` +
                         "You probably just need to save the current file somewhere.",
                       dismissable: true,

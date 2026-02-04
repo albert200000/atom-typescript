@@ -6,7 +6,7 @@ export async function renderTooltip(
   if (data === undefined) return null
 
   const kind = (
-    <div className="atom-typescript-datatip-tooltip-kind">
+    <div className="pulsar-typescript-datatip-tooltip-kind">
       {data.kind}
       {formatKindModifiers(data.kindModifiers)}
     </div>
@@ -15,11 +15,11 @@ export async function renderTooltip(
   const tags = data.tags
     ? data.tags.map((tag, idx) => {
         const tagClass =
-          "atom-typescript-datatip-tooltip-doc-tag " +
-          `atom-typescript-datatip-tooltip-doc-tag-name-${tag.name}`
+          "pulsar-typescript-datatip-tooltip-doc-tag " +
+          `pulsar-typescript-datatip-tooltip-doc-tag-name-${tag.name}`
         return (
           <div className={tagClass} key={idx}>
-            <span className="atom-typescript-datatip-tooltip-doc-tag-name">{tag.name}</span>
+            <span className="pulsar-typescript-datatip-tooltip-doc-tag-name">{tag.name}</span>
             {formatTagText(etch, tag.text)}
           </div>
         )
@@ -27,7 +27,7 @@ export async function renderTooltip(
     : null
 
   const docs = (
-    <div className="atom-typescript-datatip-tooltip-doc">
+    <div className="pulsar-typescript-datatip-tooltip-doc">
       {data.documentation}
       {tags}
     </div>
@@ -39,7 +39,7 @@ export async function renderTooltip(
 
 function formatKindModifiers(etch: any, text?: string) {
   if (text === undefined) return null
-  return <span className="atom-typescript-datatip-tooltip-kind-modifiers">{text}</span>
+  return <span className="pulsar-typescript-datatip-tooltip-kind-modifiers">{text}</span>
 }
 
 function formatTagText(etch: any, tagText?: string) {
@@ -47,8 +47,8 @@ function formatTagText(etch: any, tagText?: string) {
 
   const [, firstWord, restOfText] = /^\s*(\S*)([^]*)$/.exec(tagText)!
   return (
-    <span className="atom-typescript-datatip-tooltip-doc-tag-text">
-      <span className="atom-typescript-datatip-tooltip-doc-tag-text-first-word">{firstWord}</span>
+    <span className="pulsar-typescript-datatip-tooltip-doc-tag-text">
+      <span className="pulsar-typescript-datatip-tooltip-doc-tag-text-first-word">{firstWord}</span>
       {restOfText}
     </span>
   )

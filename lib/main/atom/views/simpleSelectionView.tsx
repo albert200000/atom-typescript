@@ -62,7 +62,7 @@ export async function selectListView<T>({
         loadingMessage,
         didChangeQuery,
         emptyMessage,
-        itemsClassList: ["atom-typescript"],
+        itemsClassList: ["pulsar-typescript"],
       })
       if (typeof items !== "function") {
         handlePromise(

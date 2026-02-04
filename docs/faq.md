@@ -24,12 +24,12 @@ general grammar issues should go there, and ones specific to Atom to
 If you feel confused as to where you should create the issue, it's likely safe to default
 to <https://github.com/atom/language-typescript>.
 
-## I want to use package X for syntax highlighting instead of language-typescript, but Atom-TypeScript doesn't work
+## I want to use package X for syntax highlighting instead of language-typescript, but pulsar-typescript doesn't work
 
-Long story short, Atom-TypeScript only activates when language-typescript
+Long story short, pulsar-typescript only activates when language-typescript
 grammar is used. This is done mostly to save resources when you're not working
 on TypeScript. The flipside is, when you want to use a different grammar
-package, Atom-TypeScript won't know that.
+package, pulsar-typescript won't know that.
 
 Sadly, there is no way to easily configure this behaviour after package
 installation, but there is a hack you could use.
@@ -61,13 +61,13 @@ do (grammarPackageImUsing = "typescript-grammar-you-want-to-use") ->
     atom.packages.triggerActivationHook 'language-typescript:grammar-used'
 ```
 
-See [here](https://github.com/albert200000/atom-typescript/issues/1451#issuecomment-428151082) for more information.
+See [here](https://github.com/albert200000/pulsar-typescript/issues/1451#issuecomment-428151082) for more information.
 
 ## I want to use the keyboard to control type tooltips instead of hovering the mouse
 
 For keyboard-activated tooltips, bind a shortcut you like to `typescript:show-tooltip` command. See [Atom Flight Manual section on customizing keybindings](https://flight-manual.atom.io/using-atom/sections/basic-customization/#customizing-keybindings) for more information on the topic.
 
-It's recommended to add the key binding to `atom-text-editor` selector, since the command is editor-bound. If you want a more specific selector, use `atom-text-editor:not([mini]).typescript-editor`, which will only trigger on editors managed by atom-typescript.
+It's recommended to add the key binding to `atom-text-editor` selector, since the command is editor-bound. If you want a more specific selector, use `atom-text-editor:not([mini]).typescript-editor`, which will only trigger on editors managed by pulsar-typescript.
 
 Also see the next question.
 
@@ -80,7 +80,7 @@ reasons. You can manually tell it to refresh by running
 If that doesn't help, you can also forcibly restart running TsServer instances
 with `typescript:restart-all-servers` command.
 
-## Which version of TypeScript does atom-typescript use?
+## Which version of TypeScript does pulsar-typescript use?
 
 Your current version installed in your `node_modules`. This gets
 determined once per open file so you might want to re-open your panes,
@@ -113,4 +113,4 @@ This by design, since TypeScript doesn't really assign any special meaning to `n
 ## How can I contribute
 
 see
-<https://github.com/albert200000/atom-typescript/blob/master/CONTRIBUTING.md>
+<https://github.com/albert200000/pulsar-typescript/blob/master/CONTRIBUTING.md>

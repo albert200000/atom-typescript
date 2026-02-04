@@ -47,7 +47,7 @@ export class TypescriptEditorPane {
       editor.onDidChangeGrammar(this.checkIfTypescript),
       editor.onDidDestroy(this.destroy),
       editor.onDidSave(() => {
-        if (atom.config.get("atom-typescript-updated.checkAllFilesOnSave")) {
+        if (atom.config.get("pulsar-typescript-updated.checkAllFilesOnSave")) {
           atom.commands.dispatch(atom.views.getView(editor), "typescript:check-all-files")
         }
       }),

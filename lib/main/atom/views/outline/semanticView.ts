@@ -2,7 +2,7 @@ import {GetClientFunction} from "../../../../client"
 import {NavigationTreeComponent} from "./navigationTreeComponent"
 import {NavigationTreeViewModel} from "./semanticViewModel"
 
-export const SEMANTIC_VIEW_URI = "atom-typescript://semantic-view"
+export const SEMANTIC_VIEW_URI = "pulsar-typescript://semantic-view"
 
 export interface SemanticViewOptions {
   navTree: NavigationTreeViewModel | null

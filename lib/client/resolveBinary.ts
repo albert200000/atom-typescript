@@ -36,7 +36,7 @@ export async function resolveBinary(
     }
 
     // try to get typescript from configured tsdkPath
-    const tsdkPath = atom.config.get("atom-typescript-updated.tsdkPath")
+    const tsdkPath = atom.config.get("pulsar-typescript-updated.tsdkPath")
     if (tsdkPath) {
       const binPath = path.join(tsdkPath, "lib", binName)
       const exists = await fsExists(binPath)
@@ -102,8 +102,8 @@ async function resolveConfigFile(initialBaseDir: string) {
   let parent = path.dirname(basedir)
   while (basedir !== parent) {
     const configFile = await tryConfigFiles(basedir, [
-      [".atom-typescript.json"],
-      [".atom", "atom-typescript.json"],
+      [".pulsar-typescript.json"],
+      [".atom", "pulsar-typescript.json"],
       [".vscode", "settings.json"],
     ])
     if (configFile !== undefined) return {basedir, configFile}

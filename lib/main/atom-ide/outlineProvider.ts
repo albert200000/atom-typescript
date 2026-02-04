@@ -5,7 +5,7 @@ import {spanToRange, typeScriptScopes} from "../atom/utils"
 
 export function getOutlineProvider(getClient: GetClientFunction): OutlineProvider {
   return {
-    name: "Atom-TypeScript",
+    name: "pulsar-typescript",
     grammarScopes: typeScriptScopes(),
     priority: 100,
     updateOnEdit: true,
