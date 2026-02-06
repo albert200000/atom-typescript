@@ -30,7 +30,7 @@ export default [
         ecmaFeatures: {
           jsx: true
         },
-        ecmaVersion: '2020',
+        ecmaVersion: '2019',
         sourceType: 'module'
       },
       globals: {
