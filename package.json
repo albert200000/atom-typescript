@@ -434,7 +434,7 @@
     "bundle": {
       "context": "electron-renderer",
       "engines": {
-        "electron": ">=5.x"
+        "electron": ">=12.x"
       },
       "includeNodeModules": {
         "atom": false,
