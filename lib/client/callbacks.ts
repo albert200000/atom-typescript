@@ -68,7 +68,9 @@ export class Callbacks {
       }
       if (res.success) req.resolve(res)
       else req.reject(new Error(res.message))
-    } else console.warn("unexpected response:", res)
+    } else if (window.atom_typescript_debug) {
+      console.warn("unexpected response:", res)
+    }
   }
 
   public resolveMS(body: proto.RequestCompletedEventBody): void {

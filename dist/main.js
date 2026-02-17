@@ -1367,7 +1367,7 @@ var $c6112536605178e1$export$2b3937e1c5d995d8 = /*#__PURE__*/ function() {
                     if (window.atom_typescript_debug) console.log("received response for", res.command, "in", Date.now() - req.started, "ms", "with data", res.body);
                     if (res.success) req.resolve(res);
                     else req.reject(new Error(res.message));
-                } else console.warn("unexpected response:", res);
+                } else if (window.atom_typescript_debug) console.warn("unexpected response:", res);
             }
         },
         {
