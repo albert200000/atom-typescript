@@ -89,11 +89,6 @@ does as it's using it behind the scenes to do all of the heavy lifting.
 In fact, `pulsar-typescript` will use the exact version of TypeScript you
 have installed in your `node_modules` directory.
 
-## Format Code
-
-Shortcut: `ctrl+alt+l` or `cmd+alt+l`. Will format just the selection
-if you have something selected otherwise it will format the entire file.
-
 ## Go to Declaration
 
 Shortcut: `F12`. Will open the *first* declaration of the said item for

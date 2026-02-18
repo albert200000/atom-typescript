@@ -53,6 +53,8 @@ $parcel$export(module.exports, "provideReferences", function () { return $64e764
 $parcel$export(module.exports, "provideOutlines", function () { return $64e7645780377c6f$export$cec97b3152a9a2a4; });
 $parcel$export(module.exports, "provideDefinitions", function () { return $64e7645780377c6f$export$60b479b2c6dcce92; });
 $parcel$export(module.exports, "provideCodeHighlight", function () { return $64e7645780377c6f$export$67b00a253126c08e; });
+$parcel$export(module.exports, "provideFileCodeFormat", function () { return $64e7645780377c6f$export$ddba29d0edc24a00; });
+$parcel$export(module.exports, "provideRangeCodeFormat", function () { return $64e7645780377c6f$export$6bd9d026c612c1d4; });
 
 
 
@@ -4878,142 +4880,6 @@ function $8006872929ecb29e$var$_finally(promise, callback) {
 
 
 
-
-(0, $095c7bfbba93f9a3$export$35e8f4a3c2d7c0da)("atom-text-editor", "typescript:format-code", function(deps) {
-    return {
-        description: "Format code in currently active text editor",
-        didDispatch: function(editor) {
-            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                var filePath, ranges, _iteratorNormalCompletion, _didIteratorError, _iteratorError, _iterator, _step, selection, end, client, edits, _iteratorNormalCompletion1, _didIteratorError1, _iteratorError1, _iterator1, _step1, range, _edits, result, err;
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
-                    switch(_state.label){
-                        case 0:
-                            filePath = editor.getPath();
-                            if (filePath === undefined) return [
-                                2
-                            ];
-                            ranges = [];
-                            _iteratorNormalCompletion = true, _didIteratorError = false, _iteratorError = undefined;
-                            try {
-                                for(_iterator = editor.getSelectedBufferRanges()[Symbol.iterator](); !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true){
-                                    selection = _step.value;
-                                    if (!selection.isEmpty()) ranges.push((0, $ee93806a41573bb4$export$430a7b9c6c8900f6)(selection));
-                                }
-                            } catch (err) {
-                                _didIteratorError = true;
-                                _iteratorError = err;
-                            } finally{
-                                try {
-                                    if (!_iteratorNormalCompletion && _iterator["return"] != null) {
-                                        _iterator["return"]();
-                                    }
-                                } finally{
-                                    if (_didIteratorError) {
-                                        throw _iteratorError;
-                                    }
-                                }
-                            }
-                            // Format the whole document if there are no ranges added
-                            if (ranges.length === 0) {
-                                end = editor.getBuffer().getEndPosition();
-                                ranges.push({
-                                    line: 1,
-                                    offset: 1,
-                                    endLine: end.row + 1,
-                                    endOffset: end.column + 1
-                                });
-                            }
-                            return [
-                                4,
-                                deps.getClient(filePath)
-                            ];
-                        case 1:
-                            client = _state.sent();
-                            edits = [];
-                            _iteratorNormalCompletion1 = true, _didIteratorError1 = false, _iteratorError1 = undefined;
-                            _state.label = 2;
-                        case 2:
-                            _state.trys.push([
-                                2,
-                                7,
-                                8,
-                                9
-                            ]);
-                            _iterator1 = ranges[Symbol.iterator]();
-                            _state.label = 3;
-                        case 3:
-                            if (!!(_iteratorNormalCompletion1 = (_step1 = _iterator1.next()).done)) return [
-                                3,
-                                6
-                            ];
-                            range = _step1.value;
-                            return [
-                                4,
-                                client.execute("format", (0, $8qw4J$swchelperscjs_object_spread_propscjs._)((0, $8qw4J$swchelperscjs_object_spreadcjs._)({}, range), {
-                                    file: filePath
-                                }))
-                            ];
-                        case 4:
-                            result = _state.sent();
-                            if (result.body) (_edits = edits).push.apply(_edits, (0, $8qw4J$swchelperscjs_to_consumable_arraycjs._)(result.body));
-                            _state.label = 5;
-                        case 5:
-                            _iteratorNormalCompletion1 = true;
-                            return [
-                                3,
-                                3
-                            ];
-                        case 6:
-                            return [
-                                3,
-                                9
-                            ];
-                        case 7:
-                            err = _state.sent();
-                            _didIteratorError1 = true;
-                            _iteratorError1 = err;
-                            return [
-                                3,
-                                9
-                            ];
-                        case 8:
-                            try {
-                                if (!_iteratorNormalCompletion1 && _iterator1["return"] != null) {
-                                    _iterator1["return"]();
-                                }
-                            } finally{
-                                if (_didIteratorError1) {
-                                    throw _iteratorError1;
-                                }
-                            }
-                            return [
-                                7
-                            ];
-                        case 9:
-                            if (edits.length > 0) editor.transact(function() {
-                                $585c4a318f71f147$var$formatCode(editor, edits);
-                            });
-                            return [
-                                2
-                            ];
-                    }
-                });
-            })();
-        }
-    };
-});
-function $585c4a318f71f147$var$formatCode(editor, edits) {
-    // The code edits need to be applied in reverse order
-    for(var i = edits.length - 1; i >= 0; i--)editor.setTextInBufferRange((0, $ee93806a41573bb4$export$477d491a08b070ec)(edits[i]), edits[i].newText);
-}
-
-
-
-
-
-
-
-
 (0, $095c7bfbba93f9a3$export$35e8f4a3c2d7c0da)("atom-text-editor", "typescript:initialize-config", function() {
     return {
         description: "Create tsconfig.json in the project related to currently-active text edtior",
@@ -8308,6 +8174,149 @@ var $a568bbacdc99572d$export$a0bbaae59860162e = /*#__PURE__*/ function() {
 $a568bbacdc99572d$export$a0bbaae59860162e.editorMap = new WeakMap();
 
 
+
+
+
+
+
+
+function $3d6f042fcd0719f0$var$formatCode(editor, getClient) {
+    return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
+        var filePath, ranges, _iteratorNormalCompletion, _didIteratorError, _iteratorError, _iterator, _step, selection, end, client, edits, _iteratorNormalCompletion1, _didIteratorError1, _iteratorError1, _iterator1, _step1, range, _edits, result, err;
+        return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
+            switch(_state.label){
+                case 0:
+                    filePath = editor.getPath();
+                    if (filePath === undefined) return [
+                        2
+                    ];
+                    ranges = [];
+                    _iteratorNormalCompletion = true, _didIteratorError = false, _iteratorError = undefined;
+                    try {
+                        for(_iterator = editor.getSelectedBufferRanges()[Symbol.iterator](); !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true){
+                            selection = _step.value;
+                            if (!selection.isEmpty()) ranges.push((0, $ee93806a41573bb4$export$430a7b9c6c8900f6)(selection));
+                        }
+                    } catch (err) {
+                        _didIteratorError = true;
+                        _iteratorError = err;
+                    } finally{
+                        try {
+                            if (!_iteratorNormalCompletion && _iterator["return"] != null) {
+                                _iterator["return"]();
+                            }
+                        } finally{
+                            if (_didIteratorError) {
+                                throw _iteratorError;
+                            }
+                        }
+                    }
+                    // Format the whole document if there are no ranges added
+                    if (ranges.length === 0) {
+                        end = editor.getBuffer().getEndPosition();
+                        ranges.push({
+                            line: 1,
+                            offset: 1,
+                            endLine: end.row + 1,
+                            endOffset: end.column + 1
+                        });
+                    }
+                    return [
+                        4,
+                        getClient(filePath)
+                    ];
+                case 1:
+                    client = _state.sent();
+                    edits = [];
+                    _iteratorNormalCompletion1 = true, _didIteratorError1 = false, _iteratorError1 = undefined;
+                    _state.label = 2;
+                case 2:
+                    _state.trys.push([
+                        2,
+                        7,
+                        8,
+                        9
+                    ]);
+                    _iterator1 = ranges[Symbol.iterator]();
+                    _state.label = 3;
+                case 3:
+                    if (!!(_iteratorNormalCompletion1 = (_step1 = _iterator1.next()).done)) return [
+                        3,
+                        6
+                    ];
+                    range = _step1.value;
+                    return [
+                        4,
+                        client.execute("format", (0, $8qw4J$swchelperscjs_object_spread_propscjs._)((0, $8qw4J$swchelperscjs_object_spreadcjs._)({}, range), {
+                            file: filePath
+                        }))
+                    ];
+                case 4:
+                    result = _state.sent();
+                    if (result.body) (_edits = edits).push.apply(_edits, (0, $8qw4J$swchelperscjs_to_consumable_arraycjs._)(result.body));
+                    _state.label = 5;
+                case 5:
+                    _iteratorNormalCompletion1 = true;
+                    return [
+                        3,
+                        3
+                    ];
+                case 6:
+                    return [
+                        3,
+                        9
+                    ];
+                case 7:
+                    err = _state.sent();
+                    _didIteratorError1 = true;
+                    _iteratorError1 = err;
+                    return [
+                        3,
+                        9
+                    ];
+                case 8:
+                    try {
+                        if (!_iteratorNormalCompletion1 && _iterator1["return"] != null) {
+                            _iterator1["return"]();
+                        }
+                    } finally{
+                        if (_didIteratorError1) {
+                            throw _iteratorError1;
+                        }
+                    }
+                    return [
+                        7
+                    ];
+                case 9:
+                    if (edits.length > 0) editor.transact(function() {
+                        // The code edits need to be applied in reverse order
+                        for(var i = edits.length - 1; i >= 0; i--)editor.setTextInBufferRange((0, $ee93806a41573bb4$export$477d491a08b070ec)(edits[i]), edits[i].newText);
+                    });
+                    return [
+                        2
+                    ];
+            }
+        });
+    })();
+}
+function $3d6f042fcd0719f0$export$625cc23770b58a7a(getClient) {
+    return {
+        formatEntireFile: function(editor) {
+            $3d6f042fcd0719f0$var$formatCode(editor, getClient);
+            return null;
+        }
+    };
+}
+function $3d6f042fcd0719f0$export$7cba49b39d54126a(getClient) {
+    return {
+        formatCode: function(editor) {
+            $3d6f042fcd0719f0$var$formatCode(editor, getClient);
+            return [];
+        }
+    };
+}
+
+
 var $8655349229b8a3fd$export$f2c0a16002429d72 = /*#__PURE__*/ function() {
     "use strict";
     function PluginManager(state) {
@@ -8797,6 +8806,18 @@ var $8655349229b8a3fd$export$f2c0a16002429d72 = /*#__PURE__*/ function() {
             }
         },
         {
+            key: "provideFileCodeFormat",
+            value: function provideFileCodeFormat() {
+                return (0, $3d6f042fcd0719f0$export$625cc23770b58a7a)(this.getClient);
+            }
+        },
+        {
+            key: "provideRangeCodeFormat",
+            value: function provideRangeCodeFormat() {
+                return (0, $3d6f042fcd0719f0$export$7cba49b39d54126a)(this.getClient);
+            }
+        },
+        {
             key: "subscribeEditors",
             value: function subscribeEditors() {
                 var _this = this;
@@ -8908,6 +8929,12 @@ function $64e7645780377c6f$export$60b479b2c6dcce92() {
 }
 function $64e7645780377c6f$export$67b00a253126c08e() {
     if ($64e7645780377c6f$var$pluginManager) return $64e7645780377c6f$var$pluginManager.provideCodeHighlight();
+}
+function $64e7645780377c6f$export$ddba29d0edc24a00() {
+    if ($64e7645780377c6f$var$pluginManager) return $64e7645780377c6f$var$pluginManager.provideFileCodeFormat();
+}
+function $64e7645780377c6f$export$6bd9d026c612c1d4() {
+    if ($64e7645780377c6f$var$pluginManager) return $64e7645780377c6f$var$pluginManager.provideRangeCodeFormat();
 }
 
 

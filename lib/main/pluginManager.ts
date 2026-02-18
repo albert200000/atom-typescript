@@ -30,6 +30,7 @@ import {SymbolsViewController} from "./atom/views/symbols/symbolsViewController"
 import {ErrorPusher} from "./errorPusher"
 import {State} from "./packageState"
 import {TypescriptEditorPane} from "./typescriptEditorPane"
+import {getFileCodeFormatProvider, getRangeCodeFormatProvider} from "./atom-ide/codeFormatProvider"
 
 export interface Change extends TextSpan {
   newText: string
@@ -232,6 +233,14 @@ export class PluginManager {
 
   public provideCodeHighlight() {
     return getCodeHighlightProvider(this.getClient)
+  }
+
+  public provideFileCodeFormat() {
+    return getFileCodeFormatProvider(this.getClient)
+  }
+
+  public provideRangeCodeFormat() {
+    return getRangeCodeFormatProvider(this.getClient)
   }
 
   private clearErrors = () => {

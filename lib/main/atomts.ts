@@ -9,6 +9,8 @@ import {
   HyperclickProvider,
   OutlineProvider,
   SignatureHelpRegistry,
+  FileCodeFormatProvider,
+  RangeCodeFormatProvider,
 } from "atom-ide-base"
 import * as packageDeps from "atom-package-deps"
 import {AutocompleteProvider} from "atom/autocomplete-plus"
@@ -108,4 +110,12 @@ export function provideDefinitions(): DefinitionProvider | undefined {
 
 export function provideCodeHighlight(): CodeHighlightProvider | undefined {
   if (pluginManager) return pluginManager.provideCodeHighlight()
+}
+
+export function provideFileCodeFormat(): FileCodeFormatProvider | undefined {
+  if (pluginManager) return pluginManager.provideFileCodeFormat()
+}
+
+export function provideRangeCodeFormat(): RangeCodeFormatProvider | undefined {
+  if (pluginManager) return pluginManager.provideRangeCodeFormat()
 }

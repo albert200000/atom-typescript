@@ -39,6 +39,7 @@
     "url": "https://github.com/albert200000/pulsar-typescript/issues"
   },
   "dependencies": {
+    "@swc/helpers": "^0.5.18",
     "atom-ide-base": "^3.3.0",
     "atom-package-deps": "^8.0.0",
     "atom-select-list": "^0.8.1",
@@ -378,6 +379,16 @@
     "autocomplete.provider": {
       "versions": {
         "2.0.0": "provideAutocomplete"
+      }
+    },
+    "code-format.range": {
+      "versions": {
+        "0.1.0": "provideRangeCodeFormat"
+      }
+    },
+    "code-format.file": {
+      "versions": {
+        "0.1.0": "provideFileCodeFormat"
       }
     },
     "hyperclick": {
