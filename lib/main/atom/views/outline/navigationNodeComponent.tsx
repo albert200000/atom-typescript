@@ -41,7 +41,9 @@ export class NavigationNodeComponent implements JSX.ElementClass {
         </div>
         <ol className="entries list-tree">
           {node.childItems
-            ? node.childItems.map((sn, i) => <NavigationNodeComponent key={i} navTree={sn} ctrl={ctrl} />)
+            ? node.childItems.map((sn, i) => (
+                <NavigationNodeComponent key={i} navTree={sn} ctrl={ctrl} />
+              ))
             : null}
         </ol>
       </li>

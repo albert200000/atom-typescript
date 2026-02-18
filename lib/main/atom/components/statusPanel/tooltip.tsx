@@ -17,7 +17,10 @@ export class Tooltip implements JSX.ElementClass {
   public element!: HTMLElement
   private tooltipDisposable: DisposableLike
 
-  constructor(props: Props, private children?: JSX.Element[]) {
+  constructor(
+    props: Props,
+    private children?: JSX.Element[],
+  ) {
     this.props = {
       ...props,
       delay: {show: 0, hide: 0},

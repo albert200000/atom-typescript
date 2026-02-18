@@ -52,7 +52,10 @@ export class AutocompleteProvider implements ACP.AutocompleteProvider {
     details: Map<string, Details>
   }
 
-  constructor(private getClient: GetClientFunction, private applyEdits: ApplyEdits) {}
+  constructor(
+    private getClient: GetClientFunction,
+    private applyEdits: ApplyEdits,
+  ) {}
 
   public async getSuggestions(opts: ACP.SuggestionsRequestedEvent): Promise<ACP.AnySuggestion[]> {
     const location = getLocationQuery(opts)

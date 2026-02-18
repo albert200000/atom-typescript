@@ -36,7 +36,10 @@ export class TypescriptEditorPane {
   private readonly subscriptions = new CompositeDisposable()
   private isTypescript = false
 
-  private constructor(private readonly editor: Atom.TextEditor, private opts: PaneOptions) {
+  private constructor(
+    private readonly editor: Atom.TextEditor,
+    private opts: PaneOptions,
+  ) {
     this.buffer = TypescriptBuffer.create(editor.getBuffer(), opts)
     this.subscriptions.add(this.buffer.on("opened", this.onOpened))
 

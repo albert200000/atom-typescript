@@ -39,7 +39,10 @@ export class TypescriptBuffer {
 
   public on = this.events.on.bind(this.events)
 
-  private constructor(public buffer: Atom.TextBuffer, private deps: Deps) {
+  private constructor(
+    public buffer: Atom.TextBuffer,
+    private deps: Deps,
+  ) {
     let debouncedGetErr: DebouncedFunc<() => void>
     this.subscriptions.add(
       atom.config.observe("pulsar-typescript.getErrDebounceTimeout", (val) => {
