@@ -1,6 +1,5 @@
 'atom-text-editor:not([mini]).typescript-editor':
   'f2': 'typescript:rename-refactor'
-  'shift-f12': 'typescript:find-references'
   'f6': 'typescript:build'
   'f12': 'typescript:go-to-declaration'
   'escape': 'typescript:hide-signature-help'

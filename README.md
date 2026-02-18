@@ -99,10 +99,6 @@ if you have something selected otherwise it will format the entire file.
 Shortcut: `F12`. Will open the *first* declaration of the said item for
 now. (Note: some people call it Go to Definition)
 
-## Find References
-
-Shortcut `shift+F12`. Also called *find usages*.
-
 ## Semantic View
 
 A bird's eye view of the current file. Use command

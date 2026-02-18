@@ -2844,55 +2844,6 @@ function $532eb743eaf241e3$var$refTsToIde(ref) {
 
 
 
-
-var $3a2f125535af08fb$export$275be3d1a3f62fb = /*#__PURE__*/ function() {
-    "use strict";
-    function TsView(props) {
-        (0, $8qw4J$swchelperscjs_class_call_checkcjs._)(this, TsView);
-        this.props = props;
-        $8qw4J$etch.initialize(this);
-    }
-    (0, $8qw4J$swchelperscjs_create_classcjs._)(TsView, [
-        {
-            key: "update",
-            value: function update(props) {
-                return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                    return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
-                        this.props = (0, $8qw4J$swchelperscjs_object_spreadcjs._)({}, this.props, props);
-                        return [
-                            2,
-                            $8qw4J$etch.update(this)
-                        ];
-                    });
-                }).call(this);
-            }
-        },
-        {
-            key: "render",
-            value: function render() {
-                var style = {
-                    fontFamily: atom.config.get("editor.fontFamily")
-                };
-                return $8qw4J$etch.dom("div", {
-                    className: "editor editor-colors",
-                    style: style,
-                    innerHTML: this.props.highlightedText
-                });
-            }
-        }
-    ]);
-    return TsView;
-}();
-
-
-
-
-
-
-
-
-
-
 var $5f8857790714307e$export$31d5f5740e2c2887 = /*#__PURE__*/ function() {
     "use strict";
     function HighlightComponent(props) {
@@ -3162,134 +3113,6 @@ function $095c7bfbba93f9a3$export$7a6092e2ae7e1845() {
 }
 
 
-(0, $095c7bfbba93f9a3$export$35e8f4a3c2d7c0da)("atom-text-editor", "typescript:find-references", function(deps) {
-    return {
-        description: "Find where symbol under text cursor is referenced",
-        didDispatch: function(editor) {
-            return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                var location, client, result;
-                return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
-                    switch(_state.label){
-                        case 0:
-                            location = (0, $7580a2909a181bf5$export$f25e34a2b31a939c)(editor);
-                            if (!location) return [
-                                2
-                            ];
-                            return [
-                                4,
-                                deps.getClient(location.file)
-                            ];
-                        case 1:
-                            client = _state.sent();
-                            return [
-                                4,
-                                client.execute("references", location)
-                            ];
-                        case 2:
-                            result = _state.sent();
-                            return [
-                                4,
-                                $bd6f96bfb4d02b8e$export$2904681fe8c977be(result, editor, deps.histGoForward)
-                            ];
-                        case 3:
-                            _state.sent();
-                            return [
-                                2
-                            ];
-                    }
-                });
-            })();
-        }
-    };
-});
-function $bd6f96bfb4d02b8e$export$2904681fe8c977be(result, editor, histGoForward) {
-    return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-        var refs, res;
-        return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
-            switch(_state.label){
-                case 0:
-                    refs = Promise.all(result.body.refs.map(function(ref) {
-                        return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                            var _a, _b, fileContents, context, fileHlText, lineText;
-                            return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
-                                switch(_state.label){
-                                    case 0:
-                                        return [
-                                            4,
-                                            new Promise(function(resolve, reject) {
-                                                return $8qw4J$fs.readFile(ref.file, function(error, data) {
-                                                    if (error) reject(error);
-                                                    else resolve(data.toString("utf-8"));
-                                                });
-                                            })
-                                        ];
-                                    case 1:
-                                        fileContents = _state.sent().split(/\r?\n/g);
-                                        context = ref.contextStart !== undefined && ref.contextEnd !== undefined ? fileContents.slice(ref.contextStart.line - 1, ref.contextEnd.line) : fileContents;
-                                        return [
-                                            4,
-                                            (0, $cf8cb216522ae432$export$e4043f67d36cbb26)(context.join("\n"), "source.tsx")
-                                        ];
-                                    case 2:
-                                        fileHlText = _state.sent().split("\n");
-                                        lineText = fileHlText[ref.start.line - ((_b = (_a = ref.contextStart) === null || _a === void 0 ? void 0 : _a.line) !== null && _b !== void 0 ? _b : 1)];
-                                        return [
-                                            2,
-                                            (0, $8qw4J$swchelperscjs_object_spread_propscjs._)((0, $8qw4J$swchelperscjs_object_spreadcjs._)({}, ref), {
-                                                hlText: lineText
-                                            })
-                                        ];
-                                }
-                            });
-                        })();
-                    }));
-                    return [
-                        4,
-                        (0, $f55d59ecd155c40a$export$12cb8c60c107136e)({
-                            items: refs,
-                            itemTemplate: function(item, ctx) {
-                                return $8qw4J$etch.dom("li", null, $8qw4J$etch.dom((0, $5f8857790714307e$export$31d5f5740e2c2887), {
-                                    label: atom.project.relativize(item.file),
-                                    query: ctx.getFilterQuery()
-                                }), $8qw4J$etch.dom("div", {
-                                    className: "pull-right"
-                                }, "line: ", item.start.line), $8qw4J$etch.dom((0, $3a2f125535af08fb$export$275be3d1a3f62fb), {
-                                    highlightedText: item.hlText
-                                }));
-                            },
-                            itemFilterKey: "file"
-                        })
-                    ];
-                case 1:
-                    res = _state.sent();
-                    if (!res) return [
-                        3,
-                        3
-                    ];
-                    return [
-                        4,
-                        histGoForward(editor, res)
-                    ];
-                case 2:
-                    _state.sent();
-                    _state.label = 3;
-                case 3:
-                    return [
-                        2
-                    ];
-            }
-        });
-    })();
-}
-
-
-
-
-
-
-
-
-
 (0, $095c7bfbba93f9a3$export$35e8f4a3c2d7c0da)("atom-text-editor", "typescript:go-to-declaration", function(deps) {
     return {
         description: "Go to declaration of symbol under text cursor",
@@ -3426,7 +3249,7 @@ function $f208e1245e4db9fc$export$51c07c30fb16d966(getClient, histGoForward) {
                             range: range,
                             callback: function() {
                                 return (/*#__PURE__*/ 0, /*#__PURE__*/ $8qw4J$swchelperscjs_async_to_generatorcjs._)(function() {
-                                    var _a, location, client, result, resLoc, references;
+                                    var location, client, result;
                                     return (0, $8qw4J$swchelperscjs_ts_generatorcjs._)(this, function(_state) {
                                         switch(_state.label){
                                             case 0:
@@ -3447,36 +3270,12 @@ function $f208e1245e4db9fc$export$51c07c30fb16d966(getClient, histGoForward) {
                                                 ];
                                             case 2:
                                                 result = _state.sent();
-                                                resLoc = result.body ? result.body[0] : undefined;
-                                                if (!(((_a = result.body) === null || _a === void 0 ? void 0 : _a.length) === 1 && (resLoc === null || resLoc === void 0 ? void 0 : resLoc.start.line) === location.line && (resLoc === null || resLoc === void 0 ? void 0 : resLoc.start.offset) === location.offset)) return [
-                                                    3,
-                                                    5
-                                                ];
-                                                return [
-                                                    4,
-                                                    client.execute("references", location)
-                                                ];
-                                            case 3:
-                                                references = _state.sent();
-                                                return [
-                                                    4,
-                                                    (0, $bd6f96bfb4d02b8e$export$2904681fe8c977be)(references, editor, histGoForward)
-                                                ];
-                                            case 4:
-                                                _state.sent();
-                                                return [
-                                                    3,
-                                                    7
-                                                ];
-                                            case 5:
                                                 return [
                                                     4,
                                                     (0, $71d6fd6c1ba3e8dc$export$680a91dbc2dcff04)(result, editor, histGoForward)
                                                 ];
-                                            case 6:
+                                            case 3:
                                                 _state.sent();
-                                                _state.label = 7;
-                                            case 7:
                                                 return [
                                                     2
                                                 ];
@@ -5071,7 +4870,6 @@ function $8006872929ecb29e$var$_finally(promise, callback) {
         }
     };
 });
-
 
 
 

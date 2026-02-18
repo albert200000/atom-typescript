@@ -425,7 +425,10 @@
         "name": "linter"
       },
       {
-        "name": "atom-ide-ui"
+        "name": "atom-ide-base"
+      },
+      {
+        "name": "pulsar-find-references"
       }
     ]
   ],
